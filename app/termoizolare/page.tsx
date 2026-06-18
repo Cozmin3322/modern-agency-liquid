@@ -1,81 +1,197 @@
-import { Metadata } from "next"
-import Script from "next/script"
+import type { Metadata } from "next"
 import Link from "next/link"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { ArrowRight, Check } from "lucide-react"
-import { serviceSchema, breadcrumbSchema } from "@/lib/schema"
-import { ServiceHero } from "@/components/service-hero"
-
-const termoizolareServiceSchema = serviceSchema(
-  'Termoizolare',
-  'Servicii profesionale de termoizolare cu izolație termică de calitate. Economie 40-50% la energie. Garanție 25 ani. Aplicare în 1-2 zile.'
-)
+import { Check, ArrowRight, Home, Building2, Warehouse, Container, Truck, Wrench, Wheat, PipelineIcon, Thermometer, Droplets, Wind, FileText, Calculator, HardHat, ShieldCheck, Zap } from "lucide-react"
+import Header from "@/components/header"
+import ServiceHero from "@/components/service-hero"
+import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Termoizolare Profesională Moldova | Economie 40-50% la Energie | IsoThermLux",
-  description: "Termoizolare profesională cu spumă poliuretanică în Moldova. Economie 40-50% la energie. Garanție 25 ani scrisă. 12 ani experiență. Consultație gratuită Chișinău.",
-  keywords: "termoizolare Moldova, termoizolare Chișinău, izolare termică, spumă poliuretanică Moldova, termoizolare casă, economie energie Moldova",
+  description:
+    "Termoizolare profesională cu spumă poliuretanică în Moldova. Economie 40-50% la energie. Garanție 25 ani scrisă. 12 ani experiență. Consultație gratuită Chișinău.",
+  keywords:
+    "termoizolare Moldova, termoizolare Chișinău, izolare termică, spumă poliuretanică Moldova, termoizolare casă, economie energie Moldova",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare" },
   openGraph: {
-            title: "Termoizolare Profesională | Economie 40-50% la Energie | IsoThermLux",
-            description: "Termoizolare profesională cu spumă poliuretanică. Economie 40-50% la energie. Garanție 25 ani scrisă. 12 ani experiență.",
-    type: "website",
-    locale: "ro_MD",
+    title: "Termoizolare Profesională | Economie 40-50% la Energie | IsoThermLux",
+    description:
+      "Termoizolare profesională cu spumă poliuretanică. Economie 40-50% la energie. Garanție 25 ani scrisă. 12 ani experiență.",
     url: "https://www.isothermlux.md/termoizolare",
+    locale: "ro_MD",
+    type: "website",
   },
 }
+
+const tipuriTermoizolare = [
+  {
+    href: "/termoizolare/mansarda",
+    Icon: Home,
+    title: "Mansardă",
+    desc: "Izolare termică profesională a mansardelor. Spațiu locuibil cald iarna, răcoros vara.",
+  },
+  {
+    href: "/termoizolare/casa",
+    Icon: Home,
+    title: "Casă Completă",
+    desc: "Izolare acoperiș, pereți exteriori și fundație. Confort maxim, economie 40-50%.",
+  },
+  {
+    href: "/termoizolare/hala-industriala",
+    Icon: Warehouse,
+    title: "Hale Industriale",
+    desc: "Izolație termică pentru hale, depozite și clădiri comerciale. Aplicare 300 m²/zi.",
+  },
+  {
+    href: "/termoizolare/acoperis",
+    Icon: Building2,
+    title: "Acoperiș și Terasă",
+    desc: "Terase plate, șarpante, table ondulate. Eliminăm condensul și pierderile prin acoperiș.",
+  },
+  {
+    href: "/termoizolare/cisterne",
+    Icon: Container,
+    title: "Cisterne și Rezervoare",
+    desc: "Cisterne de combustibil, apă, alimente. Spumă cu celule închise — impermeabilă.",
+  },
+  {
+    href: "/termoizolare/containere",
+    Icon: Container,
+    title: "Containere",
+    desc: "Containere frigorifice, de depozitare sau locuibile. Soluție completă în 1 zi.",
+  },
+  {
+    href: "/termoizolare/camioane",
+    Icon: Truck,
+    title: "Camioane și Vehicule",
+    desc: "Caroserii izoterme, dube, remorci frigorifice. Greutate minimă, eficiență maximă.",
+  },
+  {
+    href: "/termoizolare/fundatie",
+    Icon: Building2,
+    title: "Fundație și Subsol",
+    desc: "Socluri, pereți subterani, plăci de beton. Elimini umezeala și puntea termică.",
+  },
+  {
+    href: "/termoizolare/garaj",
+    Icon: Wrench,
+    title: "Garaj și Atelier",
+    desc: "Garaje metalice sau zidărie, ateliere auto. Confortabil tot parcursul anului.",
+  },
+  {
+    href: "/termoizolare/ferma",
+    Icon: Wheat,
+    title: "Ferme Agricole",
+    desc: "Grajduri, hale avicole, sere, depozite agricole. Animale sănătoase, costuri reduse.",
+  },
+  {
+    href: "/termoizolare/conducte",
+    Icon: Thermometer,
+    title: "Conducte și Instalații",
+    desc: "Conducte termice, sanitare, industriale. Fără rosturi, fără punți termice.",
+  },
+]
+
+const conditiiAplicare = [
+  {
+    Icon: Thermometer,
+    title: "Temperatura",
+    desc: "Temperatura minimă +5°C pentru aplicare și întărire corectă a materialului.",
+  },
+  {
+    Icon: Droplets,
+    title: "Umiditate",
+    desc: "Suprafața trebuie să fie uscată și curată. NU se aplică pe suprafețe înghețate sau umede.",
+  },
+  {
+    Icon: Wind,
+    title: "Ventilație",
+    desc: "Spațiile închise trebuie aerisite corespunzător pentru a elimina vaporii de aplicare.",
+  },
+  {
+    Icon: Wrench,
+    title: "Preparare Suprafață",
+    desc: "Îndepărtați praf, vopsea desprinsă și alte impurități. Spuma aderă direct pe beton și lemn curat.",
+  },
+]
+
+const deIsoThermLux = [
+  {
+    Icon: FileText,
+    title: "Garanție Scrisă 25 Ani",
+    desc: "Contract legal pentru fiecare proiect. Protecția dumneavoastră este prioritate noastră.",
+  },
+  {
+    Icon: Zap,
+    title: "Economie 40-50% la Energie",
+    desc: "Factură de gaz mai mică. Investiția se recuperează în 2-3 ani cu economii reale.",
+  },
+  {
+    Icon: Calculator,
+    title: "Calculator Ofertă Online",
+    desc: "Estimare preț exactă în 2 minute. Vezi calculul complet al economiilor anuale.",
+  },
+  {
+    Icon: HardHat,
+    title: "Consultație Gratuită pe Loc",
+    desc: "Echipă profesionistă analizează proprietatea și oferă recomandări personalizate.",
+  },
+]
 
 export default function TermoizolarePage() {
   return (
     <>
-      <Script
+      <script
         id="termoizolare-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(termoizolareServiceSchema),
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Servicii de Termoizolare",
+            description:
+              "Servicii profesionale de termoizolare cu izolație termică de calitate. Economie 40-50% la energie. Garanție 25 ani. Aplicare în 1-2 zile.",
+            provider: { "@type": "LocalBusiness", name: "IsoThermLux", url: "https://www.isothermlux.md" },
+            areaServed: "MD",
+            availableLanguage: "ro",
+          }),
         }}
       />
-      <Script
+      <script
         id="termoizolare-service-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "name": "Termoizolare Profesională",
-            "provider": {
+            name: "Termoizolare Profesională",
+            provider: {
               "@type": "LocalBusiness",
-              "name": "IsoThermLux",
-      "telephone": "+37378370243",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Chișinău",
-                "addressCountry": "MD"
-              }
+              name: "IsoThermLux",
+              telephone: "+37378370243",
+              address: { "@type": "PostalAddress", addressLocality: "Chișinău", addressCountry: "MD" },
             },
-            "areaServed": "Moldova",
-            "description": "Servicii profesionale de termoizolare cu spumă poliuretanică. Garanție 25 ani.",
-            "offers": {
-              "@type": "Offer",
-              "availability": "https://schema.org/InStock"
-            }
+            areaServed: "Moldova",
+            description: "Servicii profesionale de termoizolare cu spumă poliuretanică. Garanție 25 ani.",
+            offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
           }),
         }}
       />
-      <Script
+      <script
         id="breadcrumb-termoizolare"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema([
-            { name: 'Acasă', url: 'https://www.isothermlux.md' },
-            { name: 'Termoizolare', url: 'https://www.isothermlux.md/termoizolare' }
-          ])),
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Acasă", item: "https://www.isothermlux.md" },
+              { "@type": "ListItem", position: 2, name: "Termoizolare", item: "https://www.isothermlux.md/termoizolare" },
+            ],
+          }),
         }}
       />
       <Header />
       <main className="bg-background">
-        {/* Hero Section */}
         <ServiceHero
           backgroundImage="/images/termoizolare-hero.webp"
           title="Termoizolare Profesională"
@@ -87,34 +203,22 @@ export default function TermoizolarePage() {
           ctaSecondaryLabel="Vezi Portofoliu"
         />
 
-        {/* Benefits Section */}
+        {/* Beneficii */}
         <section className="py-24 bg-card">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-12">Beneficiile Termoizolării</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="grid gap-6">
                 {[
-                  {
-                    title: "40-50% Economie la Energie",
-                    description: "Reducere confirmată a costurilor de gaz și electricitate. Investiția se recuperează în 2-3 ani."
-                  },
-                  {
-                    title: "Garanție 25 Ani",
-                    description: "Garanție scrisă material și manopera. Protecție completă a investiției dumneavoastră."
-                  },
-                  {
-                    title: "Materiale Premium",
-                    description: "Izolație termică certificată ISO 9001. Fără compromiuri la calitate și durabilitate."
-                  },
-                  {
-                    title: "Aplicare Rapidă",
-                    description: "Montaj în 1-2 zile. Minimal disrupting pentru locuința sau biroul dumneavoastră."
-                  }
-                ].map((benefit, idx) => (
-                  <div key={idx} className="p-6 border border-border rounded-lg bg-background">
+                  { title: "40-50% Economie la Energie", desc: "Reducere confirmată a costurilor de gaz și electricitate. Investiția se recuperează în 2-3 ani." },
+                  { title: "Garanție 25 Ani", desc: "Garanție scrisă material și manopera. Protecție completă a investiției dumneavoastră." },
+                  { title: "Materiale Premium", desc: "Izolație termică certificată ISO 9001. Fără compromiuri la calitate și durabilitate." },
+                  { title: "Aplicare Rapidă", desc: "Montaj în 1-2 zile. Minimal disrupting pentru locuința sau biroul dumneavoastră." },
+                ].map((item, i) => (
+                  <div key={i} className="p-6 border border-border rounded-lg bg-background">
                     <Check className="w-6 h-6 text-accent mb-3" />
-                    <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
-                    <p className="text-foreground/70 text-sm">{benefit.description}</p>
+                    <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                    <p className="text-foreground/70 text-sm">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -129,84 +233,21 @@ export default function TermoizolarePage() {
           </div>
         </section>
 
-        {/* Service Types Section */}
+        {/* Tipuri */}
         <section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-4">Tipuri de Termoizolare</h2>
-            <p className="text-foreground/60 mb-12 max-w-2xl">Izolăm orice tip de construcție sau obiect cu spumă poliuretanică — cu celule deschise sau închise, în funcție de necesități.</p>
+            <p className="text-foreground/60 mb-12 max-w-2xl">
+              Izolăm orice tip de construcție sau obiect cu spumă poliuretanică — cu celule deschise sau închise, în funcție de necesități.
+            </p>
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: "🏡",
-                  title: "Mansardă",
-                  description: "Izolare termică profesională a mansardelor. Spațiu locuibil cald iarna, răcoros vara.",
-                  link: "/termoizolare/mansarda"
-                },
-                {
-                  icon: "🏠",
-                  title: "Casă Completă",
-                  description: "Izolare acoperiș, pereți exteriori și fundație. Confort maxim, economie 40-50%.",
-                  link: "/termoizolare/casa"
-                },
-                {
-                  icon: "🏭",
-                  title: "Hale Industriale",
-                  description: "Izolație termică pentru hale, depozite și clădiri comerciale. Aplicare 300 m²/zi.",
-                  link: "/termoizolare/hala-industriala"
-                },
-                {
-                  icon: "🏠",
-                  title: "Acoperiș și Terasă",
-                  description: "Terase plate, șarpante, table ondulate. Eliminăm condensul și pierderile prin acoperiș.",
-                  link: "/termoizolare/acoperis"
-                },
-                {
-                  icon: "🛢️",
-                  title: "Cisterne și Rezervoare",
-                  description: "Cisterne de combustibil, apă, alimente. Spumă cu celule închise — impermeabilă.",
-                  link: "/termoizolare/cisterne"
-                },
-                {
-                  icon: "📦",
-                  title: "Containere",
-                  description: "Containere frigorifice, de depozitare sau locuibile. Soluție completă în 1 zi.",
-                  link: "/termoizolare/containere"
-                },
-                {
-                  icon: "🚛",
-                  title: "Camioane și Vehicule",
-                  description: "Caroserii izoterme, dube, remorci frigorifice. Greutate minimă, eficiență maximă.",
-                  link: "/termoizolare/camioane"
-                },
-                {
-                  icon: "🏗️",
-                  title: "Fundație și Subsol",
-                  description: "Socluri, pereți subterani, plăci de beton. Elimini umezeala și puntea termică.",
-                  link: "/termoizolare/fundatie"
-                },
-                {
-                  icon: "🔧",
-                  title: "Garaj și Atelier",
-                  description: "Garaje metalice sau zidărie, ateliere auto. Confortabil tot parcursul anului.",
-                  link: "/termoizolare/garaj"
-                },
-                {
-                  icon: "🐄",
-                  title: "Ferme Agricole",
-                  description: "Grajduri, hale avicole, sere, depozite agricole. Animale sănătoase, costuri reduse.",
-                  link: "/termoizolare/ferma"
-                },
-                {
-                  icon: "🌡️",
-                  title: "Conducte și Instalații",
-                  description: "Conducte termice, sanitare, industriale. Fără rosturi, fără punți termice.",
-                  link: "/termoizolare/conducte"
-                },
-              ].map((service, idx) => (
-                <Link key={idx} href={service.link} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition group">
-                  <div className="text-3xl mb-3">{service.icon}</div>
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-accent transition">{service.title}</h3>
-                  <p className="text-foreground/70 mb-4 text-sm">{service.description}</p>
+              {tipuriTermoizolare.map(({ href, Icon, title, desc }) => (
+                <Link key={href} href={href} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition group">
+                  <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center mb-4 group-hover:border-accent group-hover:text-accent transition">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3 group-hover:text-accent transition">{title}</h3>
+                  <p className="text-foreground/70 mb-4 text-sm">{desc}</p>
                   <span className="inline-flex items-center gap-2 text-accent text-sm">
                     Detalii <ArrowRight className="w-4 h-4" />
                   </span>
@@ -216,11 +257,13 @@ export default function TermoizolarePage() {
           </div>
         </section>
 
-        {/* Technical Zones Table Section */}
+        {/* Zone Tehnice */}
         <section className="py-24 bg-secondary">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-4">Zone Tehnice de Aplicare</h2>
-            <p className="text-foreground/70 mb-12 max-w-3xl">Selectați tipul de izolație termoizolării în funcție de zona și condițiile specifice ale proprietății dumneavoastră.</p>
+            <p className="text-foreground/70 mb-12 max-w-3xl">
+              Selectați tipul de izolație termoizolării în funcție de zona și condițiile specifice ale proprietății dumneavoastră.
+            </p>
             <div className="overflow-x-auto border border-border rounded-lg">
               <table className="w-full">
                 <thead>
@@ -232,17 +275,17 @@ export default function TermoizolarePage() {
                 </thead>
                 <tbody className="divide-y divide-border">
                   {[
-                    { zona: "Acoperiș interior", tip: "Celule deschise / închise", grosime: "10–15 cm" },
-                    { zona: "Pereți interiori", tip: "Celule deschise", grosime: "5–8 cm" },
-                    { zona: "Pereți exteriori", tip: "Celule închise", grosime: "5–10 cm" },
-                    { zona: "Subsoluri și beciuri", tip: "Celule închise", grosime: "5–10 cm" },
-                    { zona: "Tavane / planșee", tip: "Celule închise", grosime: "5–8 cm" },
-                    { zona: "Spații comerciale / industriale", tip: "Celule închise", grosime: "4–10 cm" }
-                  ].map((row, idx) => (
-                    <tr key={idx} className={idx % 2 === 0 ? "bg-background" : "bg-secondary"}>
-                      <td className="px-6 py-4 font-medium text-foreground">{row.zona}</td>
-                      <td className="px-6 py-4 text-foreground/80">{row.tip}</td>
-                      <td className="px-6 py-4 text-foreground/80">{row.grosime}</td>
+                    ["Acoperiș interior", "Celule deschise / închise", "10–15 cm"],
+                    ["Pereți interiori", "Celule deschise", "5–8 cm"],
+                    ["Pereți exteriori", "Celule închise", "5–10 cm"],
+                    ["Subsoluri și beciuri", "Celule închise", "5–10 cm"],
+                    ["Tavane / planșee", "Celule închise", "5–8 cm"],
+                    ["Spații comerciale / industriale", "Celule închise", "4–10 cm"],
+                  ].map(([zona, tip, grosime], i) => (
+                    <tr key={i} className={i % 2 === 0 ? "bg-background" : "bg-secondary"}>
+                      <td className="px-6 py-4 font-medium text-foreground">{zona}</td>
+                      <td className="px-6 py-4 text-foreground/80">{tip}</td>
+                      <td className="px-6 py-4 text-foreground/80">{grosime}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -251,173 +294,118 @@ export default function TermoizolarePage() {
           </div>
         </section>
 
-        {/* Technical Details Section */}
+        {/* Detalii Tehnice */}
         <section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-12">Detalii Tehnice</h2>
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-6">
                 {[
-                  {
-                    label: "Conductivitate Termică",
-                    value: "λ = 0.020–0.025 W/m·K"
-                  },
-                  {
-                    label: "Aderență Directă Pe",
-                    value: "Lemn, beton, cărămidă, tablă"
-                  },
-                  {
-                    label: "Capacitate de Aplicare",
-                    value: "Până la 300 m²/zi"
-                  },
-                  {
-                    label: "Durată de Viață",
-                    value: "Peste 25 ani fără întreținere"
-                  }
-                ].map((tech, idx) => (
-                  <div key={idx} className="p-6 border-l-4 border-accent bg-card">
-                    <p className="text-sm text-muted-foreground mb-2">{tech.label}</p>
-                    <p className="text-xl font-semibold text-foreground">{tech.value}</p>
+                  ["Conductivitate Termică", "λ = 0.020–0.025 W/m·K"],
+                  ["Aderență Directă Pe", "Lemn, beton, cărămidă, tablă"],
+                  ["Capacitate de Aplicare", "Până la 300 m²/zi"],
+                  ["Durată de Viață", "Peste 25 ani fără întreținere"],
+                ].map(([label, val], i) => (
+                  <div key={i} className="p-6 border-l-4 border-accent bg-card">
+                    <p className="text-sm text-muted-foreground mb-2">{label}</p>
+                    <p className="text-xl font-semibold text-foreground">{val}</p>
                   </div>
                 ))}
               </div>
               <div className="bg-secondary p-8 rounded-lg">
                 <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
-                  <span className="w-2 h-8 bg-accent"></span>
+                  <span className="w-2 h-8 bg-accent" />
                   De Ce Alegem Spuma Poliuretanică?
                 </h3>
                 <ul className="space-y-4 text-foreground/80">
-                  <li className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>Conductivitate termică minimă - cel mai bun raport izolare/grosime</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>Aderență perfect pe orice suprafață fără preparare specială</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>Etanșare totală - fără punți termice sau infiltrații</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>Durabilitate extremă - nu se degradează sau se tasează</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>Garanție 25 ani - cea mai lungă pe piață</span>
-                  </li>
+                  {[
+                    "Conductivitate termică minimă - cel mai bun raport izolare/grosime",
+                    "Aderență perfect pe orice suprafață fără preparare specială",
+                    "Etanșare totală - fără punți termice sau infiltrații",
+                    "Durabilitate extremă - nu se degradează sau se tasează",
+                    "Garanție 25 ani - cea mai lungă pe piață",
+                  ].map((text, i) => (
+                    <li key={i} className="flex gap-3">
+                      <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                      <span>{text}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Application Conditions Section */}
+        {/* Condiții de Aplicare */}
         <section className="py-24 bg-card">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-12">Condiții de Aplicare</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              {[
-                {
-                  icon: "🌡️",
-                  title: "Temperatura",
-                  description: "Temperatura minimă +5°C pentru aplicare și întărire corectă a materialului."
-                },
-                {
-                  icon: "💧",
-                  title: "Umiditate",
-                  description: "Suprafața trebuie să fie uscată și curată. NU se aplică pe suprafețe înghețate sau umede."
-                },
-                {
-                  icon: "💨",
-                  title: "Ventilație",
-                  description: "Spațiile închise trebuie aerisite corespunzător pentru a elimina vaporii de aplicare."
-                },
-                {
-                  icon: "🔧",
-                  title: "Preparare Suprafață",
-                  description: "Îndepărtați praf, vopsea desprinsă și alte impurități. Spuma aderă direct pe beton și lemn curat."
-                }
-              ].map((condition, idx) => (
-                <div key={idx} className="p-8 border border-border rounded-lg hover:border-accent transition bg-background">
-                  <div className="text-4xl mb-4">{condition.icon}</div>
-                  <h3 className="text-xl font-semibold mb-3">{condition.title}</h3>
-                  <p className="text-foreground/70">{condition.description}</p>
+              {conditiiAplicare.map(({ Icon, title, desc }) => (
+                <div key={title} className="p-8 border border-border rounded-lg hover:border-accent transition bg-background">
+                  <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center mb-4">
+                    <Icon className="w-5 h-5 text-accent" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3">{title}</h3>
+                  <p className="text-foreground/70">{desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Unique Advantages Section */}
+        {/* De Ce IsoThermLux */}
         <section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-12 text-center">De Ce IsoThermLux?</h2>
             <div className="grid md:grid-cols-4 gap-6">
-              {[
-                {
-                  title: "Garanție Scrisă 25 Ani",
-                  description: "Contract legal pentru fiecare proiect. Protecția dumneavoastră este prioritate noastră.",
-                  icon: "📋"
-                },
-                {
-                  title: "Economie 40-50% la Energie",
-                  description: "Factură de gaz mai mică. Investiția se recuperează în 2-3 ani cu economii reale.",
-                  icon: "💰"
-                },
-                {
-                  title: "Calculator Ofertă Online",
-                  description: "Estimare preț exactă în 2 minute. Vezi calculul complet al economiilor anuale.",
-                  icon: "🧮"
-                },
-                {
-                  title: "Consultație Gratuită pe Loc",
-                  description: "Echipă profesionistă analizează proprietatea și oferă recomandări personalizate.",
-                  icon: "👷"
-                }
-              ].map((advantage, idx) => (
-                <div key={idx} className="p-8 bg-card border-2 border-border rounded-lg hover:border-accent transition text-center">
-                  <div className="text-5xl mb-4">{advantage.icon}</div>
-                  <h3 className="text-lg font-semibold mb-3 text-foreground">{advantage.title}</h3>
-                  <p className="text-sm text-foreground/70">{advantage.description}</p>
+              {deIsoThermLux.map(({ Icon, title, desc }) => (
+                <div key={title} className="p-8 bg-card border-2 border-border rounded-lg hover:border-accent transition text-center">
+                  <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-3 text-foreground">{title}</h3>
+                  <p className="text-sm text-foreground/70">{desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Process Section */}
+        {/* Procesul Nostru */}
         <section className="py-24 bg-card">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-12">Procesul Nostru</h2>
             <div className="grid md:grid-cols-4 gap-6">
               {[
-                { step: "1", title: "Consultație Gratuită", desc: "Analiză completă pe loc și recomandări" },
-                { step: "2", title: "Ofertă Personalizată", desc: "Estimare exactă și plan de lucru" },
-                { step: "3", title: "Implementare Profesională", desc: "Echipă certificată și materiale premium" },
-                { step: "4", title: "Garanție 25 Ani", desc: "Protecție completă a investiției" }
-              ].map((item, idx) => (
-                <div key={idx} className="text-center">
+                ["1", "Consultație Gratuită", "Analiză completă pe loc și recomandări"],
+                ["2", "Ofertă Personalizată", "Estimare exactă și plan de lucru"],
+                ["3", "Implementare Profesională", "Echipă certificată și materiale premium"],
+                ["4", "Garanție 25 Ani", "Protecție completă a investiției"],
+              ].map(([nr, title, desc]) => (
+                <div key={nr} className="text-center">
                   <div className="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
-                    {item.step}
+                    {nr}
                   </div>
-                  <h3 className="font-semibold mb-2">{item.title}</h3>
-                  <p className="text-sm text-foreground/70">{item.desc}</p>
+                  <h3 className="font-semibold mb-2">{title}</h3>
+                  <p className="text-sm text-foreground/70">{desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* CTA */}
         <section className="py-24 bg-[#2C3E50] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Gata pentru Termoizolare?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
               Consultație gratuită fără angajamente. Estimare preț pe loc. Răspuns în 30 minute.
             </p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a
+              href="tel:+37378370243"
+              className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition"
+            >
               Contactează-ne Acum
               <ArrowRight className="w-4 h-4" />
             </a>
