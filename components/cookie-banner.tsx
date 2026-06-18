@@ -35,11 +35,11 @@ export function CookieBanner() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div className="flex-1">
             <h3 className="font-semibold text-gray-900 mb-2">Prelucrarea datelor cu caracter personal</h3>
-            <p className="text-sm text-gray-700 leading-relaxed">
+            <p className="text-sm text-gray-600 leading-relaxed">
               Siturile noastre folosesc cookies și alte tehnologii de urmărire pentru a îmbunătăți experiența dvs., a analiza traficul și a vă oferi conținut personalizat. 
               Prin continuarea utilizării site-ului, vă exprimați acordul pentru colectarea și prelucrarea datelor cu caracter personal în conformitate cu 
-              <Link href="/politica-de-confidentialitate" className="text-[#7A4A0D] underline hover:text-[#5A3509] ml-1">Politica de confidențialitate</Link> și 
-              <Link href="/termenii-si-conditiile" className="text-[#7A4A0D] underline hover:text-[#5A3509] ml-1">Termenii și condițiile</Link>.
+              <Link href="/politica-de-confidentialitate" className="text-accent hover:underline ml-1">Politica de confidențialitate</Link> și 
+              <Link href="/termenii-si-conditiile" className="text-accent hover:underline ml-1">Termenii și condițiile</Link>.
             </p>
           </div>
           <div className="flex gap-3 flex-shrink-0">
