@@ -7,6 +7,7 @@ import { organizationSchema } from "@/lib/schema"
 import { SplashScreen } from "@/components/splash-screen"
 import { CookieBanner } from "@/components/cookie-banner"
 import Chatbot from "@/components/chatbot"
+import { WhatsAppButton } from "@/components/whatsapp-button"
 import "./globals.css"
 
 const _geistMono = Geist_Mono({ subsets: ["latin"], display: "swap" })
@@ -136,6 +137,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <SplashScreen />
         {children}
+        <WhatsAppButton />
         <Chatbot />
         <CookieBanner />
         <Analytics />
