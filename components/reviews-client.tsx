@@ -1,6 +1,6 @@
 'use client'
 
-import { Star } from 'lucide-react'
+import { Star, ArrowRight } from 'lucide-react'
 
 interface Review {
   id: string
@@ -11,89 +11,62 @@ interface Review {
   location: string
 }
 
-interface ReviewsClientProps {
-  reviews: Review[]
-}
-
-export function ReviewsClient({ reviews }: ReviewsClientProps) {
+export function ReviewsClient({ reviews }: { reviews: Review[] }) {
   return (
-    <section className="py-20 md:py-32 bg-[#2C3E50] text-white">
+    <section className="py-20 md:py-28 border-b border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-medium mb-4 text-balance text-white">
-            Ce spun clienții noștri
-          </h2>
-          <p className="text-lg text-white/75 mb-8">
-            Peste 500 clienți mulțumiți în Chișinău și moldova
-          </p>
 
-          {/* Google Reviews Badge */}
-          <div className="flex items-center justify-center gap-3 mb-12">
-            <div className="flex gap-1">
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12 md:mb-16">
+          <div>
+            <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Recenzii</p>
+            <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight">
+              Ce spun<br />clienții noștri
+            </h2>
+          </div>
+          {/* Google badge */}
+          <a
+            href="https://maps.app.goo.gl/QZjS5k4vB8zVEKGv6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 border border-border px-5 py-3 rounded-full hover:border-accent transition-colors group flex-shrink-0"
+          >
+            <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-accent text-accent" />
+                <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
               ))}
             </div>
-            <p className="text-sm font-semibold text-white">
-              4.9/5 pe Google Maps
-            </p>
-            <a
-              href="https://maps.app.goo.gl/QZjS5k4vB8zVEKGv6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-white hover:text-white/80 transition-colors underline"
-            >
-              Vezi pe Google
-            </a>
-          </div>
+            <span className="text-sm font-medium">4.9 pe Google</span>
+            <ArrowRight className="w-3.5 h-3.5 text-muted-foreground group-hover:text-accent group-hover:translate-x-0.5 transition-all" />
+          </a>
         </div>
 
-        {/* Reviews Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Reviews */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border">
           {reviews.map((review) => (
-            <div
-              key={review.id}
-              className="bg-white border border-white/20 rounded-lg p-6 text-foreground transition-all hover:-translate-y-1 hover:shadow-xl"
-            >
+            <div key={review.id} className="bg-background p-6 md:p-8 flex flex-col">
               {/* Stars */}
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-5">
                 {[...Array(review.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-accent text-accent" />
+                  <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
                 ))}
               </div>
-
-              {/* Review Text */}
-              <p className="text-foreground/80 mb-6 line-clamp-4 leading-relaxed">
+              {/* Text */}
+              <p className="text-sm text-muted-foreground leading-relaxed flex-1 mb-6 line-clamp-5">
                 {review.text}
               </p>
-
-              {/* Reviewer Info */}
+              {/* Info */}
               <div className="border-t border-border pt-4">
-                <p className="font-semibold text-foreground text-sm">{review.name}</p>
-                <div className="flex items-center justify-between mt-2 text-xs text-foreground/60">
-                  <span>{review.location}</span>
-                  <span>{review.date}</span>
+                <p className="text-sm font-medium">{review.name}</p>
+                <div className="flex items-center justify-between mt-1">
+                  <span className="text-xs text-muted-foreground">{review.location}</span>
+                  <span className="text-xs text-muted-foreground">{review.date}</span>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="mt-16 text-center">
-            <p className="text-white/75 mb-6">
-              Contactează-ne azi pentru o consultație gratuită
-            </p>
-          <a
-            href="https://wa.me/373783702433"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
-          >
-            Sună acum
-          </a>
-        </div>
       </div>
     </section>
   )

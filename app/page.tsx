@@ -1,8 +1,9 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { PremiumServices } from "@/components/premium-services"
+import { Philosophy } from "@/components/philosophy"
 import { Projects } from "@/components/projects"
-import Reviews from "@/components/reviews"
+import { Reviews } from "@/components/reviews"
 import { CoverageMoldova } from "@/components/coverage-moldova"
 import { ContactForm } from "@/components/contact-form"
 import { FAQ } from "@/components/faq"
@@ -10,6 +11,7 @@ import { CallToAction } from "@/components/call-to-action"
 import { Footer } from "@/components/footer"
 import Link from "next/link"
 import Script from "next/script"
+import { ArrowRight } from "lucide-react"
 
 const webSiteSchema = {
   '@context': 'https://schema.org',
@@ -19,10 +21,7 @@ const webSiteSchema = {
   description: 'Servicii profesionale de termoizolare și hidroizolare în Moldova',
   potentialAction: {
     '@type': 'SearchAction',
-    target: {
-      '@type': 'EntryPoint',
-      urlTemplate: 'https://www.isothermlux.md/blog?search={search_term_string}'
-    },
+    target: { '@type': 'EntryPoint', urlTemplate: 'https://www.isothermlux.md/blog?search={search_term_string}' },
     query_input: 'required name=search_term_string'
   }
 }
@@ -30,42 +29,66 @@ const webSiteSchema = {
 export default async function Home() {
   return (
     <main className="min-h-screen">
-      <Script
-        id="website-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(webSiteSchema),
-        }}
-      />
+      <Script id="website-schema" type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }} />
       <Header />
+
+      {/* 1. Hero */}
       <Hero />
+
+      {/* 2. Servicii concrete */}
       <PremiumServices />
 
-      {/* Calculator Promo Section */}
-      <section className="py-20 md:py-28 bg-card border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-muted-foreground text-xs md:text-sm tracking-[0.3em] uppercase mb-4">Calcul Rapid</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-medium mb-4">Cât Costă Serviciul?</h2>
-          <p className="text-base md:text-lg text-foreground/70 max-w-2xl mx-auto mb-8">
-            Folosește calculatorul nostru rapid pentru a obține o estimare aproximativă. Oferta exactă se determină după evaluare gratuită pe loc.
-          </p>
-          <Link
-            href="/calculator"
-            className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition"
-          >
-            Deschide Calculator Rapid →
-          </Link>
+      {/* 3. De ce noi — cifre + beneficii */}
+      <Philosophy />
+
+      {/* 4. Proiecte recente */}
+      <Projects />
+
+      {/* 5. Recenzii clienți */}
+      <Reviews />
+
+      {/* 6. Calculator rapid */}
+      <section className="py-20 md:py-28 border-b border-border section-warm">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Estimare rapidă</p>
+              <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight mb-4">
+                Cât costă<br />serviciul tău?
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Calculatorul nostru îți oferă o estimare în 2 minute. Oferta exactă se stabilește gratuit, la fața locului.
+              </p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <Link href="/calculator"
+                className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300 hover:gap-3">
+                Deschide Calculatorul <ArrowRight className="w-4 h-4" />
+              </Link>
+              <a href="tel:+37378370243"
+                className="inline-flex items-center justify-center gap-2 border border-border text-foreground px-8 py-4 rounded-full font-medium hover:border-accent hover:text-accent transition-all duration-300">
+                Sau sună direct: +373 78 370 243
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
-      <Projects />
-      <Reviews />
+      {/* 7. Acoperire Moldova + stats */}
       <CoverageMoldova />
+
+      {/* 8. Formular contact */}
       <div id="contact-form">
         <ContactForm />
       </div>
+
+      {/* 9. FAQ */}
       <FAQ />
+
+      {/* 10. CTA final */}
       <CallToAction />
+
       <Footer />
     </main>
   )

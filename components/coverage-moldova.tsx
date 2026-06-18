@@ -1,170 +1,106 @@
 'use client'
 
-import Link from 'next/link'
-import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 
 const STATS = [
-  { number: 14, label: 'ANI EXPERIENTA' },
-  { number: 3971, label: 'CLIENTI MULTUMITI' },
-  { number: 4368, label: 'CLADIRI IZOLATE' },
+  { number: 12, suffix: '', label: 'Ani experiență' },
+  { number: 500, suffix: '+', label: 'Proiecte finalizate' },
+  { number: 25, suffix: ' ani', label: 'Garanție scrisă' },
 ]
 
 export function CoverageMoldova() {
   const statsRef = useRef<HTMLDivElement>(null)
-  const [animatedStats, setAnimatedStats] = useState(() => STATS.map(() => 0))
+  const [animated, setAnimated] = useState(STATS.map(() => 0))
 
   useEffect(() => {
     const target = statsRef.current
     if (!target) return
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReduced) { setAnimated(STATS.map(s => s.number)); return }
 
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (prefersReducedMotion) {
-      setAnimatedStats(STATS.map((stat) => stat.number))
-      return
-    }
+    let frame = 0
+    let done = false
 
-    let animationFrame = 0
-    let hasAnimated = false
-
-    const animateStats = () => {
-      const duration = 1800
-      const start = performance.now()
-
-      const tick = (now: number) => {
-        const progress = Math.min((now - start) / duration, 1)
-        const eased = 1 - Math.pow(1 - progress, 3)
-
-        setAnimatedStats(STATS.map((stat) => Math.round(stat.number * eased)))
-
-        if (progress < 1) {
-          animationFrame = requestAnimationFrame(tick)
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !done) {
+        done = true
+        const start = performance.now()
+        const duration = 1600
+        const tick = (now: number) => {
+          const t = Math.min((now - start) / duration, 1)
+          const eased = 1 - Math.pow(1 - t, 3)
+          setAnimated(STATS.map(s => Math.round(s.number * eased)))
+          if (t < 1) frame = requestAnimationFrame(tick)
         }
+        frame = requestAnimationFrame(tick)
+        observer.disconnect()
       }
-
-      animationFrame = requestAnimationFrame(tick)
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated) {
-          hasAnimated = true
-          animateStats()
-          observer.disconnect()
-        }
-      },
-      { threshold: 0.35 },
-    )
+    }, { threshold: 0.35 })
 
     observer.observe(target)
-
-    return () => {
-      observer.disconnect()
-      cancelAnimationFrame(animationFrame)
-    }
+    return () => { observer.disconnect(); cancelAnimationFrame(frame) }
   }, [])
 
   return (
-    <section className="w-full bg-background">
-      {/* Statistics Bar */}
-      <div className="w-full py-12 md:py-16" style={{ backgroundColor: '#2C3E50' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div ref={statsRef} className="grid grid-cols-3 gap-8 md:gap-16">
-            {STATS.map((stat, idx) => (
-              <div key={idx} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">
-                  {animatedStats[idx].toLocaleString('en-US')}
-                </div>
-                <div className="text-xs md:text-sm text-white/90 tracking-widest uppercase font-semibold">
-                  {stat.label}
-                </div>
+    <section className="w-full">
+
+      {/* Stats — 3 cifre cheie */}
+      <div ref={statsRef} className="py-16 md:py-20 bg-foreground">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-3 gap-4 md:gap-12">
+            {STATS.map((stat, i) => (
+              <div key={i} className="text-center">
+                <p className="text-4xl sm:text-5xl md:text-6xl font-serif font-medium text-white mb-2">
+                  {animated[i].toLocaleString('ro-RO')}{stat.suffix}
+                </p>
+                <p className="text-xs md:text-sm text-white/60 tracking-[0.2em] uppercase">{stat.label}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      {/* Coverage Section */}
-      <div className="py-20 md:py-28 bg-background">
+      {/* Map + coverage */}
+      <div className="py-20 md:py-28 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Title */}
-          <div className="text-center mb-16">
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <div className="h-1 w-12" style={{ backgroundColor: '#9B5F12' }} />
-              <span className="text-xs md:text-sm tracking-[0.3em] uppercase text-foreground/60">Acoperire</span>
-              <div className="h-1 w-12" style={{ backgroundColor: '#9B5F12' }} />
-            </div>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-              Acoperire în toată <span className="text-accent">Moldova</span>.
-            </h2>
-          </div>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-          {/* Map centered */}
-          <div className="flex justify-center mb-20">
-            <Link href="/portofoliu" className="relative w-full h-96 max-w-lg hover:opacity-80 transition-opacity">
+            {/* Text */}
+            <div>
+              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">Acoperire</p>
+              <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight mb-6">
+                Acoperim toată<br />Moldova
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
+                Echipele noastre intervin în Chișinău și în toată Moldova. Deplasare gratuită pentru evaluare, indiferent de localitate.
+              </p>
+              <Link
+                href="/portofoliu"
+                className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:gap-3 transition-all duration-200"
+              >
+                Vezi proiectele noastre <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Map */}
+            <Link href="/portofoliu" className="relative h-72 md:h-96 block group">
               <Image
                 src="/images/moldova-map.png"
-                alt="Hartă Moldova - Acoperire teritorială"
+                alt="Hartă acoperire IsoThermLux Moldova"
                 fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-contain cursor-pointer"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-contain group-hover:opacity-80 transition-opacity duration-300"
                 quality={75}
               />
             </Link>
-          </div>
 
-          {/* Services Grid */}
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Termoizolare */}
-            <div className="bg-card rounded-lg overflow-hidden border border-border">
-              <div className="relative h-48 w-full">
-                <Image
-                  src="/images/project-casa-termoizolare-01.jpg"
-                  alt="Termoizolare"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                  quality={75}
-                />
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-2xl font-bold mb-4">Termoizolare</h3>
-                <a
-                  href="/calculator"
-                  className="inline-block px-8 py-3 rounded-lg font-bold text-white transition"
-                  style={{ backgroundColor: '#9B5F12' }}
-                >
-                  SOLICITA OFERTA
-                </a>
-              </div>
-            </div>
-
-            {/* Hidroizolare */}
-            <div className="bg-card rounded-lg overflow-hidden border border-border">
-              <div className="relative h-48 w-full">
-                <Image
-                  src="/images/hidroizolare-fundatie-02.jpg"
-                  alt="Hidroizolare"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                  quality={75}
-                />
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-2xl font-bold mb-4">Hidroizolare</h3>
-                <a
-                  href="/calculator"
-                  className="inline-block px-8 py-3 rounded-lg font-bold text-white transition"
-                  style={{ backgroundColor: '#9B5F12' }}
-                >
-                  SOLICITA OFERTA
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+
     </section>
   )
 }
