@@ -11,14 +11,14 @@ export function PremiumServices() {
 
   useEffect(() => {
     const allProjectImages = [
-      '/images/hero-family-correct.jpg',
-      '/images/project-termoizolare-01.jpg',
+      '/images/hero-family-correct.webp',
+      '/images/project-termoizolare-01.webp',
       '/images/project-casa-termoizolare-01.jpg',
-      '/images/project-hala-industrial-01.jpg',
+      '/images/project-hala-industrial-01.webp',
       '/images/project-terasa-izolare-01.jpg',
-      '/images/project-aplicare-spuma-01.jpg',
-      '/images/project-finisaj-01.jpg',
-      '/images/project-rezultat-final-01.jpg',
+      '/images/project-aplicare-spuma-01.webp',
+      '/images/project-finisaj-01.webp',
+      '/images/project-rezultat-final-01.webp',
     ]
     setImages(allProjectImages)
   }, [])

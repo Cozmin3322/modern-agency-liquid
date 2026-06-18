@@ -9,10 +9,10 @@ import { CookieBanner } from "@/components/cookie-banner"
 import Chatbot from "@/components/chatbot"
 import "./globals.css"
 
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
-const _lato = Lato({ subsets: ["latin"], weight: ["100", "300", "400", "700", "900"], variable: "--font-lato" })
-const _playfairDisplay = Playfair_Display({ subsets: ["latin"], weight: ["400", "500", "600", "700"] })
-const _robotoSlab = Roboto_Slab({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-roboto-slab" })
+const _geistMono = Geist_Mono({ subsets: ["latin"], display: "swap" })
+const _lato = Lato({ subsets: ["latin"], weight: ["400", "700", "900"], variable: "--font-lato", display: "swap" })
+const _playfairDisplay = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"], display: "swap" })
+const _robotoSlab = Roboto_Slab({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-roboto-slab", display: "swap" })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.isothermlux.md"),

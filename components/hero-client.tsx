@@ -103,7 +103,7 @@ export function HeroClient({ data }: HeroClientProps) {
         <div
           className="absolute inset-0 will-change-transform"
           style={{
-            backgroundImage: `url('/images/hero-izolator-professional.jpg')`,
+            backgroundImage: `url('/images/hero-izolator-professional.webp')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             transform: `translateY(${offset}px)`,
