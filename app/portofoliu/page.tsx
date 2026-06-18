@@ -20,7 +20,7 @@ export default function PortfolioPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-5xl font-serif font-medium mb-4">Portofoliu</h1>
             <p className="text-xl text-foreground/80">
-              500+ proiecte realizate de excellență. Iată o selecție din lucrările noastre recente.
+              3971 proiecte realizate de excellență. Iată o selecție din lucrările noastre recente.
             </p>
           </div>
         </section>

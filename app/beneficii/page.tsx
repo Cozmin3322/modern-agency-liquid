@@ -7,7 +7,7 @@ import { Zap, Home, ShieldCheck, TrendingDown, Leaf, BarChart3 } from "lucide-re
 
 export const metadata = {
   title: "Beneficiile Termoizolării | IsoThermLux",
-  description: "Descoperă beneficiile termoizolării: economie de 40-50% la energie, garanție 25 ani, materiale premium certificate ISO 9001 și 12 ani de experiență.",
+  description: "Descoperă beneficiile termoizolării: economie de 40-50% la energie, garanție 25 ani, materiale premium certificate ISO 9001 și 14 ani de experiență.",
 }
 
 export default function BeneficiiPage() {
@@ -164,7 +164,7 @@ export default function BeneficiiPage() {
                   <h3 className="text-2xl font-serif font-bold text-white">Echipă Expertă</h3>
                 </div>
                 <p className="text-white/90 leading-relaxed">
-                  12 ani de experiență și lucrări în toată Moldova. Tehnologie modernă și materiale premium certificate ISO 9001 de înaltă calitate.
+                  14 ani de experiență și lucrări în toată Moldova. Tehnologie modernă și materiale premium certificate ISO 9001 de înaltă calitate.
                 </p>
               </div>
             </div>

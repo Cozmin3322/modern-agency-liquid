@@ -8,14 +8,14 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Termoizolare Profesională Moldova | Economie 40-50% la Energie | IsoThermLux",
   description:
-    "Termoizolare profesională cu spumă poliuretanică în Moldova. Economie 40-50% la energie. Garanție 25 ani scrisă. 12 ani experiență. Consultație gratuită Chișinău.",
+    "Termoizolare profesională cu spumă poliuretanică în Moldova. Economie 40-50% la energie. Garanție 25 ani scrisă. 14 ani experiență. Consultație gratuită Chișinău.",
   keywords:
     "termoizolare Moldova, termoizolare Chișinău, izolare termică, spumă poliuretanică Moldova, termoizolare casă, economie energie Moldova",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare" },
   openGraph: {
     title: "Termoizolare Profesională | Economie 40-50% la Energie | IsoThermLux",
     description:
-      "Termoizolare profesională cu spumă poliuretanică. Economie 40-50% la energie. Garanție 25 ani scrisă. 12 ani experiență.",
+      "Termoizolare profesională cu spumă poliuretanică. Economie 40-50% la energie. Garanție 25 ani scrisă. 14 ani experiență.",
     url: "https://www.isothermlux.md/termoizolare",
     locale: "ro_MD",
     type: "website",
@@ -62,7 +62,7 @@ export default function TermoizolarePage() {
           backgroundImage="/images/termoizolare-hero.webp"
           title="Termoizolare Profesională"
           titleAccent="în Moldova — Economie 40-50% la Energie"
-          subtitle="Izolație termică profesională cu spumă poliuretanică în Chișinău, Moldova, cu economie confirmată de 40-50% la costuri de energie. Materiale premium ISO 9001, garanție 25 ani scrisă, echipă certificată cu 12 ani experiență."
+          subtitle="Izolație termică profesională cu spumă poliuretanică în Chișinău, Moldova, cu economie confirmată de 40-50% la costuri de energie. Materiale premium ISO 9001, garanție 25 ani scrisă, echipă certificată cu 14 ani experiență."
           ctaHref="tel:+37378370243"
           ctaLabel="Consultație Gratuită"
           ctaSecondaryHref="/portofoliu?tip=termoizolare"

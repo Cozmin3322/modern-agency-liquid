@@ -18,7 +18,7 @@ const DEFAULT_HOME_CONTENT: HomeContent = {
   heroTitle: 'Termoizolare și Hidroizolare Profesională',
   heroSubtitle: 'Economisește până la 70% la încălzire',
   whyUsTitle: 'De Ce Să Alegi IsoThermLux',
-  whyUsDescription: 'Cu 12 ani de experiență și 500+ proiecte finalizate, garantăm cea mai bună calitate.',
+  whyUsDescription: 'Cu 12 ani de experiență și 3971 proiecte finalizate, garantăm cea mai bună calitate.',
   ctaText: 'Cere Consultație Gratuită',
 }
 

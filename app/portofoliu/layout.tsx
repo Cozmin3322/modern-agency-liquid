@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Portofoliu Proiecte | 500+ Lucrări Termoizolare și Hidroizolare",
+  title: "Portofoliu Proiecte | 3971 Lucrări Termoizolare și Hidroizolare",
   description:
     "Descoperă portofoliul IsoThermLux: peste 500 de proiecte de termoizolare și hidroizolare realizate în Moldova. Case private, hale industriale, fundații și acoperișuri.",
   alternates: {

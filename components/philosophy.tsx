@@ -20,8 +20,8 @@ const philosophyItems = [
     description: "Garanție scrisă material și manopera. Durabilitate dovedită. Serviciu de încredere pentru generații.",
   },
   {
-    title: "12 Ani de Experiență",
-    description: "IsoThermLux a fost înființată în 2014. 500+ proiecte finalizate. Echipă proprie și servicii complete de la început până la final.",
+    title: "14 Ani de Experiență",
+    description: "IsoThermLux a fost înființată în 2010. 3971 proiecte finalizate. Echipă proprie și servicii complete de la început până la final.",
   },
 ]
 

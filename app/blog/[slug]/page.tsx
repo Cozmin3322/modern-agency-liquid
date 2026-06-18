@@ -44,7 +44,7 @@ const articles: Record<string, BlogArticle> = {
       <p>Investiția în termoizolare se recuperează în 2-3 ani prin economiile la facturile de gaz. După aceea, beneficiezi de energie ieftină pentru următorii 25 de ani.</p>
 
       <h2>De Ce Alege IsoThermLux?</h2>
-      <p>Noi folosim spumă poliuretanică certificată ISO 9001. Echipa noastră are 12 ani de experiență cu 500+ proiecte finalizate. Oferim garanție scrisă 25 ani pe toată lucrarea.</p>
+      <p>Noi folosim spumă poliuretanică certificată ISO 9001. Echipa noastră are 14 ani de experiență cu 3971 proiecte finalizate. Oferim garanție scrisă 25 ani pe toată lucrarea.</p>
     `,
   },
   'hidroizolare-fundatie-protectie': {

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | IsoThermLux",
   },
   description:
-    "IsoThermLux - specialist în termoizolare, hidroizolare și fonoizolare în Moldova. 12 ani experiență, garanție până la 25 ani și consultație gratuită.",
+    "IsoThermLux - specialist în termoizolare, hidroizolare și fonoizolare în Moldova. 14 ani experiență, garanție până la 25 ani și consultație gratuită.",
   keywords: [
     "termoizolare",
     "hidroizolare",

@@ -5,13 +5,13 @@ import { Footer } from "@/components/footer"
 import { CheckCircle, Award, Users, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Despre IsoThermLux | Echipa Profesionistă | 12 Ani Experiență",
-  description: "Despre IsoThermLux - Companie de termoizolare și hidroizolare cu 12 ani experiență. 500+ proiecte. Echipă certificată. Garanție 25 ani.",
+  title: "Despre IsoThermLux | Echipa Profesionistă | 14 Ani Experiență",
+  description: "Despre IsoThermLux - Companie de termoizolare și hidroizolare cu 14 ani experiență. 3971 proiecte. Echipă certificată. Garanție 25 ani.",
   keywords: "despre noi, echipa IsoThermLux, experiență, certificări, misiune",
   alternates: { canonical: "https://www.isothermlux.md/despre-noi" },
   openGraph: {
-    title: "Despre IsoThermLux | 12 Ani Experiență Termoizolare",
-    description: "IsoThermLux - Experți în termoizolare și hidroizolare cu 500+ proiecte și garanție 25 ani.",
+    title: "Despre IsoThermLux | 14 Ani Experiență Termoizolare",
+    description: "IsoThermLux - Experți în termoizolare și hidroizolare cu 3971 proiecte și garanție 25 ani.",
     type: "website",
     locale: "ro_MD",
     url: "https://www.isothermlux.md/despre-noi",
@@ -23,7 +23,7 @@ export default function AboutPage() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'IsoThermLux',
-    description: 'Experți în termoizolare și hidroizolare cu 12 ani de experiență',
+    description: 'Experți în termoizolare și hidroizolare cu 14 ani de experiență',
     foundingDate: '2012',
     numberOfEmployees: '15',
     areaServed: 'MD',
@@ -44,7 +44,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-5xl font-serif font-medium mb-8">Despre <span className="text-accent">IsoThermLux</span></h1>
             <p className="text-xl text-foreground/80 leading-relaxed max-w-3xl">
-              IsoThermLux este o companie cu 12 ani de experiență în domeniul termoizolării și hidroizolării în Moldova. Am finalizat peste 500 de proiecte de calitate, cu echipă certificată și materiale premium.
+              IsoThermLux este o companie cu 14 ani de experiență în domeniul termoizolării și hidroizolării în Moldova. Am finalizat peste 3971 de proiecte de calitate, cu echipă certificată și materiale premium.
             </p>
           </div>
         </section>
@@ -67,7 +67,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center gap-3 mb-4">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
-                  <span className="text-lg">500+ clienți satisfăcuți</span>
+                  <span className="text-lg">3971 clienți satisfăcuți</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
@@ -117,7 +117,7 @@ export default function AboutPage() {
               <div className="p-8 bg-card border border-border rounded-lg">
                 <h3 className="font-semibold text-lg mb-2">Ion Popescu</h3>
                 <p className="text-foreground/70 mb-2">Director & Specialist Termoizolare</p>
-                <p className="text-sm text-accent font-semibold">12 ani experiență</p>
+                <p className="text-sm text-accent font-semibold">14 ani experiență</p>
               </div>
               <div className="p-8 bg-card border border-border rounded-lg">
                 <h3 className="font-semibold text-lg mb-2">Andrei Vasile</h3>

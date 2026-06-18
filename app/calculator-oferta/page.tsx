@@ -248,7 +248,7 @@ export default function CalculatorPage() {
                 { title: "Consultație Gratuită", desc: "Evaluarea pe loc este complet gratuită și fără angajamente." },
                 { title: "Oferta Detaliată", desc: "După vizită primești ofertă scrisă cu cronograma și garantii." },
                 { title: "Garanție 25 Ani", desc: "Toată lucrarea și materialele sunt garantate 25 de ani." },
-                { title: "Echipă Profesionistă", desc: "12 ani experiență cu 500+ proiecte finalizate cu succes." },
+                { title: "Echipă Profesionistă", desc: "14 ani experiență cu 3971 proiecte finalizate cu succes." },
                 { title: "Economii Reale", desc: "Economisești 40-50% la energie. ROI în 2-3 ani." }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">

@@ -12,7 +12,7 @@ export function Footer() {
               <Image src="/images/logo-isotherm-lux.webp" alt="IsoThermLux" width={64} height={64} className="h-16 w-auto" />
             </Link>
             <p className="text-white leading-relaxed max-w-sm">
-              Servicii profesionale de termoizolare și hidroizolare. 12 ani de experiență, 500+ proiecte finalizate. Garanție 25 ani pe toate lucrările.
+              Servicii profesionale de termoizolare și hidroizolare. 14 ani de experiență, 3971 proiecte finalizate. Garanție 25 ani pe toate lucrările.
             </p>
           </div>
 

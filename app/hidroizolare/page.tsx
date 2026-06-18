@@ -85,7 +85,7 @@ export default function HidroizolarePage() {
           backgroundImage="/images/hidroizolare-hero.webp"
           title="Hidroizolare Profesională"
           titleAccent="în Moldova — Protecție 25 Ani"
-          subtitle="Protecție completă împotriva infiltrațiilor de apă în Chișinău, Moldova. Impermeabilizare profesională pentru fundații, subsoluri și acoperișuri. Garanție 25 ani scrisă, echipă certificată cu 12 ani experiență."
+          subtitle="Protecție completă împotriva infiltrațiilor de apă în Chișinău, Moldova. Impermeabilizare profesională pentru fundații, subsoluri și acoperișuri. Garanție 25 ani scrisă, echipă certificată cu 14 ani experiență."
           ctaHref="tel:+37378370243"
           ctaLabel="Consultație Gratuită"
           ctaSecondaryHref="/portofoliu?tip=hidroizolare"
