@@ -103,11 +103,11 @@ export function HeroClient({ data }: HeroClientProps) {
             {'Izolare Profesională'}
           </p>
 
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-balance text-center text-white mb-6 tracking-tight leading-tight" style={{textShadow: '0 6px 20px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'}}>
+          <p className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-balance text-center text-white mb-6 tracking-tight leading-tight" style={{textShadow: '0 6px 20px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'}}>
             {data.heroTitle}
             <br />
             <span className="text-white" style={{textShadow: '0 6px 20px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'}}>{data.heroSubtitle}</span>
-          </h1>
+          </p>
 
           <div className="space-y-8">
             <p className="text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed drop-shadow-2xl font-semibold" style={{textShadow: '0 4px 12px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.6)'}}>

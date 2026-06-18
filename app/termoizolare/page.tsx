@@ -20,7 +20,7 @@ export const metadata: Metadata = {
             title: "Termoizolare Profesională | Economie 40-50% la Energie | IsoThermLux",
             description: "Termoizolare profesională cu spumă poliuretanică. Economie 40-50% la energie. Garanție 25 ani scrisă. 12 ani experiență.",
     type: "website",
-    locale: "ro_RO",
+    locale: "ro_MD",
     url: "https://www.isothermlux.md/termoizolare",
   },
 }

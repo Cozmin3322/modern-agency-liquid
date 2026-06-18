@@ -1,8 +1,16 @@
 import { MetadataRoute } from 'next'
+import { projects } from '@/lib/projects'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.isothermlux.md'
   const lastModified = new Date()
+
+  const portfolioRoutes = projects.map((project) => ({
+    url: `${baseUrl}/portofoliu/${project.slug}`,
+    lastModified,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
 
   const routes = [
     // Main pages
@@ -50,10 +58,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/garantie-25-ani-protectie-investitie`, lastModified, changeFrequency: 'monthly', priority: 0.6 }
   ]
 
-  return routes.map((route) => ({
+  const staticRoutes = routes.map((route) => ({
     url: route.url,
     lastModified: route.lastModified,
     changeFrequency: route.changeFrequency as any,
     priority: route.priority,
   }))
+
+  return [...staticRoutes, ...portfolioRoutes]
 }

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Întrebări Frecvente | IsoThermLux",
     description: "Răspunsuri la întrebările frecvente despre serviciile noastre",
     type: "website",
-    locale: "ro_RO",
+    locale: "ro_MD",
     url: "https://www.isothermlux.md/intrebari-frecvente",
   },
 }

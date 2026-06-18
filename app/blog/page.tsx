@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Blog IsoThermLux - Articole Termoizolare și Hidroizolare',
     description: 'Citește articole profesionale despre termoizolare, hidroizolare și eficiență energetică. Ghiduri complete, sfaturi și calcule pentru investiția ta.',
     type: 'website',
-    locale: 'ro_RO',
+    locale: 'ro_MD',
     url: 'https://www.isothermlux.md/blog',
   },
   robots: {

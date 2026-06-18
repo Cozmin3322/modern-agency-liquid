@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Hidroizolare Profesională | Protecție 25 Ani | IsoThermLux",
     description: "Hidroizolare cu spumă poliuretanică. Garanție 25 ani scrisă. Protecție fundații, subsoluri, acoperișuri. Chișinău, Moldova.",
     type: "website",
-    locale: "ro_RO",
+    locale: "ro_MD",
     url: "https://www.isothermlux.md/hidroizolare",
   },
   twitter: {

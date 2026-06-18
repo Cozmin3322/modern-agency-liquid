@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Despre IsoThermLux | 12 Ani Experiență Termoizolare",
     description: "IsoThermLux - Experți în termoizolare și hidroizolare cu 500+ proiecte și garanție 25 ani.",
     type: "website",
-    locale: "ro_RO",
+    locale: "ro_MD",
     url: "https://www.isothermlux.md/despre-noi",
   },
 }

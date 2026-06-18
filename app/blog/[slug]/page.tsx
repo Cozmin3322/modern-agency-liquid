@@ -249,7 +249,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: article.title,
       description: descriptionMap[slug] || article.excerpt,
       type: 'article',
-      locale: 'ro_RO',
+      locale: 'ro_MD',
       url,
       publishedTime: article.date,
       authors: [article.author],
