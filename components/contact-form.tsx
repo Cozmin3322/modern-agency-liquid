@@ -29,8 +29,8 @@ export function ContactForm() {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="/images/contact-form-bg.png"
-          alt="Aplicare izolație profesională"
+          src="/images/project-aplicare-spuma-01.webp"
+          alt="Aplicare izolație profesională IsoThermLux"
           fill sizes="100vw"
           className="object-cover"
           quality={70}
