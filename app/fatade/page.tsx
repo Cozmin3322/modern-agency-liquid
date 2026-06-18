@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { ArrowRight, Layers, Thermometer, ShieldCheck, TrendingUp, Zap, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Termoizolare Fațade Moldova | Sisteme Complete | IsoThermLux',
@@ -10,260 +11,219 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.isothermlux.md/fatade' }
 }
 
+const included = [
+  { Icon: Thermometer, title: "Izolație Termică", description: "Spumă poliuretanică aplicată direct pe fațadă. Reduce pierderile de căldură cu până la 80%." },
+  { Icon: Layers, title: "Tencuială Armată", description: "Strat protector cu plasă din fibră de sticlă. Aderență perfectă și protecție mecanică." },
+  { Icon: ShieldCheck, title: "Finisaj Exterior", description: "Tencuială decorativă sau vopsea hidrofobă. Protecție completă și estetică modernă." },
+]
+
+const benefits = [
+  { Icon: Zap, title: "Economie 70% Energie", description: "Reducere drastică la costurile de încălzire și răcire." },
+  { Icon: Thermometer, title: "Confort Termic", description: "Temperatură constantă și plăcută în interiorul casei." },
+  { Icon: ShieldCheck, title: "Protecție Completă", description: "Fațada protejată împotriva intemperiilor și infiltrațiilor." },
+  { Icon: Clock, title: "Garanție 25 Ani", description: "Garanție scrisă pe material și manoperă." },
+  { Icon: TrendingUp, title: "Valoare Imobiliară", description: "Crește valoarea casei prin renovare energetică." },
+  { Icon: Layers, title: "Durabilitate 25+ Ani", description: "Sistem rezistent fără întreținere specială." },
+]
+
+const systems = [
+  {
+    name: "Spumă Poliuretanică",
+    badge: "Recomandat",
+    pros: ["Performanță termică maximă", "Aderență perfectă", "Impermeabilă", "Garanție 25 ani"],
+    cons: ["Investiție mai mare"],
+  },
+  {
+    name: "Vată Minerală",
+    badge: null,
+    pros: ["Cost mediu", "Performanță bună", "Permeabilă la vapori"],
+    cons: ["Necesită protecție suplimentară la umiditate"],
+  },
+  {
+    name: "Polistiren",
+    badge: null,
+    pros: ["Cost accesibil", "Ușor de aplicat"],
+    cons: ["Performanță termică medie", "Durabilitate mai scurtă"],
+  },
+]
+
+const steps = [
+  { nr: "01", title: "Evaluare", description: "Analiză detaliată a fațadei și a nevoilor termice." },
+  { nr: "02", title: "Pregătire", description: "Curățare și reparație a suprafeței existente." },
+  { nr: "03", title: "Aplicare", description: "Montaj sistem de izolație și tencuială armată." },
+  { nr: "04", title: "Finisaj", description: "Tencuială decorativă și protecție finală." },
+]
+
+const projects = [
+  { img: '/images/project-casa-privat.jpg', title: 'Casă Privată — Fațadă Sud' },
+  { img: '/images/project-casa-privat-new.jpg', title: 'Casă Privată — Fațadă Nord' },
+  { img: '/images/project-mansard.jpg', title: 'Mansardă — Finisaj Decorativ' },
+  { img: '/images/project-birou-comercial.jpg', title: 'Birou Comercial — ETICS' },
+]
+
 export default function FacadesPage() {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-background">
-      {/* Breadcrumb */}
-      <div className="bg-card border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-foreground transition">Acasă</Link>
-            <span>/</span>
-            <Link href="/termoizolare" className="hover:text-foreground transition">Termoizolare</Link>
-            <span>/</span>
-            <span className="text-foreground">Fațade</span>
+      <main className="min-h-screen bg-background">
+
+        {/* Hero */}
+        <section className="py-24 md:py-36 border-b border-border">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-2xl">
+              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">Servicii IsoThermLux</p>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-medium leading-tight mb-6">
+                Termoizolare<br />Fațade
+              </h1>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-lg">
+                Sisteme profesionale ETICS cu garanție 25 ani. Transformăm fațada casei tale în scut termic eficient cu execuție rapidă și durabilă.
+              </p>
+              <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300 hover:gap-3">
+                Ofertă Gratuită <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
           </div>
-        </div>
-      </div>
+        </section>
 
-      {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-muted-foreground text-xs md:text-sm tracking-[0.3em] uppercase mb-4">Soluții Profesionale</p>
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 text-foreground">
-            Termoizolare Fațade
-          </h1>
-          <p className="text-xl md:text-2xl text-accent font-medium mb-4">Sisteme Complete și Durabile</p>
-          <p className="text-lg text-foreground/70 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Transformă fațada casei tale în scut termic eficient. Sisteme profesionale ETICS cu garanție 25 ani și execuție rapidă.
-          </p>
-          <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition text-lg">
-            Sună pentru Ofertă Gratuită →
-          </a>
-        </div>
-      </section>
-
-      {/* What's Included */}
-      <section className="py-20 md:py-28 bg-card border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-serif font-bold mb-12 text-center">Ce Include Termoizolarea Fațadei?</h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "1. Izolație Termică",
-                desc: "Spumă poliuretanică, vată minerală sau polistiren aplicată direct pe fațadă. Reduce pierderile de căldură cu până la 80%."
-              },
-              {
-                title: "2. Tencuială Armată",
-                desc: "Strat protector cu plasă din fibră de sticlă. Asigură aderență perfectă și protecție mecanică a sistemului."
-              },
-              {
-                title: "3. Finisaj Exterior",
-                desc: "Tencuială decorativă sau vopsea hidrofobă. Protecție completă și estetică modernă pentru fațada casei."
-              }
-            ].map((item, idx) => (
-              <div key={idx} className="bg-background p-8 rounded-lg border border-border">
-                <h3 className="text-xl font-semibold mb-4 text-accent">{item.title}</h3>
-                <p className="text-foreground/80 leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Systems Available */}
-      <section className="py-20 md:py-28 bg-background border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-serif font-bold mb-12 text-center">Sisteme Disponibile</h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Spumă Poliuretanică",
-                pros: ["Performanță termică maximă", "Aderență perfectă", "Impermeabilă", "Garanție 25 ani"],
-                cons: ["Cost mai ridicat"]
-              },
-              {
-                name: "Vată Minerală",
-                pros: ["Cost mediu", "Bună termic", "Flexibilă", "Permeabilă la vapori"],
-                cons: ["Necesită mai multă grijă cu umiditatea"]
-              },
-              {
-                name: "Polistiren",
-                pros: ["Cost accesibil", "Ușor de aplicat", "Ușor de prelucrat"],
-                cons: ["Performanță termică medie", "Durabilitate mai scurtă"]
-              }
-            ].map((system, idx) => (
-              <div key={idx} className="bg-card p-8 rounded-lg border border-border">
-                <h3 className="text-2xl font-semibold mb-6 text-accent">{system.name}</h3>
-                <div className="space-y-4">
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Avantaje:</p>
-                    <ul className="space-y-2">
-                      {system.pros.map((pro, i) => (
-                        <li key={i} className="flex items-start gap-2 text-foreground/80">
-                          <span className="text-accent font-bold">✓</span>
-                          <span>{pro}</span>
-                        </li>
-                      ))}
-                    </ul>
+        {/* Ce include */}
+        <section className="py-20 md:py-28">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-xl mb-16">
+              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Sistem complet</p>
+              <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight">Ce include termoizolarea fațadei?</h2>
+            </div>
+            <div className="grid md:grid-cols-3 gap-px bg-border">
+              {included.map(({ Icon, title, description }) => (
+                <div key={title} className="bg-background p-10 group hover:bg-card transition-colors duration-300">
+                  <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center mb-6 group-hover:border-accent group-hover:bg-accent/5 transition-all duration-300">
+                    <Icon className="w-5 h-5 text-muted-foreground group-hover:text-accent transition-colors duration-300" strokeWidth={1.5} />
                   </div>
-                  <div className="border-t border-border pt-4">
-                    <p className="font-semibold text-foreground mb-2">Dezavantaje:</p>
-                    <ul className="space-y-2">
-                      {system.cons.map((con, i) => (
-                        <li key={i} className="flex items-start gap-2 text-foreground/80">
-                          <span className="text-amber-600">✗</span>
-                          <span>{con}</span>
-                        </li>
-                      ))}
-                    </ul>
+                  <h3 className="font-serif font-medium text-lg mb-3">{title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Sisteme */}
+        <section className="py-20 md:py-28 border-t border-border bg-card">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-xl mb-16">
+              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Comparație</p>
+              <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight">Sisteme disponibile</h2>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {systems.map(({ name, badge, pros, cons }) => (
+                <div key={name} className={`bg-background p-8 border ${badge ? 'border-accent' : 'border-border'} rounded-lg`}>
+                  <div className="flex items-center justify-between mb-6">
+                    <h3 className="font-serif font-medium text-xl">{name}</h3>
+                    {badge && <span className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full font-medium">{badge}</span>}
+                  </div>
+                  <div className="space-y-2 mb-6">
+                    {pros.map(p => (
+                      <div key={p} className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <span className="w-1 h-1 rounded-full bg-accent flex-shrink-0" />
+                        {p}
+                      </div>
+                    ))}
+                  </div>
+                  <div className="border-t border-border pt-4 space-y-2">
+                    {cons.map(c => (
+                      <div key={c} className="flex items-center gap-2 text-sm text-muted-foreground/60">
+                        <span className="w-1 h-1 rounded-full bg-muted-foreground/40 flex-shrink-0" />
+                        {c}
+                      </div>
+                    ))}
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Work Process */}
-      <section className="py-20 md:py-28 bg-card border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-serif font-bold mb-12 text-center">Procesul de Lucru</h2>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            {[
-              { step: 1, title: "Evaluare", desc: "Analiză detaliată a fațadei și a nevoilor termice" },
-              { step: 2, title: "Pregătire", desc: "Curățare și reparație a suprafeței" },
-              { step: 3, title: "Aplicare", desc: "Montaj sistem izolație și tencuială armată" },
-              { step: 4, title: "Finisaj", desc: "Tencuială decorativă și protecție finală" }
-            ].map((item) => (
-              <div key={item.step} className="relative">
-                <div className="bg-background p-6 rounded-lg border border-border text-center">
-                  <div className="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
-                    {item.step}
+        {/* Beneficii */}
+        <section className="py-20 md:py-28 border-t border-border">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-xl mb-16">
+              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Rezultate</p>
+              <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight">Avantajele termoizolării fațadei</h2>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+              {benefits.map(({ Icon, title, description }) => (
+                <div key={title} className="bg-background p-8 group hover:bg-card transition-colors duration-300">
+                  <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center mb-5 group-hover:border-accent group-hover:bg-accent/5 transition-all duration-300">
+                    <Icon className="w-4 h-4 text-muted-foreground group-hover:text-accent transition-colors duration-300" strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 text-accent">{item.title}</h3>
-                  <p className="text-foreground/70">{item.desc}</p>
+                  <h3 className="font-serif font-medium mb-2">{title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
                 </div>
-                {item.step < 4 && (
-                  <div className="hidden md:block absolute top-1/3 -right-3 text-accent text-2xl">→</div>
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Benefits */}
-      <section className="py-20 md:py-28 bg-background border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-serif font-bold mb-12 text-center">Avantaje Termoizolării Fațadei</h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { title: "Economie de Energie", desc: "Reducere de 70% la costurile de încălzire/răcire" },
-              { title: "Confort Termic", desc: "Temperatură constantă în interiorul casei" },
-              { title: "Protecție Exterioară", desc: "Protecție completă împotriva intemperiilor și infiltrațiilor" },
-              { title: "Garanție Lungă", desc: "Garanție scrisă 25 ani pe material și manoperă" },
-              { title: "Valoare Imobiliară", desc: "Creșterea valorii casei prin renovare energetică" },
-              { title: "Durabilitate", desc: "Sistem rezistent 25-30+ ani fără întreținere specială" }
-            ].map((benefit, idx) => (
-              <div key={idx} className="bg-card p-8 rounded-lg border border-border hover:border-accent transition">
-                <h3 className="text-xl font-semibold mb-3 text-accent">{benefit.title}</h3>
-                <p className="text-foreground/80">{benefit.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Project Gallery */}
-      <section className="py-20 md:py-28 bg-card border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-serif font-bold mb-12 text-center">Proiecte Realizate</h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              { img: '/images/project-casa-privat.jpg', title: 'Casă Privată — Fațadă Sud' },
-              { img: '/images/project-casa-privat-new.jpg', title: 'Casă Privată — Fațadă Nord' },
-              { img: '/images/project-mansard.jpg', title: 'Mansardă — Finisaj Decorativ' },
-              { img: '/images/project-birou-comercial.jpg', title: 'Birou Commercial — ETICS' }
-            ].map((project, idx) => (
-              <div key={idx} className="relative aspect-video rounded-lg overflow-hidden bg-background border border-border group">
-                <Image
-                  src={project.img}
-                  alt={project.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all flex items-end p-6">
-                  <h3 className="text-white font-semibold text-lg">{project.title}</h3>
+        {/* Proces */}
+        <section className="py-20 md:py-28 border-t border-border bg-card">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-xl mb-16">
+              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Cum lucrăm</p>
+              <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight">Procesul de lucru</h2>
+            </div>
+            <div className="grid md:grid-cols-4 gap-8">
+              {steps.map(({ nr, title, description }) => (
+                <div key={nr}>
+                  <p className="text-5xl font-serif text-muted-foreground/20 mb-4">{nr}</p>
+                  <h3 className="font-serif font-medium text-lg mb-2">{title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Internal Link */}
-      <section className="py-16 md:py-24 bg-background border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-muted-foreground text-xs md:text-sm tracking-[0.3em] uppercase mb-4">Material Educativ</p>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Vrei să înțelegi mai bine termoizolația?</h2>
-          <p className="text-foreground/70 mb-8 max-w-2xl mx-auto">
-            Citește ghidul nostru complet despre spuma poliuretanică și sistemele de izolație.
-          </p>
-          <a href="/ce-este-spuma-poliuretanica" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
-            Citește Ghidul Complet →
-          </a>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 md:py-28 bg-accent">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">
-            Gata să transformi fațada casei tale?
-          </h2>
-            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Contactează echipa IsoThermLux pentru o evaluare gratuită și ofertă personalizată.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+37378370243" className="inline-flex items-center justify-center gap-2 bg-background text-accent px-8 py-4 rounded-lg font-semibold hover:bg-background/90 transition">
-              Sună: +37378370243
-            </a>
-            <a href="mailto:infopoliuretan@gmail.com" className="inline-flex items-center justify-center gap-2 bg-background/20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-background/30 transition border border-background">
-              Email: infopoliuretan@gmail.com
-            </a>
+        {/* Galerie */}
+        <section className="py-20 md:py-28 border-t border-border">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-xl mb-16">
+              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Portofoliu</p>
+              <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight">Proiecte realizate</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4">
+              {projects.map(({ img, title }) => (
+                <div key={title} className="relative aspect-video overflow-hidden rounded-lg bg-card group">
+                  <Image src={img} alt={title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-end p-6">
+                    <p className="text-white font-serif font-medium">{title}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* JSON-LD Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Termoizolare Fațade — Sisteme Complete",
-            "description": "Termoizolare profesională a fațadelor cu spumă poliuretanică și sisteme ETICS",
-            "image": "https://www.isothermlux.md/images/project-casa-privat.jpg",
-            "author": {
-              "@type": "Organization",
-              "name": "IsoThermLux",
-              "url": "https://www.isothermlux.md"
-            },
-            "datePublished": "2024-06-17",
-            "articleBody": "Termoizolarea fațadei este soluția optimă pentru case rezidențiale și cladiri comerciale..."
-          })
-        }}
-      />
-      </div>
+        {/* CTA */}
+        <section className="py-20 md:py-28 bg-foreground">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p className="text-sm tracking-[0.3em] uppercase text-background/50 mb-6">Pas următor</p>
+            <h2 className="text-4xl md:text-5xl font-serif font-medium text-background mb-6 leading-tight">
+              Transformă fațada<br />casei tale
+            </h2>
+            <p className="text-lg text-background/70 mb-10">
+              Contactează echipa IsoThermLux pentru o evaluare gratuită și ofertă personalizată.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:+37378370243" className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300">
+                +373 78 370 243
+              </a>
+              <a href="mailto:infopoliuretan@gmail.com" className="inline-flex items-center justify-center gap-2 border border-background/30 text-background px-8 py-4 rounded-full font-medium hover:border-background/60 transition-all duration-300">
+                infopoliuretan@gmail.com
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </main>
       <Footer />
     </>
   )
