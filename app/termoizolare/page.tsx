@@ -132,29 +132,82 @@ export default function TermoizolarePage() {
         {/* Service Types Section */}
         <section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-12">Tipuri de Termoizolare</h2>
+            <h2 className="text-4xl font-serif font-medium mb-4">Tipuri de Termoizolare</h2>
+            <p className="text-foreground/60 mb-12 max-w-2xl">Izolăm orice tip de construcție sau obiect cu spumă poliuretanică — cu celule deschise sau închise, în funcție de necesități.</p>
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Mansarda",
-                  description: "Izolare termică profesională a mansardelor. Spațiu locuibil cald în iarna.",
+                  icon: "🏡",
+                  title: "Mansardă",
+                  description: "Izolare termică profesională a mansardelor. Spațiu locuibil cald iarna, răcoros vara.",
                   link: "/termoizolare/mansarda"
                 },
                 {
-                  title: "Casa Completa",
-                  description: "Izolare acoperis, pereti exteriori și fundație. Confort maxim.",
+                  icon: "🏠",
+                  title: "Casă Completă",
+                  description: "Izolare acoperiș, pereți exteriori și fundație. Confort maxim, economie 40-50%.",
                   link: "/termoizolare/casa"
                 },
                 {
+                  icon: "🏭",
                   title: "Hale Industriale",
-                  description: "Izolație termică pentru hale, depozite și clădiri comerciale.",
+                  description: "Izolație termică pentru hale, depozite și clădiri comerciale. Aplicare 300 m²/zi.",
                   link: "/termoizolare/hala-industriala"
-                }
+                },
+                {
+                  icon: "🏠",
+                  title: "Acoperiș și Terasă",
+                  description: "Terase plate, șarpante, table ondulate. Eliminăm condensul și pierderile prin acoperiș.",
+                  link: "/termoizolare/acoperis"
+                },
+                {
+                  icon: "🛢️",
+                  title: "Cisterne și Rezervoare",
+                  description: "Cisterne de combustibil, apă, alimente. Spumă cu celule închise — impermeabilă.",
+                  link: "/termoizolare/cisterne"
+                },
+                {
+                  icon: "📦",
+                  title: "Containere",
+                  description: "Containere frigorifice, de depozitare sau locuibile. Soluție completă în 1 zi.",
+                  link: "/termoizolare/containere"
+                },
+                {
+                  icon: "🚛",
+                  title: "Camioane și Vehicule",
+                  description: "Caroserii izoterme, dube, remorci frigorifice. Greutate minimă, eficiență maximă.",
+                  link: "/termoizolare/camioane"
+                },
+                {
+                  icon: "🏗️",
+                  title: "Fundație și Subsol",
+                  description: "Socluri, pereți subterani, plăci de beton. Elimini umezeala și puntea termică.",
+                  link: "/termoizolare/fundatie"
+                },
+                {
+                  icon: "🔧",
+                  title: "Garaj și Atelier",
+                  description: "Garaje metalice sau zidărie, ateliere auto. Confortabil tot parcursul anului.",
+                  link: "/termoizolare/garaj"
+                },
+                {
+                  icon: "🐄",
+                  title: "Ferme Agricole",
+                  description: "Grajduri, hale avicole, sere, depozite agricole. Animale sănătoase, costuri reduse.",
+                  link: "/termoizolare/ferma"
+                },
+                {
+                  icon: "🌡️",
+                  title: "Conducte și Instalații",
+                  description: "Conducte termice, sanitare, industriale. Fără rosturi, fără punți termice.",
+                  link: "/termoizolare/conducte"
+                },
               ].map((service, idx) => (
                 <Link key={idx} href={service.link} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition group">
+                  <div className="text-3xl mb-3">{service.icon}</div>
                   <h3 className="text-xl font-semibold mb-3 group-hover:text-accent transition">{service.title}</h3>
-                  <p className="text-foreground/70 mb-4">{service.description}</p>
-                  <span className="inline-flex items-center gap-2 text-accent">
+                  <p className="text-foreground/70 mb-4 text-sm">{service.description}</p>
+                  <span className="inline-flex items-center gap-2 text-accent text-sm">
                     Detalii <ArrowRight className="w-4 h-4" />
                   </span>
                 </Link>
