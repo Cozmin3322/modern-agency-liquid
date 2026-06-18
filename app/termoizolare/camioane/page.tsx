@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Check } from "lucide-react"
+import { ArrowRight, Check, Truck, Container, Snowflake, Ambulance, Tent } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Termoizolare Camioane și Vehicule de Transport | IsoThermLux Moldova",
@@ -110,38 +110,38 @@ export default function CamioanePage() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: "🚐",
+                  Icon: Truck,
                   title: "Dube și Furgonete",
                   desc: "Izolăm pereții, plafonul și podeaua dubelor. Ideal pentru livrare produse alimentare, farmaceutice sau flori.",
                 },
                 {
-                  icon: "🚛",
+                  Icon: Container,
                   title: "Camioane cu Izotermă",
                   desc: "Refacere sau realizare izolație pentru caroseriile izoterme. Temperaturi controlate +5°C până la +25°C.",
                 },
                 {
-                  icon: "🚜",
+                  Icon: Truck,
                   title: "Semiremorci",
                   desc: "Izolație completă pentru semiremorci de mare tonaj. Suprafețe mari tratate rapid cu echipament profesional.",
                 },
                 {
-                  icon: "❄️",
+                  Icon: Snowflake,
                   title: "Remorci Frigorifice",
                   desc: "Repararea sau înlocuirea izolației la remorcile frigorifice. Reducem consumul agregatului frigorific.",
                 },
                 {
-                  icon: "🚑",
+                  Icon: Ambulance,
                   title: "Vehicule Speciale",
                   desc: "Ambulanțe, laboratoare mobile, unități de comandă. Izolație termică și fonică personalizată.",
                 },
                 {
-                  icon: "🏕️",
+                  Icon: Tent,
                   title: "Autorulote și Caravane",
                   desc: "Termoizolare complete pentru caravane și autorulote. Confort pe tot parcursul anului, oricunde te-ai afla.",
                 },
               ].map((type, idx) => (
                 <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
-                  <div className="text-4xl mb-4">{type.icon}</div>
+                  <type.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-3">{type.title}</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">{type.desc}</p>
                 </div>
@@ -166,12 +166,12 @@ export default function CamioanePage() {
                 </thead>
                 <tbody>
                   {[
-                    ["Conductivitate termică", "0.022 W/m·K ✅", "0.035 W/m·K", "0.033 W/m·K"],
-                    ["Absorbție apă", "< 2% ✅", "Ridicată ❌", "Medie"],
-                    ["Greutate", "1–3 kg/m² ✅", "8–15 kg/m²", "5–10 kg/m²"],
-                    ["Punți termice", "Zero ✅", "Posibile", "Posibile"],
-                    ["Durată aplicare", "1–2 zile ✅", "3–5 zile", "3–5 zile"],
-                    ["Durabilitate", "25+ ani ✅", "10–15 ani", "15–20 ani"],
+                    ["Conductivitate termică", "0.022 W/m·K", "0.035 W/m·K", "0.033 W/m·K"],
+                    ["Absorbție apă", "< 2%", "Ridicată", "Medie"],
+                    ["Greutate", "1–3 kg/m²", "8–15 kg/m²", "5–10 kg/m²"],
+                    ["Punți termice", "Zero", "Posibile", "Posibile"],
+                    ["Durată aplicare", "1–2 zile", "3–5 zile", "3–5 zile"],
+                    ["Durabilitate", "25+ ani", "10–15 ani", "15–20 ani"],
                   ].map((row, idx) => (
                     <tr key={idx} className="border-t border-border">
                       <td className="p-4 font-medium text-sm">{row[0]}</td>

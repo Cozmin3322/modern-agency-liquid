@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Check } from "lucide-react"
+import { ArrowRight, Check, Snowflake, Package, Home, Wrench, Wheat, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Termoizolare Containere | Containere Frigorifice și Depozitare | IsoThermLux",
@@ -113,38 +113,38 @@ export default function ContainerePage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
-                  icon: "❄️",
+                  Icon: Snowflake,
                   title: "Containere Frigorifice",
                   desc: "Refacerea sau completarea izolației termice la containerele frigorifice uzate. Temperatură controlată 0°C până la -25°C.",
                 },
                 {
-                  icon: "📦",
+                  Icon: Package,
                   title: "Containere de Depozitare",
                   desc: "Containere standard 20ft sau 40ft transformate în depozite termoizolate pentru produse sensibile la temperatură.",
                 },
                 {
-                  icon: "🏠",
+                  Icon: Home,
                   title: "Containere Locuibile",
                   desc: "Case container, cabine de șantier sau birouri modulare. Izolăm pereții, plafonul și podeaua pentru confort complet.",
                 },
                 {
-                  icon: "🔧",
+                  Icon: Wrench,
                   title: "Ateliere Container",
                   desc: "Containere transformate în ateliere auto, mecanice sau de reparații. Confort termic pentru lucrul pe tot parcursul anului.",
                 },
                 {
-                  icon: "🌾",
+                  Icon: Wheat,
                   title: "Containere Agricole",
                   desc: "Depozitare fructe, legume, cereale sau semințe. Temperatura și umiditatea controlate pentru păstrarea calității.",
                 },
                 {
-                  icon: "⚡",
+                  Icon: Zap,
                   title: "Containere Tehnice",
                   desc: "Adăposturi pentru echipamente electronice, grupuri electrogene sau stații de pompare. Protecție termică pentru instalații.",
                 },
               ].map((type, idx) => (
                 <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
-                  <div className="text-4xl mb-4">{type.icon}</div>
+                  <type.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-3">{type.title}</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">{type.desc}</p>
                 </div>

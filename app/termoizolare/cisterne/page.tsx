@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Check } from "lucide-react"
+import { ArrowRight, Check, Fuel, Droplet, Milk, Factory, Thermometer, Truck } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Termoizolare Cisterne | Rezervoare Industriale | IsoThermLux Moldova",
@@ -108,38 +108,38 @@ export default function CisternePage() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: "🛢️",
+                  Icon: Fuel,
                   title: "Cisterne de Combustibil",
                   desc: "Rezervoare de motorină, benzină sau gaz. Izolația termică previne variațiile de vâscozitate și pierderile prin evaporare în perioadele calde.",
                 },
                 {
-                  icon: "💧",
+                  Icon: Droplet,
                   title: "Rezervoare de Apă",
                   desc: "Cisterne de apă potabilă sau tehnologică. Prevenim înghețarea iarna și supraîncălzirea vara. Material alimentar certificat.",
                 },
                 {
-                  icon: "🥛",
+                  Icon: Milk,
                   title: "Cisterne Alimentare",
                   desc: "Rezervoare pentru lapte, ulei, vin sau alte produse alimentare. Temperatura controlată menține calitatea produselor.",
                 },
                 {
-                  icon: "🏭",
+                  Icon: Factory,
                   title: "Rezervoare Industriale",
                   desc: "Cisterne pentru produse chimice, aditivi sau fluide industriale. Rezistență chimică și termică optimă.",
                 },
                 {
-                  icon: "🌡️",
+                  Icon: Thermometer,
                   title: "Cisterne Subterane",
                   desc: "Rezervoare îngropate. Izolarea previne condensul și coroziunea pe exterior, extinde durata de viață.",
                 },
                 {
-                  icon: "🚛",
+                  Icon: Truck,
                   title: "Cisterne Mobile",
                   desc: "Rezervoare montate pe remorci sau camioane. Izolație ușoară cu celule închise pentru transport eficient.",
                 },
               ].map((type, idx) => (
                 <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
-                  <div className="text-4xl mb-4">{type.icon}</div>
+                  <type.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-3">{type.title}</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">{type.desc}</p>
                 </div>

@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Check } from "lucide-react"
+import { ArrowRight, Check, Beef, PiggyBank, Bird, Sprout, Wheat, Milk } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Termoizolare Ferme Agricole și Grajduri | Spumă Poliuretanică | IsoThermLux",
@@ -57,15 +57,15 @@ export default function FermaPage() {
             <h2 className="text-4xl font-serif font-medium mb-12 text-center">Ce Tipuri de Spații Agricole Izolăm</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { icon: "🐄", title: "Grajduri Bovine", desc: "Temperatură stabilă pentru vaci de lapte sau carne. Spuma reduce condensul și mucegaiul, îmbunătățind sănătatea animalelor și producția de lapte." },
-                { icon: "🐖", title: "Ferme de Porci", desc: "Purceii mici sunt sensibili la frig. Izolarea corectă a halelor reduce mortalitatea și consumul de energie la încălzire cu până la 40%." },
-                { icon: "🐔", title: "Hale Avicole", desc: "Puii de carne și găinile ouătoare au nevoie de temperaturi constante. Izolăm rapid halele mari cu echipament profesional — 300 m²/zi." },
-                { icon: "🌿", title: "Sere și Solarii", desc: "Izolăm pereții și acoperișul serelor. Temperatura nocturnă menținută reduce costurile de încălzire și prelungește sezonul de producție." },
-                { icon: "🌾", title: "Depozite de Cereale", desc: "Temperatura și umiditatea controlate previn condensul și degradarea cerealelor. Spuma creează o barieră de vapori completă." },
-                { icon: "🧀", title: "Spații de Maturare / Fermentare", desc: "Pivnițe de vin, camere de maturare brânzeturi sau fermentare. Temperatura stabilă este esențială — spuma cu celule închise o garantează." },
+                { Icon: Beef, title: "Grajduri Bovine", desc: "Temperatură stabilă pentru vaci de lapte sau carne. Spuma reduce condensul și mucegaiul, îmbunătățind sănătatea animalelor și producția de lapte." },
+                { Icon: PiggyBank, title: "Ferme de Porci", desc: "Purceii mici sunt sensibili la frig. Izolarea corectă a halelor reduce mortalitatea și consumul de energie la încălzire cu până la 40%." },
+                { Icon: Bird, title: "Hale Avicole", desc: "Puii de carne și găinile ouătoare au nevoie de temperaturi constante. Izolăm rapid halele mari cu echipament profesional — 300 m²/zi." },
+                { Icon: Sprout, title: "Sere și Solarii", desc: "Izolăm pereții și acoperișul serelor. Temperatura nocturnă menținută reduce costurile de încălzire și prelungește sezonul de producție." },
+                { Icon: Wheat, title: "Depozite de Cereale", desc: "Temperatura și umiditatea controlate previn condensul și degradarea cerealelor. Spuma creează o barieră de vapori completă." },
+                { Icon: Milk, title: "Spații de Maturare / Fermentare", desc: "Pivnițe de vin, camere de maturare brânzeturi sau fermentare. Temperatura stabilă este esențială — spuma cu celule închise o garantează." },
               ].map((type, idx) => (
                 <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
-                  <div className="text-4xl mb-4">{type.icon}</div>
+                  <type.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-3">{type.title}</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">{type.desc}</p>
                 </div>
@@ -105,12 +105,12 @@ export default function FermaPage() {
               <div className="p-8 bg-card border-2 border-accent rounded-lg">
                 <h3 className="text-xl font-semibold mb-3">Celule Închise</h3>
                 <p className="text-foreground/70 text-sm mb-4">Recomandată pentru acoperișuri metalice, cisterne de apă, depozite. Impermeabilă, dură, λ = 0.022 W/m·K.</p>
-                <span className="text-accent font-semibold text-sm">✅ Acoperișuri, depozite, cisterne</span>
+                <span className="text-accent font-semibold text-sm flex items-center gap-1.5"><Check className="w-4 h-4" /> Acoperișuri, depozite, cisterne</span>
               </div>
               <div className="p-8 bg-card border-2 border-border rounded-lg">
                 <h3 className="text-xl font-semibold mb-3">Celule Deschise</h3>
                 <p className="text-foreground/70 text-sm mb-4">Recomandată pentru pereții interiori ai grajdurilor unde respirabilitatea este importantă. Izolație fonică excelentă.</p>
-                <span className="text-foreground/60 font-semibold text-sm">✅ Pereți interiori grajduri, hale</span>
+                <span className="text-foreground/60 font-semibold text-sm flex items-center gap-1.5"><Check className="w-4 h-4" /> Pereți interiori grajduri, hale</span>
               </div>
             </div>
           </div>

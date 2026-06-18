@@ -152,7 +152,7 @@ export default function Chatbot() {
           <div className="flex-1 overflow-y-auto p-3 space-y-3" style={{ backgroundColor: '#FAF7F4' }}>
             {messages.length === 0 && (
                 <div className="text-center text-[#dd9933] py-6">
-                <p className="text-sm font-medium">Bun venit! 👋</p>
+                <p className="text-sm font-medium">Bun venit!</p>
                 <p className="text-xs opacity-70 mt-1">Cum te pot ajuta?</p>
               </div>
             )}

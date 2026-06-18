@@ -244,16 +244,16 @@ export default function CalculatorPage() {
             <h2 className="text-4xl font-serif font-medium mb-12">De Ce Alege IsoThermLux?</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {[
-                { icon: "✓", title: "Estimare Transparentă", desc: "Fără costuri ascunse. Ce vezi în calculator este oferta reală." },
-                { icon: "✓", title: "Consultație Gratuită", desc: "Evaluarea pe loc este complet gratuită și fără angajamente." },
-                { icon: "✓", title: "Oferta Detaliată", desc: "După vizită primești ofertă scrisă cu cronograma și garantii." },
-                { icon: "✓", title: "Garanție 25 Ani", desc: "Toată lucrarea și materialele sunt garantate 25 de ani." },
-                { icon: "✓", title: "Echipă Profesionistă", desc: "12 ani experiență cu 500+ proiecte finalizate cu succes." },
-                { icon: "✓", title: "Economii Reale", desc: "Economisești 40-50% la energie. ROI în 2-3 ani." }
+                { title: "Estimare Transparentă", desc: "Fără costuri ascunse. Ce vezi în calculator este oferta reală." },
+                { title: "Consultație Gratuită", desc: "Evaluarea pe loc este complet gratuită și fără angajamente." },
+                { title: "Oferta Detaliată", desc: "După vizită primești ofertă scrisă cu cronograma și garantii." },
+                { title: "Garanție 25 Ani", desc: "Toată lucrarea și materialele sunt garantate 25 de ani." },
+                { title: "Echipă Profesionistă", desc: "12 ani experiență cu 500+ proiecte finalizate cu succes." },
+                { title: "Economii Reale", desc: "Economisești 40-50% la energie. ROI în 2-3 ani." }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">
-                  <div className="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center flex-shrink-0 font-bold">
-                    {item.icon}
+                  <div className="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center flex-shrink-0">
+                    <Check className="w-4 h-4" />
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">{item.title}</h3>

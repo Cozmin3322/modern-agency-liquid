@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Check } from "lucide-react"
+import { ArrowRight, Check, Thermometer, Factory, Droplet, Snowflake, Wrench, Cylinder } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Termoizolare Conducte și Instalații | Spumă Poliuretanică | IsoThermLux Moldova",
@@ -57,15 +57,15 @@ export default function ConduCtePage() {
             <h2 className="text-4xl font-serif font-medium mb-12 text-center">Ce Conducte și Instalații Izolăm</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { icon: "🌡️", title: "Conducte Agent Termic", desc: "Termoizolare pentru conductele de apă caldă sau abur. Reducem pierderile termice cu 60–80% și prevenim condensul pe conductele reci." },
-                { icon: "🏭", title: "Conducte Industriale", desc: "Conducte de proces cu fluide calde sau reci. Spuma se aplică direct pe metal, inox sau oțel galvanizat — pe orice diametru." },
-                { icon: "💧", title: "Conducte Sanitare", desc: "Izolăm conductele de apă rece împotriva înghețului și conductele de apă caldă pentru a reduce pierderile de temperatură." },
-                { icon: "❄️", title: "Conducte Frigorifice", desc: "Conducte de agent frigorific sau răcire. Celule închise împiedică vaporizarea umidității pe suprafața rece a conductei." },
-                { icon: "🔧", title: "Vane, Flanșe, Fitinguri", desc: "Spuma se modelează perfect pe geometria complexă a vanelor și fitingurilor — punct frecvent de pierderi termice neglijat." },
-                { icon: "🏗️", title: "Rezervoare și Boilere", desc: "Izolăm boilere, rezervoare tampon și acumulatoare. Menţinem temperatura fluidului mai mult timp cu consum redus de energie." },
+                { Icon: Thermometer, title: "Conducte Agent Termic", desc: "Termoizolare pentru conductele de apă caldă sau abur. Reducem pierderile termice cu 60–80% și prevenim condensul pe conductele reci." },
+                { Icon: Factory, title: "Conducte Industriale", desc: "Conducte de proces cu fluide calde sau reci. Spuma se aplică direct pe metal, inox sau oțel galvanizat — pe orice diametru." },
+                { Icon: Droplet, title: "Conducte Sanitare", desc: "Izolăm conductele de apă rece împotriva înghețului și conductele de apă caldă pentru a reduce pierderile de temperatură." },
+                { Icon: Snowflake, title: "Conducte Frigorifice", desc: "Conducte de agent frigorific sau răcire. Celule închise împiedică vaporizarea umidității pe suprafața rece a conductei." },
+                { Icon: Wrench, title: "Vane, Flanșe, Fitinguri", desc: "Spuma se modelează perfect pe geometria complexă a vanelor și fitingurilor — punct frecvent de pierderi termice neglijat." },
+                { Icon: Cylinder, title: "Rezervoare și Boilere", desc: "Izolăm boilere, rezervoare tampon și acumulatoare. Menţinem temperatura fluidului mai mult timp cu consum redus de energie." },
               ].map((type, idx) => (
                 <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
-                  <div className="text-4xl mb-4">{type.icon}</div>
+                  <type.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-3">{type.title}</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">{type.desc}</p>
                 </div>

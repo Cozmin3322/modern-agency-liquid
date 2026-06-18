@@ -2,7 +2,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Link from "next/link"
 import Image from "next/image"
-import { CheckCircle2 } from "lucide-react"
+import { CheckCircle2, Check } from "lucide-react"
 
 export const metadata = {
   title: 'Spumă Poliuretanică cu Celulă Închisă | IsoThermLux Moldova',
@@ -141,33 +141,33 @@ export default function ClosedCellFoamPage() {
               <tbody>
                 <tr className="border-b border-border hover:bg-background/50 transition">
                   <td className="py-4 px-4 font-medium">Permeabilitate</td>
-                  <td className="py-4 px-4"><span className="text-accent">✓</span> Impermeabilă</td>
+                  <td className="py-4 px-4"><Check className="inline w-4 h-4 text-accent mr-1" /> Impermeabilă</td>
                   <td className="py-4 px-4">Permeabilă la apă</td>
                 </tr>
                 <tr className="border-b border-border hover:bg-background/50 transition">
                   <td className="py-4 px-4 font-medium">Densitate</td>
-                  <td className="py-4 px-4"><span className="text-accent">✓</span> 30-45 kg/m³</td>
+                  <td className="py-4 px-4"><Check className="inline w-4 h-4 text-accent mr-1" /> 30-45 kg/m³</td>
                   <td className="py-4 px-4">10-20 kg/m³</td>
                 </tr>
                 <tr className="border-b border-border hover:bg-background/50 transition">
                   <td className="py-4 px-4 font-medium">Rezistență Mecanică</td>
-                  <td className="py-4 px-4"><span className="text-accent">✓</span> Foarte ridicată</td>
+                  <td className="py-4 px-4"><Check className="inline w-4 h-4 text-accent mr-1" /> Foarte ridicată</td>
                   <td className="py-4 px-4">Moderată</td>
                 </tr>
                 <tr className="border-b border-border hover:bg-background/50 transition">
                   <td className="py-4 px-4 font-medium">Eficiență Energetică</td>
-                  <td className="py-4 px-4"><span className="text-accent">✓</span> Excelentă (λ 0.022)</td>
+                  <td className="py-4 px-4"><Check className="inline w-4 h-4 text-accent mr-1" /> Excelentă (λ 0.022)</td>
                   <td className="py-4 px-4">Bună (λ 0.025)</td>
                 </tr>
                 <tr className="border-b border-border hover:bg-background/50 transition">
                   <td className="py-4 px-4 font-medium">Aplicații Umide</td>
-                  <td className="py-4 px-4"><span className="text-accent">✓</span> Ideală</td>
+                  <td className="py-4 px-4"><Check className="inline w-4 h-4 text-accent mr-1" /> Ideală</td>
                   <td className="py-4 px-4">Nerecomandat</td>
                 </tr>
                 <tr className="border-b border-border hover:bg-background/50 transition">
                   <td className="py-4 px-4 font-medium">Cost</td>
                   <td className="py-4 px-4">Premium</td>
-                  <td className="py-4 px-4"><span className="text-accent">✓</span> Accesibil</td>
+                  <td className="py-4 px-4"><Check className="inline w-4 h-4 text-accent mr-1" /> Accesibil</td>
                 </tr>
               </tbody>
             </table>

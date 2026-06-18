@@ -3,7 +3,7 @@ import Script from "next/script"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Check } from "lucide-react"
+import { ArrowRight, Check, Droplet, ClipboardCheck, Microscope, UserCheck, Construction, Wind, Thermometer, Building2, Home } from "lucide-react"
 import { serviceSchema, breadcrumbSchema } from "@/lib/schema"
 import { ServiceHero } from "@/components/service-hero"
 
@@ -182,19 +182,19 @@ export default function HidroizolarePage() {
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Beneficii Imediate</h3>
                 <ul className="space-y-3 text-sm text-foreground/70">
                   <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span> Protecție 100% împotriva infiltrațiilor
+                    <Check className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> Protecție 100% împotriva infiltrațiilor
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span> Durată de viață a clădirii extinsă
+                    <Check className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> Durată de viață a clădirii extinsă
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span> Prevenirea problemelor de umiditate și mucegai
+                    <Check className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> Prevenirea problemelor de umiditate și mucegai
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span> Valoarea proprietății crescută
+                    <Check className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> Valoarea proprietății crescută
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span> Garanție 25 ani scrisă
+                    <Check className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> Garanție 25 ani scrisă
                   </li>
                 </ul>
               </div>
@@ -345,28 +345,28 @@ export default function HidroizolarePage() {
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
-                  icon: "🌡️",
+                  icon: Thermometer,
                   title: "Temperatura",
                   description: "Temperatura minimă +5°C pentru aplicare și întărire corectă a materialului."
                 },
                 {
-                  icon: "💧",
+                  icon: Droplet,
                   title: "Umiditate",
                   description: "Suprafața trebuie să fie uscată, curată și stabilă. NU se aplică pe suprafețe înghețate sau umede."
                 },
                 {
-                  icon: "💨",
+                  icon: Wind,
                   title: "Ventilație",
                   description: "Spațiile închise trebuie aerisite corespunzător pentru a elimina vaporii de aplicare."
                 },
                 {
-                  icon: "🏗️",
+                  icon: Construction,
                   title: "Stabilitate Structurală",
                   description: "Substratul trebuie să fie stabil și consolidat înainte de aplicare."
                 }
               ].map((condition, idx) => (
                 <div key={idx} className="p-8 border border-border rounded-lg hover:border-accent transition bg-background">
-                  <div className="text-4xl mb-4">{condition.icon}</div>
+                  <condition.icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-xl font-semibold mb-3">{condition.title}</h3>
                   <p className="text-foreground/70">{condition.description}</p>
                 </div>
@@ -384,31 +384,31 @@ export default function HidroizolarePage() {
                 {
                   title: "Asistență Profesională",
                   description: "Alegerea tipului și grosimii de izolație pentru fiecare zonă.",
-                  icon: "👨‍🔧"
+                  icon: UserCheck
                 },
                 {
                   title: "Verificare Umiditate",
                   description: "Diagnosticul complet al umidității și stării structurale.",
-                  icon: "🔬"
+                  icon: Microscope
                 },
                 {
                   title: "Aplicare Versatilă",
                   description: "Posibilitatea aplicării în construcții existente și noi.",
-                  icon: "🏢"
+                  icon: Building2
                 },
                 {
                   title: "Garanție Scrisă",
                   description: "Contract legal pentru 25 ani — material și manoperă.",
-                  icon: "📋"
+                  icon: ClipboardCheck
                 },
                 {
                   title: "Consultație Gratuită",
                   description: "Evaluare la fața locului și recomandări personalizate.",
-                  icon: "🏠"
+                  icon: Home
                 }
               ].map((offering, idx) => (
                 <div key={idx} className="p-6 bg-card border-2 border-border rounded-lg hover:border-accent transition text-center">
-                  <div className="text-4xl mb-3">{offering.icon}</div>
+                  <offering.icon className="w-8 h-8 text-accent mb-3 mx-auto" />
                   <h3 className="text-base font-semibold mb-2 text-foreground">{offering.title}</h3>
                   <p className="text-xs text-foreground/70">{offering.description}</p>
                 </div>

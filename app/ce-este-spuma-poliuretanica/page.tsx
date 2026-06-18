@@ -2,6 +2,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { CallToAction } from "@/components/call-to-action"
 import Link from "next/link"
+import { Check, X } from "lucide-react"
 
 export const metadata = {
   title: "Ce Este Spuma Poliuretanică? | IsoThermLux Moldova",
@@ -73,23 +74,23 @@ export default function PolyurethaneFormPage() {
               <h3 className="text-2xl font-semibold mb-6 text-accent">Celulă Deschisă (Open Cell)</h3>
               <ul className="space-y-3 text-foreground/80 mb-6">
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <Check className="w-4 h-4 text-accent flex-shrink-0 mt-1" />
                   <span>Densitate mai scăzută (10-15 kg/m³)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <Check className="w-4 h-4 text-accent flex-shrink-0 mt-1" />
                   <span>Flexibilă și ușor de aplicat</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <Check className="w-4 h-4 text-accent flex-shrink-0 mt-1" />
                   <span>Bună pentru fonoizolare</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <Check className="w-4 h-4 text-accent flex-shrink-0 mt-1" />
                   <span>Permeabilă la vapori de apă</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✗</span>
+                  <X className="w-4 h-4 text-foreground/40 flex-shrink-0 mt-1" />
                   <span>Performanță termică mai scăzută decât celulă închisă</span>
                 </li>
               </ul>
@@ -101,23 +102,23 @@ export default function PolyurethaneFormPage() {
               <h3 className="text-2xl font-semibold mb-6 text-accent">Celulă Închisă (Closed Cell)</h3>
               <ul className="space-y-3 text-foreground/80 mb-6">
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <Check className="w-4 h-4 text-accent flex-shrink-0 mt-1" />
                   <span>Densitate mai mare (30-50 kg/m³)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <Check className="w-4 h-4 text-accent flex-shrink-0 mt-1" />
                   <span>Performanță termică superioară (R ≈ 6-7 pe inch)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <Check className="w-4 h-4 text-accent flex-shrink-0 mt-1" />
                   <span>Excelentă rezistență la apă și umiditate</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <Check className="w-4 h-4 text-accent flex-shrink-0 mt-1" />
                   <span>Durabilitate extremă (25+ ani)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">✓</span>
+                  <Check className="w-4 h-4 text-accent flex-shrink-0 mt-1" />
                   <span>Rigidă și structurală</span>
                 </li>
               </ul>

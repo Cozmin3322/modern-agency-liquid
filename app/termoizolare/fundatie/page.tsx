@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Check } from "lucide-react"
+import { ArrowRight, Check, Home, Warehouse, Sprout, Layers, Construction, Droplet } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Termoizolare Fundație și Subsol | Spumă Poliuretanică | IsoThermLux Moldova",
@@ -57,15 +57,15 @@ export default function FundatiePage() {
             <h2 className="text-4xl font-serif font-medium mb-12 text-center">Zone pe Care le Izolăm</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { icon: "🏠", title: "Soclul Casei", desc: "Izolăm soclul pe exterior sau interior. Elimini puntea termică la nivelul pardoselii și reduci umiditatea în pereți." },
-                { icon: "🏚️", title: "Pereții Subsolului", desc: "Izolăm pereții de beton ai subsolului pe interior. Spațiu uscat, cald și fără mucegai — utilizabil ca depozit sau atelier." },
-                { icon: "🌱", title: "Fundația Exterioară", desc: "Izolație pe exteriorul fundației înainte de umplutură. Protecție termică și hidro în același timp. Soluție definitivă." },
-                { icon: "🔲", title: "Placa de Beton (Pardoseala)", desc: "Izolăm sub sau peste placa de beton. Pardoseală caldă la pas fără sistem de încălzire în pardoseală." },
-                { icon: "🏗️", title: "Grinzi și Tavane Subterane", desc: "Eliminăm punțile termice la grinzile de beton care ies din clădire. Punct critic de pierderi termice." },
-                { icon: "💧", title: "Zone cu Umiditate", desc: "Acolo unde apa sau vaporii sunt problemă, spuma cu celule închise oprește complet infiltrațiile." },
+                { Icon: Home, title: "Soclul Casei", desc: "Izolăm soclul pe exterior sau interior. Elimini puntea termică la nivelul pardoselii și reduci umiditatea în pereți." },
+                { Icon: Warehouse, title: "Pereții Subsolului", desc: "Izolăm pereții de beton ai subsolului pe interior. Spațiu uscat, cald și fără mucegai — utilizabil ca depozit sau atelier." },
+                { Icon: Sprout, title: "Fundația Exterioară", desc: "Izolație pe exteriorul fundației înainte de umplutură. Protecție termică și hidro în același timp. Soluție definitivă." },
+                { Icon: Layers, title: "Placa de Beton (Pardoseala)", desc: "Izolăm sub sau peste placa de beton. Pardoseală caldă la pas fără sistem de încălzire în pardoseală." },
+                { Icon: Construction, title: "Grinzi și Tavane Subterane", desc: "Eliminăm punțile termice la grinzile de beton care ies din clădire. Punct critic de pierderi termice." },
+                { Icon: Droplet, title: "Zone cu Umiditate", desc: "Acolo unde apa sau vaporii sunt problemă, spuma cu celule închise oprește complet infiltrațiile." },
               ].map((z, idx) => (
                 <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
-                  <div className="text-4xl mb-4">{z.icon}</div>
+                  <z.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-3">{z.title}</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">{z.desc}</p>
                 </div>

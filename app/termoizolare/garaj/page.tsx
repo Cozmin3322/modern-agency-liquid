@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Check } from "lucide-react"
+import { ArrowRight, Check, BrickWall, DoorOpen, SquareParking, Layers, Home, CarFront, Wrench, Construction } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Termoizolare Garaj | Spumă Poliuretanică | IsoThermLux Moldova",
@@ -58,32 +58,32 @@ export default function GarajPage() {
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
-                  icon: "🏗️",
+                  Icon: Construction,
                   title: "Pereții Garajului",
                   desc: "Izolăm pereții de beton, cărămidă sau metal pe interior sau exterior. Spumă cu celule deschise pentru respirabilitate sau celule închise pentru eficiență maximă.",
                   foam: "Celule Deschise sau Închise",
                 },
                 {
-                  icon: "🏠",
+                  Icon: Home,
                   title: "Acoperișul / Tavanul",
                   desc: "Acoperișul plat sau în pantă izolat cu spumă — eliminăm condensul pe tablă și pierderile de căldură prin plafon. Aplicare rapidă pe orice suprafață.",
                   foam: "Celule Închise",
                 },
                 {
-                  icon: "🚪",
+                  Icon: DoorOpen,
                   title: "Ușa Garajului (Rabatabilă / Secțională)",
                   desc: "Injectăm spumă în panelurile goale ale ușii garajului sau aplicăm pe interior. Ușa devine un element izolant eficient.",
                   foam: "Celule Închise",
                 },
                 {
-                  icon: "🔲",
+                  Icon: Layers,
                   title: "Podeaua (Placa de Beton)",
                   desc: "Izolăm sub sau peste placa de beton. Podea caldă la pas — esențial dacă lucrezi în garaj sau ai un atelier.",
                   foam: "Celule Închise",
                 },
               ].map((z, idx) => (
                 <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
-                  <div className="text-4xl mb-3">{z.icon}</div>
+                  <z.Icon className="w-8 h-8 text-accent mb-3" />
                   <div className="flex items-start justify-between mb-3">
                     <h3 className="text-lg font-semibold">{z.title}</h3>
                     <span className="text-xs bg-accent/10 text-accent px-2 py-1 rounded ml-4 flex-shrink-0">{z.foam}</span>
@@ -101,15 +101,15 @@ export default function GarajPage() {
             <h2 className="text-4xl font-serif font-medium mb-12 text-center">Ce Tipuri de Garaje Izolăm</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { icon: "🔩", title: "Garaj Metalic", desc: "Tablă, panouri sandwich sau structură metalică. Spuma aderă perfect pe metal și elimină condensul și zgomotul ploii." },
-                { icon: "🧱", title: "Garaj Zidărie", desc: "Beton sau cărămidă. Izolăm pe interior sau exterior — soluție rapidă fără modificări structurale." },
-                { icon: "🏎️", title: "Atelier Auto", desc: "Garaj unde lucrezi la mașini. Temperatură confortabilă pe tot parcursul anului + izolație fonică." },
-                { icon: "🏠", title: "Garaj Integrat în Casă", desc: "Garaj sub casă sau alipit. Izolăm tavanul garajului care este podeaua camerei de deasupra — esențial pentru confort." },
-                { icon: "🅿️", title: "Parcare Acoperită", desc: "Spații de parcare acoperite sau semi-deschise. Protecție pentru mașini și confort pentru utilizatori." },
-                { icon: "🔧", title: "Garaj Hobby / Depozit", desc: "Spațiu pentru unelte, echipamente sau activități hobby. Izolat corespunzător devine utilizabil tot anul." },
+                { Icon: Wrench, title: "Garaj Metalic", desc: "Tablă, panouri sandwich sau structură metalică. Spuma aderă perfect pe metal și elimină condensul și zgomotul ploii." },
+                { Icon: BrickWall, title: "Garaj Zidărie", desc: "Beton sau cărămidă. Izolăm pe interior sau exterior — soluție rapidă fără modificări structurale." },
+                { Icon: CarFront, title: "Atelier Auto", desc: "Garaj unde lucrezi la mașini. Temperatură confortabilă pe tot parcursul anului + izolație fonică." },
+                { Icon: Home, title: "Garaj Integrat în Casă", desc: "Garaj sub casă sau alipit. Izolăm tavanul garajului care este podeaua camerei de deasupra — esențial pentru confort." },
+                { Icon: SquareParking, title: "Parcare Acoperită", desc: "Spații de parcare acoperite sau semi-deschise. Protecție pentru mașini și confort pentru utilizatori." },
+                { Icon: Wrench, title: "Garaj Hobby / Depozit", desc: "Spațiu pentru unelte, echipamente sau activități hobby. Izolat corespunzător devine utilizabil tot anul." },
               ].map((type, idx) => (
                 <div key={idx} className="p-6 bg-background border border-border rounded-lg hover:border-accent transition">
-                  <div className="text-3xl mb-3">{type.icon}</div>
+                  <type.Icon className="w-7 h-7 text-accent mb-3" />
                   <h3 className="font-semibold mb-2">{type.title}</h3>
                   <p className="text-foreground/70 text-sm">{type.desc}</p>
                 </div>

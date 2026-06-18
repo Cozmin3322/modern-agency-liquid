@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Check } from "lucide-react"
+import { ArrowRight, Check, Building, House, Factory, Construction, Building2, Layers } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Termoizolare Acoperiș Terasă și Șarpantă | Spumă Poliuretanică | IsoThermLux",
@@ -59,44 +59,44 @@ export default function AcoperisPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
-                  icon: "🏠",
+                  Icon: Building,
                   title: "Terasă Plată (Beton)",
                   desc: "Aplicăm spumă cu celule închise direct pe beton. Izolație termică + hidroizolare într-o singură operație. Fără rosturi sau punți termice.",
                   foam: "Celule Închise",
                 },
                 {
-                  icon: "🏡",
+                  Icon: House,
                   title: "Șarpantă (Lemn)",
                   desc: "Izolăm între căpriori sau pe inradosul învelitorii. Spumă cu celule deschise pentru respirabilitate sau celule închise pentru izolație maximă.",
                   foam: "Celule Deschise sau Închise",
                 },
                 {
-                  icon: "🏭",
+                  Icon: Factory,
                   title: "Table Ondulate (Hale)",
                   desc: "Spuma aderă perfect pe tabla ondulată metalică. Acoperim toate nervurile și colțurile — zero punți termice, zero condens.",
                   foam: "Celule Închise",
                 },
                 {
-                  icon: "🏗️",
+                  Icon: Construction,
                   title: "Acoperiș Tip Sandwich",
                   desc: "Completăm sau refacem izolația panourilor sandwich deteriorate. Recuperăm performanța termică inițială a clădirii.",
                   foam: "Celule Închise",
                 },
                 {
-                  icon: "🏘️",
+                  Icon: Building2,
                   title: "Mansardă",
                   desc: "Izolăm pereții înclimați și podeaua mansardei. Spațiu locuibil cald iarna și răcoros vara. Vezi și pagina dedicată mansardei.",
                   foam: "Celule Deschise sau Închise",
                 },
                 {
-                  icon: "🔷",
+                  Icon: Layers,
                   title: "Acoperiș cu Panou Fibrociment",
                   desc: "Aplicare directă pe fibrociment, onduleu sau eternit. Soluție durabilă care prelungește viața învelitorii existente.",
                   foam: "Celule Închise",
                 },
               ].map((type, idx) => (
                 <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
-                  <div className="text-4xl mb-4">{type.icon}</div>
+                  <type.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-2">{type.title}</h3>
                   <span className="text-xs bg-accent/10 text-accent px-2 py-1 rounded mb-3 inline-block">{type.foam}</span>
                   <p className="text-foreground/70 text-sm leading-relaxed mt-2">{type.desc}</p>
