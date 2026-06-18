@@ -20,15 +20,15 @@ body {
 
 /* Header background color override */
 header.fixed.z-50 {
-  background-color: #FFFFFF;
+  background-color: #FAFAF8;
   border-bottom: 1px solid #E8DFD5;
 }
 
 /* IsoThermLux brand palette */
 :root {
-  --background: #FFFFFF;
+  --background: #FAFAF8;
   --foreground: #2C3E50;
-  --card: #FFFFFF;
+  --card: #F2EDE6;
   --card-foreground: #1A1A1A;
   --popover: #FFFFFF;
   --popover-foreground: #1A1A1A;
@@ -65,9 +65,9 @@ header.fixed.z-50 {
 }
 
 .dark {
-  --background: #FFFFFF;
+  --background: #FAFAF8;
   --foreground: #2C3E50;
-  --card: #FFFFFF;
+  --card: #F2EDE6;
   --card-foreground: #1A1A1A;
   --popover: #FFFFFF;
   --popover-foreground: #1A1A1A;
@@ -178,17 +178,33 @@ header.fixed.z-50 {
   }
   body {
     @apply bg-background text-foreground;
-    background-color: #FFFFFF;
+    background-color: #FAFAF8;
     color: #1A1A1A;
   }
   html {
     scroll-behavior: smooth;
-    background-color: #FFFFFF;
+    background-color: #FAFAF8;
   }
   main {
-    background-color: #FFFFFF;
+    background-color: #FAFAF8;
   }
 }
+
+/* Textură granulată subtilă — adaugă profunzime pe fundaluri plate */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.022;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* Clase utilitare pentru secțiuni alternante */
+.section-warm { background-color: #F2EDE6; }
+.section-deep { background-color: #EAE2D8; }
 
 /* Adding stroke drawing animation for expertise icons */
 @keyframes draw-stroke {

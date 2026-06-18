@@ -64,7 +64,7 @@ export default function ServiciiPage() {
       <main className="min-h-screen bg-background">
 
         {/* Hero Section */}
-        <section className="py-24 md:py-32 bg-background border-b border-border">
+        <section className="py-24 md:py-32 border-b border-border">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl">
               <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">Ce oferim</p>

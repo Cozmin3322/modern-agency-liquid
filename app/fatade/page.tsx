@@ -107,7 +107,7 @@ export default function FacadesPage() {
         </section>
 
         {/* Sisteme */}
-        <section className="py-20 md:py-28 border-t border-border bg-card">
+        <section className="py-20 md:py-28 border-t border-border section-warm">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-xl mb-16">
               <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Comparație</p>
@@ -164,7 +164,7 @@ export default function FacadesPage() {
         </section>
 
         {/* Proces */}
-        <section className="py-20 md:py-28 border-t border-border bg-card">
+        <section className="py-20 md:py-28 border-t border-border section-warm">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-xl mb-16">
               <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Cum lucrăm</p>
