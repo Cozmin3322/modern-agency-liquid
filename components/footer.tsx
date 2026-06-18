@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link href="/" className="inline-flex items-center gap-3 mb-6">
-              <Image src="/images/logo-isotherm-lux.png" alt="IsoThermLux" width={200} height={96} className="h-16 w-auto" />
+              <Image src="/images/logo-isotherm-lux.webp" alt="IsoThermLux" width={200} height={96} className="h-16 w-auto" />
             </Link>
             <p className="text-white leading-relaxed max-w-sm">
               Servicii profesionale de termoizolare și hidroizolare. 12 ani de experiență, 500+ proiecte finalizate. Garanție 25 ani pe toate lucrările.

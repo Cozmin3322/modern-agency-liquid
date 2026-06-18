@@ -20,7 +20,7 @@ export const projects: Project[] = [
     category: "Termoizolare",
     location: "Chișinău, Buiucani",
     year: 2026,
-    image: "/images/project-casa-termoizolare-01.jpg",
+    image: "/images/project-casa-termoizolare-01.webp",
     slug: "termoizolare-casa-privata",
     shortDesc: "Mansardă 45m² termoizolată complet",
     longDesc: `<h2>Termoizolare Casa Privată - Mansardă 45m²</h2>
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     category: "Hidroizolare",
     location: "Bălți",
     year: 2026,
-    image: "/images/hidroizolare-fundatie-02.jpg",
+    image: "/images/hidroizolare-fundatie-02.webp",
     slug: "hidroizolare-fundatie",
     shortDesc: "Fundație protejată împotriva infiltrațiilor",
     longDesc: `<h2>Hidroizolare Fundație - Protecție Completă</h2>
@@ -99,7 +99,7 @@ export const projects: Project[] = [
     category: "Termoizolare",
     location: "Chișinău",
     year: 2025,
-    image: "/images/project-hala-industrial-02.jpg",
+    image: "/images/project-hala-industrial-02.webp",
     slug: "izolare-hala-industriala",
     shortDesc: "Hală 200m² termoizolată",
     longDesc: `<h2>Izolare Hală Industrială - 200m²</h2>
@@ -139,7 +139,7 @@ export const projects: Project[] = [
     category: "Termoizolare",
     location: "Orhei",
     year: 2025,
-    image: "/images/project-terasa-izolare-01.jpg",
+    image: "/images/project-terasa-izolare-01.webp",
     slug: "termoizolare-mansarda",
     shortDesc: "Spațiu locuibil cald și confortabil",
     longDesc: `<h2>Termoizolare Mansardă - Transformare Spațiu Locuibil</h2>

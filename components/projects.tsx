@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
 import { getFeaturedProjects } from "@/lib/projects"
 
@@ -61,10 +62,13 @@ export function Projects() {
             >
               <Link href={`/portofoliu/${project.slug}`}>
                 <div ref={(el) => (imageRefs.current[index] = el)} className="relative overflow-hidden aspect-[4/3] mb-6 rounded-lg">
-                  <img
+                  <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className={`w-full h-full object-cover transition-transform duration-700 ${
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    loading="lazy"
+                    className={`object-cover transition-transform duration-700 ${
                       hoveredId === project.id ? "scale-105" : "scale-100"
                     }`}
                   />

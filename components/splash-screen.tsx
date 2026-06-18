@@ -57,7 +57,7 @@ export function SplashScreen() {
         {/* Logo */}
         <div className="mb-8 flex justify-center">
           <img
-            src="/images/logo-isotherm-lux.png"
+            src="/images/logo-isotherm-lux.webp"
             alt="IsoThermLux"
             className="h-20 w-auto"
           />

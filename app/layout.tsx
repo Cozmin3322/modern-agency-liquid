@@ -125,17 +125,6 @@ export default function RootLayout({
         {/* Bing Webmaster Tools Verification */}
         <meta name="msvalidate.01" content="E2F8B6656FDBDAE0F8240089BB16CEFA" />
         <meta name="theme-color" content="#9B5F12" />
-        {/* Optimize fonts loading */}
-        <link
-          rel="preconnect"
-          href="https://fonts.googleapis.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
         <Script
           id="org-schema"
           type="application/ld+json"

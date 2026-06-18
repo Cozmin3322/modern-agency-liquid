@@ -45,7 +45,7 @@ export function Header() {
     >
       <nav className="container mx-auto px-6 flex items-center justify-between md:px-[24]">
         <Link href="/" className="flex items-center group" onClick={handleLogoClick}>
-          <Image src="/images/logo-isotherm-lux.png" alt="IsoThermLux" width={200} height={96} className="h-24 w-auto" priority />
+          <Image src="/images/logo-isotherm-lux.webp" alt="IsoThermLux" width={200} height={96} className="h-24 w-auto" priority />
         </Link>
 
         <ul className="hidden md:flex items-center gap-10 text-sm tracking-wide">

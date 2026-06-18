@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
+import Image from 'next/image'
 import { ArrowDown, Zap, Gift, ShieldCheck } from 'lucide-react'
 import { useParallax } from '@/hooks/use-parallax'
 
@@ -31,14 +32,13 @@ export function HeroClient({ data }: HeroClientProps) {
         ref={heroRef} 
         className="md:hidden relative w-full min-h-screen flex items-center justify-center overflow-y-auto bg-black"
       >
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url('/images/hero-mobile-containers.jpg')`,
-            backgroundSize: 'auto 100%',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}
+        <Image
+          src="/images/hero-mobile-containers.webp"
+          alt="Izolare profesională Moldova"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60" />
 
