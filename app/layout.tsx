@@ -6,7 +6,6 @@ import { Analytics } from "@vercel/analytics/next"
 import { organizationSchema } from "@/lib/schema"
 import { SplashScreen } from "@/components/splash-screen"
 import { CookieBanner } from "@/components/cookie-banner"
-import Chatbot from "@/components/chatbot"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import "./globals.css"
 
@@ -138,7 +137,6 @@ export default function RootLayout({
         <SplashScreen />
         {children}
         <WhatsAppButton />
-        <Chatbot />
         <CookieBanner />
         <Analytics />
       </body>
