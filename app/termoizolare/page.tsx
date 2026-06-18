@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Check, ArrowRight, Home, Building2, Warehouse, Container, Truck, Wrench, Wheat, Thermometer, Droplets, Wind, FileText, Calculator, HardHat, Zap } from "lucide-react"
-import Header from "@/components/header"
-import ServiceHero from "@/components/service-hero"
-import Footer from "@/components/footer"
+import { Header } from "@/components/header"
+import { ServiceHero } from "@/components/service-hero"
+import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Termoizolare Profesională Moldova | Economie 40-50% la Energie | IsoThermLux",
