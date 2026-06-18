@@ -15,36 +15,49 @@ const _playfairDisplay = Playfair_Display({ subsets: ["latin"], weight: ["400", 
 const _robotoSlab = Roboto_Slab({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-roboto-slab" })
 
 export const metadata: Metadata = {
-  title: "IsoThermLux | Termoizolare și Hidroizolare Profesională Moldova",
+  metadataBase: new URL("https://isothermlux.md"),
+  title: {
+    default: "IsoThermLux | Termoizolare și Hidroizolare Profesională Moldova",
+    template: "%s | IsoThermLux",
+  },
   description:
-    "IsoThermLux - Specialist în termoizolare și hidroizolare. 12 ani experiență. Garanție 25 ani. Economia 40-50% la gaz. Consultație gratuită.",
-  keywords: "termoizolare, hidroizolare, izolare termică, Moldova, protecție umiditate",
-  canonical: "https://www.isothermlux.md",
+    "IsoThermLux - specialist în termoizolare, hidroizolare și fonoizolare în Moldova. 12 ani experiență, garanție până la 25 ani și consultație gratuită.",
+  keywords: [
+    "termoizolare",
+    "hidroizolare",
+    "izolare termică",
+    "spumă poliuretanică",
+    "Moldova",
+    "Chișinău",
+  ],
   alternates: {
+    canonical: "/",
     languages: {
-      ro: "https://www.isothermlux.md",
+      ro: "/",
+      "x-default": "/",
     },
   },
   openGraph: {
     title: "IsoThermLux | Termoizolare și Hidroizolare Profesională",
-    description: "Servicii profesionale de termoizolare și hidroizolare. Economia 40-50% la gaz. Garanție 25 ani.",
+    description: "Servicii profesionale de termoizolare, hidroizolare și fonoizolare în Moldova. Consultație gratuită și garanție până la 25 ani.",
     type: "website",
-    locale: "ro_RO",
-    url: "https://www.isothermlux.md",
+    locale: "ro_MD",
+    siteName: "IsoThermLux",
+    url: "/",
     images: [
       {
-        url: "https://www.isothermlux.md/images/logo-isotherm-lux.png",
+        url: "/images/hero-spray-foam.webp",
         width: 1200,
         height: 630,
-        alt: "IsoThermLux",
-      }
-    ]
+        alt: "Aplicare profesională de spumă poliuretanică IsoThermLux",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "IsoThermLux | Termoizolare și Hidroizolare",
-    description: "Servicii profesionale de termoizolare și hidroizolare.",
-    images: ["https://www.isothermlux.md/images/logo-isotherm-lux.png"],
+    title: "IsoThermLux | Termoizolare și Hidroizolare Profesională",
+    description: "Servicii profesionale de termoizolare, hidroizolare și fonoizolare în Moldova.",
+    images: ["/images/hero-spray-foam.webp"],
   },
   icons: {
     icon: "/images/logo-isotherm-lux.png",
@@ -62,13 +75,12 @@ export default function RootLayout({
       <head>
         {/* Google Analytics */}
         <Script
-          async
           src="https://www.googletagmanager.com/gtag/js?id=G-DDP86YY4HF"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <Script
           id="google-analytics"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -82,7 +94,7 @@ export default function RootLayout({
         {/* Meta Pixel Code */}
         <Script
           id="meta-pixel"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)
@@ -112,6 +124,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="IDXInvKVwWPJ7p5b8BGsmITILsWx8iJ66Nvn0rnL8W8" />
         {/* Bing Webmaster Tools Verification */}
         <meta name="msvalidate.01" content="E2F8B6656FDBDAE0F8240089BB16CEFA" />
+        <meta name="theme-color" content="#9B5F12" />
         {/* Optimize fonts loading */}
         <link
           rel="preconnect"
@@ -123,7 +136,6 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        {/* Do not prefetch non-critical hero images */}
         <Script
           id="org-schema"
           type="application/ld+json"

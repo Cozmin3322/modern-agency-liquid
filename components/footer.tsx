@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function Footer() {
   return (
-     <footer className="py-16 md:py-24 border-t border-border bg-foreground text-white [&_*]:!text-white [&_a]:!text-white [&_a:hover]:!text-white">
+    <footer className="py-16 md:py-24 border-t border-white/10 bg-[#2C3E50] text-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
@@ -21,27 +21,27 @@ export function Footer() {
             <h3 className="text-sm font-medium mb-4 text-white">Servicii</h3>
             <ul className="space-y-3 text-sm text-white">
               <li>
-                <Link href="/termoizolare" className="hover:text-secondary-foreground transition-colors">
+                <Link href="/termoizolare" className="text-white/85 hover:text-white transition-colors">
                   Termoizolare
                 </Link>
               </li>
               <li>
-                <Link href="/fatade" className="hover:text-foreground transition-colors">
+                <Link href="/fatade" className="text-white/85 hover:text-white transition-colors">
                   Fațade
                 </Link>
               </li>
               <li>
-                <Link href="/hidroizolare" className="hover:text-foreground transition-colors">
+                <Link href="/hidroizolare" className="text-white/85 hover:text-white transition-colors">
                   Hidroizolare
                 </Link>
               </li>
               <li>
-                <Link href="/calculator-oferta" className="hover:text-foreground transition-colors">
+                <Link href="/calculator-oferta" className="text-white/85 hover:text-white transition-colors">
                   Calculator Ofertă
                 </Link>
               </li>
               <li>
-                <Link href="/portofoliu" className="hover:text-foreground transition-colors">
+                <Link href="/portofoliu" className="text-white/85 hover:text-white transition-colors">
                   Portofoliu
                 </Link>
               </li>
@@ -50,30 +50,30 @@ export function Footer() {
 
           {/* Informatii */}
           <div>
-            <h3 className="text-sm font-medium mb-4 text-secondary-foreground">Informatii</h3>
+            <h3 className="text-sm font-medium mb-4 text-white">Informatii</h3>
             <ul className="space-y-3 text-sm text-white">
               <li>
-                <Link href="/beneficii" className="hover:text-secondary-foreground transition-colors">
+                <Link href="/beneficii" className="text-white/85 hover:text-white transition-colors">
                   Beneficii
                 </Link>
               </li>
               <li>
-                <Link href="/ce-este-spuma-poliuretanica" className="hover:text-foreground transition-colors">
+                <Link href="/ce-este-spuma-poliuretanica" className="text-white/85 hover:text-white transition-colors">
                   Ghid Spuma Poliuretanică
                 </Link>
               </li>
               <li>
-                <Link href="/spuma-cu-celula-inchisa" className="hover:text-foreground transition-colors">
+                <Link href="/spuma-cu-celula-inchisa" className="text-white/85 hover:text-white transition-colors">
                   Celulă Închisă
                 </Link>
               </li>
               <li>
-                <Link href="/despre-noi" className="hover:text-foreground transition-colors">
+                <Link href="/despre-noi" className="text-white/85 hover:text-white transition-colors">
                   Despre Noi
                 </Link>
               </li>
               <li>
-                <Link href="/recenzii" className="hover:text-foreground transition-colors">
+                <Link href="/recenzii" className="text-white/85 hover:text-white transition-colors">
                   Recenzii
                 </Link>
               </li>
@@ -82,15 +82,15 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-medium mb-4 text-secondary-foreground">Contact</h3>
+            <h3 className="text-sm font-medium mb-4 text-white">Contact</h3>
             <ul className="space-y-3 text-sm text-white">
               <li>
-                <a href="tel:+37378370243" className="hover:text-secondary-foreground transition-colors">
-                  +37378370243
+                <a href="tel:+37378370243" aria-label="Sună IsoThermLux la +373 78 370 243" className="text-white/85 hover:text-white transition-colors">
+                  +373 78 370 243
                 </a>
               </li>
               <li>
-                <a href="mailto:infopoliuretan@gmail.com" className="hover:text-foreground transition-colors">
+                <a href="mailto:infopoliuretan@gmail.com" className="text-white/85 hover:text-white transition-colors">
                   infopoliuretan@gmail.com
                 </a>
               </li>
@@ -99,13 +99,13 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-secondary-foreground/20 flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-white">
-          <p>© 2025 IsoThermLux. Toți drepturii rezervați.</p>
+        <div className="pt-8 border-t border-white/15 flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-white/80">
+          <p>© 2026 IsoThermLux. Toate drepturile rezervate.</p>
           <div className="flex gap-6">
-            <Link href="/politica-de-confidentialitate" className="hover:text-secondary-foreground transition-colors text-white">
+            <Link href="/politica-de-confidentialitate" className="text-white/85 hover:text-white transition-colors">
               Confidențialitate
             </Link>
-            <Link href="/termenii-si-conditiile" className="hover:text-foreground transition-colors text-white">
+            <Link href="/termenii-si-conditiile" className="text-white/85 hover:text-white transition-colors">
               Termeni
             </Link>
           </div>

@@ -17,14 +17,14 @@ interface ReviewsClientProps {
 
 export function ReviewsClient({ reviews }: ReviewsClientProps) {
   return (
-    <section className="py-20 md:py-32 bg-[#2C3E50]">
+    <section className="py-20 md:py-32 bg-[#2C3E50] text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-medium mb-4 text-balance">
+          <h2 className="text-4xl md:text-5xl font-serif font-medium mb-4 text-balance text-white">
             Ce spun clienții noștri
           </h2>
-          <p className="text-lg text-foreground/70 mb-8">
+          <p className="text-lg text-white/75 mb-8">
             Peste 500 clienți mulțumiți în Chișinău și moldova
           </p>
 
@@ -35,14 +35,14 @@ export function ReviewsClient({ reviews }: ReviewsClientProps) {
                 <Star key={i} className="w-5 h-5 fill-accent text-accent" />
               ))}
             </div>
-            <p className="text-sm font-semibold text-foreground">
+            <p className="text-sm font-semibold text-white">
               4.9/5 pe Google Maps
             </p>
             <a
               href="https://maps.app.goo.gl/QZjS5k4vB8zVEKGv6"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-accent hover:text-accent/80 transition-colors underline"
+              className="text-sm text-white hover:text-white/80 transition-colors underline"
             >
               Vezi pe Google
             </a>
@@ -54,7 +54,7 @@ export function ReviewsClient({ reviews }: ReviewsClientProps) {
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="bg-background border border-border rounded-lg p-6 hover:border-accent/30 transition-all"
+              className="bg-white border border-white/20 rounded-lg p-6 text-foreground transition-all hover:-translate-y-1 hover:shadow-xl"
             >
               {/* Stars */}
               <div className="flex gap-1 mb-4">
@@ -82,14 +82,14 @@ export function ReviewsClient({ reviews }: ReviewsClientProps) {
 
         {/* CTA */}
         <div className="mt-16 text-center">
-          <p className="text-foreground/70 mb-6">
-            Contactează-ne azi pentru o consultație gratuită
-          </p>
+            <p className="text-white/75 mb-6">
+              Contactează-ne azi pentru o consultație gratuită
+            </p>
           <a
             href="https://wa.me/373783702433"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-accent text-background px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
           >
             Sună acum
           </a>

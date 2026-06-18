@@ -50,29 +50,21 @@ export function PremiumServices() {
           
           {/* LEFT — Image Slider 16:9 */}
           <div className="relative aspect-video rounded-xl overflow-hidden bg-slate-800">
-            {images.length > 0 && images.map((image, index) => (
-              <div
-                key={index}
-                className={`absolute inset-0 transition-all duration-500 ${
-                  index === currentImageIndex 
-                    ? 'opacity-100 translate-x-0' 
-                    : 'opacity-0 translate-x-full'
-                }`}
-              >
-                <Image
-                  src={image}
-                  alt={`Project image ${index + 1}`}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover w-full h-full"
-                  priority={index === 0}
-                  quality={75}
-                  onError={(e) => {
-                    ;(e.target as HTMLImageElement).src = '/images/premium-services-foam.png'
-                  }}
-                />
-              </div>
-            ))}
+            {images.length > 0 && (
+              <Image
+                key={images[currentImageIndex]}
+                src={images[currentImageIndex]}
+                alt={`Project image ${currentImageIndex + 1}`}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover w-full h-full transition-opacity duration-500"
+                priority={currentImageIndex === 0}
+                quality={75}
+                onError={(e) => {
+                  ;(e.target as HTMLImageElement).src = '/images/premium-services-foam.png'
+                }}
+              />
+            )}
 
             {/* Left Arrow - only show if not first image */}
             {currentImageIndex > 0 && (
@@ -131,8 +123,8 @@ export function PremiumServices() {
 
             {/* Button */}
             <a
-              href="tel:++37378370243"
-              className="inline-block px-8 py-3 bg-accent text-slate-900 font-semibold rounded-full hover:bg-accent/90 transition-colors"
+              href="tel:+37378370243"
+              className="inline-block px-8 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-colors"
             >
               Sună Acum →
             </a>

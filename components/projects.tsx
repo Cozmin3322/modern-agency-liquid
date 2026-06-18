@@ -35,7 +35,7 @@ export function Projects() {
   }, [])
 
   return (
-     <section id="projects" className="relative overflow-hidden py-32 md:py-29 bg-[#EEF6F9]">
+    <section id="projects" className="py-32 md:py-29 bg-white border-y border-border">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
@@ -60,7 +60,7 @@ export function Projects() {
               onMouseLeave={() => setHoveredId(null)}
             >
               <Link href={`/portofoliu/${project.slug}`}>
-                <div ref={(el) => (imageRefs.current[index] = el)} className="relative overflow-hidden aspect-[4/3] mb-6">
+                <div ref={(el) => (imageRefs.current[index] = el)} className="relative overflow-hidden aspect-[4/3] mb-6 rounded-lg">
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}

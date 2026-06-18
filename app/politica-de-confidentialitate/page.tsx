@@ -4,7 +4,14 @@ import Link from "next/link"
 
 export const metadata = {
   title: "Politica de Confidențialitate | IsoThermLux",
-  description: "Politica noastră de confidențialitate și protecția datelor cu caracter personal",
+  description: "Politica IsoThermLux de confidențialitate și protecție a datelor cu caracter personal",
+  alternates: { canonical: "/politica-de-confidentialitate" },
+  openGraph: {
+    title: "Politica de Confidențialitate | IsoThermLux",
+    description: "Politica IsoThermLux de confidențialitate și protecție a datelor cu caracter personal",
+    url: "/politica-de-confidentialitate",
+    type: "article",
+  },
 }
 
 export default function PoliticaConfidentialitate() {
@@ -21,14 +28,14 @@ export default function PoliticaConfidentialitate() {
             <section>
               <h2 className="text-2xl font-bold mt-8 mb-4">1. Introducere</h2>
               <p>
-                IsoThermLux (denumit în continuare "noi" sau "compania") se angajează să protejeze confidențialitatea dvs. și datele cu caracter personal. 
-                Această Politică de Confidențialitate explică cum colectez, utilizez, divulg și protejez informațiile dvs.
+                IsoThermLux (denumit în continuare "noi" sau "compania") se angajează să protejeze confidențialitatea dvs. și datele cu caracter personal.
+                Această Politică de Confidențialitate explică modul în care colectăm, utilizăm, divulgăm și protejăm informațiile dvs.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mt-8 mb-4">2. Datele pe Care le Colectăm</h2>
-              <p>Colectez următoarele tipuri de date:</p>
+              <p>Colectăm următoarele tipuri de date:</p>
               <ul className="list-disc list-inside space-y-2">
                 <li>Informații de identificare: nume, adresă de email, număr de telefon</li>
                 <li>Informații de contact: adresa, oraș, țară</li>
@@ -40,11 +47,11 @@ export default function PoliticaConfidentialitate() {
 
             <section>
               <h2 className="text-2xl font-bold mt-8 mb-4">3. Cum Utilizez Datele Dvs.</h2>
-              <p>Utilizez datele dvs. pentru:</p>
+              <p>Utilizăm datele dvs. pentru:</p>
               <ul className="list-disc list-inside space-y-2">
                 <li>A furniza și îmbunătăți serviciile noastre</li>
                 <li>A comunica cu dvs. despre servicii, actualizări și oferte</li>
-                <li>A antrena modele și a îmbunătăți experiența utilizatorului</li>
+                <li>A îmbunătăți experiența utilizatorului și calitatea comunicării</li>
                 <li>A respecta obligațiile legale</li>
                 <li>A preveni frauda și a asigura securitatea</li>
               </ul>
@@ -53,7 +60,7 @@ export default function PoliticaConfidentialitate() {
             <section>
               <h2 className="text-2xl font-bold mt-8 mb-4">4. Baza Legală pentru Procesare</h2>
               <p>
-                Procesez datele dvs. cu caracter personal pe baza consimțământului dvs. explicit, obținut prin bannerul de cookie-uri afișat pe site-ul nostru. 
+                Procesăm datele dvs. cu caracter personal pe baza consimțământului dvs. explicit, obținut prin bannerul de cookie-uri afișat pe site-ul nostru.
                 De asemenea, putem procesa date atunci când este necesar pentru îndeplinirea unui contract, respectarea unei obligații legale, 
                 sau pentru protejarea intereselor vitale ale dvs.
               </p>
@@ -86,8 +93,8 @@ export default function PoliticaConfidentialitate() {
             <section>
               <h2 className="text-2xl font-bold mt-8 mb-4">7. Securitatea Datelor</h2>
               <p>
-                Implementez măsuri de securitate tehnice și organizaționale pentru a proteja datele dvs. 
-                împotriva pierderii, utilizării neautorizate sau modificării. Utilizez criptare SSL/TLS pentru transferul datelor.
+                Implementăm măsuri de securitate tehnice și organizaționale pentru a proteja datele dvs.
+                împotriva pierderii, utilizării neautorizate sau modificării. Utilizăm criptare SSL/TLS pentru transferul datelor.
               </p>
             </section>
 
@@ -99,7 +106,7 @@ export default function PoliticaConfidentialitate() {
               <div className="bg-slate-100 p-4 rounded-lg mt-4">
                 <p>IsoThermLux</p>
                 <p>Email: infopoliuretan@gmail.com</p>
-                <p>Telefon: +373 (0) 60 123 456</p>
+                <p>Telefon: +373 78 370 243</p>
                 <p>Adresa: Chișinău, Moldova</p>
               </div>
             </section>

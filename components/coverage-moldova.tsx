@@ -67,7 +67,7 @@ export function CoverageMoldova() {
   return (
     <section className="w-full bg-background">
       {/* Statistics Bar */}
-      <div className="w-full py-12 md:py-16" style={{ backgroundColor: '#9B5F12' }}>
+      <div className="w-full py-12 md:py-16" style={{ backgroundColor: '#2C3E50' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div ref={statsRef} className="grid grid-cols-3 gap-8 md:gap-16">
             {STATS.map((stat, idx) => (
@@ -95,7 +95,7 @@ export function CoverageMoldova() {
               <div className="h-1 w-12" style={{ backgroundColor: '#9B5F12' }} />
             </div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-              Acoperire în toată <span className="text-foreground" style={{ color: '#FFFFFF' }}>Moldova</span>.
+              Acoperire în toată <span className="text-accent">Moldova</span>.
             </h2>
           </div>
 

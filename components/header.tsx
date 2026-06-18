@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
-import { MessageCircle, Phone, ChevronDown } from "lucide-react"
+import { ChevronDown } from "lucide-react"
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -67,6 +67,8 @@ export function Header() {
           {/* Services Dropdown */}
           <li className="relative group">
             <button
+              type="button"
+              aria-haspopup="true"
               className="hover:text-accent transition-colors duration-300 relative text-foreground flex items-center gap-2 font-medium py-2 px-1 group"
             >
               Servicii
@@ -113,6 +115,8 @@ export function Header() {
           {/* Gallery Dropdown */}
           <li className="relative group">
             <button
+              type="button"
+              aria-haspopup="true"
               className="hover:text-accent transition-colors duration-300 relative text-foreground flex items-center gap-2 font-medium py-2 px-1 group"
             >
               Galerie
@@ -139,7 +143,7 @@ export function Header() {
             Calculator
           </Link>
           <a
-            href="tel:++37378370243"
+            href="tel:+37378370243"
             className={cn(
               "inline-flex items-center gap-2 text-sm px-5 py-2.5 rounded-lg font-semibold transition-all duration-300 bg-accent text-background hover:bg-accent/90",
               scrolled ? "bg-accent text-background" : "bg-accent text-background",
@@ -163,7 +167,8 @@ export function Header() {
         </div>
         <button
           className="md:hidden z-50 transition-colors duration-300 text-foreground"
-          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileMenuOpen}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
@@ -206,6 +211,8 @@ export function Header() {
           {/* Mobile Services Menu */}
           <li>
             <button
+              type="button"
+              aria-expanded={servicesOpen}
               onClick={() => setServicesOpen(!servicesOpen)}
               className="text-foreground text-4xl font-light hover:text-accent transition-colors flex items-center gap-2 w-full"
             >
@@ -254,6 +261,8 @@ export function Header() {
           {/* Mobile Gallery Menu */}
           <li>
             <button
+              type="button"
+              aria-expanded={galleryOpen}
               onClick={() => setGalleryOpen(!galleryOpen)}
               className="text-foreground text-4xl font-light hover:text-accent transition-colors flex items-center gap-2 w-full"
             >
@@ -282,7 +291,7 @@ export function Header() {
             Calculator
           </Link>
           <a
-            href="tel:++37378370243"
+            href="tel:+37378370243"
             className="inline-flex items-center justify-center gap-2 text-sm px-6 py-3 bg-accent text-background border border-accent hover:bg-accent/90 transition-all duration-300 mb-4 rounded-lg font-semibold w-full"
             onClick={closeMobileMenu}
           >

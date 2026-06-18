@@ -5,6 +5,13 @@ import Link from "next/link"
 export const metadata = {
   title: "Termenii și Condițiile | IsoThermLux",
   description: "Termenii și condițiile generale de utilizare a serviciilor IsoThermLux",
+  alternates: { canonical: "/termenii-si-conditiile" },
+  openGraph: {
+    title: "Termenii și Condițiile | IsoThermLux",
+    description: "Termenii și condițiile generale de utilizare a serviciilor IsoThermLux",
+    url: "/termenii-si-conditiile",
+    type: "article",
+  },
 }
 
 export default function TermeniiSiConsitii() {
@@ -54,7 +61,7 @@ export default function TermeniiSiConsitii() {
             <section>
               <h2 className="text-2xl font-bold mt-8 mb-4">4. Serviciile Noastre</h2>
               <p>
-                IsoThermLux oferă servicii de consultanță și soluții de izolare termică, fonoizolare și hidroizolare. 
+                IsoThermLux oferă servicii de consultanță și soluții de izolare termică, fonoizolare și hidroizolare.
                 Descrierile serviciilor sunt cât mai exacte posibil, dar nu constituie o garanție. 
                 Prețurile și disponibilitatea sunt supuse modificării fără notificare prealabilă.
               </p>
@@ -63,14 +70,14 @@ export default function TermeniiSiConsitii() {
             <section>
               <h2 className="text-2xl font-bold mt-8 mb-4">5. Limitarea Răspunderii</h2>
               <p>
-                ÎN NICIUN CAZ, HOUSLY NU VA FI RESPONSABILĂ PENTRU ORICE DAUNE INDIRECTE, INCIDENTALE, 
+                ÎN NICIUN CAZ, ISOTHERMLUX NU VA FI RESPONSABILĂ PENTRU ORICE DAUNE INDIRECTE, INCIDENTALE,
                 SPECIALE SAU CONSECUTIVE REZULTATE DIN SAU LEGATE DE UTILIZAREA SITE-ULU SAU SERVICIILOR NOASTRE. 
-                RĂSPUNDEREA NOASTRĂ TOTALĂ NU VA DEPĂȘI SUMA PLĂTITĂ DE DVOUSĂPTĂMÂNĂ.
+                Răspunderea noastră totală este limitată în condițiile permise de legislația Republicii Moldova.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mt-8 mb-4">6. Dispozitiv de Decontare</h2>
+              <h2 className="text-2xl font-bold mt-8 mb-4">6. Soluționarea Litigiilor</h2>
               <p>
                 Orice litigiu, acțiune sau procedură rezultată din sau legată de acești Termeni și Condiții 
                 va fi reglementată de legile Republicii Moldova. Ambele părți acceptă să se supună jurisdicției 
@@ -81,7 +88,7 @@ export default function TermeniiSiConsitii() {
             <section>
               <h2 className="text-2xl font-bold mt-8 mb-4">7. Modificări ale Termenilor</h2>
               <p>
-                IsoThermLux se rezervă dreptul de a modifica acești Termeni și Condiții în orice moment. 
+                IsoThermLux se rezervă dreptul de a modifica acești Termeni și Condiții în orice moment.
                 Modificările vor fi efective la data publicării pe site. Utilizarea continuă a site-ului după 
                 publicarea modificărilor constituie acceptarea acestora.
               </p>
@@ -90,7 +97,7 @@ export default function TermeniiSiConsitii() {
             <section>
               <h2 className="text-2xl font-bold mt-8 mb-4">8. Întreruperea Serviciului</h2>
               <p>
-                IsoThermLux se rezervă dreptul de a întrerupe sau de a anula orice serviciu, cu sau fără motiv, 
+                IsoThermLux se rezervă dreptul de a întrerupe sau de a anula orice serviciu, cu sau fără motiv,
                 și cu sau fără notificare prealabilă. Nu vom fi responsabili pentru nicio întrerupere sau anulare a serviciilor.
               </p>
             </section>
@@ -103,7 +110,7 @@ export default function TermeniiSiConsitii() {
               <div className="bg-slate-100 p-4 rounded-lg mt-4">
                 <p>IsoThermLux</p>
                 <p>Email: infopoliuretan@gmail.com</p>
-                <p>Telefon: +373 (0) 60 123 456</p>
+                <p>Telefon: +373 78 370 243</p>
                 <p>Adresa: Chișinău, Moldova</p>
               </div>
             </section>

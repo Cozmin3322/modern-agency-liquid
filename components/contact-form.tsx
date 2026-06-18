@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import type React from 'react'
 import Image from 'next/image'
 import { Facebook, Instagram, Linkedin, Mail } from 'lucide-react'
 
@@ -49,8 +50,9 @@ Mesaj: ${formData.message}`
       <div className="absolute inset-0">
         <Image
           src="/images/contact-form-bg.png"
-          alt="Contact background"
+          alt="Aplicare izolație cu spumă poliuretanică"
           fill
+          sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
@@ -60,24 +62,24 @@ Mesaj: ${formData.message}`
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-0 bg-white rounded-lg overflow-hidden shadow-2xl">
           {/* Left Side - Yellow */}
-          <div className="p-8 md:p-12 text-white flex flex-col justify-center" style={{ backgroundColor: '#DD9933' }}>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">Formulär de Contact</h2>
+          <div className="p-8 md:p-12 text-white flex flex-col justify-center" style={{ backgroundColor: '#9B5F12' }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">Formular de Contact</h2>
             <p className="text-base md:text-lg leading-relaxed mb-8">
               Completează formularul pentru a solicita o ofertă personalizată, iar noi te vom contacta în cel mai scurt timp.
             </p>
             
             {/* Social Icons */}
             <div className="flex gap-4">
-              <a href="#" className="bg-white/20 hover:bg-white/40 p-3 rounded-full transition-all">
+              <a href="https://www.facebook.com/isothermlux" target="_blank" rel="noopener noreferrer" aria-label="IsoThermLux pe Facebook" className="bg-white/20 hover:bg-white/40 p-3 rounded-full transition-all">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-white/20 hover:bg-white/40 p-3 rounded-full transition-all">
+              <a href="https://www.instagram.com/isothermlux" target="_blank" rel="noopener noreferrer" aria-label="IsoThermLux pe Instagram" className="bg-white/20 hover:bg-white/40 p-3 rounded-full transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-white/20 hover:bg-white/40 p-3 rounded-full transition-all">
+              <a href="https://www.linkedin.com/company/isothermlux" target="_blank" rel="noopener noreferrer" aria-label="IsoThermLux pe LinkedIn" className="bg-white/20 hover:bg-white/40 p-3 rounded-full transition-all">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-white/20 hover:bg-white/40 p-3 rounded-full transition-all">
+              <a href="mailto:infopoliuretan@gmail.com" aria-label="Trimite email către IsoThermLux" className="bg-white/20 hover:bg-white/40 p-3 rounded-full transition-all">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -87,7 +89,7 @@ Mesaj: ${formData.message}`
           <div className="p-8 md:p-12 bg-white">
             <h3 className="text-2xl font-bold mb-8 text-center text-foreground font-serif">Cere Oferta!</h3>
             
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4" aria-label="Formular cerere ofertă">
               <input
                 type="text"
                 name="name"
@@ -118,7 +120,9 @@ Mesaj: ${formData.message}`
                 required
               />
               
+              <label htmlFor="serviceType" className="sr-only">Tip de izolare</label>
               <select
+                id="serviceType"
                 name="serviceType"
                 value={formData.serviceType}
                 onChange={handleChange}
@@ -154,7 +158,7 @@ Mesaj: ${formData.message}`
                 type="submit"
                 className="w-full py-3 rounded-full font-bold text-white transition-all uppercase tracking-widest text-sm hover:opacity-90"
                 style={{ 
-                  backgroundColor: '#DD9933',
+                  backgroundColor: '#9B5F12',
                 }}
               >
                 Trimite
