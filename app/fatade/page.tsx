@@ -39,7 +39,7 @@ export default function FacadesPage() {
           <p className="text-lg text-foreground/70 max-w-3xl mx-auto mb-8 leading-relaxed">
             Transformă fațada casei tale în scut termic eficient. Sisteme profesionale ETICS cu garanție 25 ani și execuție rapidă.
           </p>
-          <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-background px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition text-lg">
+          <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition text-lg">
             Sună pentru Ofertă Gratuită →
           </a>
         </div>
@@ -49,7 +49,7 @@ export default function FacadesPage() {
       <section className="py-20 md:py-28 bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-serif font-bold mb-12 text-center">Ce Include Termoizolarea Fațadei?</h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -78,7 +78,7 @@ export default function FacadesPage() {
       <section className="py-20 md:py-28 bg-background border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-serif font-bold mb-12 text-center">Sisteme Disponibile</h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -133,7 +133,7 @@ export default function FacadesPage() {
       <section className="py-20 md:py-28 bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-serif font-bold mb-12 text-center">Procesul de Lucru</h2>
-          
+
           <div className="grid md:grid-cols-4 gap-6">
             {[
               { step: 1, title: "Evaluare", desc: "Analiză detaliată a fațadei și a nevoilor termice" },
@@ -143,7 +143,7 @@ export default function FacadesPage() {
             ].map((item) => (
               <div key={item.step} className="relative">
                 <div className="bg-background p-6 rounded-lg border border-border text-center">
-                  <div className="w-12 h-12 bg-accent text-background rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
+                  <div className="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
                     {item.step}
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-accent">{item.title}</h3>
@@ -162,7 +162,7 @@ export default function FacadesPage() {
       <section className="py-20 md:py-28 bg-background border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-serif font-bold mb-12 text-center">Avantaje Termoizolării Fațadei</h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { title: "Economie de Energie", desc: "Reducere de 70% la costurile de încălzire/răcire" },
@@ -185,7 +185,7 @@ export default function FacadesPage() {
       <section className="py-20 md:py-28 bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-serif font-bold mb-12 text-center">Proiecte Realizate</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             {[
               { img: '/images/project-casa-privat.jpg', title: 'Casă Privată — Fațadă Sud' },
@@ -217,7 +217,7 @@ export default function FacadesPage() {
           <p className="text-foreground/70 mb-8 max-w-2xl mx-auto">
             Citește ghidul nostru complet despre spuma poliuretanică și sistemele de izolație.
           </p>
-          <a href="/ce-este-spuma-poliuretanica" className="inline-flex items-center gap-2 bg-accent text-background px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+          <a href="/ce-este-spuma-poliuretanica" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
             Citește Ghidul Complet →
           </a>
         </div>
@@ -226,17 +226,17 @@ export default function FacadesPage() {
       {/* CTA */}
       <section className="py-20 md:py-28 bg-accent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-background">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">
             Gata să transformi fațada casei tale?
           </h2>
-          <p className="text-lg text-background/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Contactează echipa IsoThermLux pentru o evaluare gratuită și ofertă personalizată.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+37378370243" className="inline-flex items-center justify-center gap-2 bg-background text-accent px-8 py-4 rounded-lg font-semibold hover:bg-background/90 transition">
               Sună: +37378370243
             </a>
-            <a href="mailto:infopoliuretan@gmail.com" className="inline-flex items-center justify-center gap-2 bg-background/20 text-background px-8 py-4 rounded-lg font-semibold hover:bg-background/30 transition border border-background">
+            <a href="mailto:infopoliuretan@gmail.com" className="inline-flex items-center justify-center gap-2 bg-background/20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-background/30 transition border border-background">
               Email: infopoliuretan@gmail.com
             </a>
           </div>
@@ -268,4 +268,3 @@ export default function FacadesPage() {
     </>
   )
 }
-

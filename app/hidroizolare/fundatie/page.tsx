@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Hidroizolare Fundație Casă | Protecție Infiltrații | IsoThermLux",
   description: "Hidroizolare profesională a fundației. Protecție completă împotriva infiltrațiilor de apă. Garanție 25 ani.",
   keywords: "hidroizolare fundație, infiltrații apă, protecție subsol, impermeabilizare",
-  canonical: "https://www.isothermlux.md/hidroizolare/fundatie",
+  alternates: { canonical: "https://www.isothermlux.md/hidroizolare/fundatie" },
 }
 
 export default function FundatiePage() {
@@ -27,7 +27,7 @@ export default function FundatiePage() {
               <p className="text-2xl text-white/90 mb-8 leading-relaxed">
                 Hidroizolare profesională a fundației. Protecție 100% împotriva infiltrațiilor de apă. Subsol uscat și sigur.
               </p>
-              <a href="tel:++37378370243" className="inline-block bg-accent text-background px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+              <a href="tel:+37378370243" className="inline-block bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
                 Consultație Gratuită
               </a>
             </div>
@@ -54,11 +54,11 @@ export default function FundatiePage() {
           </div>
         </section>
 
-        <section className="py-24 bg-foreground text-background">
+        <section className="py-24 bg-[#2C3E50] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Hidroizolează Fundația Acum</h2>
             <p className="text-lg mb-8 opacity-90">Protecție completă pe termen lung. Evaluare pe loc.</p>
-            <a href="tel:++37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
               Contactează-ne <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -68,4 +68,3 @@ export default function FundatiePage() {
     </>
   )
 }
-

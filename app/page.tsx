@@ -40,7 +40,7 @@ export default async function Home() {
       <Header />
       <Hero />
       <PremiumServices />
-      
+
       {/* Calculator Promo Section */}
       <section className="py-20 md:py-28 bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -51,13 +51,13 @@ export default async function Home() {
           </p>
           <Link
             href="/calculator"
-            className="inline-flex items-center justify-center gap-2 bg-accent text-background px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition"
+            className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition"
           >
             Deschide Calculator Rapid →
           </Link>
         </div>
       </section>
-      
+
       <Projects />
       <Reviews />
       <CoverageMoldova />
@@ -70,4 +70,3 @@ export default async function Home() {
     </main>
   )
 }
-

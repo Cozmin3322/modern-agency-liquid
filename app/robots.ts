@@ -16,8 +16,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'AhrefsBot', crawlDelay: 10 },
       { userAgent: 'SemrushBot', crawlDelay: 10 },
     ],
-    sitemap: 'https://www.isothermlux.md/sitemap.xml',
-    host: 'https://www.isothermlux.md',
+    sitemap: 'https://isothermlux.md/sitemap.xml',
+    host: 'https://isothermlux.md',
   }
 }
-

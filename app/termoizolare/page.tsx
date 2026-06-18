@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Termoizolare Profesională Moldova | Economie 40-50% la Energie | IsoThermLux",
   description: "Termoizolare profesională cu spumă poliuretanică în Moldova. Economie 40-50% la energie. Garanție 25 ani scrisă. 12 ani experiență. Consultație gratuită Chișinău.",
   keywords: "termoizolare Moldova, termoizolare Chișinău, izolare termică, spumă poliuretanică Moldova, termoizolare casă, economie energie Moldova",
-  canonical: "https://www.isothermlux.md/termoizolare",
+  alternates: { canonical: "https://www.isothermlux.md/termoizolare" },
   openGraph: {
             title: "Termoizolare Profesională | Economie 40-50% la Energie | IsoThermLux",
             description: "Termoizolare profesională cu spumă poliuretanică. Economie 40-50% la energie. Garanție 25 ani scrisă. 12 ani experiență.",
@@ -46,7 +46,7 @@ export default function TermoizolarePage() {
             "provider": {
               "@type": "LocalBusiness",
               "name": "IsoThermLux",
-              "telephone": "++37378370243",
+      "telephone": "+37378370243",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Chișinău",
@@ -97,7 +97,7 @@ export default function TermoizolarePage() {
                   Izolație termică profesională cu spumă poliuretanică în Chișinău, Moldova, cu economie confirmată de 40-50% la costuri de energie. Materiale premium ISO 9001, garanție 25 ani scrisă, echipă certificată cu 12 ani experiență.
                 </p>
                 <div className="flex gap-4 pt-4">
-                  <a href="tel:++37378370243" className="bg-accent text-background px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+                  <a href="tel:+37378370243" className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
                     Consultație Gratuită
                   </a>
                   <Link href="/portofoliu?tip=termoizolare" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition">
@@ -193,7 +193,7 @@ export default function TermoizolarePage() {
             <div className="overflow-x-auto border border-border rounded-lg">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-accent text-background">
+                  <tr className="bg-accent text-white">
                     <th className="px-6 py-4 text-left font-semibold">Zonă</th>
                     <th className="px-6 py-4 text-left font-semibold">Tip Spumă Recomandat</th>
                     <th className="px-6 py-4 text-left font-semibold">Grosime Uzuală</th>
@@ -368,7 +368,7 @@ export default function TermoizolarePage() {
                 { step: "4", title: "Garanție 25 Ani", desc: "Protecție completă a investiției" }
               ].map((item, idx) => (
                 <div key={idx} className="text-center">
-                  <div className="w-12 h-12 bg-accent text-background rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
+                  <div className="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
                     {item.step}
                   </div>
                   <h3 className="font-semibold mb-2">{item.title}</h3>
@@ -380,13 +380,13 @@ export default function TermoizolarePage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-foreground text-background">
+        <section className="py-24 bg-[#2C3E50] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Gata pentru Termoizolare?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
               Consultație gratuită fără angajamente. Estimare preț pe loc. Răspuns în 30 minute.
             </p>
-            <a href="tel:++37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
               Contactează-ne Acum
               <ArrowRight className="w-4 h-4" />
             </a>
@@ -397,4 +397,3 @@ export default function TermoizolarePage() {
     </>
   )
 }
-

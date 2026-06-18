@@ -40,7 +40,7 @@ export default function FonoizolarePage() {
                 <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">Fonoizolare Profesională</h1>
                 <p className="text-xl text-foreground/70 mb-8">Izolare fonică profesională pentru confort acustic maxim. Reducere zgomot până la 70% cu spumă poliuretanică de calitate premium.</p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-accent text-background px-8 py-3 rounded-lg font-bold hover:bg-accent/90 transition">
+                  <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-3 rounded-lg font-bold hover:bg-accent/90 transition">
                     Solicită Ofertă Gratuită <ArrowRight className="w-5 h-5" />
                   </Link>
                   <Link href="/calculator-oferta" className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-8 py-3 rounded-lg font-bold hover:bg-accent/5 transition">
@@ -145,4 +145,3 @@ export default function FonoizolarePage() {
     </>
   )
 }
-

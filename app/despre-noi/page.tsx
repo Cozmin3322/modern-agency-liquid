@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Despre IsoThermLux | Echipa Profesionistă | 12 Ani Experiență",
   description: "Despre IsoThermLux - Companie de termoizolare și hidroizolare cu 12 ani experiență. 500+ proiecte. Echipă certificată. Garanție 25 ani.",
   keywords: "despre noi, echipa IsoThermLux, experiență, certificări, misiune",
-  canonical: "https://www.isothermlux.md/despre-noi",
+  alternates: { canonical: "https://www.isothermlux.md/despre-noi" },
   openGraph: {
     title: "Despre IsoThermLux | 12 Ani Experiență Termoizolare",
     description: "IsoThermLux - Experți în termoizolare și hidroizolare cu 500+ proiecte și garanție 25 ani.",
@@ -142,8 +142,8 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:++37378370243"
-                className="inline-flex items-center justify-center gap-2 bg-accent text-background px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+                href="tel:+37378370243"
+                className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
               >
                 Sună Acum
               </a>
@@ -161,4 +161,3 @@ export default function AboutPage() {
     </>
   )
 }
-

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Termoizolare Mansardă | Spațiu Locuibil Cald | IsoThermLux Moldova",
   description: "Termoizolare profesională a mansardelor. Izolație termică pentru spații locuite. Economie 40-50% la gaz. Consultație gratuită.",
   keywords: "termoizolare mansardă, izolare mansarda, spațiu locuibil, izolație termică acoperis",
-  canonical: "https://www.isothermlux.md/termoizolare/mansarda",
+  alternates: { canonical: "https://www.isothermlux.md/termoizolare/mansarda" },
 }
 
 export default function MansardaPage() {
@@ -44,7 +44,7 @@ export default function MansardaPage() {
                 Transformă mansarda în spațiu cald și confortabil. Izolație termică de înaltă calitate cu economia confirmată de 40-50%.
               </p>
               <div className="flex gap-4">
-                <a href="tel:++37378370243" className="bg-accent text-background px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+                <a href="tel:+37378370243" className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
                   Consultație Gratuită
                 </a>
               </div>
@@ -90,7 +90,7 @@ export default function MansardaPage() {
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-8 mb-8">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-accent text-background rounded-full flex items-center justify-center font-bold">
+                    <div className="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold">
                       {item.step}
                     </div>
                   </div>
@@ -149,13 +149,13 @@ export default function MansardaPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-foreground text-background">
+        <section className="py-24 bg-[#2C3E50] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Termoizolează Mansarda Acum</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
               Consultație gratuită. Estimare pe loc. Răspuns în 30 minute.
             </p>
-            <a href="tel:++37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
               Sună Acum <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -165,4 +165,3 @@ export default function MansardaPage() {
     </>
   )
 }
-

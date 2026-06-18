@@ -34,7 +34,7 @@ export default function CalculatorPage() {
   const materialsAndLabor = area * pricePerM2
   const totalEstimate = materialsAndLabor + transportFee
 
-  const savings = type === 'termoizolare' 
+  const savings = type === 'termoizolare'
     ? Math.round((totalEstimate / 100) * 15) // Estimated savings per year (15% of total cost = 45% economy over 3 years)
     : 0
 
@@ -71,7 +71,7 @@ export default function CalculatorPage() {
             <div className="grid md:grid-cols-5 gap-12">
               {/* Calculator Form */}
               <div className="md:col-span-3 space-y-8">
-                
+
                 {/* Service Type */}
                 <div>
                   <label className="block font-semibold mb-4 text-lg">1. Tip Serviciu</label>
@@ -226,9 +226,9 @@ export default function CalculatorPage() {
                     </p>
                   </div>
 
-                  <a 
-                    href="tel:++37378370243" 
-                    className="w-full inline-flex items-center justify-center gap-2 bg-accent text-background px-6 py-4 rounded-lg font-semibold hover:bg-accent/90 transition text-lg"
+                  <a
+                    href="tel:+37378370243"
+                    className="w-full inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-4 rounded-lg font-semibold hover:bg-accent/90 transition text-lg"
                   >
                     Obțin Ofertă Exactă <ArrowRight className="w-5 h-5" />
                   </a>
@@ -252,7 +252,7 @@ export default function CalculatorPage() {
                 { icon: "✓", title: "Economii Reale", desc: "Economisești 40-50% la energie. ROI în 2-3 ani." }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4">
-                  <div className="w-8 h-8 rounded-full bg-accent text-background flex items-center justify-center flex-shrink-0 font-bold">
+                  <div className="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center flex-shrink-0 font-bold">
                     {item.icon}
                   </div>
                   <div>
@@ -277,7 +277,7 @@ export default function CalculatorPage() {
                 { step: "4", title: "Execuție", desc: "Realizare profesională cu garanție 25 ani." }
               ].map((item) => (
                 <div key={item.step} className="text-center">
-                  <div className="w-16 h-16 bg-accent text-background rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">
+                  <div className="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-2xl">
                     {item.step}
                   </div>
                   <h3 className="font-semibold mb-2">{item.title}</h3>
@@ -292,4 +292,3 @@ export default function CalculatorPage() {
     </>
   )
 }
-

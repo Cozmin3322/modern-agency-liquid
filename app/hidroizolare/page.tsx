@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Hidroizolare Profesională Moldova | Protecție 25 Ani | IsoThermLux",
   description: "Hidroizolare profesională cu spumă poliuretanică în Moldova. Protecție completă fundații, subsoluri, acoperișuri. Garanție 25 ani scrisă. Consultație gratuită Chișinău.",
   keywords: "hidroizolare Moldova, hidroizolare Chișinău, impermeabilizare fundație, hidroizolare acoperiș, protecție umiditate Moldova, hidroizolare subsol, spumă poliuretanică hidroizolare",
-  canonical: "https://www.isothermlux.md/hidroizolare",
+  alternates: { canonical: "https://www.isothermlux.md/hidroizolare" },
   openGraph: {
     title: "Hidroizolare Profesională | Protecție 25 Ani | IsoThermLux",
     description: "Hidroizolare cu spumă poliuretanică. Garanție 25 ani scrisă. Protecție fundații, subsoluri, acoperișuri. Chișinău, Moldova.",
@@ -51,7 +51,7 @@ export default function HidroizolarePage() {
             "provider": {
               "@type": "LocalBusiness",
               "name": "IsoThermLux",
-              "telephone": "++37378370243",
+      "telephone": "+37378370243",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Chișinău",
@@ -102,7 +102,7 @@ export default function HidroizolarePage() {
                   Protecție completă împotriva infiltrațiilor de apă în Chișinău, Moldova. Impermeabilizare profesională pentru fundații, subsoluri și acoperișuri. Garanție 25 ani scrisă, echipă certificată cu 12 ani experiență.
                 </p>
                 <div className="flex gap-4 pt-4">
-                  <a href="tel:++37378370243" className="bg-accent text-background px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+                  <a href="tel:+37378370243" className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
                     Consultație Gratuită
                   </a>
                   <Link href="/portofoliu?tip=hidroizolare" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition">
@@ -272,7 +272,7 @@ export default function HidroizolarePage() {
             <div className="overflow-x-auto border border-border rounded-lg">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-accent text-background">
+                  <tr className="bg-accent text-white">
                     <th className="px-6 py-4 text-left font-semibold">Zonă</th>
                     <th className="px-6 py-4 text-left font-semibold">Tip spumă recomandat</th>
                     <th className="px-6 py-4 text-left font-semibold">Grosime uzuală</th>
@@ -451,7 +451,7 @@ export default function HidroizolarePage() {
                 { step: "4", title: "Garanție 25 Ani", desc: "Protecție completă" }
               ].map((item, idx) => (
                 <div key={idx} className="text-center">
-                  <div className="w-12 h-12 bg-accent text-background rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
+                  <div className="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
                     {item.step}
                   </div>
                   <h3 className="font-semibold mb-2">{item.title}</h3>
@@ -463,13 +463,13 @@ export default function HidroizolarePage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-foreground text-background">
+        <section className="py-24 bg-[#2C3E50] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Protejează-ți Locuința</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
               Consultație gratuită fără angajamente. Estimare preț pe loc. Răspuns în 30 minute.
             </p>
-            <a href="tel:++37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
               Contactează-ne Acum
               <ArrowRight className="w-4 h-4" />
             </a>
@@ -480,4 +480,3 @@ export default function HidroizolarePage() {
     </>
   )
 }
-

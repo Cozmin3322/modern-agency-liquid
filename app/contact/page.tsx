@@ -99,7 +99,7 @@ export default function ContactPage() {
                     <label className="block text-sm font-medium mb-2">Mesaj</label>
                     <textarea className="w-full px-4 py-2 rounded-lg border border-border focus:border-accent outline-none h-32" placeholder="Mesajul tău..." required></textarea>
                   </div>
-                  <button type="submit" className="w-full py-3 bg-accent text-background font-bold rounded-lg hover:bg-accent/90 transition">
+                  <button type="submit" className="w-full py-3 bg-accent text-white font-bold rounded-lg hover:bg-accent/90 transition">
                     Trimite Mesaj
                   </button>
                 </form>
@@ -147,4 +147,3 @@ export default function ContactPage() {
     </>
   )
 }
-

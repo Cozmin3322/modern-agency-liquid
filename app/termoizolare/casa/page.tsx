@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Termoizolare Casă Completă | Acoperis Pereti Fundație | IsoThermLux",
   description: "Termoizolare completă a casei. Izolare acoperis, pereti exteriori și fundație. Economie 40-50% la gaz. Garanție 25 ani.",
   keywords: "termoizolare casă, izolare completă, termoizolare acoperis pereti, renovare casă",
-  canonical: "https://www.isothermlux.md/termoizolare/casa",
+  alternates: { canonical: "https://www.isothermlux.md/termoizolare/casa" },
 }
 
 export default function CasaPage() {
@@ -27,7 +27,7 @@ export default function CasaPage() {
               <p className="text-2xl text-white/90 mb-8 leading-relaxed">
                 Izolează acoperisul, pereții și fundația. Confort maxim în orice sezon. Economie 40-50% la gaz.
               </p>
-              <a href="tel:++37378370243" className="inline-block bg-accent text-background px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+              <a href="tel:+37378370243" className="inline-block bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
                 Consultație Gratuită
               </a>
             </div>
@@ -59,21 +59,21 @@ export default function CasaPage() {
             <div className="max-w-3xl">
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="w-8 h-8 bg-accent text-background rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                  <div className="w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
                   <div>
                     <h3 className="font-semibold mb-2">Confort Maxim</h3>
                     <p className="text-foreground/70">Temperatura constantă în toată casa. Fără zone reci sau calde.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="w-8 h-8 bg-accent text-background rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                  <div className="w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
                   <div>
                     <h3 className="font-semibold mb-2">Economie 40-50%</h3>
                     <p className="text-foreground/70">Reducere semnificativă la costuri de gaz și electricitate.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="w-8 h-8 bg-accent text-background rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                  <div className="w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
                   <div>
                     <h3 className="font-semibold mb-2">Protecție Lungă</h3>
                     <p className="text-foreground/70">Garanție 25 ani. Investiție pe termen lung.</p>
@@ -84,11 +84,11 @@ export default function CasaPage() {
           </div>
         </section>
 
-        <section className="py-24 bg-foreground text-background">
+        <section className="py-24 bg-[#2C3E50] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Termoizolează Casa Completa</h2>
             <p className="text-lg mb-8 opacity-90">Consultație gratuită fără angajamente.</p>
-            <a href="tel:++37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
               Contactează-ne <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -98,4 +98,3 @@ export default function CasaPage() {
     </>
   )
 }
-

@@ -48,8 +48,8 @@ export default function PortfolioPage() {
                 <Link key={project.id} href={`/portofoliu/${project.slug}`}>
                   <div className="bg-card border border-border rounded-lg overflow-hidden hover:border-accent transition group cursor-pointer h-full">
                     <div className="h-48 bg-accent/10 flex items-center justify-center overflow-hidden">
-                      <Image 
-                        src={project.image} 
+                      <Image
+                        src={project.image}
                         alt={project.title}
                         width={800}
                         height={600}
@@ -81,7 +81,7 @@ export default function PortfolioPage() {
             <p className="text-lg text-foreground/80 mb-8">
               Fiecare proiect este unic. Oferim consultații personalizate și soluții adaptate.
             </p>
-            <a href="tel:++37378370243" className="inline-block bg-accent text-background px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-block bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
               Contactează-ne pentru Consultație
             </a>
           </div>

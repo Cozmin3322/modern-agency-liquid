@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "IsoThermLux Bălți | Termoizolare Hidroizolare | Servicii Locale",
   description: "IsoThermLux Bălți - Servicii profesionale de termoizolare și hidroizolare. Echipă certificată.",
   keywords: "termoizolare Bălți, hidroizolare Bălți, izolare nord, servicii locale",
-  canonical: "https://www.isothermlux.md/locatii/balti",
+  alternates: { canonical: "https://www.isothermlux.md/locatii/balti" },
 }
 
 export default function BaltiPage() {
@@ -37,7 +37,7 @@ export default function BaltiPage() {
               <div className="p-8 bg-background border border-border rounded-lg">
                 <Phone className="w-8 h-8 text-accent mb-4" />
                 <h3 className="font-semibold mb-2">Telefon</h3>
-                <a href="tel:++37378370243" className="text-accent hover:underline">+373 62 040 050</a>
+                <a href="tel:+37378370243" className="text-accent hover:underline">+373 62 040 050</a>
               </div>
               <div className="p-8 bg-background border border-border rounded-lg">
                 <MapPin className="w-8 h-8 text-accent mb-4" />
@@ -72,11 +72,11 @@ export default function BaltiPage() {
           </div>
         </section>
 
-        <section className="py-24 bg-foreground text-background">
+        <section className="py-24 bg-[#2C3E50] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Vrei Consultație în Bălți?</h2>
             <p className="text-lg mb-8 opacity-90">Echipa locală IsoThermLux. Evaluare pe loc în 24 ore.</p>
-            <a href="tel:++37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
               Sună Acum
             </a>
           </div>
@@ -86,4 +86,3 @@ export default function BaltiPage() {
     </>
   )
 }
-

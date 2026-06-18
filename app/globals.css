@@ -24,27 +24,27 @@ header.fixed.z-50 {
   border-bottom: 1px solid #E8DFD5;
 }
 
-/* White and Terracotta color palette */
+/* IsoThermLux brand palette */
 :root {
   --background: #FFFFFF;
-  --foreground: #1A1A1A;
+  --foreground: #2C3E50;
   --card: #FFFFFF;
   --card-foreground: #1A1A1A;
   --popover: #FFFFFF;
   --popover-foreground: #1A1A1A;
   --primary: #9B5F12;
   --primary-foreground: #FFFFFF;
-  --secondary: #FAF7F4;
+  --secondary: #F4F7F8;
   --secondary-foreground: #1A1A1A;
-  --muted: #6B5E56;
-  --muted-foreground: #3D3532;
+  --muted: #5E6A70;
+  --muted-foreground: #3C464B;
   --accent: #9B5F12;
   --accent-foreground: #FFFFFF;
   --warm-accent: #8A520F;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #FFFFFF;
-  --border: #EDE4DC;
-  --input: #FAF7F4;
+  --border: #DDE5E8;
+  --input: #F4F7F8;
   --ring: #9B5F12;
   --chart-1: #9B5F12;
   --chart-2: oklch(0.6 0.118 184.704);
@@ -52,7 +52,7 @@ header.fixed.z-50 {
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.25rem;
-  --sidebar: #1A1A1A;
+  --sidebar: #2C3E50;
   --sidebar-foreground: #FFFFFF;
   --font-montserrat: 'Montserrat', sans-serif;
   --font-open-sans: 'Open Sans', sans-serif;
@@ -66,30 +66,30 @@ header.fixed.z-50 {
 
 .dark {
   --background: #FFFFFF;
-  --foreground: #1A1A1A;
+  --foreground: #2C3E50;
   --card: #FFFFFF;
   --card-foreground: #1A1A1A;
   --popover: #FFFFFF;
   --popover-foreground: #1A1A1A;
   --primary: #9B5F12;
   --primary-foreground: #FFFFFF;
-  --secondary: #FAF7F4;
+  --secondary: #F4F7F8;
   --secondary-foreground: #1A1A1A;
-  --muted: #6B5E56;
-  --muted-foreground: #3D3532;
+  --muted: #5E6A70;
+  --muted-foreground: #3C464B;
   --accent: #9B5F12;
   --accent-foreground: #FFFFFF;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #FFFFFF;
-  --border: #EDE4DC;
-  --input: #FAF7F4;
+  --border: #DDE5E8;
+  --input: #F4F7F8;
   --ring: #9B5F12;
   --chart-1: #9B5F12;
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: #1A1A1A;
+  --sidebar: #2C3E50;
   --sidebar-foreground: #FFFFFF;
   --sidebar-primary: #9B5F12;
   --sidebar-primary-foreground: #FFFFFF;
@@ -187,21 +187,6 @@ header.fixed.z-50 {
   }
   main {
     background-color: #FFFFFF;
-  }
-  section {
-    background-color: #FFFFFF;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    color: #1A1A1A;
-  }
-  p, span, li, a {
-    color: #3D3532;
-  }
-  a {
-    color: #9B5F12;
-  }
-  a:hover {
-    color: #A0522D;
   }
 }
 

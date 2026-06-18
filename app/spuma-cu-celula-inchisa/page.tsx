@@ -14,7 +14,7 @@ export default function ClosedCellFoamPage() {
   return (
     <>
       <Header />
-      
+
       {/* Breadcrumb */}
       <div className="bg-background border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -36,9 +36,9 @@ export default function ClosedCellFoamPage() {
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed">
             Impermeabilă, densitate mare, rezistență maximă la apă și umiditate. Soluția ideală pentru fundații, subsoluri și aplicații în contact direct cu apa.
           </p>
-          <a 
-            href="tel:+373783702433" 
-            className="inline-flex items-center gap-2 bg-accent text-background px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition"
+          <a
+            href="tel:+373783702433"
+            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition"
           >
             Sună Pentru Ofertă Gratuită →
           </a>
@@ -210,7 +210,7 @@ export default function ClosedCellFoamPage() {
           <p className="text-foreground/70 mb-8">
             Citește ghidul nostru complet despre spuma poliuretanică și diferitele tipuri disponibile.
           </p>
-          <Link href="/ce-este-spuma-poliuretanica" className="inline-flex items-center gap-2 bg-accent text-background px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+          <Link href="/ce-este-spuma-poliuretanica" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
             Ghid Complet Spumă Poliuretanică →
           </Link>
         </div>
@@ -226,13 +226,13 @@ export default function ClosedCellFoamPage() {
             Echipa noastră profesionistă este gata să-ți ofere o soluție personalizată. Sună acum pentru o evaluare gratuită pe amplasament.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+            <a
               href="tel:+373783702433"
-              className="inline-flex items-center justify-center gap-2 bg-accent text-background px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition"
+              className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition"
             >
               Sună Acum +37378370243
             </a>
-            <a 
+            <a
               href="mailto:infopoliuretan@gmail.com"
               className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-8 py-4 rounded-lg font-semibold hover:bg-accent/10 transition"
             >
@@ -270,4 +270,3 @@ export default function ClosedCellFoamPage() {
     </>
   )
 }
-

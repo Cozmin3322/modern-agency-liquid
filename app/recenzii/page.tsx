@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Recenzii IsoThermLux | Clienți Mulțumiți | 5 Stele",
   description: "Recenzii clienți IsoThermLux. Evaluări 5 stele. Clienți mulțumiți de serviciile de termoizolare și hidroizolare.",
   keywords: "recenzii, evaluări, clienți mulțumiți, testimonii",
-  canonical: "https://www.isothermlux.md/recenzii",
+  alternates: { canonical: "https://www.isothermlux.md/recenzii" },
 }
 
 export default function ReviewsPage() {
@@ -97,7 +97,7 @@ export default function ReviewsPage() {
             <p className="text-lg text-foreground/80 mb-8">
               Clienții noștri sunt prioritatea #1. Garanția 25 ani și suportul permanent ne diferențiază.
             </p>
-            <a href="tel:++37378370243" className="inline-block bg-accent text-background px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-block bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
               Cere Recenzie pe Loc
             </a>
           </div>
@@ -107,4 +107,3 @@ export default function ReviewsPage() {
     </>
   )
 }
-

@@ -81,7 +81,7 @@ export default function PhotoGallery() {
           {/* CTA */}
           <div className="text-center py-12 border-t border-border pt-16">
             <h2 className="text-3xl font-serif font-bold mb-4">Vrei un rezultat similar?</h2>
-            <a href="/calculator" className="inline-flex items-center gap-2 bg-accent text-background px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="/calculator" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
               Solicită ofertă gratuită →
             </a>
           </div>
@@ -93,4 +93,3 @@ export default function PhotoGallery() {
     </>
   )
 }
-

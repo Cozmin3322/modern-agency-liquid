@@ -168,7 +168,7 @@ export default function BlogPage() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-3 left-3">
-                      <span className="inline-block bg-accent text-background px-3 py-1 rounded-full text-xs font-semibold">
+                      <span className="inline-block bg-accent text-white px-3 py-1 rounded-full text-xs font-semibold">
                         {post.category}
                       </span>
                     </div>
@@ -226,7 +226,7 @@ export default function BlogPage() {
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors"
+                className="px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-colors"
               >
                 Înscrie-te
               </button>
@@ -247,12 +247,12 @@ export default function BlogPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/calculator-oferta"
-                className="inline-flex items-center justify-center gap-2 bg-accent text-background px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
               >
                 Calculator Ofertă <ArrowRight className="w-5 h-5" />
               </Link>
               <a
-                href="tel:++37378370243"
+                href="tel:+37378370243"
                 className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-8 py-4 rounded-lg font-semibold hover:bg-accent/10 transition-colors"
               >
                 Sună Acum
@@ -265,4 +265,3 @@ export default function BlogPage() {
     </>
   )
 }
-

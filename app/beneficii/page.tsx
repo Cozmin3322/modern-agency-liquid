@@ -14,7 +14,7 @@ export default function BeneficiiPage() {
   return (
     <main className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="py-20 md:py-32 bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,7 +22,7 @@ export default function BeneficiiPage() {
             <p className="text-muted-foreground text-xs md:text-sm tracking-[0.3em] uppercase mb-4">De Ce Noi?</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6">Beneficiile Termoizolării</h1>
             <p className="text-base md:text-lg text-foreground/70 max-w-2xl mx-auto">
-              Investiția în termoizolare se recuperează în 2-3 ani prin economiile la facturile de energie. 
+              Investiția în termoizolare se recuperează în 2-3 ani prin economiile la facturile de energie.
               Noi oferim garanție 25 ani și echipă profesionistă din Moldova.
             </p>
           </div>
@@ -30,11 +30,11 @@ export default function BeneficiiPage() {
       </section>
 
       {/* Benefits Grid with Images */}
-      <section className="py-20 md:py-28" style={{backgroundColor: '#2c3e50'}}>
+        <section className="py-20 md:py-28 bg-[#2C3E50]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {/* Beneficiu 1: Economie */}
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#DD9933'}}>
+            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#9B5F12'}}>
               <div className="relative h-64 md:h-72 w-full overflow-hidden">
                 <Image
                   src="/images/project-finisaj-01.jpg"
@@ -56,7 +56,7 @@ export default function BeneficiiPage() {
             </div>
 
             {/* Beneficiu 2: Confort */}
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#DD9933'}}>
+            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#9B5F12'}}>
               <div className="relative h-64 md:h-72 w-full overflow-hidden">
                 <Image
                   src="/images/project-casa-termoizolare-01.jpg"
@@ -80,7 +80,7 @@ export default function BeneficiiPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {/* Beneficiu 3: Garanție */}
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#DD9933'}}>
+            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#9B5F12'}}>
               <div className="relative h-64 md:h-72 w-full overflow-hidden">
                 <Image
                   src="/images/project-protectie-margini-01.jpg"
@@ -102,7 +102,7 @@ export default function BeneficiiPage() {
             </div>
 
             {/* Beneficiu 4: Durabilitate */}
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#DD9933'}}>
+            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#9B5F12'}}>
               <div className="relative h-64 md:h-72 w-full overflow-hidden">
                 <Image
                   src="/images/project-detaliu-izolare-01.jpg"
@@ -126,7 +126,7 @@ export default function BeneficiiPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Beneficiu 5: Mediu */}
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#DD9933'}}>
+            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#9B5F12'}}>
               <div className="relative h-64 md:h-72 w-full overflow-hidden">
                 <Image
                   src="/images/project-hala-industrial-01.jpg"
@@ -148,7 +148,7 @@ export default function BeneficiiPage() {
             </div>
 
             {/* Beneficiu 6: Profesionalism */}
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#DD9933'}}>
+            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#9B5F12'}}>
               <div className="relative h-64 md:h-72 w-full overflow-hidden">
                 <Image
                   src="/images/project-casa-detail-01.jpg"
@@ -173,7 +173,7 @@ export default function BeneficiiPage() {
       </section>
 
       <Philosophy />
-      
+
       {/* Learn More Section */}
       <section className="py-16 md:py-24 bg-background border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -182,7 +182,7 @@ export default function BeneficiiPage() {
           <p className="text-foreground/70 mb-8 max-w-2xl mx-auto">
             Citește ghidul nostru complet despre spuma poliuretanică: ce este, cum funcționează, tipuri și aplicații.
           </p>
-          <a href="/ce-este-spuma-poliuretanica" className="inline-flex items-center gap-2 bg-accent text-background px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+          <a href="/ce-este-spuma-poliuretanica" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
             Citește Ghidul Complet →
           </a>
         </div>
