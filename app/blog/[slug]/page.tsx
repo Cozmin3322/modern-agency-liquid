@@ -22,7 +22,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '15 ianuarie 2024',
     readTime: '5 min',
-    image: '/images/termoizolare-spuma-poliuretanic.jpg',
+    image: '/images/project-casa-termoizolare-01.jpg',
     excerpt: 'Descoperă cum funcționează termoizolarea cu spumă poliuretanică, beneficiile complete și cum economisești 40-50% la energie.',
     keywords: 'termoizolare, spumă poliuretanică, izolare termică, ghid complet, economia de energie, izolație casă',
     content: `
@@ -52,7 +52,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '12 ianuarie 2024',
     readTime: '4 min',
-    image: '/images/hidroizolare-fundatie.jpg',
+    image: '/images/hidroizolare-fundatie-02.jpg',
     excerpt: 'Ce este hidroizolarea și de ce este esențială pentru protecția proprietății tale. Metode, costuri și beneficii.',
     keywords: 'hidroizolare, fundație, protecție umiditate, infiltrații apă, hidroizolare subsol, profesională',
     content: `
@@ -84,7 +84,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '10 ianuarie 2024',
     readTime: '6 min',
-    image: '/images/economie-70-procent-gaz.jpg',
+    image: '/images/beneficii-termoizolare.webp',
     excerpt: 'Calculează exact cât vei economisi și cum se recuperează investiția în termoizolare în 2-3 ani.',
     keywords: 'economie gaz, termoizolare, ROI, eficiență energetică, calculator, costuri termoizolare, recuperare investiție',
     content: `
@@ -118,7 +118,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '8 ianuarie 2024',
     readTime: '5 min',
-    image: '/images/izolarea-mansardei.jpg',
+    image: '/images/project-mansard-new.webp',
     excerpt: 'Transformă mansarda ta într-un spațiu confortabil și locuibil cu izolație termică profesională.',
     keywords: 'izolare mansardă, spațiu locuibil, termoizolare mansardă, confort termic, spumă poliuretanică',
     content: `
@@ -150,6 +150,10 @@ const articles: Record<string, BlogArticle> = {
   },
   'materiale-basf-iso-9001-calitate': {
     title: 'Materiale Premium Certificate ISO 9001 - Garantia Calității',
+    author: 'IsoThermLux Team',
+    date: '5 ianuarie 2024',
+    readTime: '4 min',
+    image: '/images/premium-services-foam.png',
     excerpt: 'Spumă poliuretanică certificată ISO 9001 garantează calitate și durabilitate. De ce alegem doar materiale premium.',
     keywords: 'ISO 9001, materiale premium, spumă poliuretanică, calitate, durabilitate, garanție 25 ani',
     content: `
@@ -180,7 +184,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '2 ianuarie 2024',
     readTime: '5 min',
-    image: '/images/garantie-25-ani.jpg',
+    image: '/images/project-rezultat-final-01.jpg',
     excerpt: 'Garanție scrisă 25 ani pe material și manopera. Protecție completă pentru investiția ta în termoizolare.',
     keywords: 'garanție 25 ani, protecție investiție, durabilitate, asigurare calitate, termoizolare garantat',
     content: `
@@ -325,7 +329,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
       name: 'IsoThermLux',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.isothermlux.md/images/logo.png',
+        url: 'https://www.isothermlux.md/images/logo-isotherm-lux.png',
       },
     },
     mainEntityOfPage: {
