@@ -6,8 +6,8 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
 const STATS = [
-  { number: 12, suffix: '', label: 'Ani experiență' },
-  { number: 500, suffix: '+', label: 'Proiecte finalizate' },
+  { number: 14, suffix: '', label: 'Ani experiență' },
+  { number: 3971, suffix: '', label: 'Proiecte finalizate' },
   { number: 25, suffix: ' ani', label: 'Garanție scrisă' },
 ]
 
