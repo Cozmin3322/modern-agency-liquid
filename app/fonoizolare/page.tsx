@@ -4,12 +4,15 @@ import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ArrowRight, Volume2, Shield, Clock, TrendingUp, Home, Building, Music, Coffee } from "lucide-react"
-import { serviceSchema } from "@/lib/schema"
 
-const fonoizolareServiceSchema = serviceSchema(
-  'Fonoizolare',
-  'Servicii profesionale de fonoizolare cu spumă poliuretanică cu celulă deschisă. Reducere zgomot până la 70%. Confort acustic garantat.'
-)
+const fonoizolareServiceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Fonoizolare',
+  description: 'Servicii profesionale de fonoizolare cu spumă poliuretanică cu celulă deschisă. Reducere zgomot până la 70%. Confort acustic garantat.',
+  provider: { '@type': 'LocalBusiness', name: 'IsoThermLux' },
+  areaServed: 'Moldova',
+}
 
 export const metadata: Metadata = {
   title: "Fonoizolare cu Spumă Poliuretanică Moldova | Reducere Zgomot 70% | IsoThermLux",

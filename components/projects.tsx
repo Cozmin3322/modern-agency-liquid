@@ -61,7 +61,7 @@ export function Projects() {
               onMouseLeave={() => setHoveredId(null)}
             >
               <Link href={`/portofoliu/${project.slug}`}>
-                <div ref={(el) => (imageRefs.current[index] = el)} className="relative overflow-hidden aspect-[4/3] mb-6 rounded-lg">
+                <div ref={(el) => { imageRefs.current[index] = el }} className="relative overflow-hidden aspect-[4/3] mb-6 rounded-lg">
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
