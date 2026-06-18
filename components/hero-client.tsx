@@ -2,6 +2,7 @@
 
 import { useRef } from 'react'
 import { ArrowDown, Zap, Gift, ShieldCheck } from 'lucide-react'
+import { useParallax } from '@/hooks/use-parallax'
 
 interface HeroContent {
   heroTitle: string
@@ -14,6 +15,7 @@ interface HeroClientProps {
 
 export function HeroClient({ data }: HeroClientProps) {
   const heroRef = useRef<HTMLElement>(null)
+  const { ref: parallaxRef, offset } = useParallax(0.35)
 
   const scrollToContactForm = () => {
     const contactForm = document.getElementById('contact-form')
@@ -24,18 +26,20 @@ export function HeroClient({ data }: HeroClientProps) {
 
   return (
     <>
-      {/* Mobile Background - Containers Image */}
+      {/* Mobile Background - static, fără parallax */}
       <section 
         ref={heroRef} 
         className="md:hidden relative w-full min-h-screen flex items-center justify-center overflow-y-auto bg-black"
-        style={{
-          backgroundImage: `url('/images/hero-mobile-containers.jpg')`,
-          backgroundSize: 'auto 100%',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'scroll'
-        }}
       >
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url('/images/hero-mobile-containers.jpg')`,
+            backgroundSize: 'auto 100%',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
@@ -85,17 +89,29 @@ export function HeroClient({ data }: HeroClientProps) {
         </div>
       </section>
 
-      {/* Desktop Background - Professional Worker Image */}
+      {/* Desktop Background - Parallax real */}
       <section 
-        ref={heroRef} 
-        className="hidden md:flex relative w-full min-h-screen flex items-center justify-center overflow-hidden"
-        style={{
-          backgroundImage: `url('/images/hero-izolator-professional.jpg')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
+        ref={(el) => {
+          // @ts-ignore
+          heroRef.current = el
+          // @ts-ignore
+          parallaxRef.current = el
         }}
+        className="hidden md:flex relative w-full min-h-screen items-center justify-center overflow-hidden"
       >
+        {/* Imaginea de fundal cu parallax */}
+        <div
+          className="absolute inset-0 will-change-transform"
+          style={{
+            backgroundImage: `url('/images/hero-izolator-professional.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            transform: `translateY(${offset}px)`,
+            // Puțin mai mare decât 100% ca să nu apară margini albe la scroll
+            top: '-10%',
+            bottom: '-10%',
+          }}
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/50 to-black/60" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">

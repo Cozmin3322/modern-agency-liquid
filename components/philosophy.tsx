@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { HighlightedText } from "./highlighted-text"
+import { useParallax } from "@/hooks/use-parallax"
 
 const philosophyItems = [
   {
@@ -27,6 +28,9 @@ const philosophyItems = [
 export function Philosophy() {
   const [visibleItems, setVisibleItems] = useState<number[]>([])
   const itemRefs = useRef<(HTMLDivElement | null)[]>([])
+
+  // Parallax subtil pe imaginea din stânga — "float" editorial
+  const { ref: imgContainerRef, offset: imgOffset } = useParallax(0.12)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -61,11 +65,22 @@ export function Philosophy() {
               <HighlightedText>Termoizolării</HighlightedText>
             </h2>
 
-            <div className="relative hidden lg:block">
+            {/* Imagine cu parallax "float" — overflow hidden ca imaginea să nu iasă din container */}
+            <div
+              ref={imgContainerRef as React.RefObject<HTMLDivElement>}
+              className="relative hidden lg:block overflow-hidden rounded-lg"
+              style={{ height: '24rem' }}
+            >
               <img
                 src="/images/economie-70-procent-gaz.jpg"
                 alt="Tehnician IsoThermLux aplicand spuma poliuretanica - Beneficiile termoizolarii"
-                className="opacity-90 relative z-10 w-full h-auto max-h-96 object-cover rounded-lg"
+                className="opacity-90 w-full h-full object-cover will-change-transform"
+                style={{
+                  transform: `translateY(${imgOffset}px)`,
+                  // Puțin mai înaltă ca să nu apară spații goale la deplasare
+                  height: 'calc(100% + 40px)',
+                  marginTop: '-20px',
+                }}
               />
             </div>
           </div>

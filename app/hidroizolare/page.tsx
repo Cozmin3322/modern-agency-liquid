@@ -5,6 +5,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ArrowRight, Check } from "lucide-react"
 import { serviceSchema, breadcrumbSchema } from "@/lib/schema"
+import { ServiceHero } from "@/components/service-hero"
 
 const hidroizolareServiceSchema = serviceSchema(
   'Hidroizolare',
@@ -80,39 +81,16 @@ export default function HidroizolarePage() {
       <Header />
       <main className="bg-background">
         {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center pt-20">
-          <div
-            className="absolute inset-0 z-0"
-            style={{
-              backgroundImage: "url(/images/hidroizolare-hero.webp)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          />
-          <div className="absolute inset-0 bg-black/40 z-10" />
-
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-8">
-                <h1 className="text-5xl lg:text-6xl font-serif font-medium text-white leading-tight">
-                  Hidroizolare Profesională
-                  <span className="block text-accent">în Moldova — Protecție 25 Ani</span>
-                </h1>
-                <p className="text-xl text-white/90 leading-relaxed max-w-md">
-                  Protecție completă împotriva infiltrațiilor de apă în Chișinău, Moldova. Impermeabilizare profesională pentru fundații, subsoluri și acoperișuri. Garanție 25 ani scrisă, echipă certificată cu 12 ani experiență.
-                </p>
-                <div className="flex gap-4 pt-4">
-                  <a href="tel:+37378370243" className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
-                    Consultație Gratuită
-                  </a>
-                  <Link href="/portofoliu?tip=hidroizolare" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition">
-                    Vezi Portofoliu
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ServiceHero
+          backgroundImage="/images/hidroizolare-hero.webp"
+          title="Hidroizolare Profesională"
+          titleAccent="în Moldova — Protecție 25 Ani"
+          subtitle="Protecție completă împotriva infiltrațiilor de apă în Chișinău, Moldova. Impermeabilizare profesională pentru fundații, subsoluri și acoperișuri. Garanție 25 ani scrisă, echipă certificată cu 12 ani experiență."
+          ctaHref="tel:+37378370243"
+          ctaLabel="Consultație Gratuită"
+          ctaSecondaryHref="/portofoliu?tip=hidroizolare"
+          ctaSecondaryLabel="Vezi Portofoliu"
+        />
 
         {/* Benefits Section */}
         <section className="py-24 bg-card">
