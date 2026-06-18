@@ -15,7 +15,6 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
   experimental: {
     optimizePackageImports: ['lucide-react'],
-    optimizeCss: true,
   },
 }
 
