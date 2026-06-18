@@ -7,7 +7,7 @@ import { CheckCircle2 } from "lucide-react"
 export const metadata = {
   title: 'Spumă Poliuretanică cu Celulă Închisă | IsoThermLux Moldova',
   description: 'Spuma poliuretanică cu celulă închisă — soluția premium pentru izolații rezistente la apă și umiditate. Densitate mare, impermeabilă. Ofertă gratuită.',
-  alternates: { canonical: 'https://isothermlux.md/spuma-cu-celula-inchisa' }
+  alternates: { canonical: 'https://www.isothermlux.md/spuma-cu-celula-inchisa' }
 }
 
 export default function ClosedCellFoamPage() {
@@ -256,11 +256,11 @@ export default function ClosedCellFoamPage() {
             "@type": "Article",
             "headline": "Spumă Poliuretanică cu Celulă Închisă — Soluția Premium",
             "description": "Ghid complet despre spuma poliuretanică cu celulă închisă: proprietăți, aplicații și avantaje.",
-            "image": "https://isothermlux.md/images/project-fundatie.jpg",
+            "image": "https://www.isothermlux.md/images/project-fundatie.jpg",
             "author": {
               "@type": "Organization",
               "name": "IsoThermLux",
-              "url": "https://isothermlux.md"
+              "url": "https://www.isothermlux.md"
             },
             "datePublished": "2026-06-17T00:00:00Z",
             "articleBody": "Spuma poliuretanică cu celulă închisă este soluția premium pentru izolații rezistente la apă și umiditate."
@@ -270,3 +270,4 @@ export default function ClosedCellFoamPage() {
     </>
   )
 }
+

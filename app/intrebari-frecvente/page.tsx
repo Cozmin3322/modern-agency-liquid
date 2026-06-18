@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   title: "Întrebări Frecvente | Termoizolare și Hidroizolare | IsoThermLux",
   description: "Răspunsuri la întrebările frecvente despre termoizolare, hidroizolare, garanție și costuri. Consultanță gratuită.",
   keywords: "intrebari frecvente, FAQ, termoizolare, hidroizolare, costuri, garanție",
-  canonical: "https://isothermlux.md/intrebari-frecvente",
+  canonical: "https://www.isothermlux.md/intrebari-frecvente",
   openGraph: {
     title: "Întrebări Frecvente | IsoThermLux",
     description: "Răspunsuri la întrebările frecvente despre serviciile noastre",
     type: "website",
     locale: "ro_RO",
-    url: "https://isothermlux.md/intrebari-frecvente",
+    url: "https://www.isothermlux.md/intrebari-frecvente",
   },
 }
 
@@ -98,3 +98,4 @@ export default function IntrebariFrecventePage() {
     </>
   )
 }
+

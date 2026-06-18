@@ -7,7 +7,7 @@ export const metadata = {
   title: "Calculator Rapid - IsoThermLux",
   description: "Calculează cost estimat pentru serviciile de termoizolare și hidroizolare",
   alternates: {
-    canonical: 'https://isothermlux.md/calculator-oferta'
+    canonical: 'https://www.isothermlux.md/calculator-oferta'
   }
 }
 
@@ -21,3 +21,4 @@ export default function CalculatorPage() {
     </main>
   )
 }
+

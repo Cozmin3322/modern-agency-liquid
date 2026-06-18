@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Contact IsoThermLux | +373 78 370 243 | Răspuns în 30 min",
   description: "Contactează IsoThermLux pentru ofertă gratuită. Tel: +373 78 370 243. Luni-Vineri 08:00-18:00. Răspuns rapid în 30 minute.",
   alternates: {
-    canonical: "https://isothermlux.md/contact"
+    canonical: "https://www.isothermlux.md/contact"
   }
 }
 
@@ -147,3 +147,4 @@ export default function ContactPage() {
     </>
   )
 }
+

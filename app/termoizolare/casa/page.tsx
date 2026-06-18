@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Termoizolare Casă Completă | Acoperis Pereti Fundație | IsoThermLux",
   description: "Termoizolare completă a casei. Izolare acoperis, pereti exteriori și fundație. Economie 40-50% la gaz. Garanție 25 ani.",
   keywords: "termoizolare casă, izolare completă, termoizolare acoperis pereti, renovare casă",
-  canonical: "https://isothermlux.md/termoizolare/casa",
+  canonical: "https://www.isothermlux.md/termoizolare/casa",
 }
 
 export default function CasaPage() {
@@ -98,3 +98,4 @@ export default function CasaPage() {
     </>
   )
 }
+

@@ -7,16 +7,16 @@ import { ArrowRight, Check } from "lucide-react"
 import { breadcrumbSchema } from "@/lib/schema"
 
 const mansardaBreadcrumb = breadcrumbSchema([
-  { name: 'IsoThermLux', url: 'https://isothermlux.md' },
-  { name: 'Termoizolare', url: 'https://isothermlux.md/termoizolare' },
-  { name: 'Mansardă', url: 'https://isothermlux.md/termoizolare/mansarda' }
+  { name: 'IsoThermLux', url: 'https://www.isothermlux.md' },
+  { name: 'Termoizolare', url: 'https://www.isothermlux.md/termoizolare' },
+  { name: 'Mansardă', url: 'https://www.isothermlux.md/termoizolare/mansarda' }
 ])
 
 export const metadata: Metadata = {
   title: "Termoizolare Mansardă | Spațiu Locuibil Cald | IsoThermLux Moldova",
   description: "Termoizolare profesională a mansardelor. Izolație termică pentru spații locuite. Economie 40-50% la gaz. Consultație gratuită.",
   keywords: "termoizolare mansardă, izolare mansarda, spațiu locuibil, izolație termică acoperis",
-  canonical: "https://isothermlux.md/termoizolare/mansarda",
+  canonical: "https://www.isothermlux.md/termoizolare/mansarda",
 }
 
 export default function MansardaPage() {
@@ -165,3 +165,4 @@ export default function MansardaPage() {
     </>
   )
 }
+

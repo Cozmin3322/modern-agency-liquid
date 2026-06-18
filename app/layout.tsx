@@ -15,7 +15,7 @@ const _playfairDisplay = Playfair_Display({ subsets: ["latin"], weight: ["400", 
 const _robotoSlab = Roboto_Slab({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-roboto-slab" })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://isothermlux.md"),
+  metadataBase: new URL("https://www.isothermlux.md"),
   title: {
     default: "IsoThermLux | Termoizolare și Hidroizolare Profesională Moldova",
     template: "%s | IsoThermLux",
@@ -154,3 +154,4 @@ export default function RootLayout({
     </html>
   )
 }
+

@@ -236,7 +236,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     }
   }
 
-  const url = `https://isothermlux.md/blog/${slug}`
+  const url = `https://www.isothermlux.md/blog/${slug}`
 
   return {
     title: `${article.title} | IsoThermLux`,
@@ -305,27 +305,27 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
     )
   }
 
-  const url = `https://isothermlux.md/blog/${slug}`
+  const url = `https://www.isothermlux.md/blog/${slug}`
 
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: article.title,
     description: article.excerpt,
-    image: `https://isothermlux.md${article.image}`,
+    image: `https://www.isothermlux.md${article.image}`,
     datePublished: article.date,
     dateModified: article.date,
     author: {
       '@type': 'Organization',
       name: article.author,
-      url: 'https://isothermlux.md',
+      url: 'https://www.isothermlux.md',
     },
     publisher: {
       '@type': 'Organization',
       name: 'IsoThermLux',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://isothermlux.md/images/logo.png',
+        url: 'https://www.isothermlux.md/images/logo.png',
       },
     },
     mainEntityOfPage: {
@@ -342,13 +342,13 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
         '@type': 'ListItem',
         position: 1,
         name: 'Acasă',
-        item: 'https://isothermlux.md',
+        item: 'https://www.isothermlux.md',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Blog',
-        item: 'https://isothermlux.md/blog',
+        item: 'https://www.isothermlux.md/blog',
       },
       {
         '@type': 'ListItem',
@@ -468,3 +468,4 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
     </>
   )
 }
+

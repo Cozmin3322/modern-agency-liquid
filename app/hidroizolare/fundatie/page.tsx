@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Hidroizolare Fundație Casă | Protecție Infiltrații | IsoThermLux",
   description: "Hidroizolare profesională a fundației. Protecție completă împotriva infiltrațiilor de apă. Garanție 25 ani.",
   keywords: "hidroizolare fundație, infiltrații apă, protecție subsol, impermeabilizare",
-  canonical: "https://isothermlux.md/hidroizolare/fundatie",
+  canonical: "https://www.isothermlux.md/hidroizolare/fundatie",
 }
 
 export default function FundatiePage() {
@@ -68,3 +68,4 @@ export default function FundatiePage() {
     </>
   )
 }
+

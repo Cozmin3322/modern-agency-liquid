@@ -10,9 +10,9 @@ export const metadata: Metadata = {
   description: 'Citește articole utile și profesionale despre termoizolare, hidroizolare, economie de energie, sfaturi pentru casa ta. Ghiduri complete pentru izolație termică.',
   keywords: 'blog termoizolare, hidroizolare, articole termoizolare, sfaturi energetice, izolare termică, spumă poliuretanică, hidroizolare fundație, economie gaz',
   alternates: {
-    canonical: 'https://isothermlux.md/blog',
+    canonical: 'https://www.isothermlux.md/blog',
     languages: {
-      ro: 'https://isothermlux.md/blog',
+      ro: 'https://www.isothermlux.md/blog',
     },
   },
   openGraph: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: 'Citește articole profesionale despre termoizolare, hidroizolare și eficiență energetică. Ghiduri complete, sfaturi și calcule pentru investiția ta.',
     type: 'website',
     locale: 'ro_RO',
-    url: 'https://isothermlux.md/blog',
+    url: 'https://www.isothermlux.md/blog',
   },
   robots: {
     index: true,
@@ -109,11 +109,11 @@ const blogListSchema = {
   '@type': 'Blog',
   name: 'Blog IsoThermLux',
   description: 'Articole și sfaturi despre termoizolare, hidroizolare și economie de energie',
-  url: 'https://isothermlux.md/blog',
+  url: 'https://www.isothermlux.md/blog',
   publisher: {
     '@type': 'Organization',
     name: 'IsoThermLux',
-    url: 'https://isothermlux.md',
+    url: 'https://www.isothermlux.md',
   },
   blogPost: blogPosts.map(post => ({
     '@context': 'https://schema.org',
@@ -265,3 +265,4 @@ export default function BlogPage() {
     </>
   )
 }
+

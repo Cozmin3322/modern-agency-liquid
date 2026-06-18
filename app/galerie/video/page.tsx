@@ -1,11 +1,11 @@
 export const metadata = {
   title: 'Galerie Video IsoThermLux | Proiecte Termoizolare și Hidroizolare',
   description: 'Vizionează videoclipuri ale proiectelor noastre de termoizolare și hidroizolare. Execuție profesională, finisaj de calitate.',
-  alternates: { canonical: 'https://isothermlux.md/galerie/video' },
+  alternates: { canonical: 'https://www.isothermlux.md/galerie/video' },
   openGraph: {
     title: 'Galerie Video IsoThermLux',
     description: 'Videoclipuri proiecte termoizolare și hidroizolare',
-    url: 'https://isothermlux.md/galerie/video',
+    url: 'https://www.isothermlux.md/galerie/video',
     type: 'website',
   }
 }
@@ -55,7 +55,7 @@ export default function VideoGallery() {
             '@type': 'CollectionPage',
             'name': 'Galerie Video IsoThermLux',
             'description': 'Colecție de videoclipuri cu proiecte de termoizolare și hidroizolare',
-            'url': 'https://isothermlux.md/galerie/video',
+            'url': 'https://www.isothermlux.md/galerie/video',
             'hasPart': videoSchemas
           })
         }}
@@ -123,3 +123,4 @@ export default function VideoGallery() {
     </>
   )
 }
+

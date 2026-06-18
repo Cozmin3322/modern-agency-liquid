@@ -15,13 +15,13 @@ const webSiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'IsoThermLux',
-  url: 'https://isothermlux.md',
+  url: 'https://www.isothermlux.md',
   description: 'Servicii profesionale de termoizolare și hidroizolare în Moldova',
   potentialAction: {
     '@type': 'SearchAction',
     target: {
       '@type': 'EntryPoint',
-      urlTemplate: 'https://isothermlux.md/blog?search={search_term_string}'
+      urlTemplate: 'https://www.isothermlux.md/blog?search={search_term_string}'
     },
     query_input: 'required name=search_term_string'
   }
@@ -70,3 +70,4 @@ export default async function Home() {
     </main>
   )
 }
+

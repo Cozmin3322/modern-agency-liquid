@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "IsoThermLux Chișinău | Termoizolare Hidroizolare | Locații",
   description: "IsoThermLux Chișinău - Servicii de termoizolare și hidroizolare. Echipă locală. Consultație gratuită.",
   keywords: "termoizolare Chișinău, hidroizolare Chișinău, izolare Capitală, servicii locale",
-  canonical: "https://isothermlux.md/locatii/chisinau",
+  canonical: "https://www.isothermlux.md/locatii/chisinau",
 }
 
 export default function ChisinauPage() {
@@ -86,3 +86,4 @@ export default function ChisinauPage() {
     </>
   )
 }
+

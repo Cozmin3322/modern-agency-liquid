@@ -43,7 +43,7 @@ export default function CalculatorPage() {
     '@type': 'CalculatorTool',
     name: 'Calculator Ofertă IsoThermLux',
     description: 'Estimare rapidă și precisă a costului serviciilor de termoizolare și hidroizolare',
-    url: 'https://isothermlux.md/calculator-oferta'
+    url: 'https://www.isothermlux.md/calculator-oferta'
   }
 
   return (
@@ -292,3 +292,4 @@ export default function CalculatorPage() {
     </>
   )
 }
+

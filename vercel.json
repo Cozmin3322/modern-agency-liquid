@@ -4,7 +4,9 @@
   "installCommand": "pnpm install",
   "framework": "nextjs",
   "outputDirectory": ".next",
-  "regions": ["iad1"],
+  "regions": [
+    "iad1"
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -44,19 +46,6 @@
           "value": "public, max-age=31536000, immutable"
         }
       ]
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.isothermlux.md"
-        }
-      ],
-      "destination": "https://isothermlux.md/:path*",
-      "permanent": true
     }
   ]
 }

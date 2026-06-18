@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Hidroizolare Acoperis | Impermeabilizare Ploaie | IsoThermLux",
   description: "Hidroizolare profesională a acoperișului. Impermeabilizare completă. Protecție la ploaie și ninsoare.",
   keywords: "hidroizolare acoperis, impermeabilizare, protecție ploaie, acoperis etanș",
-  canonical: "https://isothermlux.md/hidroizolare/acoperis",
+  canonical: "https://www.isothermlux.md/hidroizolare/acoperis",
 }
 
 export default function AcoperisPage() {
@@ -68,3 +68,4 @@ export default function AcoperisPage() {
     </>
   )
 }
+

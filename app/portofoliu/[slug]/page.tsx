@@ -23,7 +23,7 @@ export async function generateMetadata(
     title: project.metaTitle,
     description: project.metaDescription,
     keywords: project.keywords.join(', '),
-    canonical: `https://isothermlux.md/portofoliu/${project.slug}`,
+    canonical: `https://www.isothermlux.md/portofoliu/${project.slug}`,
     openGraph: {
       title: project.metaTitle,
       description: project.metaDescription,
@@ -63,7 +63,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     author: {
       '@type': 'Organization',
       name: 'IsoThermLux',
-      url: 'https://isothermlux.md',
+      url: 'https://www.isothermlux.md',
     },
     location: {
       '@type': 'Place',
@@ -210,3 +210,4 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     </>
   )
 }
+

@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   title: "Termoizolare Profesională Moldova | Economie 40-50% la Energie | IsoThermLux",
   description: "Termoizolare profesională cu spumă poliuretanică în Moldova. Economie 40-50% la energie. Garanție 25 ani scrisă. 12 ani experiență. Consultație gratuită Chișinău.",
   keywords: "termoizolare Moldova, termoizolare Chișinău, izolare termică, spumă poliuretanică Moldova, termoizolare casă, economie energie Moldova",
-  canonical: "https://isothermlux.md/termoizolare",
+  canonical: "https://www.isothermlux.md/termoizolare",
   openGraph: {
             title: "Termoizolare Profesională | Economie 40-50% la Energie | IsoThermLux",
             description: "Termoizolare profesională cu spumă poliuretanică. Economie 40-50% la energie. Garanție 25 ani scrisă. 12 ani experiență.",
     type: "website",
     locale: "ro_RO",
-    url: "https://isothermlux.md/termoizolare",
+    url: "https://www.isothermlux.md/termoizolare",
   },
 }
 
@@ -67,8 +67,8 @@ export default function TermoizolarePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema([
-            { name: 'Acasă', url: 'https://isothermlux.md' },
-            { name: 'Termoizolare', url: 'https://isothermlux.md/termoizolare' }
+            { name: 'Acasă', url: 'https://www.isothermlux.md' },
+            { name: 'Termoizolare', url: 'https://www.isothermlux.md/termoizolare' }
           ])),
         }}
       />
@@ -397,3 +397,4 @@ export default function TermoizolarePage() {
     </>
   )
 }
+

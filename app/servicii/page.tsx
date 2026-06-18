@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Servicii Termoizolare și Hidroizolare Moldova | IsoThermLux",
   description: "Toate serviciile IsoThermLux: termoizolare, hidroizolare, fațade, fonoizolare, spumă poliuretanică. Ofertă gratuită și consultație profesională.",
   alternates: {
-    canonical: "https://isothermlux.md/servicii"
+    canonical: "https://www.isothermlux.md/servicii"
   }
 }
 
@@ -119,3 +119,4 @@ export default function ServiciiPage() {
     </>
   )
 }
+

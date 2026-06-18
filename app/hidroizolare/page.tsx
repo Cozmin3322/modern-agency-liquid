@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   title: "Hidroizolare Profesională Moldova | Protecție 25 Ani | IsoThermLux",
   description: "Hidroizolare profesională cu spumă poliuretanică în Moldova. Protecție completă fundații, subsoluri, acoperișuri. Garanție 25 ani scrisă. Consultație gratuită Chișinău.",
   keywords: "hidroizolare Moldova, hidroizolare Chișinău, impermeabilizare fundație, hidroizolare acoperiș, protecție umiditate Moldova, hidroizolare subsol, spumă poliuretanică hidroizolare",
-  canonical: "https://isothermlux.md/hidroizolare",
+  canonical: "https://www.isothermlux.md/hidroizolare",
   openGraph: {
     title: "Hidroizolare Profesională | Protecție 25 Ani | IsoThermLux",
     description: "Hidroizolare cu spumă poliuretanică. Garanție 25 ani scrisă. Protecție fundații, subsoluri, acoperișuri. Chișinău, Moldova.",
     type: "website",
     locale: "ro_RO",
-    url: "https://isothermlux.md/hidroizolare",
+    url: "https://www.isothermlux.md/hidroizolare",
   },
   twitter: {
     card: "summary_large_image",
@@ -72,8 +72,8 @@ export default function HidroizolarePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema([
-            { name: 'Acasă', url: 'https://isothermlux.md' },
-            { name: 'Hidroizolare', url: 'https://isothermlux.md/hidroizolare' }
+            { name: 'Acasă', url: 'https://www.isothermlux.md' },
+            { name: 'Hidroizolare', url: 'https://www.isothermlux.md/hidroizolare' }
           ])),
         }}
       />
@@ -480,3 +480,4 @@ export default function HidroizolarePage() {
     </>
   )
 }
+

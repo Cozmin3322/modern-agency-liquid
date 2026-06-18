@@ -6,7 +6,7 @@ import Link from "next/link"
 export const metadata = {
   title: "Ce Este Spuma Poliuretanică? | IsoThermLux Moldova",
   description: "Ghid complet despre spuma poliuretanică: ce este, cum funcționează, tipuri (celulă deschisă vs închisă), avantaje și aplicații. Expert IsoThermLux.",
-  alternates: { canonical: "https://isothermlux.md/ce-este-spuma-poliuretanica" }
+  alternates: { canonical: "https://www.isothermlux.md/ce-este-spuma-poliuretanica" }
 }
 
 export default function PolyurethaneFormPage() {
@@ -266,9 +266,9 @@ export default function PolyurethaneFormPage() {
             "@type": "Article",
             headline: "Ce Este Spuma Poliuretanică?",
             description: "Ghid complet despre spuma poliuretanică: ce este, cum funcționează, tipuri (celulă deschisă vs închisă), avantaje și aplicații.",
-            url: "https://isothermlux.md/ce-este-spuma-poliuretanica",
+            url: "https://www.isothermlux.md/ce-este-spuma-poliuretanica",
             author: { "@type": "Organization", name: "IsoThermLux" },
-            publisher: { "@type": "Organization", name: "IsoThermLux", logo: { "@type": "ImageObject", url: "https://isothermlux.md/images/logo-isotherm-lux.png" } },
+            publisher: { "@type": "Organization", name: "IsoThermLux", logo: { "@type": "ImageObject", url: "https://www.isothermlux.md/images/logo-isotherm-lux.png" } },
             datePublished: new Date().toISOString(),
             articleBody: "Spuma poliuretanică este un material inovator compus din doi componenți chimici..."
           })
@@ -280,3 +280,4 @@ export default function PolyurethaneFormPage() {
     </main>
   )
 }
+

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "IsoThermLux Bălți | Termoizolare Hidroizolare | Servicii Locale",
   description: "IsoThermLux Bălți - Servicii profesionale de termoizolare și hidroizolare. Echipă certificată.",
   keywords: "termoizolare Bălți, hidroizolare Bălți, izolare nord, servicii locale",
-  canonical: "https://isothermlux.md/locatii/balti",
+  canonical: "https://www.isothermlux.md/locatii/balti",
 }
 
 export default function BaltiPage() {
@@ -86,3 +86,4 @@ export default function BaltiPage() {
     </>
   )
 }
+

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Hidroizolare Subsol | Spațiu Uscat și Locuibil | IsoThermLux",
   description: "Hidroizolare profesională a subsolului. Protecție umiditate. Spațiu uscat și locuibil.",
   keywords: "hidroizolare subsol, protecție subsol, umiditate subsol, spațiu locuibil",
-  canonical: "https://isothermlux.md/hidroizolare/subsol",
+  canonical: "https://www.isothermlux.md/hidroizolare/subsol",
 }
 
 export default function SubsolPage() {
@@ -68,3 +68,4 @@ export default function SubsolPage() {
     </>
   )
 }
+

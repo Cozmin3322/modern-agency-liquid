@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   title: "Despre IsoThermLux | Echipa Profesionistă | 12 Ani Experiență",
   description: "Despre IsoThermLux - Companie de termoizolare și hidroizolare cu 12 ani experiență. 500+ proiecte. Echipă certificată. Garanție 25 ani.",
   keywords: "despre noi, echipa IsoThermLux, experiență, certificări, misiune",
-  canonical: "https://isothermlux.md/despre-noi",
+  canonical: "https://www.isothermlux.md/despre-noi",
   openGraph: {
     title: "Despre IsoThermLux | 12 Ani Experiență Termoizolare",
     description: "IsoThermLux - Experți în termoizolare și hidroizolare cu 500+ proiecte și garanție 25 ani.",
     type: "website",
     locale: "ro_RO",
-    url: "https://isothermlux.md/despre-noi",
+    url: "https://www.isothermlux.md/despre-noi",
   },
 }
 
@@ -161,3 +161,4 @@ export default function AboutPage() {
     </>
   )
 }
+

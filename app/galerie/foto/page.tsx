@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Galerie Foto IsoThermLux | Proiecte Termoizolare și Hidroizolare',
   description: 'Galerie de fotografii din proiectele noastre de termoizolare și hidroizolare. Calitate profesională, finisaj premium.',
-  alternates: { canonical: 'https://isothermlux.md/galerie/foto' }
+  alternates: { canonical: 'https://www.isothermlux.md/galerie/foto' }
 }
 
 import Image from 'next/image'
@@ -93,3 +93,4 @@ export default function PhotoGallery() {
     </>
   )
 }
+

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Termoizolare Hale Industriale | Depozite Comerciale | IsoThermLux",
   description: "Termoizolare profesională pentru hale industriale și clădiri comerciale. Economie energie, confort și durabilitate.",
   keywords: "termoizolare hale, izolare industriala, depozite, clădiri comerciale",
-  canonical: "https://isothermlux.md/termoizolare/hala-industriala",
+  canonical: "https://www.isothermlux.md/termoizolare/hala-industriala",
 }
 
 export default function HalaPage() {
@@ -68,3 +68,4 @@ export default function HalaPage() {
     </>
   )
 }
+

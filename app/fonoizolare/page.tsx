@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Fonoizolare profesională pentru apartamente, birouri și studiouri. Reducere zgomot 70%. Spumă poliuretanică cu celulă deschisă. Consultație gratuită Chișinău.",
   keywords: "fonoizolare Moldova, fonoizolare Chișinău, izolare fonică, reducere zgomot, confort acustic, spumă poliuretanică fonoizolare",
   alternates: {
-    canonical: "https://isothermlux.md/fonoizolare"
+    canonical: "https://www.isothermlux.md/fonoizolare"
   }
 }
 
@@ -145,3 +145,4 @@ export default function FonoizolarePage() {
     </>
   )
 }
+

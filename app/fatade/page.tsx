@@ -7,7 +7,7 @@ import { Footer } from '@/components/footer'
 export const metadata: Metadata = {
   title: 'Termoizolare Fațade Moldova | Sisteme Complete | IsoThermLux',
   description: 'Termoizolare profesională a fațadelor cu spumă poliuretanică și sisteme ETICS. Execuție completă, garanție 25 ani. Ofertă gratuită în Moldova.',
-  alternates: { canonical: 'https://isothermlux.md/fatade' }
+  alternates: { canonical: 'https://www.isothermlux.md/fatade' }
 }
 
 export default function FacadesPage() {
@@ -252,11 +252,11 @@ export default function FacadesPage() {
             "@type": "Article",
             "headline": "Termoizolare Fațade — Sisteme Complete",
             "description": "Termoizolare profesională a fațadelor cu spumă poliuretanică și sisteme ETICS",
-            "image": "https://isothermlux.md/images/project-casa-privat.jpg",
+            "image": "https://www.isothermlux.md/images/project-casa-privat.jpg",
             "author": {
               "@type": "Organization",
               "name": "IsoThermLux",
-              "url": "https://isothermlux.md"
+              "url": "https://www.isothermlux.md"
             },
             "datePublished": "2024-06-17",
             "articleBody": "Termoizolarea fațadei este soluția optimă pentru case rezidențiale și cladiri comerciale..."
@@ -268,3 +268,4 @@ export default function FacadesPage() {
     </>
   )
 }
+
