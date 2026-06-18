@@ -90,7 +90,7 @@ export default function Chatbot() {
           href="https://wa.me/37378370243"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white rounded-xl shadow-lg max-w-xs p-4 border border-[#e8dcc8] animate-fade-in hover:shadow-xl transition-shadow" 
+          className="bg-white rounded-xl shadow-lg max-w-xs p-5 border border-[#e8dcc8] animate-fade-in hover:shadow-xl transition-shadow min-w-[240px]" 
           style={{ position: 'fixed', bottom: '100px', right: '24px', left: 'auto', zIndex: 9998 }}
         >
           <div className="flex items-center gap-3">
@@ -101,14 +101,14 @@ export default function Chatbot() {
             </div>
             <div className="flex-1">
               <p className="text-sm text-[#6B3410] font-medium">+373 78370243</p>
-              <p className="text-xs text-[#c8a882]">Contactează-ne pe WhatsApp</p>
+              <p className="text-xs text-[#7A4A0D]">Contactează-ne pe WhatsApp</p>
             </div>
             <button
               onClick={(e) => {
                 e.preventDefault()
                 setShowNotification(false)
               }}
-              className="ml-auto text-[#c8a882] hover:text-[#dd9933] flex-shrink-0"
+              className="ml-auto text-[#7A4A0D] hover:text-[#9B5F12] flex-shrink-0 p-2 -mr-1"
               aria-label="Dismiss"
             >
               <X className="w-4 h-4" />

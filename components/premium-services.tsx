@@ -105,10 +105,10 @@ export function PremiumServices() {
           <div className="space-y-6 text-white">
             {/* Label and accent line */}
             <div>
-              <p className="text-sm font-bold tracking-widest uppercase text-accent mb-3">
+              <p className="text-sm font-bold tracking-widest uppercase text-amber-400 mb-3">
                 Despre Noi
               </p>
-              <div className="w-16 h-0.5 bg-accent" />
+              <div className="w-16 h-0.5 bg-amber-400" />
             </div>
 
             {/* Title */}
@@ -139,7 +139,7 @@ export function PremiumServices() {
 
             {/* Services section */}
             <div className="space-y-4">
-              <p className="text-sm font-bold tracking-widest uppercase text-accent">
+              <p className="text-sm font-bold tracking-widest uppercase text-amber-400">
                 Servicii Disponibile
               </p>
               <p className="text-sm text-white/70 leading-relaxed">

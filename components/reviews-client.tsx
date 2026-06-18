@@ -71,7 +71,7 @@ export function ReviewsClient({ reviews }: ReviewsClientProps) {
               {/* Reviewer Info */}
               <div className="border-t border-border pt-4">
                 <p className="font-semibold text-foreground text-sm">{review.name}</p>
-                <div className="flex items-center justify-between mt-2 text-xs text-foreground/60">
+                <div className="flex items-center justify-between mt-2 text-xs text-foreground/80">
                   <span>{review.location}</span>
                   <span>{review.date}</span>
                 </div>

@@ -91,11 +91,11 @@ export function CoverageMoldova() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-2 mb-6">
               <div className="h-1 w-12" style={{ backgroundColor: '#9B5F12' }} />
-              <span className="text-xs md:text-sm tracking-[0.3em] uppercase text-foreground/60">Acoperire</span>
+              <span className="text-xs md:text-sm tracking-[0.3em] uppercase text-foreground/80">Acoperire</span>
               <div className="h-1 w-12" style={{ backgroundColor: '#9B5F12' }} />
             </div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-              Acoperire în toată <span className="text-accent">Moldova</span>.
+              Acoperire în toată <span className="text-[#7A4A0D]">Moldova</span>.
             </h2>
           </div>
 
