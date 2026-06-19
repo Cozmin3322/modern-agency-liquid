@@ -64,8 +64,8 @@ export function Header() {
       <header className={cn(
         "fixed z-50 transition-all duration-300 w-full",
         scrolled
-          ? "bg-white/98 backdrop-blur-md border-b border-border shadow-sm py-3"
-          : "bg-white border-b border-border py-4"
+          ? "bg-background/80 backdrop-blur-xl py-3 top-3 left-3 right-3 rounded-2xl border border-border/60 shadow-lg"
+          : "bg-transparent py-4"
       )}>
         <div className="absolute top-0 left-0 right-0 h-0.5 bg-accent" />
 
