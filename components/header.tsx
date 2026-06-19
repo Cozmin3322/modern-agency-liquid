@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
-import { ChevronDown, Phone, X, Menu } from "lucide-react"
+import { ChevronDown, Phone, X } from "lucide-react"
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -14,7 +14,7 @@ export function Header() {
   const [galleryOpen, setGalleryOpen] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50)
+    const handleScroll = () => setScrolled(window.scrollY > 80)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -59,64 +59,66 @@ export function Header() {
     { label: "Calculator", href: "/calculator" },
   ]
 
+  // Transparent pe hero, alb la scroll
+  const isTransparent = !scrolled && !mobileMenuOpen
+
   return (
     <>
       <header className={cn(
-        "fixed z-50 transition-all duration-300 w-full",
-        scrolled
-          ? "bg-white/98 backdrop-blur-md border-b border-border shadow-sm py-3"
-          : "bg-white border-b border-border py-4"
+        "fixed z-50 w-full transition-all duration-500",
+        isTransparent
+          ? "bg-transparent py-5"
+          : "bg-white/95 backdrop-blur-md border-b border-border shadow-sm py-3"
       )}>
-        <div className="absolute top-0 left-0 right-0 h-0.5 bg-accent" />
 
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+        <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
 
-          {/* Logo — accentuat */}
+          {/* Logo stânga */}
           <Link href="/" onClick={handleLogoClick} className="flex items-center gap-3 group">
             <Image
               src="/images/logo-isotherm-lux.webp"
               alt="IsoThermLux"
-              width={88} height={88}
-              className="h-20 w-auto transition-transform duration-200 group-hover:scale-105"
+              width={72} height={72}
+              className="h-16 w-auto transition-transform duration-200 group-hover:scale-105"
               priority
             />
-            <div className="hidden sm:block">
-              <div className="font-serif text-lg font-semibold text-foreground leading-tight tracking-tight">IsoThermLux</div>
-              <div className="font-mono text-[10px] text-accent uppercase tracking-[0.2em]">Izolare Profesională</div>
+            <div>
+              <div className={cn(
+                "font-serif text-xl font-semibold leading-tight tracking-tight transition-colors duration-300",
+                isTransparent ? "text-white" : "text-foreground"
+              )}>IsoThermLux</div>
+              <div className="font-mono text-[10px] text-accent uppercase tracking-[0.25em]">Izolare Profesională</div>
             </div>
           </Link>
 
-          {/* Desktop: doar Suna + hamburger */}
-          <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+37378370243"
-              className="flex items-center gap-2 border border-accent text-accent px-6 py-2.5 font-mono text-sm uppercase tracking-wider hover:bg-accent hover:text-white transition-all duration-200">
-              <Phone className="w-4 h-4" /> +373 78 370 243
-            </a>
-            <button
-              onClick={() => setMobileMenuOpen(true)}
-              className="flex flex-col gap-1.5 p-2 text-foreground/70 hover:text-accent transition-colors group"
-              aria-label="Meniu"
+          {/* Dreapta: telefon + hamburger */}
+          <div className="flex items-center gap-4">
+            {/* Buton telefon cu border portocaliu */}
+            <a
+              href="tel:+37378370243"
+              className={cn(
+                "hidden sm:flex items-center gap-2 px-5 py-2.5 font-mono text-sm uppercase tracking-wider border transition-all duration-300",
+                isTransparent
+                  ? "border-accent text-white hover:bg-accent hover:text-white"
+                  : "border-accent text-accent hover:bg-accent hover:text-white"
+              )}
             >
-              <span className="w-6 h-0.5 bg-current transition-all group-hover:w-8" />
-              <span className="w-8 h-0.5 bg-current" />
-              <span className="w-5 h-0.5 bg-current transition-all group-hover:w-8" />
-            </button>
-          </div>
+              <Phone className="w-4 h-4 text-accent flex-shrink-0" />
+              +373 78 370 243
+            </a>
 
-          {/* Mobile: Suna + hamburger */}
-          <div className="md:hidden flex items-center gap-3">
-            <a href="tel:+37378370243"
-              className="flex items-center gap-1.5 border border-accent text-accent px-4 py-2 font-mono text-xs uppercase tracking-wider hover:bg-accent hover:text-white transition-all">
-              <Phone className="w-3.5 h-3.5" /> Sună
-            </a>
+            {/* Hamburger */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="flex flex-col gap-1.5 p-2 text-foreground/70"
+              className={cn(
+                "flex flex-col gap-[5px] p-2 transition-colors duration-300",
+                isTransparent ? "text-white hover:text-accent" : "text-foreground hover:text-accent"
+              )}
               aria-label="Meniu"
             >
-              <span className="w-6 h-0.5 bg-current" />
-              <span className="w-8 h-0.5 bg-current" />
-              <span className="w-5 h-0.5 bg-current" />
+              <span className="w-7 h-[2px] bg-current" />
+              <span className="w-5 h-[2px] bg-current" />
+              <span className="w-7 h-[2px] bg-current" />
             </button>
           </div>
         </nav>
@@ -124,12 +126,12 @@ export function Header() {
 
       {/* Fullscreen menu overlay */}
       <div className={cn(
-        "fixed inset-0 z-[100] bg-[#1A1D21] flex flex-col transition-all duration-300",
+        "fixed inset-0 z-[100] bg-[#1A1D21] flex flex-col transition-all duration-400",
         mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
       )}>
         <div className="h-0.5 w-full bg-accent flex-shrink-0" />
 
-        {/* Top bar */}
+        {/* Top bar în meniu */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 flex-shrink-0">
           <Link href="/" onClick={close} className="flex items-center gap-3">
             <Image src="/images/logo-isotherm-lux-white.webp" alt="IsoThermLux" width={56} height={56} className="h-12 w-auto" />
@@ -205,9 +207,9 @@ export function Header() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="px-6 py-5 border-t border-white/10 flex-shrink-0 flex gap-3">
+        <div className="px-6 py-5 border-t border-white/10 flex-shrink-0">
           <a href="tel:+37378370243" onClick={close}
-            className="flex-1 flex items-center justify-center gap-2 bg-accent text-white py-3.5 font-mono text-sm uppercase tracking-wider hover:bg-accent/90 transition-all">
+            className="flex items-center justify-center gap-2 bg-accent text-white py-3.5 font-mono text-sm uppercase tracking-wider hover:bg-accent/90 transition-all w-full">
             <Phone className="w-4 h-4" /> +373 78 370 243
           </a>
         </div>
