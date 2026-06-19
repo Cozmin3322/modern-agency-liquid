@@ -68,8 +68,13 @@ export function Header() {
         "fixed z-50 w-full transition-all duration-500",
         isTransparent
           ? "bg-transparent py-5"
-          : "bg-white/95 backdrop-blur-md border-b border-border shadow-sm py-3"
-      )}>
+          : "backdrop-blur-md border-b border-border py-3"
+      )}
+      style={!isTransparent ? {
+        background: "linear-gradient(180deg, #FFFFFF 0%, #FAF6F0 100%)",
+        boxShadow: "0 4px 24px -8px rgba(44, 62, 80, 0.10)",
+      } : undefined}
+      >
 
         <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
 
@@ -93,17 +98,17 @@ export function Header() {
 
           {/* Dreapta: telefon + hamburger */}
           <div className="flex items-center gap-4">
-            {/* Buton telefon cu border portocaliu */}
+            {/* Buton telefon plin, cu umbra */}
             <a
               href="tel:+37378370243"
               className={cn(
-                "hidden sm:flex items-center gap-2 px-5 py-2.5 font-mono text-sm uppercase tracking-wider border transition-all duration-300",
+                "hidden sm:flex items-center gap-2 px-5 py-2.5 font-mono text-sm uppercase tracking-wider transition-all duration-300 rounded-md shadow-md shadow-accent/30 hover:shadow-lg hover:shadow-accent/40 hover:-translate-y-0.5",
                 isTransparent
-                  ? "border-accent text-white hover:bg-accent hover:text-white"
-                  : "border-accent text-accent hover:bg-accent hover:text-white"
+                  ? "bg-accent text-white border border-accent/60 hover:bg-accent/90"
+                  : "bg-accent text-white hover:bg-accent/90"
               )}
             >
-              <Phone className="w-4 h-4 text-accent flex-shrink-0" />
+              <Phone className="w-4 h-4 text-white flex-shrink-0" />
               +373 78 370 243
             </a>
 
