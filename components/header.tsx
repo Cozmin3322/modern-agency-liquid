@@ -60,7 +60,7 @@ export function Header() {
   ]
 
   // Transparent pe hero, alb la scroll
-  const isTransparent = !scrolled && !mobileMenuOpen
+  const isTransparent = scrolled && !mobileMenuOpen
 
   return (
     <>
