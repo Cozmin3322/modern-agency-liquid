@@ -70,7 +70,7 @@ export function Header() {
           isTransparent ? "bg-transparent py-5" : "backdrop-blur-md py-3"
         )}
         style={!isTransparent ? {
-          background: "linear-gradient(to bottom, #FFFFFF, #FAF6F0)",
+          background: "rgba(255, 255, 255, 0.75)",
           boxShadow: "0 4px 20px rgba(0, 0, 0, 0.06)",
         } : undefined}
       >
