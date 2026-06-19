@@ -67,12 +67,8 @@ export function Header() {
       <header
         className={cn(
           "fixed z-50 w-full transition-all duration-500",
-          isTransparent ? "bg-transparent py-5" : "backdrop-blur-md py-3"
+          isTransparent ? "bg-transparent py-5" : "backdrop-blur-md py-3 bg-white shadow-sm"
         )}
-        style={!isTransparent ? {
-          background: "rgba(255, 255, 255, 0.75)",
-          boxShadow: "0 4px 20px rgba(0, 0, 0, 0.06)",
-        } : undefined}
       >
 
         <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
@@ -87,37 +83,26 @@ export function Header() {
               priority
             />
             <div>
-              <div className={cn(
-                "font-serif text-xl font-semibold leading-tight tracking-tight transition-colors duration-300",
-                isTransparent ? "text-white" : "text-foreground"
-              )}>IsoThermLux</div>
+              <div className="font-serif text-xl font-semibold leading-tight tracking-tight text-foreground">IsoThermLux</div>
               <div className="font-mono text-[10px] text-accent uppercase tracking-[0.25em]">Izolare Profesională</div>
             </div>
           </Link>
 
           {/* Dreapta: telefon + hamburger */}
           <div className="flex items-center gap-4">
-            {/* Buton telefon plin, cu umbra */}
+            {/* Buton telefon plin, cu umbra - mereu vizibil */}
             <a
               href="tel:+37378370243"
-              className={cn(
-                "hidden sm:flex items-center gap-2 px-5 py-2.5 font-mono text-sm uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5",
-                isTransparent
-                  ? "border border-accent text-white hover:bg-accent hover:text-white"
-                  : "bg-accent text-white shadow-[0_4px_14px_rgba(155,95,18,0.35)] hover:bg-accent/90 hover:shadow-[0_6px_18px_rgba(155,95,18,0.45)]"
-              )}
+              className="hidden sm:flex items-center gap-2 px-5 py-2.5 font-mono text-sm uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5 bg-accent text-white shadow-[0_4px_14px_rgba(155,95,18,0.35)] hover:bg-accent/90 hover:shadow-[0_6px_18px_rgba(155,95,18,0.45)]"
             >
-              <Phone className={cn("w-4 h-4 flex-shrink-0", isTransparent ? "text-accent" : "text-white")} />
+              <Phone className="w-4 h-4 flex-shrink-0 text-white" />
               +373 78 370 243
             </a>
 
             {/* Hamburger */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className={cn(
-                "flex flex-col gap-[5px] p-2 transition-colors duration-300",
-                isTransparent ? "text-white hover:text-accent" : "text-foreground hover:text-accent"
-              )}
+              className="flex flex-col gap-[5px] p-2 transition-colors duration-300 text-foreground hover:text-accent"
               aria-label="Meniu"
             >
               <span className="w-7 h-[2px] bg-current" />
