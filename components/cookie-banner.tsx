@@ -45,13 +45,13 @@ export function CookieBanner() {
           <div className="flex gap-3 flex-shrink-0">
             <button
               onClick={handleReject}
-              className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+              className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-none transition-colors"
             >
               Respinge
             </button>
             <button
               onClick={handleAccept}
-              className="px-4 py-2 text-sm font-medium text-white bg-accent hover:bg-accent/90 rounded-lg transition-colors"
+              className="px-4 py-2 text-sm font-medium text-white bg-accent hover:bg-accent/90 rounded-none transition-colors"
             >
               Accept
             </button>

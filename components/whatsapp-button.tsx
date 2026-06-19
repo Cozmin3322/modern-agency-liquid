@@ -35,7 +35,7 @@ export function WhatsAppButton() {
 
       {/* Tooltip */}
       {showTooltip && (
-        <div className="flex items-start gap-2 bg-white text-foreground text-sm rounded-2xl rounded-br-sm shadow-xl border border-border px-4 py-3 max-w-[220px] animate-in fade-in slide-in-from-bottom-2 duration-300">
+        <div className="flex items-start gap-2 bg-white text-foreground text-sm rounded-none shadow-xl border border-border px-4 py-3 max-w-[220px] animate-in fade-in slide-in-from-bottom-2 duration-300">
           <span className="leading-snug">
             Bună! Cum te putem ajuta astăzi? 👋
           </span>

@@ -5,12 +5,12 @@ import { HighlightedText } from "./highlighted-text"
 
 export function CallToAction() {
   return (
-    <section id="contact" className="py-32 md:py-29 bg-[#2C3E50] text-white">
+    <section id="contact" className="py-32 md:py-29 bg-[#1A1D21] text-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-white/65 text-sm tracking-[0.3em] uppercase mb-8">Gata sa iti izolezi casa?</p>
 
-          <h2 className="text-3xl md:text-4xl lg:text-6xl font-serif font-medium leading-[1.1] tracking-tight mb-8 text-balance text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-medium leading-[1.1] tracking-tight mb-8 text-balance text-white">
             Consultatie
             <br />
             <HighlightedText>gratuita</HighlightedText> la domiciliu

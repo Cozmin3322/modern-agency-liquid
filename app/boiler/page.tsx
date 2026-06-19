@@ -1,124 +1,176 @@
 import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Check } from "lucide-react"
-import { breadcrumbSchema } from "@/lib/schema"
-
-const breadcrumb = breadcrumbSchema([
-  { name: 'IsoThermLux', url: 'https://www.isothermlux.md' },
-  { name: 'Boiler', url: 'https://www.isothermlux.md/boiler' }
-])
+import { ServiceHero } from "@/components/service-hero"
+import { ArrowRight, Check, Thermometer, ShieldCheck, Zap, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Termoizolare Boiler și Boilere cu Spumă Poliuretanică | IsoThermLux Moldova",
-  description: "Termoizolare boilere și rezervoare de apă caldă cu spumă poliuretanică. Reduci pierderile termice cu 80%. Apa caldă mai mult timp. Garanție 25 ani. Moldova.",
-  keywords: "termoizolare boiler, izolare boiler spuma poliuretanica, termoizolare rezervor apa calda Moldova, izolatie termica boiler Chisinau",
+  title: "Termoizolare Boiler și Rezervoare Termice | IsoThermLux Moldova",
+  description: "Termoizolare profesională a boilerelor și rezervoarelor termice cu spumă poliuretanică. Reduci pierderile de căldură cu 60%. Economie reală la factura de gaz. Garanție 25 ani. Moldova.",
+  keywords: "termoizolare boiler Moldova, izolare boiler, spuma poliuretanica boiler, izolare rezervor termic, termoizolare acumulator caldura Chisinau",
   alternates: { canonical: "https://www.isothermlux.md/boiler" },
+  openGraph: {
+    title: "Termoizolare Boiler | IsoThermLux Moldova",
+    description: "Izolarea unui boiler este esențială pentru a reduce pierderile de căldură. Spumă poliuretanică — garanție 25 ani.",
+    type: "website",
+    locale: "ro_MD",
+    url: "https://www.isothermlux.md/boiler",
+  },
 }
 
-export default function Page() {
+const specs = [
+  { label: "Tip spumă", value: "Celule Închise (Closed Cell)" },
+  { label: "Conductivitate termică", value: "λ = 0.020–0.024 W/m·K" },
+  { label: "Densitate", value: "35–45 kg/m³" },
+  { label: "Absorbție apă", value: "< 2% din volum" },
+  { label: "Temperaturi de lucru", value: "până la +120°C" },
+  { label: "Durată aplicare", value: "câteva ore / boiler" },
+  { label: "Garanție", value: "25 ani scrisă" },
+]
+
+const benefits = [
+  {
+    Icon: Thermometer,
+    title: "Reduci Pierderile cu 60%",
+    description: "Un boiler neizolatermit pierde constant căldura prin perete. Spuma formează o manta termică continuă, fără rosturi sau goluri.",
+  },
+  {
+    Icon: Zap,
+    title: "Factura de Gaz Scade Vizibil",
+    description: "Apa caldă se răcește mai lent — arderile sunt mai rare. Clienții noștri raportează economii de 15–30% la prima factură după izolare.",
+  },
+  {
+    Icon: ShieldCheck,
+    title: "Protecție Împotriva Condensului",
+    description: "Pe rezervoarele de apă rece, spuma cu celule închise elimină condensul care ruginește metalul și udă pereții din jur.",
+  },
+  {
+    Icon: Clock,
+    title: "Aplicare Rapidă — Câteva Ore",
+    description: "Un boiler standard se izolează în 2–4 ore fără a-l demonta sau a opri instalația. Poți folosi apa caldă în aceeași zi.",
+  },
+]
+
+const types = [
+  { title: "Boilere de Apă Caldă Menajeră", desc: "Boilere verticale sau orizontale, electrice sau pe gaz, de la 80 la 500 litri. Izolăm pe exterior fără demontare." },
+  { title: "Acumulatoare Tampon", desc: "Rezervoare tampon pentru centrale termice sau pompe de căldură. Menținem temperatura acumulată mai mult timp, reducând ciclurile de pornire." },
+  { title: "Rezervoare de Apă Rece", desc: "Rezervoare de alimentare sau hidrofor. Eliminăm condensul și protejăm metalul de coroziune." },
+  { title: "Boilere Industriale", desc: "Rezervoare mari de 500–5000 litri pentru hoteluri, blocuri sau industrie. Echipament profesional pentru suprafețe mari." },
+  { title: "Schimbătoare de Căldură", desc: "Izolăm schimbătoarele de căldură și echipamentele termice industriale. Fiecare formă neregulată este acoperită perfect." },
+  { title: "Conducte de Legătură", desc: "Izolăm și conductele dintre boiler și instalație. Pierderile pe conducte neizolate pot depăși pierderile boilerului însuși." },
+]
+
+export default function BoilerPage() {
   return (
     <>
-      <Script id="breadcrumb-boiler" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <Header />
       <main className="bg-background">
-        {/* Hero */}
-        <section className="relative min-h-[60vh] flex items-center pt-20 bg-[#2C3E50]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-            <div className="max-w-3xl">
-              <p className="text-accent text-sm tracking-widest uppercase mb-4">Termoizolare Boiler</p>
-              <h1 className="text-5xl lg:text-6xl font-serif font-medium text-white mb-6">Termoizolare Boiler cu Spumă Poliuretanică</h1>
-              <p className="text-xl text-white/85 mb-8 leading-relaxed">Un boiler neizolat pierde căldura continuu — plătești să încălzești apa care se răcește singură. Spuma poliuretanică aplicată pe boiler reduce pierderile termice cu până la 80% și menține apa caldă de 3-4 ori mai mult.</p>
-              <div className="flex flex-wrap gap-4">
-                <a href="tel:+37378370243" className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">Consultație Gratuită</a>
-                <Link href="/servicii" className="border border-white/40 text-white px-8 py-3 rounded-lg hover:bg-white/10 transition">Toate Serviciile</Link>
+
+        <ServiceHero
+          backgroundImage="/images/project-detaliu-izolare-01.jpg"
+          title="Termoizolare Boiler"
+          titleAccent="Reduci Pierderile cu 60%"
+          subtitle="Izolarea unui boiler este esențială pentru a reduce pierderile de căldură și a economisi la factură. Aplicăm spumă poliuretanică cu celule închise direct pe boiler."
+          ctaSecondaryHref="/calculator-oferta"
+          ctaSecondaryLabel="Calculează Oferta"
+        />
+
+        <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+          <Link href="/" className="hover:text-accent transition">Acasă</Link>
+          <span className="mx-2">/</span>
+          <span>Termoizolare Boiler</span>
+        </nav>
+
+        <section className="py-24 bg-card">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-4xl font-serif font-medium mb-12">De Ce Să Izolezi Boilerul?</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {benefits.map(({ Icon, title, description }, idx) => (
+                <div key={idx} className="p-8 border border-border rounded-none hover:border-accent transition">
+                  <div className="w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+                    <Icon className="w-5 h-5 text-accent" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{title}</h3>
+                  <p className="text-foreground/70">{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-24 bg-background">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-2 gap-16 items-start">
+              <div>
+                <h2 className="text-4xl font-serif font-medium mb-8">Ce Tipuri de Boilere Izolăm</h2>
+                <div className="space-y-4">
+                  {types.map((type, idx) => (
+                    <div key={idx} className="flex items-start gap-4 p-6 bg-card border border-border rounded-none hover:border-accent transition">
+                      <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                      <div>
+                        <h3 className="font-semibold mb-1">{type.title}</h3>
+                        <p className="text-foreground/70 text-sm">{type.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="bg-card p-8 rounded-none border border-border sticky top-8">
+                <h3 className="text-xl font-semibold mb-6">Specificații Tehnice</h3>
+                <div className="space-y-4">
+                  {specs.map((spec, idx) => (
+                    <div key={idx} className="flex justify-between py-2 border-b border-border last:border-0">
+                      <span className="text-foreground/60 text-sm">{spec.label}</span>
+                      <span className="font-medium text-sm">{spec.value}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-8 p-4 bg-accent/10 rounded-none border border-accent/30">
+                  <p className="text-sm text-foreground/80 font-medium mb-1">De ce celule închise?</p>
+                  <p className="text-sm text-foreground/60">
+                    Boilerele funcționează la temperaturi ridicate și în medii cu umiditate. Celulele închise sunt impermeabile și stabile termic până la 120°C — singura alegere corectă.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Tip Spuma */}
-        <section className="py-16 bg-background">
+        <section className="py-24 bg-secondary">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-serif font-medium mb-3">Spumă Poliuretanică — Singura Soluție pe Care o Folosim</h2>
-            <p className="text-foreground/70 mb-10 max-w-2xl">Nu vindem materiale generice. Lucrăm exclusiv cu spumă poliuretanică de înaltă calitate, în două variante adaptate fiecărei aplicații.</p>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="p-8 border-2 border-accent/40 rounded-lg bg-accent/5">
-                <div className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">Celulă Închisă</div>
-                <p className="text-foreground/80 mb-4">Densitate mare, impermeabil la apă. Valoare R superioară. Ideal pentru aplicații unde există contact cu umiditate sau necesitate de rezistență mecanică.</p>
-                <ul className="space-y-1 text-sm text-foreground/70">
-                  <li>✓ Impermeabil 100% la apă</li>
-                  <li>✓ Valoare R 6.5 per inch</li>
-                  <li>✓ Rezistență mecanică ridicată</li>
-                </ul>
-              </div>
-              <div className="p-8 border border-border rounded-lg">
-                <div className="inline-block bg-foreground/10 text-foreground text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">Celulă Deschisă</div>
-                <p className="text-foreground/80 mb-4">Ușoară și flexibilă. Excelentă pentru fonoizolare și spații interioare. Permeabilă la vapori — materialele respiră natural.</p>
-                <ul className="space-y-1 text-sm text-foreground/70">
-                  <li>✓ Fonoizolare excelentă</li>
-                  <li>✓ Foarte ușoară</li>
-                  <li>✓ Permeabilă la vapori</li>
-                </ul>
-              </div>
+            <h2 className="text-4xl font-serif font-medium mb-12 text-center">Cum Lucrăm</h2>
+            <div className="grid md:grid-cols-4 gap-8">
+              {[
+                { step: "1", title: "Evaluare Gratuită", desc: "Venim la tine și evaluăm boilerul: dimensiuni, tip, temperatură de lucru, necesități." },
+                { step: "2", title: "Ofertă Exactă", desc: "Calculăm cantitatea de material și prețul final. Nicio surpriză la factură." },
+                { step: "3", title: "Pregătire", desc: "Curățăm suprafața boilerului. Nu este nevoie de demontare sau oprirea instalației." },
+                { step: "4", title: "Aplicare", desc: "Spuma se aplică uniform pe toată suprafața. Finisaj neted sau brut, după preferință." },
+              ].map((s, idx) => (
+                <div key={idx} className="text-center">
+                  <div className="w-14 h-14 bg-accent text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">
+                    {s.step}
+                  </div>
+                  <h3 className="font-semibold mb-2">{s.title}</h3>
+                  <p className="text-sm text-foreground/70">{s.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Benefits */}
-        <section className="py-20 bg-card">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-12">Beneficii</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div key={"0"} className="p-6 border border-border rounded-lg"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Reducere pierderi termice cu 80%</h3><p className="text-sm text-foreground/70">Apa caldă se răcește de 3-4 ori mai lent. Boilerul pornește mult mai rar.</p></div>
-              <div key={"1"} className="p-6 border border-border rounded-lg"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Economie 30-50% la energia electrică</h3><p className="text-sm text-foreground/70">Mai puține cicluri de încălzire = factură semnificativ mai mică.</p></div>
-              <div key={"2"} className="p-6 border border-border rounded-lg"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Aderare perfectă pe orice formă</h3><p className="text-sm text-foreground/70">Spuma urmează exact forma cilindrică a boilerului. Nicio zonă neizolată.</p></div>
-              <div key={"3"} className="p-6 border border-border rounded-lg"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Elimini condensul exterior</h3><p className="text-sm text-foreground/70">Celula închisă previne formarea condensului care corodează mantaua boilerului.</p></div>
-              <div key={"4"} className="p-6 border border-border rounded-lg"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Aplicare rapidă — câteva ore</h3><p className="text-sm text-foreground/70">Izolăm boilerul fără a-l demonta sau opri alimentarea.</p></div>
-              <div key={"5"} className="p-6 border border-border rounded-lg"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Garanție 25 ani</h3><p className="text-sm text-foreground/70">Soluție permanentă. Nicio înlocuire a izolației în toată durata de viață a boilerului.</p></div>
-            </div>
-          </div>
-        </section>
-
-        {/* Types */}
-        <section className="py-20 bg-background">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-12">Tipuri de Proiecte</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div key={"0"} className="p-6 border border-border rounded-lg"><h3 className="font-semibold mb-2">Boiler Electric Vertical</h3><p className="text-sm text-foreground/70">Cel mai frecvent tip. Izolăm lateral și pe capace pentru eficiență maximă.</p></div>
-              <div key={"1"} className="p-6 border border-border rounded-lg"><h3 className="font-semibold mb-2">Boiler Electric Orizontal</h3><p className="text-sm text-foreground/70">Montat sub chiuvetă sau în dulap. Izolăm adaptat la spațiul disponibil.</p></div>
-              <div key={"2"} className="p-6 border border-border rounded-lg"><h3 className="font-semibold mb-2">Boiler cu Serpentină (Solar)</h3><p className="text-sm text-foreground/70">Izolăm rezervorul solar. Energia solară stocată mai eficient.</p></div>
-              <div key={"3"} className="p-6 border border-border rounded-lg"><h3 className="font-semibold mb-2">Boiler de Acumulare 200-500L</h3><p className="text-sm text-foreground/70">Rezervoare mari pentru case și vile. Economii uriașe la scară mare.</p></div>
-              <div key={"4"} className="p-6 border border-border rounded-lg"><h3 className="font-semibold mb-2">Boiler Industrial</h3><p className="text-sm text-foreground/70">Rezervoare de sute de litri pentru hoteluri, restaurante, fabrici.</p></div>
-              <div key={"5"} className="p-6 border border-border rounded-lg"><h3 className="font-semibold mb-2">Rezervor Tampon Centrală</h3><p className="text-sm text-foreground/70">Izolăm rezervorul tampon al centralei termice. Eficiență sporită a întregului sistem.</p></div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section className="py-20 bg-card">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-10">Întrebări Frecvente</h2>
-            <div className="space-y-6">
-              <div key={"0"} className="border-b border-border pb-6"><h3 className="font-semibold mb-2">Pot izola boilerul existent fără să-l demontez?</h3><p className="text-foreground/70">Da. Aplicăm spuma direct pe carcasa boilerului montat. Nu este nevoie să-l deconectați sau să-l demontați.</p></div>
-              <div key={"1"} className="border-b border-border pb-6"><h3 className="font-semibold mb-2">Ce grosime de spumă se aplică pe boiler?</h3><p className="text-foreground/70">3-5cm de celulă închisă sunt suficienți pentru un boiler casnic. Suficient pentru a reduce pierderile cu 80%.</p></div>
-              <div key={"2"} className="border-b border-border pb-6"><h3 className="font-semibold mb-2">Se poate izola și capacul superior/inferior?</h3><p className="text-foreground/70">Da, izolăm toate suprafețele — lateral, sus și jos — pentru protecție termică completă 360°.</p></div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="py-20 bg-[#2C3E50] text-white text-center">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-4xl font-serif font-medium mb-4">Izolează Boilerul Acum</h2>
-            <p className="text-white/80 mb-8">Evaluare gratuită. Ofertă în 24h. Garanție 25 ani.</p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
-              Sună Acum <ArrowRight className="w-4 h-4" />
+        <section className="py-24 bg-[#1A1D21] text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-4xl font-serif font-medium mb-6">Izolează Boilerul și Economisești din Prima Lună</h2>
+            <p className="text-lg mb-8 max-w-xl mx-auto opacity-90">
+              Deplasare gratuită. Aplicare în câteva ore. Garanție 25 ani.
+            </p>
+            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
+              Sună Acum: +373 78 370 243 <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </section>
+
       </main>
       <Footer />
     </>

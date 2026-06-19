@@ -23,6 +23,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/termoizolare/mansarda`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/termoizolare/casa`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/termoizolare/hala-industriala`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/termoizolare/acoperis`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/termoizolare/camioane`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/termoizolare/cisterne`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/termoizolare/conducte`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/termoizolare/containere`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/termoizolare/ferma`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/termoizolare/fundatie`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/termoizolare/garaj`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/boiler`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/transport-industrial`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
 
     // Hidroizolare subpages
     { url: `${baseUrl}/hidroizolare/fundatie`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
@@ -33,12 +43,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/locatii/chisinau`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/locatii/balti`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
 
+    // City SEO pages — high priority for local search
+    { url: `${baseUrl}/termoizolare-chisinau`, lastModified, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${baseUrl}/termoizolare-balti`, lastModified, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${baseUrl}/termoizolare-orhei`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/termoizolare-cahul`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/termoizolare-ungheni`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/termoizolare-soroca`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${baseUrl}/termoizolare-hincesti`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/termoizolare-straseni`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
+
     // Support pages
     { url: `${baseUrl}/despre-noi`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/recenzii`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${baseUrl}/servicii`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/contact`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
     { url: `${baseUrl}/calculator-oferta`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/calculator`, lastModified, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/fonoizolare`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/beneficii`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/ce-este-spuma-poliuretanica`, lastModified, changeFrequency: 'monthly', priority: 0.7 },

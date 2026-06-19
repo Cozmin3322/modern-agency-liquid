@@ -25,7 +25,7 @@ export function FAQClient({ items }: FAQClientProps) {
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-16">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Intrebari Frecvente</p>
-          <h2 className="text-6xl font-serif font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-7xl">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-medium leading-[1.1] tracking-tight mb-6 text-balance">
             Raspunsuri la intrebarile dumneavoastra
           </h2>
         </div>

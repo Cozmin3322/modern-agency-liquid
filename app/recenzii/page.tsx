@@ -73,7 +73,7 @@ export default function ReviewsPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8">
               {reviews.map((review, idx) => (
-                <div key={idx} className="p-8 bg-card border border-border rounded-lg">
+                <div key={idx} className="p-8 bg-card border border-border rounded-none">
                   <div className="flex gap-1 mb-4">
                     {[...Array(review.rating)].map((_, i) => (
                       <Star key={i} className="w-5 h-5 fill-accent text-accent" />
@@ -97,7 +97,7 @@ export default function ReviewsPage() {
             <p className="text-lg text-foreground/80 mb-8">
               Clienții noștri sunt prioritatea #1. Garanția 25 ani și suportul permanent ne diferențiază.
             </p>
-            <a href="tel:+37378370243" className="inline-block bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-block bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">
               Cere Recenzie pe Loc
             </a>
           </div>

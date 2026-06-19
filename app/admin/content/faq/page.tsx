@@ -99,7 +99,7 @@ export default function FAQEditor() {
 
           <div className="space-y-6">
             {/* Add New FAQ */}
-            <div className="border border-border rounded-lg p-6 bg-accent/5">
+            <div className="border border-border rounded-none p-6 bg-accent/5">
               <h2 className="text-lg font-semibold text-foreground mb-4">Adaugă Întrebare Nouă</h2>
               <div className="space-y-3">
                 <input
@@ -107,18 +107,18 @@ export default function FAQEditor() {
                   value={newQuestion}
                   onChange={(e) => setNewQuestion(e.target.value)}
                   placeholder="Introduceți întrebarea..."
-                  className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                  className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                 />
                 <textarea
                   value={newAnswer}
                   onChange={(e) => setNewAnswer(e.target.value)}
                   placeholder="Introduceți răspunsul..."
                   rows={3}
-                  className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                  className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                 />
                 <button
                   onClick={handleAdd}
-                  className="flex items-center gap-2 px-4 py-2 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors"
+                  className="flex items-center gap-2 px-4 py-2 bg-accent text-white rounded-none hover:bg-accent/90 transition-colors"
                 >
                   <Plus className="w-4 h-4" />
                   Adaugă
@@ -129,20 +129,20 @@ export default function FAQEditor() {
             {/* FAQ Items List */}
             <div className="space-y-3">
               {faqItems.map((item) => (
-                <div key={item.id} className="border border-border rounded-lg p-4 bg-accent/5">
+                <div key={item.id} className="border border-border rounded-none p-4 bg-accent/5">
                   {editingId === item.id ? (
                     <div className="space-y-3">
                       <input
                         type="text"
                         defaultValue={item.question}
                         onBlur={(e) => handleUpdate(item.id, e.target.value, item.answer)}
-                        className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                        className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                       />
                       <textarea
                         defaultValue={item.answer}
                         onBlur={(e) => handleUpdate(item.id, item.question, e.target.value)}
                         rows={2}
-                        className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                        className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                       />
                       <button
                         onClick={() => setEditingId(null)}
@@ -181,14 +181,14 @@ export default function FAQEditor() {
             <div className="flex gap-3">
               <button
                 onClick={handleSave}
-                className="flex items-center gap-2 px-6 py-2 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors"
+                className="flex items-center gap-2 px-6 py-2 bg-accent text-white rounded-none hover:bg-accent/90 transition-colors"
               >
                 <Save className="w-4 h-4" />
                 Salvează
               </button>
               <button
                 onClick={handleReset}
-                className="flex items-center gap-2 px-6 py-2 border border-border text-foreground rounded-lg hover:bg-accent/5 transition-colors"
+                className="flex items-center gap-2 px-6 py-2 border border-border text-foreground rounded-none hover:bg-accent/5 transition-colors"
               >
                 <RotateCcw className="w-4 h-4" />
                 Resetează la Original

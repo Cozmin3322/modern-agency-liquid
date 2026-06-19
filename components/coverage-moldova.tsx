@@ -28,7 +28,7 @@ export function CoverageMoldova() {
       if (entry.isIntersecting && !done) {
         done = true
         const start = performance.now()
-        const duration = 1600
+        const duration = 1800
         const tick = (now: number) => {
           const t = Math.min((now - start) / duration, 1)
           const eased = 1 - Math.pow(1 - t, 3)
@@ -38,7 +38,7 @@ export function CoverageMoldova() {
         frame = requestAnimationFrame(tick)
         observer.disconnect()
       }
-    }, { threshold: 0.35 })
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' })
 
     observer.observe(target)
     return () => { observer.disconnect(); cancelAnimationFrame(frame) }
@@ -48,15 +48,18 @@ export function CoverageMoldova() {
     <section className="w-full">
 
       {/* Stats — 3 cifre cheie */}
-      <div ref={statsRef} className="py-16 md:py-20 bg-foreground">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-3 gap-4 md:gap-12">
+      <div ref={statsRef} className="py-16 md:py-24 bg-foreground relative overflow-hidden">
+        {/* Top accent stripe */}
+        <div className="absolute top-0 left-0 h-1 w-full bg-accent" />
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-3 divide-x divide-white/10">
             {STATS.map((stat, i) => (
-              <div key={i} className="text-center">
-                <p className="text-4xl sm:text-5xl md:text-6xl font-serif font-medium text-white mb-2">
+              <div key={i} className="text-center px-2 md:px-6">
+                <span className="font-mono text-[10px] md:text-xs text-accent block mb-3">/ 0{i + 1}</span>
+                <p className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-serif font-semibold text-white mb-3 leading-none tabular-nums">
                   {animated[i].toLocaleString('ro-RO')}{stat.suffix}
                 </p>
-                <p className="text-xs md:text-sm text-white/60 tracking-[0.2em] uppercase">{stat.label}</p>
+                <p className="font-mono text-[10px] md:text-xs text-white/50 tracking-[0.2em] uppercase">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -66,11 +69,15 @@ export function CoverageMoldova() {
       {/* Map + coverage */}
       <div className="py-20 md:py-28 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
             {/* Text */}
             <div>
-              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">Acoperire</p>
+              <div className="flex items-center gap-4 mb-6">
+                <span className="font-mono text-sm text-accent font-bold">/ 05</span>
+                <span className="h-px flex-1 max-w-[60px] bg-border" />
+                <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground">Acoperire</p>
+              </div>
               <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight mb-6">
                 Acoperim toată<br />Moldova
               </h2>

@@ -53,7 +53,7 @@ export function CalculatorClient({ settings }: CalculatorClientProps) {
                   <button
                     key={opt.val}
                     onClick={() => setType(opt.val as any)}
-                    className={`p-4 rounded-lg font-semibold transition border-2 text-left ${
+                    className={`p-4 rounded-none font-semibold transition border-2 text-left ${
                       type === opt.val
                         ? 'border-accent bg-accent/10 text-foreground'
                         : 'border-border hover:border-accent/50'
@@ -79,7 +79,7 @@ export function CalculatorClient({ settings }: CalculatorClientProps) {
                 step="10"
                 value={area}
                 onChange={(e) => setArea(parseInt(e.target.value))}
-                className="w-full h-2 bg-border rounded-lg appearance-none cursor-pointer accent-accent"
+                className="w-full h-2 bg-border rounded-none appearance-none cursor-pointer accent-accent"
               />
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3">
                 {[30, 50, 100, 200].map((val) => (
@@ -110,7 +110,7 @@ export function CalculatorClient({ settings }: CalculatorClientProps) {
                   <button
                     key={opt.val}
                     onClick={() => setLocation(opt.val as any)}
-                    className={`p-3 rounded-lg font-semibold transition border-2 text-center ${
+                    className={`p-3 rounded-none font-semibold transition border-2 text-center ${
                       location === opt.val
                         ? 'border-accent bg-accent/10'
                         : 'border-border hover:border-accent/50'
@@ -128,7 +128,7 @@ export function CalculatorClient({ settings }: CalculatorClientProps) {
 
           {/* Result Card */}
           <div className="lg:col-span-2">
-            <div className="sticky top-20 md:top-32 bg-background p-6 md:p-8 rounded-lg border-2 border-accent">
+            <div className="sticky top-20 md:top-32 bg-background p-6 md:p-8 rounded-none border-2 border-accent">
               <p className="text-sm text-foreground/70 mb-2">ESTIMARE APROXIMATIVĂ</p>
               <div className="mb-6 pb-6 border-b border-border space-y-3">
                 <div className="flex justify-between text-sm">
@@ -151,14 +151,14 @@ export function CalculatorClient({ settings }: CalculatorClientProps) {
                 )}
               </div>
 
-              <div className="bg-accent/15 p-4 rounded-lg mb-6 border border-accent/30">
+              <div className="bg-accent/15 p-4 rounded-none mb-6 border border-accent/30">
                 <p className="text-xs text-accent font-semibold mb-1">TOTAL ESTIMAT</p>
                 <p className="text-4xl font-bold text-accent">{totalEstimate.toLocaleString()}</p>
                 <p className="text-xs text-foreground/70 mt-1">lei</p>
               </div>
 
               {savings > 0 && (
-                <div className="bg-green-500/10 p-4 rounded-lg mb-6 border border-green-500/30">
+                <div className="bg-green-500/10 p-4 rounded-none mb-6 border border-green-500/30">
                   <p className="text-xs text-green-700 font-semibold mb-1">ECONOMII ANUALE</p>
                   <p className="text-2xl font-bold text-green-700">~{savings}</p>
                   <p className="text-xs text-green-700">lei/an</p>
@@ -167,14 +167,14 @@ export function CalculatorClient({ settings }: CalculatorClientProps) {
 
               <Link
                 href="/calculator-oferta"
-                className="w-full inline-flex items-center justify-center gap-2 bg-accent text-background px-6 py-4 rounded-lg font-semibold hover:bg-accent/90 transition mb-3"
+                className="w-full inline-flex items-center justify-center gap-2 bg-accent text-background px-6 py-4 rounded-none font-semibold hover:bg-accent/90 transition mb-3"
               >
                 Calculator Complet <ArrowRight className="w-4 h-4" />
               </Link>
 
               <a
                 href="tel:++37378370243"
-                className="w-full inline-flex items-center justify-center gap-2 border-2 border-accent text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-accent/5 transition"
+                className="w-full inline-flex items-center justify-center gap-2 border-2 border-accent text-foreground px-6 py-3 rounded-none font-semibold hover:bg-accent/5 transition"
               >
                 Sună pentru Ofertă
               </a>

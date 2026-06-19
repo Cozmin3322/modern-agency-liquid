@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ServiceHero } from "@/components/service-hero"
 import { ArrowRight, Check, Snowflake, Package, Home, Wrench, Wheat, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -24,33 +25,22 @@ export default function ContainerePage() {
       <Header />
       <main className="bg-background">
 
-        {/* Hero */}
-        <section className="relative min-h-[70vh] flex items-center pt-20 bg-[#1a2535]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative py-20">
-            <nav className="text-sm text-white/60 mb-6">
-              <Link href="/" className="hover:text-white transition">Acasă</Link>
-              <span className="mx-2">/</span>
-              <Link href="/termoizolare" className="hover:text-white transition">Termoizolare</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">Containere</span>
-            </nav>
-            <p className="text-accent text-sm tracking-widest uppercase mb-4">Spumă Poliuretanică — Celule Deschise & Închise</p>
-            <h1 className="text-5xl md:text-6xl font-serif font-medium text-white mb-6 max-w-3xl">
-              Termoizolare Containere Profesională
-            </h1>
-            <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
-              Transformăm containerele reci și incomode în spații termice eficiente. Spumă poliuretanică aplicată pe toată suprafața interioară sau exterioară — izolație perfectă în orice sezon.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
-                Consultație Gratuită <ArrowRight className="w-4 h-4" />
-              </a>
-              <Link href="/calculator-oferta" className="inline-flex items-center gap-2 border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:border-white transition">
-                Calculează Oferta
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ServiceHero
+          backgroundImage="/images/project-rezultat-final-01.webp"
+          title="Termoizolare Containere"
+          titleAccent="Profesională"
+          subtitle="Transformăm containerele reci și incomode în spații termice eficiente. Spumă poliuretanică aplicată pe toată suprafața interioară sau exterioară."
+          ctaSecondaryHref="/calculator-oferta"
+          ctaSecondaryLabel="Calculează Oferta"
+        />
+
+        <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+          <Link href="/" className="hover:text-accent transition">Acasă</Link>
+          <span className="mx-2">/</span>
+          <Link href="/termoizolare" className="hover:text-accent transition">Termoizolare</Link>
+          <span className="mx-2">/</span>
+          <span>Containere</span>
+        </nav>
 
         {/* Doua tipuri spuma */}
         <section className="py-24 bg-card">
@@ -60,7 +50,7 @@ export default function ContainerePage() {
               Folosim exclusiv spumă poliuretanică — în două variante, alese în funcție de scopul containerului.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="p-8 bg-background border-2 border-accent rounded-lg">
+              <div className="p-8 bg-background border-2 border-accent rounded-none">
                 <div className="inline-block bg-accent/10 text-accent px-3 py-1 rounded text-sm font-semibold mb-4">Recomandat pentru depozitare și frig</div>
                 <h3 className="text-2xl font-semibold mb-4">Spumă cu Celule Închise</h3>
                 <p className="text-foreground/70 mb-6 leading-relaxed">
@@ -81,7 +71,7 @@ export default function ContainerePage() {
                   ))}
                 </ul>
               </div>
-              <div className="p-8 bg-background border-2 border-border rounded-lg">
+              <div className="p-8 bg-background border-2 border-border rounded-none">
                 <div className="inline-block bg-foreground/10 text-foreground px-3 py-1 rounded text-sm font-semibold mb-4">Recomandat pentru spații locuibile</div>
                 <h3 className="text-2xl font-semibold mb-4">Spumă cu Celule Deschise</h3>
                 <p className="text-foreground/70 mb-6 leading-relaxed">
@@ -143,7 +133,7 @@ export default function ContainerePage() {
                   desc: "Adăposturi pentru echipamente electronice, grupuri electrogene sau stații de pompare. Protecție termică pentru instalații.",
                 },
               ].map((type, idx) => (
-                <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
+                <div key={idx} className="p-8 bg-card border border-border rounded-none hover:border-accent transition">
                   <type.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-3">{type.title}</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">{type.desc}</p>
@@ -164,7 +154,7 @@ export default function ContainerePage() {
                 { title: "Greutate minimă", desc: "Adaugă 2–5 kg/m² față de zeci de kg cu panouri sandwich sau vată minerală. Ideal pentru transport." },
                 { title: "Durabilitate 25+ ani", desc: "Nu se tasează, nu cade, nu absoarbe umezeala. Performanța termică rămâne constantă decenii." },
               ].map((item, idx) => (
-                <div key={idx} className="p-6 bg-card border border-border rounded-lg">
+                <div key={idx} className="p-6 bg-card border border-border rounded-none">
                   <Check className="w-6 h-6 text-accent mb-3" />
                   <h3 className="font-semibold mb-2">{item.title}</h3>
                   <p className="text-foreground/70 text-sm">{item.desc}</p>
@@ -175,13 +165,13 @@ export default function ContainerePage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-[#2C3E50] text-white">
+        <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Termoizolăm Containerul Tău</h2>
             <p className="text-lg mb-8 max-w-xl mx-auto opacity-90">
               Spunem-ne ce fel de container ai și îți oferim soluția potrivită. Consultație gratuită.
             </p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum: +373 78 370 243 <ArrowRight className="w-4 h-4" />
             </a>
           </div>

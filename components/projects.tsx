@@ -40,8 +40,12 @@ export function Projects() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
-            <p className="text-muted-foreground text-xs md:text-sm tracking-[0.3em] uppercase mb-6">Lucrările Noastre</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium tracking-tight">Proiecte Recent Finalizate</h2>
+            <div className="flex items-center gap-4 mb-6">
+              <span className="font-mono text-xs md:text-sm text-accent font-bold">/ 03</span>
+              <span className="h-px flex-1 max-w-[60px] bg-border" />
+              <p className="text-muted-foreground text-xs md:text-sm tracking-[0.3em] uppercase">Lucrările Noastre</p>
+            </div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-medium tracking-tight">Proiecte Recent Finalizate</h2>
           </div>
           <Link
             href="/portofoliu"
@@ -61,7 +65,7 @@ export function Projects() {
               onMouseLeave={() => setHoveredId(null)}
             >
               <Link href={`/portofoliu/${project.slug}`}>
-                <div ref={(el) => { imageRefs.current[index] = el }} className="relative overflow-hidden aspect-[4/3] mb-6 rounded-lg">
+                <div ref={(el) => { imageRefs.current[index] = el }} className="relative overflow-hidden aspect-[4/3] mb-6 rounded-none">
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}

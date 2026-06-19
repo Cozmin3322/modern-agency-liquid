@@ -72,7 +72,7 @@ export default function CalculatorEditor() {
           </div>
 
           <div className="space-y-6">
-            <div className="border border-border rounded-lg p-6 bg-accent/5">
+            <div className="border border-border rounded-none p-6 bg-accent/5">
               <h2 className="text-lg font-semibold text-foreground mb-4">Prețuri Servicii</h2>
 
               <div className="space-y-4">
@@ -86,7 +86,7 @@ export default function CalculatorEditor() {
                     onChange={(e) => handleChange('termoizolarePrice', parseFloat(e.target.value))}
                     min="0"
                     step="0.01"
-                    className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                    className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                   />
                 </div>
 
@@ -100,13 +100,13 @@ export default function CalculatorEditor() {
                     onChange={(e) => handleChange('hidroizolarePrice', parseFloat(e.target.value))}
                     min="0"
                     step="0.01"
-                    className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                    className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                   />
                 </div>
               </div>
             </div>
 
-            <div className="border border-border rounded-lg p-6 bg-accent/5">
+            <div className="border border-border rounded-none p-6 bg-accent/5">
               <h2 className="text-lg font-semibold text-foreground mb-4">Costuri Deplasare</h2>
 
               <div className="space-y-4">
@@ -120,7 +120,7 @@ export default function CalculatorEditor() {
                     onChange={(e) => handleChange('travelCostBalti', parseFloat(e.target.value))}
                     min="0"
                     step="0.01"
-                    className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                    className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                   />
                 </div>
 
@@ -134,7 +134,7 @@ export default function CalculatorEditor() {
                     onChange={(e) => handleChange('travelCostOther', parseFloat(e.target.value))}
                     min="0"
                     step="0.01"
-                    className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                    className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                   />
                 </div>
               </div>
@@ -143,14 +143,14 @@ export default function CalculatorEditor() {
             <div className="flex gap-3">
               <button
                 onClick={handleSave}
-                className="flex items-center gap-2 px-6 py-2 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors"
+                className="flex items-center gap-2 px-6 py-2 bg-accent text-white rounded-none hover:bg-accent/90 transition-colors"
               >
                 <Save className="w-4 h-4" />
                 Salvează
               </button>
               <button
                 onClick={handleReset}
-                className="flex items-center gap-2 px-6 py-2 border border-border text-foreground rounded-lg hover:bg-accent/5 transition-colors"
+                className="flex items-center gap-2 px-6 py-2 border border-border text-foreground rounded-none hover:bg-accent/5 transition-colors"
               >
                 <RotateCcw className="w-4 h-4" />
                 Resetează la Original

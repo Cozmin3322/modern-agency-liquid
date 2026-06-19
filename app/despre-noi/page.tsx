@@ -74,7 +74,7 @@ export default function AboutPage() {
                   <span className="text-lg">Certificări internaționale</span>
                 </div>
               </div>
-              <div className="rounded-lg overflow-hidden">
+              <div className="rounded-none overflow-hidden">
                 <img
                   src="/images/about-spray-foam.jpg"
                   alt="Tehnician IsoThermLux aplicand spuma poliuretanica pe perete"
@@ -90,17 +90,17 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-12 text-center">Valorile Noastre</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="p-8 bg-card border border-border rounded-lg">
+              <div className="p-8 bg-card border border-border rounded-none">
                 <Award className="w-12 h-12 text-accent mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Calitate Premium</h3>
                 <p className="text-foreground/70">Materiale certificate ISO 9001. Garanție 25 ani. Fără compromiuri pe calitate.</p>
               </div>
-              <div className="p-8 bg-card border border-border rounded-lg">
+              <div className="p-8 bg-card border border-border rounded-none">
                 <Users className="w-12 h-12 text-accent mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Profesionalism</h3>
                 <p className="text-foreground/70">Echipă certificată cu 12+ ani experiență. Servicii complete și oneste.</p>
               </div>
-              <div className="p-8 bg-card border border-border rounded-lg">
+              <div className="p-8 bg-card border border-border rounded-none">
                 <Zap className="w-12 h-12 text-accent mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Satisfacție Client</h3>
                 <p className="text-foreground/70">100% dedicație. Consultații gratuite. Suport permanent post-lucru.</p>
@@ -114,17 +114,17 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-12 text-center">Echipa Noastră</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="p-8 bg-card border border-border rounded-lg">
+              <div className="p-8 bg-card border border-border rounded-none">
                 <h3 className="font-semibold text-lg mb-2">Ion Popescu</h3>
                 <p className="text-foreground/70 mb-2">Director & Specialist Termoizolare</p>
                 <p className="text-sm text-accent font-semibold">14 ani experiență</p>
               </div>
-              <div className="p-8 bg-card border border-border rounded-lg">
+              <div className="p-8 bg-card border border-border rounded-none">
                 <h3 className="font-semibold text-lg mb-2">Andrei Vasile</h3>
                 <p className="text-foreground/70 mb-2">Specialist Hidroizolare</p>
                 <p className="text-sm text-accent font-semibold">10 ani experiență</p>
               </div>
-              <div className="p-8 bg-card border border-border rounded-lg">
+              <div className="p-8 bg-card border border-border rounded-none">
                 <h3 className="font-semibold text-lg mb-2">Elena Munteanu</h3>
                 <p className="text-foreground/70 mb-2">Manager Proiecte</p>
                 <p className="text-sm text-accent font-semibold">8 ani experiență</p>
@@ -143,13 +143,13 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+37378370243"
-                className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition-colors"
               >
                 Sună Acum
               </a>
               <a
                 href="/calculator-oferta"
-                className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-8 py-4 rounded-lg font-semibold hover:bg-accent/10 transition-colors"
+                className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-8 py-4 rounded-none font-semibold hover:bg-accent/10 transition-colors"
               >
                 Calculator Ofertă
               </a>

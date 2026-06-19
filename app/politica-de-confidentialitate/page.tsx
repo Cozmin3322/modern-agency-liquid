@@ -103,7 +103,7 @@ export default function PoliticaConfidentialitate() {
               <p>
                 Pentru întrebări sau preocupări cu privire la această Politică de Confidențialitate sau practicile noastre de protecție a datelor:
               </p>
-              <div className="bg-slate-100 p-4 rounded-lg mt-4">
+              <div className="bg-slate-100 p-4 rounded-none mt-4">
                 <p>IsoThermLux</p>
                 <p>Email: infopoliuretan@gmail.com</p>
                 <p>Telefon: +373 78 370 243</p>

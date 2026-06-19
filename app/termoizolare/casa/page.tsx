@@ -27,7 +27,7 @@ export default function CasaPage() {
               <p className="text-2xl text-white/90 mb-8 leading-relaxed">
                 Izolează acoperisul, pereții și fundația. Confort maxim în orice sezon. Economie 40-50% la gaz.
               </p>
-              <a href="tel:+37378370243" className="inline-block bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+              <a href="tel:+37378370243" className="inline-block bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">
                 Consultație Gratuită
               </a>
             </div>
@@ -43,7 +43,7 @@ export default function CasaPage() {
                 { title: "Pereti Exteriori", desc: "Izolație pereți pentru confort maxim. Eliminare punți termice." },
                 { title: "Fundație", desc: "Izolație termică a fundației. Spațiu în subsol confortabil și uscat." }
               ].map((item, idx) => (
-                <div key={idx} className="p-8 border border-border rounded-lg">
+                <div key={idx} className="p-8 border border-border rounded-none">
                   <Check className="w-6 h-6 text-accent mb-4" />
                   <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
                   <p className="text-foreground/70">{item.desc}</p>
@@ -84,11 +84,11 @@ export default function CasaPage() {
           </div>
         </section>
 
-        <section className="py-24 bg-[#2C3E50] text-white">
+        <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Termoizolează Casa Completa</h2>
             <p className="text-lg mb-8 opacity-90">Consultație gratuită fără angajamente.</p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Contactează-ne <ArrowRight className="w-4 h-4" />
             </a>
           </div>

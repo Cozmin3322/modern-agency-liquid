@@ -7,7 +7,7 @@ import { HighlightedText } from "./highlighted-text"
 const expertiseAreas = [
   {
     title: "Termoizolare",
-    description: "Izolație termică profesională cu spumă poliuretanică. Reducere costuri încălzire cu 70%. Fără punți termice. Aplicare rapidă în 1-2 zile. Garanție 25 ani.",
+    description: "Izolație termică profesională cu spumă poliuretanică. Reducere costuri încălzire cu 40-50%. Fără punți termice. Aplicare rapidă în 1-2 zile. Garanție 25 ani.",
     icon: Thermometer,
   },
   {
@@ -47,7 +47,7 @@ export function Expertise() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-20">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Serviciile Noastre</p>
-          <h2 className="text-6xl font-serif font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-medium leading-[1.1] tracking-tight mb-6 text-balance">
             <HighlightedText>Soluții</HighlightedText> complete
             <br />
             de izolare

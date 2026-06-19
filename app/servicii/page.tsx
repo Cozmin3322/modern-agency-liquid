@@ -64,7 +64,7 @@ export default function ServiciiPage() {
       <main className="min-h-screen bg-background">
 
         {/* Hero Section */}
-        <section className="py-24 md:py-32 border-b border-border">
+        <section className="py-16 md:py-24 lg:py-32 border-b border-border">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl">
               <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">Ce oferim</p>
@@ -81,24 +81,25 @@ export default function ServiciiPage() {
         {/* Services Grid */}
         <section className="py-20 md:py-28">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
               {services.map((service, idx) => {
                 const { Icon } = service
                 return (
                   <Link key={idx} href={service.href}>
-                    <div className="bg-background p-10 h-full group flex flex-col hover:bg-card transition-colors duration-300">
-                      {/* Icon */}
-                      <div className="mb-8">
-                        <div className="w-14 h-14 rounded-full border border-border flex items-center justify-center group-hover:border-accent group-hover:bg-accent/5 transition-all duration-300">
-                          <Icon className="w-6 h-6 text-muted-foreground group-hover:text-accent transition-colors duration-300" strokeWidth={1.5} />
+                    <div className="bg-background p-10 h-full group flex flex-col hover:bg-[#1A1D21] transition-colors duration-300">
+                      {/* Number + Icon */}
+                      <div className="flex items-center justify-between mb-8">
+                        <div className="w-14 h-14 border border-border flex items-center justify-center group-hover:border-accent group-hover:bg-accent transition-all duration-300">
+                          <Icon className="w-6 h-6 text-muted-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                         </div>
+                        <span className="font-mono text-sm text-accent font-bold">/ 0{idx + 1}</span>
                       </div>
 
                       {/* Title + description */}
-                      <h2 className="text-xl font-serif font-medium mb-3 group-hover:text-accent transition-colors duration-300">
+                      <h2 className="text-xl font-serif uppercase mb-3 group-hover:text-white transition-colors duration-300">
                         {service.title}
                       </h2>
-                      <p className="text-muted-foreground text-sm leading-relaxed mb-8 flex-1">
+                      <p className="text-muted-foreground group-hover:text-white/70 text-sm leading-relaxed mb-8 flex-1 transition-colors duration-300">
                         {service.description}
                       </p>
 
@@ -106,14 +107,14 @@ export default function ServiciiPage() {
                       <div className="space-y-2 mb-8">
                         {service.benefits.map((benefit, i) => (
                           <div key={i} className="flex items-center gap-3">
-                            <span className="w-1 h-1 rounded-full bg-accent flex-shrink-0" />
-                            <span className="text-xs text-muted-foreground tracking-wide">{benefit}</span>
+                            <span className="w-1.5 h-1.5 bg-accent flex-shrink-0" />
+                            <span className="text-xs text-muted-foreground group-hover:text-white/60 tracking-wide transition-colors duration-300">{benefit}</span>
                           </div>
                         ))}
                       </div>
 
                       {/* CTA */}
-                      <div className="flex items-center gap-2 text-sm font-medium text-accent group-hover:gap-3 transition-all duration-300">
+                      <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-accent group-hover:gap-3 transition-all duration-300">
                         Află mai mult
                         <ArrowRight className="w-4 h-4" />
                       </div>
@@ -137,7 +138,7 @@ export default function ServiciiPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300 hover:gap-3"
+              className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition-all duration-300 hover:gap-3"
             >
               Solicită Consultație Gratuită
               <ArrowRight className="w-5 h-5" />

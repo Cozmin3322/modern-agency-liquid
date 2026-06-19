@@ -30,11 +30,11 @@ export default function BeneficiiPage() {
       </section>
 
       {/* Benefits Grid with Images */}
-        <section className="py-20 md:py-28 bg-[#2C3E50]">
+        <section className="py-20 md:py-28 bg-[#1A1D21]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {/* Beneficiu 1: Economie */}
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#9B5F12'}}>
+            <div className="rounded-none overflow-hidden shadow-lg" style={{backgroundColor: '#E8590C'}}>
               <div className="relative h-64 md:h-72 w-full overflow-hidden">
                 <Image
                   src="/images/project-finisaj-01.jpg"
@@ -56,7 +56,7 @@ export default function BeneficiiPage() {
             </div>
 
             {/* Beneficiu 2: Confort */}
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#9B5F12'}}>
+            <div className="rounded-none overflow-hidden shadow-lg" style={{backgroundColor: '#E8590C'}}>
               <div className="relative h-64 md:h-72 w-full overflow-hidden">
                 <Image
                   src="/images/project-casa-termoizolare-01.jpg"
@@ -80,7 +80,7 @@ export default function BeneficiiPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {/* Beneficiu 3: Garanție */}
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#9B5F12'}}>
+            <div className="rounded-none overflow-hidden shadow-lg" style={{backgroundColor: '#E8590C'}}>
               <div className="relative h-64 md:h-72 w-full overflow-hidden">
                 <Image
                   src="/images/project-protectie-margini-01.jpg"
@@ -102,7 +102,7 @@ export default function BeneficiiPage() {
             </div>
 
             {/* Beneficiu 4: Durabilitate */}
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#9B5F12'}}>
+            <div className="rounded-none overflow-hidden shadow-lg" style={{backgroundColor: '#E8590C'}}>
               <div className="relative h-64 md:h-72 w-full overflow-hidden">
                 <Image
                   src="/images/project-detaliu-izolare-01.jpg"
@@ -126,7 +126,7 @@ export default function BeneficiiPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Beneficiu 5: Mediu */}
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#9B5F12'}}>
+            <div className="rounded-none overflow-hidden shadow-lg" style={{backgroundColor: '#E8590C'}}>
               <div className="relative h-64 md:h-72 w-full overflow-hidden">
                 <Image
                   src="/images/project-hala-industrial-01.jpg"
@@ -148,7 +148,7 @@ export default function BeneficiiPage() {
             </div>
 
             {/* Beneficiu 6: Profesionalism */}
-            <div className="rounded-xl overflow-hidden shadow-lg" style={{backgroundColor: '#9B5F12'}}>
+            <div className="rounded-none overflow-hidden shadow-lg" style={{backgroundColor: '#E8590C'}}>
               <div className="relative h-64 md:h-72 w-full overflow-hidden">
                 <Image
                   src="/images/project-casa-detail-01.jpg"
@@ -182,7 +182,7 @@ export default function BeneficiiPage() {
           <p className="text-foreground/70 mb-8 max-w-2xl mx-auto">
             Citește ghidul nostru complet despre spuma poliuretanică: ce este, cum funcționează, tipuri și aplicații.
           </p>
-          <a href="/ce-este-spuma-poliuretanica" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+          <a href="/ce-este-spuma-poliuretanica" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">
             Citește Ghidul Complet →
           </a>
         </div>

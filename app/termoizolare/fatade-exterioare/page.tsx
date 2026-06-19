@@ -26,15 +26,15 @@ export default function Page() {
       <Header />
       <main className="bg-background">
         {/* Hero */}
-        <section className="relative min-h-[60vh] flex items-center pt-20 bg-[#2C3E50]">
+        <section className="relative min-h-[60vh] flex items-center pt-20 bg-[#1A1D21]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div className="max-w-3xl">
               <p className="text-accent text-sm tracking-widest uppercase mb-4">Termoizolare Fațade</p>
-              <h1 className="text-5xl lg:text-6xl font-serif font-medium text-white mb-6">Termoizolare Fațade Exterioare cu Spumă Poliuretanică</h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-white mb-6">Termoizolare Fațade Exterioare cu Spumă Poliuretanică</h1>
               <p className="text-xl text-white/85 mb-8 leading-relaxed">Fațada casei e prima barieră contra frigului. Spuma poliuretanică aplicată pe exterior creează un strat termic continuu — fără a pierde spațiu interior și fără a crea punți termice.</p>
               <div className="flex flex-wrap gap-4">
-                <a href="tel:+37378370243" className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">Consultație Gratuită</a>
-                <Link href="/termoizolare" className="border border-white/40 text-white px-8 py-3 rounded-lg hover:bg-white/10 transition">Toate Serviciile</Link>
+                <a href="tel:+37378370243" className="bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">Consultație Gratuită</a>
+                <Link href="/termoizolare" className="border border-white/40 text-white px-8 py-3 rounded-none hover:bg-white/10 transition">Toate Serviciile</Link>
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function Page() {
             <h2 className="text-3xl font-serif font-medium mb-3">Alegem Tipul Potrivit de Spumă</h2>
             <p className="text-foreground/70 mb-10 max-w-2xl">Folosim exclusiv spumă poliuretanică de înaltă calitate în două variante, fiecare optimizată pentru condiții specifice.</p>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="p-8 border-2 border-accent/40 rounded-lg bg-accent/5">
+              <div className="p-8 border-2 border-accent/40 rounded-none bg-accent/5">
                 <div className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">Celulă Închisă</div>
                 <p className="text-foreground/80 mb-4">Densitate mare, impermeabil la apă. Ideal acolo unde există contact cu umiditate sau necesitate de rezistență mecanică ridicată.</p>
                 <ul className="space-y-1 text-sm text-foreground/70">
@@ -56,7 +56,7 @@ export default function Page() {
                   <li>✓ Ideal fundații, exterioare, cisterne</li>
                 </ul>
               </div>
-              <div className="p-8 border border-border rounded-lg">
+              <div className="p-8 border border-border rounded-none">
                 <div className="inline-block bg-foreground/10 text-foreground text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">Celulă Deschisă</div>
                 <p className="text-foreground/80 mb-4">Ușoară și flexibilă, permeabilă la vapori. Excelentă pentru izolație fonică și spații interioare.</p>
                 <ul className="space-y-1 text-sm text-foreground/70">
@@ -74,13 +74,13 @@ export default function Page() {
         <section className="py-20 bg-card">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-12">De Ce Spumă Poliuretanică?</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div key={"0"} className="p-6 border border-border rounded-lg"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Fără pierdere de spațiu interior</h3><p className="text-sm text-foreground/70">Izolând pe exterior, nu reduci suprafața interioară a camerelor.</p></div>
-              <div key={"1"} className="p-6 border border-border rounded-lg"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Strat termic continuu</h3><p className="text-sm text-foreground/70">Niciun rost, nicio întrerupere. Izolație perfectă pe toată fațada.</p></div>
-              <div key={"2"} className="p-6 border border-border rounded-lg"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Protecție suplimentară a structurii</h3><p className="text-sm text-foreground/70">Spuma protejează pereții de îngheț-dezgheț și variații termice.</p></div>
-              <div key={"3"} className="p-6 border border-border rounded-lg"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Aspect modern și îngrijit</h3><p className="text-sm text-foreground/70">Finisaj decorativ la alegere. Casa arată renovată și modernă.</p></div>
-              <div key={"4"} className="p-6 border border-border rounded-lg"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Economie 35-45% la energie</h3><p className="text-sm text-foreground/70">Combinând fațada cu acoperișul, reduci dramatic costurile energetice.</p></div>
-              <div key={"5"} className="p-6 border border-border rounded-lg"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Garanție 25 ani</h3><p className="text-sm text-foreground/70">Soluție durabilă care crește valoarea proprietății.</p></div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+              <div key={"0"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Fără pierdere de spațiu interior</h3><p className="text-sm text-foreground/70">Izolând pe exterior, nu reduci suprafața interioară a camerelor.</p></div>
+              <div key={"1"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Strat termic continuu</h3><p className="text-sm text-foreground/70">Niciun rost, nicio întrerupere. Izolație perfectă pe toată fațada.</p></div>
+              <div key={"2"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Protecție suplimentară a structurii</h3><p className="text-sm text-foreground/70">Spuma protejează pereții de îngheț-dezgheț și variații termice.</p></div>
+              <div key={"3"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Aspect modern și îngrijit</h3><p className="text-sm text-foreground/70">Finisaj decorativ la alegere. Casa arată renovată și modernă.</p></div>
+              <div key={"4"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Economie 35-45% la energie</h3><p className="text-sm text-foreground/70">Combinând fațada cu acoperișul, reduci dramatic costurile energetice.</p></div>
+              <div key={"5"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Garanție 25 ani</h3><p className="text-sm text-foreground/70">Soluție durabilă care crește valoarea proprietății.</p></div>
             </div>
           </div>
         </section>
@@ -89,13 +89,13 @@ export default function Page() {
         <section className="py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-12">Tipuri de Proiecte</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div key={"0"} className="p-6 border border-border rounded-lg"><h3 className="font-semibold mb-2">Casa Unifamilială</h3><p className="text-sm text-foreground/70">Izolație completă a fațadei. Transformi complet aspectul și eficiența casei.</p></div>
-              <div key={"1"} className="p-6 border border-border rounded-lg"><h3 className="font-semibold mb-2">Bloc de Apartamente</h3><p className="text-sm text-foreground/70">Izolăm blocuri întregi. Toți locatarii beneficiază de facturi mai mici.</p></div>
-              <div key={"2"} className="p-6 border border-border rounded-lg"><h3 className="font-semibold mb-2">Clădire Comercială</h3><p className="text-sm text-foreground/70">Imagine profesională și eficiență energetică pentru afacerea ta.</p></div>
-              <div key={"3"} className="p-6 border border-border rounded-lg"><h3 className="font-semibold mb-2">Casa Istorică</h3><p className="text-sm text-foreground/70">Soluții adaptate pentru clădiri cu restricții arhitecturale.</p></div>
-              <div key={"4"} className="p-6 border border-border rounded-lg"><h3 className="font-semibold mb-2">Vilă și Casă de Vacanță</h3><p className="text-sm text-foreground/70">Confort garantat indiferent de sezon.</p></div>
-              <div key={"5"} className="p-6 border border-border rounded-lg"><h3 className="font-semibold mb-2">Clădire Industrială</h3><p className="text-sm text-foreground/70">Fațade industriale izolate rapid cu echipament profesional.</p></div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+              <div key={"0"} className="p-6 border border-border rounded-none"><h3 className="font-semibold mb-2">Casa Unifamilială</h3><p className="text-sm text-foreground/70">Izolație completă a fațadei. Transformi complet aspectul și eficiența casei.</p></div>
+              <div key={"1"} className="p-6 border border-border rounded-none"><h3 className="font-semibold mb-2">Bloc de Apartamente</h3><p className="text-sm text-foreground/70">Izolăm blocuri întregi. Toți locatarii beneficiază de facturi mai mici.</p></div>
+              <div key={"2"} className="p-6 border border-border rounded-none"><h3 className="font-semibold mb-2">Clădire Comercială</h3><p className="text-sm text-foreground/70">Imagine profesională și eficiență energetică pentru afacerea ta.</p></div>
+              <div key={"3"} className="p-6 border border-border rounded-none"><h3 className="font-semibold mb-2">Casa Istorică</h3><p className="text-sm text-foreground/70">Soluții adaptate pentru clădiri cu restricții arhitecturale.</p></div>
+              <div key={"4"} className="p-6 border border-border rounded-none"><h3 className="font-semibold mb-2">Vilă și Casă de Vacanță</h3><p className="text-sm text-foreground/70">Confort garantat indiferent de sezon.</p></div>
+              <div key={"5"} className="p-6 border border-border rounded-none"><h3 className="font-semibold mb-2">Clădire Industrială</h3><p className="text-sm text-foreground/70">Fațade industriale izolate rapid cu echipament profesional.</p></div>
             </div>
           </div>
         </section>
@@ -113,11 +113,11 @@ export default function Page() {
         </section>
 
         {/* CTA */}
-        <section className="py-20 bg-[#2C3E50] text-white text-center">
+        <section className="py-20 bg-[#1A1D21] text-white text-center">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-4xl font-serif font-medium mb-4">Izolează Fațada Acum</h2>
             <p className="text-white/80 mb-8">Evaluare gratuită pe loc. Ofertă în 24h. Garanție 25 ani.</p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum <ArrowRight className="w-4 h-4" />
             </a>
           </div>

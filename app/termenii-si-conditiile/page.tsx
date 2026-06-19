@@ -107,7 +107,7 @@ export default function TermeniiSiConsitii() {
               <p>
                 Pentru orice întrebări cu privire la acești Termeni și Condiții, vă rugăm să ne contactați:
               </p>
-              <div className="bg-slate-100 p-4 rounded-lg mt-4">
+              <div className="bg-slate-100 p-4 rounded-none mt-4">
                 <p>IsoThermLux</p>
                 <p>Email: infopoliuretan@gmail.com</p>
                 <p>Telefon: +373 78 370 243</p>

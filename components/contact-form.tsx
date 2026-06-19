@@ -44,7 +44,7 @@ export function ContactForm() {
           {/* Left — info */}
           <div className="text-white">
             <p className="text-sm tracking-[0.3em] uppercase text-white/50 mb-6">Contact</p>
-            <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-medium leading-tight mb-6">
               Cere ofertă<br />gratuită
             </h2>
             <p className="text-white/70 leading-relaxed mb-10 max-w-sm">
@@ -81,7 +81,7 @@ export function ContactForm() {
           </div>
 
           {/* Right — form */}
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-10">
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-none p-8 md:p-10">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <input type="text" name="name" placeholder="Nume complet"

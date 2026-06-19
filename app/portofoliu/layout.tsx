@@ -3,14 +3,14 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Portofoliu Proiecte | 3971 Lucrări Termoizolare și Hidroizolare",
   description:
-    "Descoperă portofoliul IsoThermLux: peste 500 de proiecte de termoizolare și hidroizolare realizate în Moldova. Case private, hale industriale, fundații și acoperișuri.",
+    "Descoperă portofoliul IsoThermLux: 3971 de proiecte de termoizolare și hidroizolare realizate în Moldova. Case private, hale industriale, fundații și acoperișuri.",
   alternates: {
     canonical: "https://www.isothermlux.md/portofoliu",
   },
   openGraph: {
     title: "Portofoliu Proiecte | IsoThermLux",
     description:
-      "Peste 500 de proiecte de termoizolare și hidroizolare realizate în Moldova. Vezi lucrările noastre recente.",
+      "3971 de proiecte de termoizolare și hidroizolare realizate în Moldova. Vezi lucrările noastre recente.",
     type: "website",
     locale: "ro_MD",
     url: "https://www.isothermlux.md/portofoliu",

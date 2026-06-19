@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ServiceHero } from "@/components/service-hero"
 import { ArrowRight, Check, Truck, Container, Snowflake, Ambulance, Tent } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -24,33 +25,22 @@ export default function CamioanePage() {
       <Header />
       <main className="bg-background">
 
-        {/* Hero */}
-        <section className="relative min-h-[70vh] flex items-center pt-20 bg-[#1a2535]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative py-20">
-            <nav className="text-sm text-white/60 mb-6">
-              <Link href="/" className="hover:text-white transition">Acasă</Link>
-              <span className="mx-2">/</span>
-              <Link href="/termoizolare" className="hover:text-white transition">Termoizolare</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">Camioane</span>
-            </nav>
-            <p className="text-accent text-sm tracking-widest uppercase mb-4">Spumă Poliuretanică cu Celule Închise</p>
-            <h1 className="text-5xl md:text-6xl font-serif font-medium text-white mb-6 max-w-3xl">
-              Termoizolare Camioane și Vehicule de Transport
-            </h1>
-            <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
-              Izolăm caroseria camionului sau remorcii tale cu spumă poliuretanică cu celule închise — soluție ușoară, impermeabilă și durabilă pentru transportul produselor termosensibile.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
-                Consultație Gratuită <ArrowRight className="w-4 h-4" />
-              </a>
-              <Link href="/calculator-oferta" className="inline-flex items-center gap-2 border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:border-white transition">
-                Calculează Oferta
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ServiceHero
+          backgroundImage="/images/project-detaliu-izolare-01.jpg"
+          title="Termoizolare Camioane"
+          titleAccent="și Vehicule de Transport"
+          subtitle="Izolăm caroseria camionului sau remorcii tale cu spumă poliuretanică cu celule închise — ușoară, impermeabilă și durabilă."
+          ctaSecondaryHref="/calculator-oferta"
+          ctaSecondaryLabel="Calculează Oferta"
+        />
+
+        <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+          <Link href="/" className="hover:text-accent transition">Acasă</Link>
+          <span className="mx-2">/</span>
+          <Link href="/termoizolare" className="hover:text-accent transition">Termoizolare</Link>
+          <span className="mx-2">/</span>
+          <span>Camioane</span>
+        </nav>
 
         {/* Beneficii cheie */}
         <section className="py-24 bg-card">
@@ -77,7 +67,7 @@ export default function CamioanePage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-background p-8 rounded-lg border border-border">
+              <div className="bg-background p-8 rounded-none border border-border">
                 <h3 className="text-xl font-semibold mb-6 text-center">Specificații Tehnice</h3>
                 <div className="space-y-4">
                   {[
@@ -140,7 +130,7 @@ export default function CamioanePage() {
                   desc: "Termoizolare complete pentru caravane și autorulote. Confort pe tot parcursul anului, oricunde te-ai afla.",
                 },
               ].map((type, idx) => (
-                <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
+                <div key={idx} className="p-8 bg-card border border-border rounded-none hover:border-accent transition">
                   <type.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-3">{type.title}</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">{type.desc}</p>
@@ -155,7 +145,7 @@ export default function CamioanePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-12 text-center">Spumă vs. Alte Soluții de Izolație</h2>
             <div className="overflow-x-auto">
-              <table className="w-full bg-card rounded-lg overflow-hidden border border-border">
+              <table className="w-full bg-card rounded-none overflow-hidden border border-border">
                 <thead>
                   <tr className="bg-accent/10">
                     <th className="p-4 text-left font-semibold">Criteriu</th>
@@ -187,13 +177,13 @@ export default function CamioanePage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-[#2C3E50] text-white">
+        <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Termoizolăm Camionul Tău Rapid</h2>
             <p className="text-lg mb-8 max-w-xl mx-auto opacity-90">
               Deplasare la locul tău. Lucrare în 1–2 zile. Reintri pe drum rapid.
             </p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum: +373 78 370 243 <ArrowRight className="w-4 h-4" />
             </a>
           </div>

@@ -11,7 +11,6 @@ export function PremiumServices() {
 
   useEffect(() => {
     const allProjectImages = [
-      '/images/hero-family-correct.webp',
       '/images/project-termoizolare-01.webp',
       '/images/project-casa-termoizolare-01.jpg',
       '/images/project-hala-industrial-01.webp',
@@ -44,12 +43,12 @@ export function PremiumServices() {
   }
 
   return (
-    <section className="py-20 md:py-32 bg-[#2C3E50]">
+    <section className="py-14 md:py-20 lg:py-32 bg-[#1A1D21]">
       <div className="max-w-7xl mx-auto px-6 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           
           {/* LEFT — Image Slider 16:9 */}
-          <div className="relative aspect-video rounded-xl overflow-hidden bg-slate-800">
+          <div className="relative aspect-video sm:aspect-video rounded-none overflow-hidden bg-slate-800 w-full">
             {images.length > 0 && (
               <Image
                 key={images[currentImageIndex]}
@@ -105,9 +104,12 @@ export function PremiumServices() {
           <div className="space-y-6 text-white">
             {/* Label and accent line */}
             <div>
-              <p className="text-sm font-bold tracking-widest uppercase text-accent mb-3">
-                Despre Noi
-              </p>
+              <div className="flex items-center gap-3 mb-3">
+                <span className="font-mono text-sm text-accent font-bold">/ 01</span>
+                <p className="text-sm font-bold tracking-widest uppercase text-accent">
+                  Despre Noi
+                </p>
+              </div>
               <div className="w-16 h-0.5 bg-accent" />
             </div>
 
@@ -124,7 +126,7 @@ export function PremiumServices() {
             {/* Button */}
             <a
               href="tel:+37378370243"
-              className="inline-block px-8 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-colors"
+              className="inline-block px-8 py-3 bg-accent text-white font-semibold rounded-none hover:bg-accent/90 transition-colors"
             >
               Sună Acum →
             </a>

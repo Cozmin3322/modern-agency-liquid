@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ServiceHero } from "@/components/service-hero"
 import { ArrowRight, Check, BrickWall, DoorOpen, SquareParking, Layers, Home, CarFront, Wrench, Construction } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -24,32 +25,22 @@ export default function GarajPage() {
       <Header />
       <main className="bg-background">
 
-        <section className="relative min-h-[70vh] flex items-center pt-20 bg-[#1a2535]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative py-20">
-            <nav className="text-sm text-white/60 mb-6">
-              <Link href="/" className="hover:text-white transition">Acasă</Link>
-              <span className="mx-2">/</span>
-              <Link href="/termoizolare" className="hover:text-white transition">Termoizolare</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">Garaj</span>
-            </nav>
-            <p className="text-accent text-sm tracking-widest uppercase mb-4">Spumă Poliuretanică — Celule Deschise & Închise</p>
-            <h1 className="text-5xl md:text-6xl font-serif font-medium text-white mb-6 max-w-3xl">
-              Termoizolare Garaj — Cald Iarna, Răcoros Vara
-            </h1>
-            <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
-              Un garaj neizolatermit este inutilizabil iarna și sufocant vara. Izolăm pereții, acoperișul și ușile garajului cu spumă poliuretanică — în 1–2 zile ai un spațiu confortabil tot anul.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
-                Consultație Gratuită <ArrowRight className="w-4 h-4" />
-              </a>
-              <Link href="/calculator-oferta" className="inline-flex items-center gap-2 border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:border-white transition">
-                Calculează Oferta
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ServiceHero
+          backgroundImage="/images/project-finisaj-01.webp"
+          title="Termoizolare Garaj"
+          titleAccent="Cald Iarna, Răcoros Vara"
+          subtitle="Un garaj neizolatermit este inutilizabil iarna și sufocant vara. Izolăm pereții, acoperișul și ușile garajului cu spumă poliuretanică."
+          ctaSecondaryHref="/calculator-oferta"
+          ctaSecondaryLabel="Calculează Oferta"
+        />
+
+        <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+          <Link href="/" className="hover:text-accent transition">Acasă</Link>
+          <span className="mx-2">/</span>
+          <Link href="/termoizolare" className="hover:text-accent transition">Termoizolare</Link>
+          <span className="mx-2">/</span>
+          <span>Garaj</span>
+        </nav>
 
         {/* Zone garaj */}
         <section className="py-24 bg-background">
@@ -82,7 +73,7 @@ export default function GarajPage() {
                   foam: "Celule Închise",
                 },
               ].map((z, idx) => (
-                <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
+                <div key={idx} className="p-8 bg-card border border-border rounded-none hover:border-accent transition">
                   <z.Icon className="w-8 h-8 text-accent mb-3" />
                   <div className="flex items-start justify-between mb-3">
                     <h3 className="text-lg font-semibold">{z.title}</h3>
@@ -108,7 +99,7 @@ export default function GarajPage() {
                 { Icon: SquareParking, title: "Parcare Acoperită", desc: "Spații de parcare acoperite sau semi-deschise. Protecție pentru mașini și confort pentru utilizatori." },
                 { Icon: Wrench, title: "Garaj Hobby / Depozit", desc: "Spațiu pentru unelte, echipamente sau activități hobby. Izolat corespunzător devine utilizabil tot anul." },
               ].map((type, idx) => (
-                <div key={idx} className="p-6 bg-background border border-border rounded-lg hover:border-accent transition">
+                <div key={idx} className="p-6 bg-background border border-border rounded-none hover:border-accent transition">
                   <type.Icon className="w-7 h-7 text-accent mb-3" />
                   <h3 className="font-semibold mb-2">{type.title}</h3>
                   <p className="text-foreground/70 text-sm">{type.desc}</p>
@@ -119,13 +110,13 @@ export default function GarajPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-[#2C3E50] text-white">
+        <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Garajul Tău Merită să Fie Confortabil</h2>
             <p className="text-lg mb-8 max-w-xl mx-auto opacity-90">
               Lucrare în 1–2 zile. Fără murdărie, fără praf, fără șantier prelungit.
             </p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum: +373 78 370 243 <ArrowRight className="w-4 h-4" />
             </a>
           </div>

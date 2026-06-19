@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: "Cum pot obține o ofertă personalizată?",
-    a: "Contactați-ne la +373 62 040 050 sau completați formularul de contact. Un specialist vă va contacta cu o estimare în 30 de minute."
+    a: "Contactați-ne la +373 78 370 243 sau completați formularul de contact. Un specialist vă va contacta cu o estimare în 30 de minute."
   }
 ]
 
@@ -61,7 +61,7 @@ export default function IntrebariFrecventePage() {
       <Header />
       <main className="bg-background">
         {/* Hero */}
-        <section className="min-h-[400px] flex items-center pt-20 bg-[#2C3E50] text-white">
+        <section className="min-h-[400px] flex items-center pt-20 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium mb-4">Întrebări Frecvente</h1>
             <p className="text-lg md:text-xl opacity-90">Răspunsuri la întrebările dumneavoastră despre serviciile noastre</p>
@@ -81,12 +81,12 @@ export default function IntrebariFrecventePage() {
             </div>
 
             {/* CTA */}
-            <div className="mt-16 bg-card p-8 rounded-2xl border border-border text-center">
+            <div className="mt-16 bg-card p-8 rounded-none border border-border text-center">
               <h3 className="text-2xl font-serif font-medium mb-4">Nu găsești răspunsul pe care îl cauți?</h3>
               <p className="text-foreground/70 mb-6">Contactează-ne direct și un specialist îți va oferi consultanța de care ai nevoie.</p>
               <a
                 href="tel:+37378370243"
-                className="inline-block bg-[#2C3E50] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#2C3E50]/90 transition"
+                className="inline-block bg-[#1A1D21] text-white px-8 py-3 rounded-none font-semibold hover:bg-[#1A1D21]/90 transition"
               >
                 Sună Acum
               </a>

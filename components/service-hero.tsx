@@ -54,7 +54,7 @@ export function ServiceHero({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-5xl lg:text-6xl font-serif font-medium text-white leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-white leading-tight">
               {title}
               {titleAccent && (
                 <span className="block text-accent">{titleAccent}</span>
@@ -66,14 +66,14 @@ export function ServiceHero({
             <div className="flex gap-4 pt-4 flex-wrap">
               <a
                 href={ctaHref}
-                className="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition"
+                className="bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition"
               >
                 {ctaLabel}
               </a>
               {ctaSecondaryHref && ctaSecondaryLabel && (
                 <a
                   href={ctaSecondaryHref}
-                  className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition"
+                  className="border-2 border-white text-white px-8 py-3 rounded-none font-semibold hover:bg-white/10 transition"
                 >
                   {ctaSecondaryLabel}
                 </a>

@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ServiceHero } from "@/components/service-hero"
 import { ArrowRight, Check, Home, Warehouse, Sprout, Layers, Construction, Droplet } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -24,32 +25,22 @@ export default function FundatiePage() {
       <Header />
       <main className="bg-background">
 
-        <section className="relative min-h-[70vh] flex items-center pt-20 bg-[#1a2535]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative py-20">
-            <nav className="text-sm text-white/60 mb-6">
-              <Link href="/" className="hover:text-white transition">Acasă</Link>
-              <span className="mx-2">/</span>
-              <Link href="/termoizolare" className="hover:text-white transition">Termoizolare</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">Fundație și Subsol</span>
-            </nav>
-            <p className="text-accent text-sm tracking-widest uppercase mb-4">Spumă Poliuretanică cu Celule Închise</p>
-            <h1 className="text-5xl md:text-6xl font-serif font-medium text-white mb-6 max-w-3xl">
-              Termoizolare Fundație și Subsol
-            </h1>
-            <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
-              Fundația rece și subsolul umed sunt cauza principală a mucegaiului și a pardoselii reci. Le izolăm cu spumă poliuretanică cu celule închise — soluție permanentă, impermeabilă și eficientă.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
-                Consultație Gratuită <ArrowRight className="w-4 h-4" />
-              </a>
-              <Link href="/calculator-oferta" className="inline-flex items-center gap-2 border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:border-white transition">
-                Calculează Oferta
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ServiceHero
+          backgroundImage="/images/project-casa-aplicare-01.jpg"
+          title="Termoizolare Fundație"
+          titleAccent="și Subsol"
+          subtitle="Fundația rece și subsolul umed sunt cauza principală a mucegaiului. Le izolăm cu spumă poliuretanică cu celule închise — soluție permanentă."
+          ctaSecondaryHref="/calculator-oferta"
+          ctaSecondaryLabel="Calculează Oferta"
+        />
+
+        <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+          <Link href="/" className="hover:text-accent transition">Acasă</Link>
+          <span className="mx-2">/</span>
+          <Link href="/termoizolare" className="hover:text-accent transition">Termoizolare</Link>
+          <span className="mx-2">/</span>
+          <span>Fundație și Subsol</span>
+        </nav>
 
         {/* Zone aplicare */}
         <section className="py-24 bg-background">
@@ -64,7 +55,7 @@ export default function FundatiePage() {
                 { Icon: Construction, title: "Grinzi și Tavane Subterane", desc: "Eliminăm punțile termice la grinzile de beton care ies din clădire. Punct critic de pierderi termice." },
                 { Icon: Droplet, title: "Zone cu Umiditate", desc: "Acolo unde apa sau vaporii sunt problemă, spuma cu celule închise oprește complet infiltrațiile." },
               ].map((z, idx) => (
-                <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
+                <div key={idx} className="p-8 bg-card border border-border rounded-none hover:border-accent transition">
                   <z.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-3">{z.title}</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">{z.desc}</p>
@@ -87,7 +78,7 @@ export default function FundatiePage() {
                 { title: "Elimini punțile termice critice", desc: "Zona soclu este cel mai frecvent punct de pierderi. Izolarea lui corectă schimbă radical comportamentul termic al casei." },
                 { title: "Reduci facturile cu 15–25%", desc: "Chiar și izolarea parțială a fundației generează economii vizibile la prima factură de iarnă." },
               ].map((b, idx) => (
-                <div key={idx} className="p-6 bg-background border border-border rounded-lg">
+                <div key={idx} className="p-6 bg-background border border-border rounded-none">
                   <Check className="w-5 h-5 text-accent mb-3" />
                   <h3 className="font-semibold mb-2">{b.title}</h3>
                   <p className="text-foreground/70 text-sm">{b.desc}</p>
@@ -98,13 +89,13 @@ export default function FundatiePage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-[#2C3E50] text-white">
+        <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Scapă de Umezeala și Frigul de la Fundație</h2>
             <p className="text-lg mb-8 max-w-xl mx-auto opacity-90">
               Evaluare gratuită pe loc. Îți arătăm exact unde piezi căldura și cât costă să repari.
             </p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum: +373 78 370 243 <ArrowRight className="w-4 h-4" />
             </a>
           </div>

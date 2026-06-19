@@ -24,7 +24,7 @@ export default function AdminDashboard() {
               { title: 'Proiecte', desc: 'Editați detaliile proiectelor din portofoliu' },
               { title: 'Contact', desc: 'Informații de contact și date SEO' },
             ].map((item, i) => (
-              <div key={i} className="p-4 border border-border rounded-lg bg-accent/5">
+              <div key={i} className="p-4 border border-border rounded-none bg-accent/5">
                 <h3 className="font-semibold text-foreground mb-1">{item.title}</h3>
                 <p className="text-sm text-foreground/60">{item.desc}</p>
               </div>

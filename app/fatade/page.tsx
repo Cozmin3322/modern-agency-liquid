@@ -115,7 +115,7 @@ export default function FacadesPage() {
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {systems.map(({ name, badge, pros, cons }) => (
-                <div key={name} className={`bg-background p-8 border ${badge ? 'border-accent' : 'border-border'} rounded-lg`}>
+                <div key={name} className={`bg-background p-8 border ${badge ? 'border-accent' : 'border-border'} rounded-none`}>
                   <div className="flex items-center justify-between mb-6">
                     <h3 className="font-serif font-medium text-xl">{name}</h3>
                     {badge && <span className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full font-medium">{badge}</span>}
@@ -191,7 +191,7 @@ export default function FacadesPage() {
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               {projects.map(({ img, title }) => (
-                <div key={title} className="relative aspect-video overflow-hidden rounded-lg bg-card group">
+                <div key={title} className="relative aspect-video overflow-hidden rounded-none bg-card group">
                   <Image src={img} alt={title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-end p-6">
                     <p className="text-white font-serif font-medium">{title}</p>

@@ -38,7 +38,7 @@ export default function AdminLoginPage() {
         </div>
 
         {/* Login Form */}
-        <form onSubmit={handleLogin} className="bg-accent/5 border border-accent/20 rounded-lg p-8">
+        <form onSubmit={handleLogin} className="bg-accent/5 border border-accent/20 rounded-none p-8">
           <div className="mb-6">
             <label htmlFor="password" className="block text-sm font-medium text-foreground mb-2">
               Parolă Admin
@@ -49,7 +49,7 @@ export default function AdminLoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Introduceți parola"
-              className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent transition-colors"
+              className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent transition-colors"
               disabled={isLoading}
             />
           </div>
@@ -63,7 +63,7 @@ export default function AdminLoginPage() {
           <button
             type="submit"
             disabled={isLoading || !password}
-            className="w-full bg-accent text-white font-medium py-2 rounded-lg hover:bg-accent/90 disabled:opacity-50 transition-all"
+            className="w-full bg-accent text-white font-medium py-2 rounded-none hover:bg-accent/90 disabled:opacity-50 transition-all"
           >
             {isLoading ? 'Se încarcă...' : 'Conectare'}
           </button>

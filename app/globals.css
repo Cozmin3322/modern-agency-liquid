@@ -20,83 +20,83 @@ body {
 
 /* Header background color override */
 header.fixed.z-50 {
-  background-color: #FAFAF8;
-  border-bottom: 1px solid #E8DFD5;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #D8DCE0;
 }
 
-/* IsoThermLux brand palette */
+/* IsoThermLux — Industrial palette: steel gray + safety orange */
 :root {
-  --background: #FAFAF8;
-  --foreground: #2C3E50;
-  --card: #F2EDE6;
-  --card-foreground: #1A1A1A;
+  --background: #FFFFFF;
+  --foreground: #1A1D21;
+  --card: #F4F5F6;
+  --card-foreground: #1A1D21;
   --popover: #FFFFFF;
-  --popover-foreground: #1A1A1A;
-  --primary: #9B5F12;
+  --popover-foreground: #1A1D21;
+  --primary: #E8590C;
   --primary-foreground: #FFFFFF;
-  --secondary: #F4F7F8;
-  --secondary-foreground: #1A1A1A;
-  --muted: #5E6A70;
-  --muted-foreground: #3C464B;
-  --accent: #9B5F12;
+  --secondary: #F4F5F6;
+  --secondary-foreground: #1A1D21;
+  --muted: #6B7280;
+  --muted-foreground: #4B5159;
+  --accent: #E8590C;
   --accent-foreground: #FFFFFF;
-  --warm-accent: #8A520F;
+  --warm-accent: #C2410C;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #FFFFFF;
-  --border: #DDE5E8;
-  --input: #F4F7F8;
-  --ring: #9B5F12;
-  --chart-1: #9B5F12;
+  --border: #D8DCE0;
+  --input: #F4F5F6;
+  --ring: #E8590C;
+  --chart-1: #E8590C;
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.25rem;
-  --sidebar: #2C3E50;
+  --radius: 0rem;
+  --sidebar: #1A1D21;
   --sidebar-foreground: #FFFFFF;
   --font-montserrat: 'Montserrat', sans-serif;
   --font-open-sans: 'Open Sans', sans-serif;
-  --sidebar-primary: #7A3F0D;
+  --sidebar-primary: #E8590C;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #FAF7F4;
-  --sidebar-accent-foreground: #1A1A1A;
-  --sidebar-border: #EDE4DC;
-  --sidebar-ring: #7A3F0D;
+  --sidebar-accent: #23272E;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #2E343B;
+  --sidebar-ring: #E8590C;
 }
 
 .dark {
-  --background: #FAFAF8;
-  --foreground: #2C3E50;
-  --card: #F2EDE6;
-  --card-foreground: #1A1A1A;
+  --background: #FFFFFF;
+  --foreground: #1A1D21;
+  --card: #F4F5F6;
+  --card-foreground: #1A1D21;
   --popover: #FFFFFF;
-  --popover-foreground: #1A1A1A;
-  --primary: #9B5F12;
+  --popover-foreground: #1A1D21;
+  --primary: #E8590C;
   --primary-foreground: #FFFFFF;
-  --secondary: #F4F7F8;
-  --secondary-foreground: #1A1A1A;
-  --muted: #5E6A70;
-  --muted-foreground: #3C464B;
-  --accent: #9B5F12;
+  --secondary: #F4F5F6;
+  --secondary-foreground: #1A1D21;
+  --muted: #6B7280;
+  --muted-foreground: #4B5159;
+  --accent: #E8590C;
   --accent-foreground: #FFFFFF;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #FFFFFF;
-  --border: #DDE5E8;
-  --input: #F4F7F8;
-  --ring: #9B5F12;
-  --chart-1: #9B5F12;
+  --border: #D8DCE0;
+  --input: #F4F5F6;
+  --ring: #E8590C;
+  --chart-1: #E8590C;
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: #2C3E50;
+  --sidebar: #1A1D21;
   --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #9B5F12;
+  --sidebar-primary: #E8590C;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #FAF7F4;
-  --sidebar-accent-foreground: #1A1A1A;
-  --sidebar-border: #EDE4DC;
-  --sidebar-ring: #9B5F12;
+  --sidebar-accent: #23272E;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #2E343B;
+  --sidebar-ring: #E8590C;
 }
 
 /* Blog article prose styling */
@@ -131,8 +131,8 @@ header.fixed.z-50 {
 }
 
 @theme inline {
-  --font-sans: 'Roboto Slab', 'Roboto Slab Fallback', sans-serif;
-  --font-serif: "Playfair Display", "Playfair Display Fallback", serif;
+  --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  --font-serif: 'Oswald', 'Oswald Fallback', sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -176,7 +176,19 @@ header.fixed.z-50 {
   * {
     @apply border-border outline-ring/50;
   }
+  /* Industrial display headings — Oswald, tight, commanding */
+  .font-serif {
+    letter-spacing: -0.01em;
+  }
+  h1.font-serif, h2.font-serif {
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+  }
+  html {
+    overflow-x: hidden;
+  }
   body {
+    overflow-x: hidden;
     @apply bg-background text-foreground;
     background-color: #FAFAF8;
     color: #1A1A1A;
@@ -203,8 +215,8 @@ body::before {
 }
 
 /* Clase utilitare pentru secțiuni alternante */
-.section-warm { background-color: #F2EDE6; }
-.section-deep { background-color: #EAE2D8; }
+.section-warm { background-color: #F4F5F6; }
+.section-deep { background-color: #ECEEF0; }
 
 /* Adding stroke drawing animation for expertise icons */
 @keyframes draw-stroke {

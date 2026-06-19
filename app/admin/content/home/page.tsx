@@ -75,7 +75,7 @@ export default function HomeContentEditor() {
 
           <div className="space-y-6">
             {/* Hero Section */}
-            <div className="border border-border rounded-lg p-6 bg-accent/5">
+            <div className="border border-border rounded-none p-6 bg-accent/5">
               <h2 className="text-lg font-semibold text-foreground mb-4">Secțiune Hero</h2>
 
               <div className="space-y-4">
@@ -87,7 +87,7 @@ export default function HomeContentEditor() {
                     type="text"
                     value={content.heroTitle}
                     onChange={(e) => handleChange('heroTitle', e.target.value)}
-                    className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                    className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                   />
                 </div>
 
@@ -99,14 +99,14 @@ export default function HomeContentEditor() {
                     type="text"
                     value={content.heroSubtitle}
                     onChange={(e) => handleChange('heroSubtitle', e.target.value)}
-                    className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                    className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                   />
                 </div>
               </div>
             </div>
 
             {/* Why Us Section */}
-            <div className="border border-border rounded-lg p-6 bg-accent/5">
+            <div className="border border-border rounded-none p-6 bg-accent/5">
               <h2 className="text-lg font-semibold text-foreground mb-4">Secțiune De Ce Noi</h2>
 
               <div className="space-y-4">
@@ -118,7 +118,7 @@ export default function HomeContentEditor() {
                     type="text"
                     value={content.whyUsTitle}
                     onChange={(e) => handleChange('whyUsTitle', e.target.value)}
-                    className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                    className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                   />
                 </div>
 
@@ -130,14 +130,14 @@ export default function HomeContentEditor() {
                     value={content.whyUsDescription}
                     onChange={(e) => handleChange('whyUsDescription', e.target.value)}
                     rows={4}
-                    className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                    className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                   />
                 </div>
               </div>
             </div>
 
             {/* CTA Section */}
-            <div className="border border-border rounded-lg p-6 bg-accent/5">
+            <div className="border border-border rounded-none p-6 bg-accent/5">
               <h2 className="text-lg font-semibold text-foreground mb-4">Call to Action</h2>
 
               <div>
@@ -148,7 +148,7 @@ export default function HomeContentEditor() {
                   type="text"
                   value={content.ctaText}
                   onChange={(e) => handleChange('ctaText', e.target.value)}
-                  className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                  className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                 />
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function HomeContentEditor() {
             <button
               onClick={handleSave}
               disabled={isSaving}
-              className="flex items-center gap-2 px-4 py-2 bg-accent text-foreground rounded-lg hover:bg-accent/80 disabled:opacity-50 font-medium transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-accent text-foreground rounded-none hover:bg-accent/80 disabled:opacity-50 font-medium transition-colors"
             >
               <Save className="w-4 h-4" />
               {isSaving ? 'Se salvează...' : 'Salvează'}
@@ -166,7 +166,7 @@ export default function HomeContentEditor() {
 
               <button
                 onClick={handleReset}
-                className="flex items-center gap-2 px-4 py-2 border border-border text-foreground rounded-lg hover:bg-background transition-colors"
+                className="flex items-center gap-2 px-4 py-2 border border-border text-foreground rounded-none hover:bg-background transition-colors"
               >
                 <RotateCcw className="w-4 h-4" />
                 Reset

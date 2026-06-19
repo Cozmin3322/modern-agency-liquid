@@ -140,6 +140,45 @@ export default function FonoizolarePage() {
           </div>
         </section>
 
+        {/* Zone Tehnice */}
+        <section className="py-20 md:py-28 border-t border-border">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-xl mb-16">
+              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Specificații tehnice</p>
+              <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight">Zone tehnice de aplicare</h2>
+            </div>
+            <div className="overflow-x-auto border border-border rounded-none">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-accent text-white">
+                    <th className="px-6 py-4 text-left font-semibold">Zonă</th>
+                    <th className="px-6 py-4 text-left font-semibold">Tip Spumă Recomandat</th>
+                    <th className="px-6 py-4 text-left font-semibold">Grosime Uzuală</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border">
+                  {[
+                    ["Pereți despărțitori interior", "Celulă deschisă", "5–8 cm"],
+                    ["Tavane între etaje", "Celulă deschisă", "5–10 cm"],
+                    ["Studiouri și camere de înregistrare", "Celulă deschisă", "8–12 cm"],
+                    ["Pereți spre exterior (combinat termo)", "Celulă închisă", "5–10 cm"],
+                    ["Conducte și instalații tehnice", "Celulă închisă", "3–5 cm"],
+                  ].map(([zona, tip, grosime], i) => (
+                    <tr key={i} className={i % 2 === 0 ? "bg-background" : "bg-card"}>
+                      <td className="px-6 py-4 font-medium text-foreground">{zona}</td>
+                      <td className="px-6 py-4 text-muted-foreground">{tip}</td>
+                      <td className="px-6 py-4 text-muted-foreground">{grosime}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-muted-foreground mt-6 max-w-2xl">
+              Spuma cu celulă deschisă oferă cea mai bună absorbție acustică datorită structurii sale poroase, ideală pentru reducerea zgomotului aerian. Pentru pereți spre exterior recomandăm o soluție combinată cu celulă închisă pentru izolație termică suplimentară.
+            </p>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="py-20 md:py-28 bg-foreground">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

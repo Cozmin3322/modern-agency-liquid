@@ -38,7 +38,7 @@ export default function ClosedCellFoamPage() {
           </p>
           <a
             href="tel:+373783702433"
-            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition"
+            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition"
           >
             Sună Pentru Ofertă Gratuită →
           </a>
@@ -46,16 +46,31 @@ export default function ClosedCellFoamPage() {
       </section>
 
       {/* What is Closed-Cell Foam */}
-      <section className="py-20 md:py-28 bg-background border-b border-border">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8 text-foreground">Ce este spuma cu celulă închisă?</h2>
-          <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-            Spuma poliuretanică cu celulă închisă este un material izolant în care celulele sunt complet închise, fără comunicare între ele. Aceasta o face impermeabilă la apă și umezeală, oferind protecție superioară împotriva infiltrațiilor. Cu o densitate de 30-45 kg/m³, spuma cu celulă închisă este mai dură și mai rezistentă decât varianta cu celulă deschisă, ceea ce o face ideală pentru aplicații unde rezistența mecanică și impermeabilitatea sunt critice.
-          </p>
-          <div className="bg-card p-6 rounded-lg border border-border">
-            <p className="text-foreground/90">
-              <strong>Avantaj principal:</strong> Spuma cu celulă închisă oferă barieră completă contra umidității și apei, ceea ce o face alegerea preferată pentru fundații, subsoluri și alte aplicații care necesită protecție maximă.
-            </p>
+      <section className="py-16 md:py-24 bg-background border-b border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-foreground">Ce este spuma cu celulă închisă?</h2>
+              <p className="text-lg text-foreground/80 leading-relaxed mb-6">
+                Spuma poliuretanică cu celulă închisă este un material izolant în care celulele sunt complet închise, fără comunicare între ele. Aceasta o face impermeabilă la apă și umezeală, oferind protecție superioară împotriva infiltrațiilor. Cu o densitate de 30-45 kg/m³, spuma cu celulă închisă este mai dură și mai rezistentă decât varianta cu celulă deschisă, ceea ce o face ideală pentru aplicații unde rezistența mecanică și impermeabilitatea sunt critice.
+              </p>
+              <div className="bg-card p-6 border border-accent/30 border-l-4 border-l-accent">
+                <p className="text-foreground/90">
+                  <strong>Avantaj principal:</strong> Spuma cu celulă închisă oferă barieră completă contra umidității și apei — alegerea preferată pentru fundații, subsoluri și aplicații în contact direct cu apa.
+                </p>
+              </div>
+            </div>
+            <div className="relative aspect-[4/3] overflow-hidden">
+              <Image
+                src="/images/hero-spray-foam.webp"
+                alt="Aplicare spumă poliuretanică cu celulă închisă"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute bottom-4 left-4 bg-[#1A1D21]/90 px-4 py-2">
+                <span className="font-mono text-xs text-accent uppercase tracking-widest">Celulă Închisă — Densitate 30-45 kg/m³</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -104,23 +119,37 @@ export default function ClosedCellFoamPage() {
       </section>
 
       {/* Where Recommended */}
-      <section className="py-20 md:py-28 bg-background border-b border-border">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 md:py-24 bg-background border-b border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-foreground">Unde se recomandă?</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              { title: "Fundații și Subsoluri", desc: "Protecție maximă contra umidității și infiltrațiilor de apă freatică." },
-              { title: "Acoperișuri Plate", desc: "Izolație cu barieră hidrofugă integrată, protejează structura de scurgeri." },
-              { title: "Pereți Exteriori", desc: "Rezistență la intemperii, impermeabilitate, protecție pe termen lung." },
-              { title: "Containere și Structuri Metalice", desc: "Protecție contra rozăturii și umidității în medii agresive." },
-              { title: "Căi de Acces Exterioare", desc: "Datorită rigidității sale, suportă trafic pedestrian și trafic ușor." },
-              { title: "Compartimentări Hidrofuge", desc: "Piscine, bazine, saune — protecție completă contra apei." }
-            ].map((item, idx) => (
-              <div key={idx} className="bg-card p-6 rounded-lg border border-border">
-                <h3 className="text-lg font-semibold text-accent mb-2">{item.title}</h3>
-                <p className="text-foreground/80">{item.desc}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                { title: "Fundații și Subsoluri", desc: "Protecție maximă contra umidității și infiltrațiilor de apă freatică." },
+                { title: "Acoperișuri Plate", desc: "Izolație cu barieră hidrofugă integrată, protejează structura de scurgeri." },
+                { title: "Pereți Exteriori", desc: "Rezistență la intemperii, impermeabilitate, protecție pe termen lung." },
+                { title: "Containere și Structuri Metalice", desc: "Protecție contra condensului și umidității în medii agresive." },
+                { title: "Căi de Acces Exterioare", desc: "Datorită rigidității sale, suportă trafic pedestrian și trafic ușor." },
+                { title: "Compartimentări Hidrofuge", desc: "Piscine, bazine, saune — protecție completă contra apei." }
+              ].map((item, idx) => (
+                <div key={idx} className="bg-card p-5 border border-border hover:border-accent transition-colors">
+                  <h3 className="text-base font-semibold text-accent mb-2">{item.title}</h3>
+                  <p className="text-sm text-foreground/80">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+            {/* Images stack */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="relative aspect-square overflow-hidden">
+                <Image src="/images/hidroizolare-fundatie-02.webp" alt="Hidroizolare fundație celulă închisă" fill className="object-cover" />
               </div>
-            ))}
+              <div className="relative aspect-square overflow-hidden">
+                <Image src="/images/project-hala-industrial-02.webp" alt="Termoizolare hală industrială" fill className="object-cover" />
+              </div>
+              <div className="relative aspect-square overflow-hidden col-span-2">
+                <Image src="/images/project-aplicare-spuma-01.webp" alt="Aplicare spumă poliuretanică celulă închisă" fill className="object-cover" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -179,22 +208,26 @@ export default function ClosedCellFoamPage() {
       <section className="py-20 md:py-28 bg-background border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-center text-foreground">Proiecte Finalizate cu Celulă Închisă</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
             {[
-              { img: '/images/project-fundatie.jpg', title: 'Izolație Fundație' },
-              { img: '/images/project-subsol-uscat.jpg', title: 'Subsol Uscat și Protejat' },
-              { img: '/images/project-acoperis.jpg', title: 'Acoperis Plat Impermeabil' },
-              { img: '/images/project-birou-comercial.jpg', title: 'Birou Commercial' }
+              { img: '/images/project-fundatie.webp', title: 'Izolație Fundație' },
+              { img: '/images/project-subsol-uscat.png', title: 'Subsol Uscat' },
+              { img: '/images/hidroizolare-fundatie-02.webp', title: 'Hidroizolare Fundație' },
+              { img: '/images/project-hala-industrial-02.webp', title: 'Hală Industrială' },
+              { img: '/images/project-hala-industrial-new.webp', title: 'Hală Nouă' },
+              { img: '/images/project-aplicare-spuma-01.webp', title: 'Aplicare Spumă' },
+              { img: '/images/project-casa-termoizolare-01.webp', title: 'Casă Termoizolare' },
+              { img: '/images/hero-spray-foam.webp', title: 'Aplicare Profesională' },
             ].map((project, idx) => (
-              <div key={idx} className="relative aspect-video rounded-lg overflow-hidden bg-card border border-border group">
+              <div key={idx} className="relative aspect-square overflow-hidden group">
                 <Image
                   src={project.img}
                   alt={project.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all flex items-end p-6">
-                  <h3 className="text-white font-semibold text-lg">{project.title}</h3>
+                <div className="absolute inset-0 bg-[#1A1D21]/0 group-hover:bg-[#1A1D21]/50 transition-all flex items-end p-3">
+                  <span className="font-mono text-[10px] text-white uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">{project.title}</span>
                 </div>
               </div>
             ))}
@@ -210,7 +243,7 @@ export default function ClosedCellFoamPage() {
           <p className="text-foreground/70 mb-8">
             Citește ghidul nostru complet despre spuma poliuretanică și diferitele tipuri disponibile.
           </p>
-          <Link href="/ce-este-spuma-poliuretanica" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition">
+          <Link href="/ce-este-spuma-poliuretanica" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">
             Ghid Complet Spumă Poliuretanică →
           </Link>
         </div>
@@ -228,13 +261,13 @@ export default function ClosedCellFoamPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+373783702433"
-              className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition"
+              className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition"
             >
               Sună Acum +37378370243
             </a>
             <a
               href="mailto:infopoliuretan@gmail.com"
-              className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-8 py-4 rounded-lg font-semibold hover:bg-accent/10 transition"
+              className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-8 py-4 rounded-none font-semibold hover:bg-accent/10 transition"
             >
               Trimite Email →
             </a>

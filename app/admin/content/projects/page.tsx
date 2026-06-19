@@ -71,7 +71,7 @@ export default function ProjectsEditor() {
 
           <div className="space-y-4">
             {projects.map((project) => (
-              <div key={project.id} className="border border-border rounded-lg p-4 bg-accent/5">
+              <div key={project.id} className="border border-border rounded-none p-4 bg-accent/5">
                 <div className="grid grid-cols-2 gap-3 mb-3">
                   <div>
                     <label className="text-xs font-medium text-foreground/60">Titlu</label>
@@ -128,14 +128,14 @@ export default function ProjectsEditor() {
           <div className="flex gap-3 mt-6">
             <button
               onClick={handleSave}
-              className="flex items-center gap-2 px-6 py-2 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors"
+              className="flex items-center gap-2 px-6 py-2 bg-accent text-white rounded-none hover:bg-accent/90 transition-colors"
             >
               <Save className="w-4 h-4" />
               Salvează
             </button>
             <button
               onClick={handleReset}
-              className="flex items-center gap-2 px-6 py-2 border border-border text-foreground rounded-lg hover:bg-accent/5 transition-colors"
+              className="flex items-center gap-2 px-6 py-2 border border-border text-foreground rounded-none hover:bg-accent/5 transition-colors"
             >
               <RotateCcw className="w-4 h-4" />
               Resetează

@@ -34,17 +34,17 @@ export default function ChisinauPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-12">Informații de Contact</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="p-8 bg-background border border-border rounded-lg">
+              <div className="p-8 bg-background border border-border rounded-none">
                 <Phone className="w-8 h-8 text-accent mb-4" />
                 <h3 className="font-semibold mb-2">Telefon</h3>
-                <a href="tel:+37378370243" className="text-accent hover:underline">+373 62 040 050</a>
+                <a href="tel:+37378370243" className="text-accent hover:underline">+373 78 370 243</a>
               </div>
-              <div className="p-8 bg-background border border-border rounded-lg">
+              <div className="p-8 bg-background border border-border rounded-none">
                 <MapPin className="w-8 h-8 text-accent mb-4" />
                 <h3 className="font-semibold mb-2">Locație</h3>
                 <p className="text-foreground/70">Chișinău, Moldova</p>
               </div>
-              <div className="p-8 bg-background border border-border rounded-lg">
+              <div className="p-8 bg-background border border-border rounded-none">
                 <Clock className="w-8 h-8 text-accent mb-4" />
                 <h3 className="font-semibold mb-2">Program</h3>
                 <p className="text-foreground/70">Lun-Dom: 08:00-18:00</p>
@@ -62,7 +62,7 @@ export default function ChisinauPage() {
                 { title: "Vila Hidroizolată", desc: "Fundație și acoperis", date: "2024" },
                 { title: "Birou Comercial", desc: "Izolare termică completă", date: "2023" }
               ].map((proj, idx) => (
-                <div key={idx} className="p-8 bg-card border border-border rounded-lg">
+                <div key={idx} className="p-8 bg-card border border-border rounded-none">
                   <h3 className="font-semibold mb-2">{proj.title}</h3>
                   <p className="text-foreground/70 text-sm mb-2">{proj.desc}</p>
                   <p className="text-accent text-sm">{proj.date}</p>
@@ -72,11 +72,11 @@ export default function ChisinauPage() {
           </div>
         </section>
 
-        <section className="py-24 bg-[#2C3E50] text-white">
+        <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Vrei Consultație în Chișinău?</h2>
             <p className="text-lg mb-8 opacity-90">Contactează echipa locală. Răspuns în 30 minute.</p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum
             </a>
           </div>

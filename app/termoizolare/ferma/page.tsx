@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ServiceHero } from "@/components/service-hero"
 import { ArrowRight, Check, Beef, PiggyBank, Bird, Sprout, Wheat, Milk } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -24,32 +25,22 @@ export default function FermaPage() {
       <Header />
       <main className="bg-background">
 
-        <section className="relative min-h-[70vh] flex items-center pt-20 bg-[#1a2535]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative py-20">
-            <nav className="text-sm text-white/60 mb-6">
-              <Link href="/" className="hover:text-white transition">Acasă</Link>
-              <span className="mx-2">/</span>
-              <Link href="/termoizolare" className="hover:text-white transition">Termoizolare</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">Ferme Agricole</span>
-            </nav>
-            <p className="text-accent text-sm tracking-widest uppercase mb-4">Spumă Poliuretanică — Soluție Agricolă</p>
-            <h1 className="text-5xl md:text-6xl font-serif font-medium text-white mb-6 max-w-3xl">
-              Termoizolare Ferme Agricole și Grajduri
-            </h1>
-            <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
-              Animalele sănătoase, producțiile bune și costurile reduse încep cu o fermă bine izolată. Izolăm grajduri, hale avicole, sere și depozite agricole cu spumă poliuretanică — rapid, eficient, durabil.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
-                Consultație Gratuită <ArrowRight className="w-4 h-4" />
-              </a>
-              <Link href="/calculator-oferta" className="inline-flex items-center gap-2 border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:border-white transition">
-                Calculează Oferta
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ServiceHero
+          backgroundImage="/images/project-hala-industrial-new.webp"
+          title="Termoizolare Ferme"
+          titleAccent="Agricole și Grajduri"
+          subtitle="Animalele sănătoase și costurile reduse încep cu o fermă bine izolată. Izolăm grajduri, hale avicole, sere și depozite agricole."
+          ctaSecondaryHref="/calculator-oferta"
+          ctaSecondaryLabel="Calculează Oferta"
+        />
+
+        <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+          <Link href="/" className="hover:text-accent transition">Acasă</Link>
+          <span className="mx-2">/</span>
+          <Link href="/termoizolare" className="hover:text-accent transition">Termoizolare</Link>
+          <span className="mx-2">/</span>
+          <span>Ferme Agricole</span>
+        </nav>
 
         {/* Tipuri ferme */}
         <section className="py-24 bg-background">
@@ -64,7 +55,7 @@ export default function FermaPage() {
                 { Icon: Wheat, title: "Depozite de Cereale", desc: "Temperatura și umiditatea controlate previn condensul și degradarea cerealelor. Spuma creează o barieră de vapori completă." },
                 { Icon: Milk, title: "Spații de Maturare / Fermentare", desc: "Pivnițe de vin, camere de maturare brânzeturi sau fermentare. Temperatura stabilă este esențială — spuma cu celule închise o garantează." },
               ].map((type, idx) => (
-                <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
+                <div key={idx} className="p-8 bg-card border border-border rounded-none hover:border-accent transition">
                   <type.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-3">{type.title}</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">{type.desc}</p>
@@ -87,7 +78,7 @@ export default function FermaPage() {
                 { title: "Rezistă la amoniac și dezinfectanți", desc: "Spuma poliuretanică este inertă chimic — nu se degradează la dezinfecțiile periodice." },
                 { title: "Garanție 25 ani", desc: "Investiție de lungă durată. Nu trebuie reizolat la fiecare renovare." },
               ].map((b, idx) => (
-                <div key={idx} className="p-6 bg-background border border-border rounded-lg">
+                <div key={idx} className="p-6 bg-background border border-border rounded-none">
                   <Check className="w-5 h-5 text-accent mb-3" />
                   <h3 className="font-semibold mb-2">{b.title}</h3>
                   <p className="text-foreground/70 text-sm">{b.desc}</p>
@@ -102,12 +93,12 @@ export default function FermaPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-12 text-center">Ce Tip de Spumă Folosim la Ferme</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-              <div className="p-8 bg-card border-2 border-accent rounded-lg">
+              <div className="p-8 bg-card border-2 border-accent rounded-none">
                 <h3 className="text-xl font-semibold mb-3">Celule Închise</h3>
                 <p className="text-foreground/70 text-sm mb-4">Recomandată pentru acoperișuri metalice, cisterne de apă, depozite. Impermeabilă, dură, λ = 0.022 W/m·K.</p>
                 <span className="text-accent font-semibold text-sm flex items-center gap-1.5"><Check className="w-4 h-4" /> Acoperișuri, depozite, cisterne</span>
               </div>
-              <div className="p-8 bg-card border-2 border-border rounded-lg">
+              <div className="p-8 bg-card border-2 border-border rounded-none">
                 <h3 className="text-xl font-semibold mb-3">Celule Deschise</h3>
                 <p className="text-foreground/70 text-sm mb-4">Recomandată pentru pereții interiori ai grajdurilor unde respirabilitatea este importantă. Izolație fonică excelentă.</p>
                 <span className="text-foreground/60 font-semibold text-sm flex items-center gap-1.5"><Check className="w-4 h-4" /> Pereți interiori grajduri, hale</span>
@@ -117,13 +108,13 @@ export default function FermaPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-[#2C3E50] text-white">
+        <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Izolăm Ferma Ta Rapid și Eficient</h2>
             <p className="text-lg mb-8 max-w-xl mx-auto opacity-90">
               Venim la fermă, evaluăm gratuit și-ți facem oferta completă. Lucrăm fără a opri activitatea.
             </p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum: +373 78 370 243 <ArrowRight className="w-4 h-4" />
             </a>
           </div>

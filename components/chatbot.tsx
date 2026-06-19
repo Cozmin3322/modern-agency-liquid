@@ -90,25 +90,25 @@ export default function Chatbot() {
           href="https://wa.me/37378370243"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white rounded-xl shadow-lg max-w-xs p-4 border border-[#e8dcc8] animate-fade-in hover:shadow-xl transition-shadow" 
+          className="bg-white rounded-none shadow-lg max-w-xs p-4 border border-[#D8DCE0] animate-fade-in hover:shadow-xl transition-shadow" 
           style={{ position: 'fixed', bottom: '100px', right: '24px', left: 'auto', zIndex: 9998 }}
         >
           <div className="flex items-center gap-3">
-            <div className="w-5 h-5 text-[#dd9933] flex-shrink-0 flex items-center justify-center">
+            <div className="w-5 h-5 text-[#F97316] flex-shrink-0 flex items-center justify-center">
               <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.991 1.523A9.9 9.9 0 002.064 12a9.897 9.897 0 001.571 5.595 9.897 9.897 0 005.631 4.237l.556.037a9.887 9.887 0 005.204-1.585 9.89 9.89 0 003.956-7.684c0-5.46-4.418-9.877-9.877-9.877z"/>
               </svg>
             </div>
             <div className="flex-1">
               <p className="text-sm text-[#6B3410] font-medium">+373 78370243</p>
-              <p className="text-xs text-[#c8a882]">Contactează-ne pe WhatsApp</p>
+              <p className="text-xs text-[#E8590C]">Contactează-ne pe WhatsApp</p>
             </div>
             <button
               onClick={(e) => {
                 e.preventDefault()
                 setShowNotification(false)
               }}
-              className="ml-auto text-[#c8a882] hover:text-[#dd9933] flex-shrink-0"
+              className="ml-auto text-[#E8590C] hover:text-[#F97316] flex-shrink-0"
               aria-label="Dismiss"
             >
               <X className="w-4 h-4" />
@@ -120,7 +120,7 @@ export default function Chatbot() {
       {/* Floating Button */}
       <button
         onClick={() => { setIsOpen(!isOpen); setShowNotification(false) }}
-        className="w-16 h-16 bg-[#dd9933] text-white rounded-full shadow-xl hover:shadow-2xl hover:scale-110 flex items-center justify-center relative animate-float transition-transform"
+        className="w-16 h-16 bg-[#F97316] text-white rounded-full shadow-xl hover:shadow-2xl hover:scale-110 flex items-center justify-center relative animate-float transition-transform"
         style={{ position: 'fixed', bottom: '24px', right: '24px', left: 'auto', zIndex: 9999 }}
         aria-label="Open chat"
         title="Deschide chat"
@@ -133,7 +133,7 @@ export default function Chatbot() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="w-80 bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden" style={{ position: 'fixed', bottom: '96px', right: '24px', left: 'auto', zIndex: 9997, height: '400px' }}>
+        <div className="w-80 bg-white rounded-none shadow-2xl flex flex-col overflow-hidden" style={{ position: 'fixed', bottom: '96px', right: '24px', left: 'auto', zIndex: 9997, height: '400px' }}>
           {/* Header */}
           <div className="bg-[#6B3410] text-white px-4 py-3 flex justify-between items-start">
             <div>
@@ -149,19 +149,19 @@ export default function Chatbot() {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-3 space-y-3" style={{ backgroundColor: '#FAF7F4' }}>
+          <div className="flex-1 overflow-y-auto p-3 space-y-3" style={{ backgroundColor: '#F4F5F6' }}>
             {messages.length === 0 && (
-                <div className="text-center text-[#dd9933] py-6">
+                <div className="text-center text-[#F97316] py-6">
                 <p className="text-sm font-medium">Bun venit!</p>
                 <p className="text-xs opacity-70 mt-1">Cum te pot ajuta?</p>
               </div>
             )}
             {messages.map((msg) => (
               <div key={msg.id} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                <div className={`max-w-xs px-4 py-2 text-sm rounded-2xl ${
+                <div className={`max-w-xs px-4 py-2 text-sm rounded-none ${
                   msg.role === 'user'
-                    ? 'bg-[#dd9933] text-white rounded-tr-none'
-                    : 'bg-white text-[#333] rounded-tl-none border border-[#e8dcc8]'
+                    ? 'bg-[#F97316] text-white '
+                    : 'bg-white text-[#333] rounded-tl-none border border-[#D8DCE0]'
                 }`}>
                   {msg.content}
                 </div>
@@ -169,9 +169,9 @@ export default function Chatbot() {
             ))}
             {isLoading && (
               <div className="flex justify-start">
-                <div className="bg-white px-4 py-2 rounded-2xl rounded-tl-none border border-[#e8dcc8]">
+                <div className="bg-white px-4 py-2 rounded-none rounded-tl-none border border-[#D8DCE0]">
                   <div className="flex space-x-1">
-                    {[0, 1, 2].map(i => <div key={i} className="w-2 h-2 bg-[#dd9933] rounded-full animate-bounce" style={{ animationDelay: `${i * 0.2}s` }}></div>)}
+                    {[0, 1, 2].map(i => <div key={i} className="w-2 h-2 bg-[#F97316] rounded-full animate-bounce" style={{ animationDelay: `${i * 0.2}s` }}></div>)}
                   </div>
                 </div>
               </div>
@@ -181,13 +181,13 @@ export default function Chatbot() {
 
           {/* Quick Replies */}
           {messages.length === 0 && (
-            <div className="px-3 py-2 space-y-2 border-t border-[#e8dcc8]" style={{ backgroundColor: '#FAF7F4' }}>
+            <div className="px-3 py-2 space-y-2 border-t border-[#D8DCE0]" style={{ backgroundColor: '#F4F5F6' }}>
               <div className="flex flex-wrap gap-2">
                 {quickReplies.map((reply, i) => (
                   <button
                     key={i}
                     onClick={() => handleSendMessage(reply.message)}
-                    className="text-xs px-3 py-1.5 rounded-full border border-[#c8a882] text-[#dd9933] hover:bg-[#dd9933] hover:text-white transition-colors font-medium"
+                    className="text-xs px-3 py-1.5 rounded-full border border-[#E8590C] text-[#F97316] hover:bg-[#F97316] hover:text-white transition-colors font-medium"
                   >
                     {reply.label}
                   </button>
@@ -197,20 +197,20 @@ export default function Chatbot() {
           )}
 
           {/* Input */}
-          <div className="border-t border-[#e8dcc8] p-3 bg-white flex gap-2">
+          <div className="border-t border-[#D8DCE0] p-3 bg-white flex gap-2">
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={(e) => { if (e.key === 'Enter') handleSendMessage() }}
               placeholder="Scrie mesajul..."
-              className="flex-1 px-4 py-2 rounded-full border border-[#e8dcc8] focus:outline-none focus:border-[#dd9933] text-sm"
-              style={{ backgroundColor: '#FAF7F4' }}
+              className="flex-1 px-4 py-2 rounded-full border border-[#D8DCE0] focus:outline-none focus:border-[#F97316] text-sm"
+              style={{ backgroundColor: '#F4F5F6' }}
             />
             <button
               onClick={() => handleSendMessage()}
               disabled={isLoading}
-              className="w-8 h-8 bg-[#dd9933] text-white rounded-full flex items-center justify-center hover:bg-[#6B3410] disabled:opacity-50"
+              className="w-8 h-8 bg-[#F97316] text-white rounded-full flex items-center justify-center hover:bg-[#6B3410] disabled:opacity-50"
             >
               <Send className="w-4 h-4" />
             </button>

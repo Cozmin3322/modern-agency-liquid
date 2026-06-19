@@ -81,14 +81,14 @@ export default function TermoizolarePage() {
                   { title: "Materiale Premium", desc: "Izolație termică certificată ISO 9001. Fără compromiuri la calitate și durabilitate." },
                   { title: "Aplicare Rapidă", desc: "Montaj în 1-2 zile. Minimal disrupting pentru locuința sau biroul dumneavoastră." },
                 ].map((item, i) => (
-                  <div key={i} className="p-6 border border-border rounded-lg bg-background">
+                  <div key={i} className="p-6 border border-border rounded-none bg-background">
                     <Check className="w-6 h-6 text-accent mb-3" />
                     <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                     <p className="text-foreground/70 text-sm">{item.desc}</p>
                   </div>
                 ))}
               </div>
-              <div className="rounded-lg overflow-hidden">
+              <div className="rounded-none overflow-hidden">
                 <img src="/images/beneficii-termoizolare.webp" alt="Termoizolare profesională casă cu spumă poliuretanică Chișinău Moldova" className="w-full h-full object-cover" />
               </div>
             </div>
@@ -102,7 +102,7 @@ export default function TermoizolarePage() {
             <p className="text-foreground/60 mb-12 max-w-2xl">Izolăm orice tip de construcție sau obiect cu spumă poliuretanică — cu celule deschise sau închise, în funcție de necesități.</p>
             <div className="grid md:grid-cols-3 gap-8">
               {tipuriTermoizolare.map(({ href, Icon, title, desc }) => (
-                <Link key={href} href={href} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition group">
+                <Link key={href} href={href} className="p-8 bg-card border border-border rounded-none hover:border-accent transition group">
                   <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center mb-4 group-hover:border-accent group-hover:text-accent transition">
                     <Icon className="w-5 h-5" />
                   </div>
@@ -120,7 +120,7 @@ export default function TermoizolarePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-4">Zone Tehnice de Aplicare</h2>
             <p className="text-foreground/70 mb-12 max-w-3xl">Selectați tipul de izolație termoizolării în funcție de zona și condițiile specifice ale proprietății dumneavoastră.</p>
-            <div className="overflow-x-auto border border-border rounded-lg">
+            <div className="overflow-x-auto border border-border rounded-none">
               <table className="w-full">
                 <thead>
                   <tr className="bg-accent text-white">
@@ -168,7 +168,7 @@ export default function TermoizolarePage() {
                   </div>
                 ))}
               </div>
-              <div className="bg-secondary p-8 rounded-lg">
+              <div className="bg-secondary p-8 rounded-none">
                 <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3"><span className="w-2 h-8 bg-accent" />De Ce Alegem Spuma Poliuretanică?</h3>
                 <ul className="space-y-4 text-foreground/80">
                   {["Conductivitate termică minimă - cel mai bun raport izolare/grosime", "Aderență perfect pe orice suprafață fără preparare specială", "Etanșare totală - fără punți termice sau infiltrații", "Durabilitate extremă - nu se degradează sau se tasează", "Garanție 25 ani - cea mai lungă pe piață"].map((text, i) => (
@@ -186,7 +186,7 @@ export default function TermoizolarePage() {
             <h2 className="text-4xl font-serif font-medium mb-12">Condiții de Aplicare</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {conditiiAplicare.map(({ Icon, title, desc }) => (
-                <div key={title} className="p-8 border border-border rounded-lg hover:border-accent transition bg-background">
+                <div key={title} className="p-8 border border-border rounded-none hover:border-accent transition bg-background">
                   <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center mb-4">
                     <Icon className="w-5 h-5 text-accent" />
                   </div>
@@ -204,7 +204,7 @@ export default function TermoizolarePage() {
             <h2 className="text-4xl font-serif font-medium mb-12 text-center">De Ce IsoThermLux?</h2>
             <div className="grid md:grid-cols-4 gap-6">
               {deIsoThermLux.map(({ Icon, title, desc }) => (
-                <div key={title} className="p-8 bg-card border-2 border-border rounded-lg hover:border-accent transition text-center">
+                <div key={title} className="p-8 bg-card border-2 border-border rounded-none hover:border-accent transition text-center">
                   <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-6 h-6 text-accent" />
                   </div>
@@ -233,11 +233,11 @@ export default function TermoizolarePage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-[#2C3E50] text-white">
+        <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Gata pentru Termoizolare?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">Consultație gratuită fără angajamente. Estimare preț pe loc. Răspuns în 30 minute.</p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Contactează-ne Acum<ArrowRight className="w-4 h-4" />
             </a>
           </div>

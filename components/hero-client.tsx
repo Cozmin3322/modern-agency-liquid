@@ -43,24 +43,28 @@ export function HeroClient({ data }: HeroClientProps) {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <p className="text-sm tracking-[0.3em] uppercase text-center mb-6 text-white/90">
-            {'Izolare Profesională'}
-          </p>
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="h-px w-8 bg-accent" />
+            <p className="text-sm tracking-[0.3em] uppercase text-center text-accent font-semibold">
+              {'Izolare Profesională'}
+            </p>
+            <span className="h-px w-8 bg-accent" />
+          </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-balance text-center text-white mb-6 tracking-tight leading-tight" style={{textShadow: '0 6px 20px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'}}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-semibold text-balance text-center text-white mb-6 tracking-tight leading-[1.1]" style={{textShadow: '0 2px 8px rgba(0,0,0,0.4)'}}>
             {data.heroTitle}
             <br />
-            <span className="text-white" style={{textShadow: '0 6px 20px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'}}>{data.heroSubtitle}</span>
+            <span className="text-white" style={{textShadow: '0 2px 8px rgba(0,0,0,0.4)'}}>{data.heroSubtitle}</span>
           </h1>
 
           <div className="space-y-8">
-            <p className="text-base md:text-xl text-white max-w-2xl mx-auto leading-relaxed drop-shadow-2xl font-semibold" style={{textShadow: '0 4px 12px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.6)'}}>
+            <p className="text-base md:text-xl text-white max-w-2xl mx-auto leading-relaxed font-medium" style={{textShadow: '0 1px 4px rgba(0,0,0,0.3)'}}>
               {'Cu spumă poliuretanică de calitate superioară. Garanție 25 ani. Economisește până la 40-50% la încălzire.'}
             </p>
 
             <button 
               onClick={scrollToContactForm}
-              className="group relative px-8 py-3 bg-accent text-background font-semibold rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 inline-flex items-center gap-2">
+              className="group relative px-8 py-3 border border-white/60 text-white font-mono text-xs uppercase tracking-widest hover:border-white hover:bg-white/10 transition-all duration-200 inline-flex items-center gap-3">
               {'Cere Ofertă Gratuită'}
               <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
             </button>
@@ -115,24 +119,28 @@ export function HeroClient({ data }: HeroClientProps) {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/50 to-black/60" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <p className="text-sm tracking-[0.3em] uppercase text-center mb-6 text-white/90">
-            {'Izolare Profesională'}
-          </p>
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="h-px w-8 bg-accent" />
+            <p className="text-sm tracking-[0.3em] uppercase text-center text-accent font-semibold">
+              {'Izolare Profesională'}
+            </p>
+            <span className="h-px w-8 bg-accent" />
+          </div>
 
-          <p className="text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-balance text-center text-white mb-6 tracking-tight leading-tight" style={{textShadow: '0 6px 20px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'}}>
+          <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-semibold text-balance text-center text-white mb-6 tracking-tight leading-[1.1]" style={{textShadow: '0 2px 8px rgba(0,0,0,0.4)'}}>
             {data.heroTitle}
             <br />
-            <span className="text-white" style={{textShadow: '0 6px 20px rgba(0, 0, 0, 0.9), 0 3px 6px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.5)'}}>{data.heroSubtitle}</span>
+            <span className="text-white" style={{textShadow: '0 2px 8px rgba(0,0,0,0.4)'}}>{data.heroSubtitle}</span>
           </p>
 
           <div className="space-y-8">
-            <p className="text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed drop-shadow-2xl font-semibold" style={{textShadow: '0 4px 12px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.6)'}}>
+            <p className="text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed font-medium" style={{textShadow: '0 1px 4px rgba(0,0,0,0.3)'}}>
               {'Cu spumă poliuretanică de calitate superioară. Garanție 25 ani. Economisește până la 40-50% la încălzire.'}
             </p>
 
             <button 
               onClick={scrollToContactForm}
-              className="group relative px-8 py-3 bg-accent text-background font-semibold rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 inline-flex items-center gap-2">
+              className="group relative px-8 py-3 border border-white/60 text-white font-mono text-xs uppercase tracking-widest hover:border-white hover:bg-white/10 transition-all duration-200 inline-flex items-center gap-3">
               {'Cere Ofertă Gratuită'}
               <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
             </button>

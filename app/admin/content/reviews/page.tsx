@@ -90,7 +90,7 @@ export default function ReviewsEditor() {
 
           <div className="space-y-6">
             {/* Add New Review */}
-            <div className="border border-border rounded-lg p-6 bg-accent/5">
+            <div className="border border-border rounded-none p-6 bg-accent/5">
               <h2 className="text-lg font-semibold text-foreground mb-4">Adaugă Recenzie Nouă</h2>
               <div className="space-y-3">
                 <div className="grid grid-cols-2 gap-3">
@@ -99,32 +99,32 @@ export default function ReviewsEditor() {
                     placeholder="Nume client..."
                     value={newReview.name}
                     onChange={(e) => setNewReview({...newReview, name: e.target.value})}
-                    className="px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                    className="px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                   />
                   <input
                     type="text"
                     placeholder="Oraș..."
                     value={newReview.city}
                     onChange={(e) => setNewReview({...newReview, city: e.target.value})}
-                    className="px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                    className="px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                   />
                 </div>
                 <input
                   type="date"
                   value={newReview.date}
                   onChange={(e) => setNewReview({...newReview, date: e.target.value})}
-                  className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                  className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                 />
                 <textarea
                   placeholder="Text recenzie..."
                   value={newReview.text}
                   onChange={(e) => setNewReview({...newReview, text: e.target.value})}
                   rows={3}
-                  className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-accent"
+                  className="w-full px-4 py-2 border border-border rounded-none bg-background text-foreground focus:outline-none focus:border-accent"
                 />
                 <button
                   onClick={handleAdd}
-                  className="flex items-center gap-2 px-4 py-2 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors"
+                  className="flex items-center gap-2 px-4 py-2 bg-accent text-white rounded-none hover:bg-accent/90 transition-colors"
                 >
                   <Plus className="w-4 h-4" />
                   Adaugă
@@ -135,7 +135,7 @@ export default function ReviewsEditor() {
             {/* Reviews List */}
             <div className="space-y-3">
               {reviews.map((review) => (
-                <div key={review.id} className="border border-border rounded-lg p-4 bg-accent/5">
+                <div key={review.id} className="border border-border rounded-none p-4 bg-accent/5">
                   <div className="flex justify-between items-start gap-4">
                     <div className="flex-1">
                       <p className="font-medium text-foreground">{review.name}</p>
@@ -157,14 +157,14 @@ export default function ReviewsEditor() {
             <div className="flex gap-3">
               <button
                 onClick={handleSave}
-                className="flex items-center gap-2 px-6 py-2 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors"
+                className="flex items-center gap-2 px-6 py-2 bg-accent text-white rounded-none hover:bg-accent/90 transition-colors"
               >
                 <Save className="w-4 h-4" />
                 Salvează
               </button>
               <button
                 onClick={handleReset}
-                className="flex items-center gap-2 px-6 py-2 border border-border text-foreground rounded-lg hover:bg-accent/5 transition-colors"
+                className="flex items-center gap-2 px-6 py-2 border border-border text-foreground rounded-none hover:bg-accent/5 transition-colors"
               >
                 <RotateCcw className="w-4 h-4" />
                 Resetează la Original

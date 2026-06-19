@@ -6,9 +6,13 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: [
-          '/', '/blog', '/blog/*', '/termoizolare',
-          '/hidroizolare', '/calculator-oferta',
-          '/intrebari-frecvente', '/portofoliu'
+          '/', '/blog', '/blog/*', '/termoizolare', '/termoizolare/*',
+          '/hidroizolare', '/hidroizolare/*', '/calculator-oferta', '/calculator',
+          '/intrebari-frecvente', '/portofoliu', '/portofoliu/*',
+          '/boiler', '/transport-industrial', '/fatade', '/fonoizolare',
+          '/despre-noi', '/contact', '/recenzii', '/servicii', '/beneficii',
+          '/ce-este-spuma-poliuretanica', '/spuma-cu-celula-inchisa',
+          '/galerie/foto', '/galerie/video', '/locatii/chisinau', '/locatii/balti'
         ],
         disallow: ['/admin', '/api', '/private'],
       },

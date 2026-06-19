@@ -159,7 +159,7 @@ export default function BlogPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post) => (
-                <article key={post.id} className="group border border-border rounded-lg overflow-hidden hover:border-accent transition-colors bg-background">
+                <article key={post.id} className="group border border-border rounded-none overflow-hidden hover:border-accent transition-colors bg-background">
                   {/* Image */}
                   <div className="relative h-48 overflow-hidden">
                     <img
@@ -221,12 +221,12 @@ export default function BlogPage() {
               <input
                 type="email"
                 placeholder="Email-ul tău"
-                className="flex-1 px-4 py-3 rounded-lg bg-card border border-border focus:border-accent outline-none transition-colors"
+                className="flex-1 px-4 py-3 rounded-none bg-card border border-border focus:border-accent outline-none transition-colors"
                 required
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-colors"
+                className="px-6 py-3 bg-accent text-white font-semibold rounded-none hover:bg-accent/90 transition-colors"
               >
                 Înscrie-te
               </button>
@@ -247,13 +247,13 @@ export default function BlogPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/calculator-oferta"
-                className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition-colors"
               >
                 Calculator Ofertă <ArrowRight className="w-5 h-5" />
               </Link>
               <a
                 href="tel:+37378370243"
-                className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-8 py-4 rounded-lg font-semibold hover:bg-accent/10 transition-colors"
+                className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-8 py-4 rounded-none font-semibold hover:bg-accent/10 transition-colors"
               >
                 Sună Acum
               </a>

@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ServiceHero } from "@/components/service-hero"
 import { ArrowRight, Check, Thermometer, Factory, Droplet, Snowflake, Wrench, Cylinder } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -24,32 +25,22 @@ export default function ConduCtePage() {
       <Header />
       <main className="bg-background">
 
-        <section className="relative min-h-[70vh] flex items-center pt-20 bg-[#1a2535]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative py-20">
-            <nav className="text-sm text-white/60 mb-6">
-              <Link href="/" className="hover:text-white transition">Acasă</Link>
-              <span className="mx-2">/</span>
-              <Link href="/termoizolare" className="hover:text-white transition">Termoizolare</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">Conducte și Instalații</span>
-            </nav>
-            <p className="text-accent text-sm tracking-widest uppercase mb-4">Spumă Poliuretanică cu Celule Închise</p>
-            <h1 className="text-5xl md:text-6xl font-serif font-medium text-white mb-6 max-w-3xl">
-              Termoizolare Conducte și Instalații Tehnice
-            </h1>
-            <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
-              Conductele neizolate pierd până la 30% din energia transportată. Izolăm conductele industriale, termice și sanitare cu spumă poliuretanică cu celule închise — formând o manta termică perfectă pe orice geometrie.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
-                Consultație Gratuită <ArrowRight className="w-4 h-4" />
-              </a>
-              <Link href="/calculator-oferta" className="inline-flex items-center gap-2 border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:border-white transition">
-                Calculează Oferta
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ServiceHero
+          backgroundImage="/images/project-protectie-margini-01.jpg"
+          title="Termoizolare Conducte"
+          titleAccent="și Instalații Tehnice"
+          subtitle="Conductele neizolate pierd până la 30% din energia transportată. Izolăm conducte industriale, termice și sanitare cu spumă poliuretanică."
+          ctaSecondaryHref="/calculator-oferta"
+          ctaSecondaryLabel="Calculează Oferta"
+        />
+
+        <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+          <Link href="/" className="hover:text-accent transition">Acasă</Link>
+          <span className="mx-2">/</span>
+          <Link href="/termoizolare" className="hover:text-accent transition">Termoizolare</Link>
+          <span className="mx-2">/</span>
+          <span>Conducte și Instalații</span>
+        </nav>
 
         {/* Tipuri conducte */}
         <section className="py-24 bg-background">
@@ -64,7 +55,7 @@ export default function ConduCtePage() {
                 { Icon: Wrench, title: "Vane, Flanșe, Fitinguri", desc: "Spuma se modelează perfect pe geometria complexă a vanelor și fitingurilor — punct frecvent de pierderi termice neglijat." },
                 { Icon: Cylinder, title: "Rezervoare și Boilere", desc: "Izolăm boilere, rezervoare tampon și acumulatoare. Menţinem temperatura fluidului mai mult timp cu consum redus de energie." },
               ].map((type, idx) => (
-                <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
+                <div key={idx} className="p-8 bg-card border border-border rounded-none hover:border-accent transition">
                   <type.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-3">{type.title}</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">{type.desc}</p>
@@ -100,17 +91,17 @@ export default function ConduCtePage() {
                 </ul>
               </div>
               <div className="space-y-4">
-                <div className="bg-background p-6 rounded-lg border border-border">
+                <div className="bg-background p-6 rounded-none border border-border">
                   <h3 className="font-semibold mb-2">Conductivitate Termică</h3>
                   <div className="text-3xl font-bold text-accent">λ = 0.022 W/m·K</div>
                   <p className="text-foreground/60 text-sm mt-1">Cel mai bun coeficient disponibil comercial</p>
                 </div>
-                <div className="bg-background p-6 rounded-lg border border-border">
+                <div className="bg-background p-6 rounded-none border border-border">
                   <h3 className="font-semibold mb-2">Temperaturi de Lucru</h3>
                   <div className="text-3xl font-bold text-foreground">-50°C → +120°C</div>
                   <p className="text-foreground/60 text-sm mt-1">Stabilitate termică pe plajă largă</p>
                 </div>
-                <div className="bg-background p-6 rounded-lg border border-border">
+                <div className="bg-background p-6 rounded-none border border-border">
                   <h3 className="font-semibold mb-2">Durată de Viață</h3>
                   <div className="text-3xl font-bold text-foreground">25+ ani</div>
                   <p className="text-foreground/60 text-sm mt-1">Fără degradare, fără reizolare</p>
@@ -121,13 +112,13 @@ export default function ConduCtePage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-[#2C3E50] text-white">
+        <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Izolăm Conductele Tale Rapid</h2>
             <p className="text-lg mb-8 max-w-xl mx-auto opacity-90">
               Evaluare gratuită. Ofertă pe metru liniar. Lucrare fără oprirea instalației în majoritatea cazurilor.
             </p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum: +373 78 370 243 <ArrowRight className="w-4 h-4" />
             </a>
           </div>

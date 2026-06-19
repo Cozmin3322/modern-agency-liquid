@@ -83,7 +83,7 @@ export default function CalculatorPage() {
                       <button
                         key={opt.val}
                         onClick={() => setType(opt.val as any)}
-                        className={`p-4 border-2 rounded-lg font-semibold transition text-left ${
+                        className={`p-4 border-2 rounded-none font-semibold transition text-left ${
                           type === opt.val
                             ? 'border-accent bg-accent/10'
                             : 'border-border hover:border-accent/50'
@@ -108,7 +108,7 @@ export default function CalculatorPage() {
                     step="10"
                     value={area}
                     onChange={(e) => setArea(parseInt(e.target.value))}
-                    className="w-full h-2 bg-border rounded-lg appearance-none cursor-pointer"
+                    className="w-full h-2 bg-border rounded-none appearance-none cursor-pointer"
                   />
                   <div className="grid grid-cols-4 gap-2 mt-4 text-sm">
                     {[30, 50, 100, 200].map((val) => (
@@ -139,7 +139,7 @@ export default function CalculatorPage() {
                       <button
                         key={opt.val}
                         onClick={() => setLocation(opt.val as any)}
-                        className={`p-3 border-2 rounded-lg font-semibold transition ${
+                        className={`p-3 border-2 rounded-none font-semibold transition ${
                           location === opt.val
                             ? 'border-accent bg-accent/10'
                             : 'border-border hover:border-accent/50'
@@ -164,7 +164,7 @@ export default function CalculatorPage() {
                       <button
                         key={opt.val}
                         onClick={() => setComplexity(opt.val as any)}
-                        className={`p-3 border-2 rounded-lg font-semibold transition text-left ${
+                        className={`p-3 border-2 rounded-none font-semibold transition text-left ${
                           complexity === opt.val
                             ? 'border-accent bg-accent/10'
                             : 'border-border hover:border-accent/50'
@@ -180,7 +180,7 @@ export default function CalculatorPage() {
 
               {/* Estimate Display */}
               <div className="md:col-span-2">
-                <div className="sticky top-32 bg-background p-8 rounded-lg border-2 border-accent">
+                <div className="sticky top-32 bg-background p-8 rounded-none border-2 border-accent">
                   <h2 className="text-2xl font-serif font-medium mb-8 text-accent">Estimare Aproximativă</h2>
 
                   <div className="space-y-4 mb-8">
@@ -208,19 +208,19 @@ export default function CalculatorPage() {
                     )}
                   </div>
 
-                  <div className="bg-accent/10 p-4 rounded-lg mb-8 border-2 border-accent">
+                  <div className="bg-accent/10 p-4 rounded-none mb-8 border-2 border-accent">
                     <p className="text-sm text-accent font-semibold mb-1">Total Estimat:</p>
                     <p className="text-4xl font-bold text-accent">{totalEstimate.toLocaleString()} RON</p>
                   </div>
 
                   {savings > 0 && (
-                    <div className="bg-green-500/10 p-4 rounded-lg mb-8 border border-green-500">
+                    <div className="bg-green-500/10 p-4 rounded-none mb-8 border border-green-500">
                       <p className="text-sm text-green-700 font-semibold mb-1">Economii Anuale Estimate:</p>
                       <p className="text-2xl font-bold text-green-600">~{savings} RON/an</p>
                     </div>
                   )}
 
-                  <div className="bg-accent/5 p-3 rounded-lg mb-8 border border-accent">
+                  <div className="bg-accent/5 p-3 rounded-none mb-8 border border-accent">
                     <p className="text-xs text-foreground/60">
                       * Aceasta este o estimare aproximativă. Oferta finală se determină după evaluare pe loc și nu are costuri ascunse.
                     </p>
@@ -228,7 +228,7 @@ export default function CalculatorPage() {
 
                   <a
                     href="tel:+37378370243"
-                    className="w-full inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-4 rounded-lg font-semibold hover:bg-accent/90 transition text-lg"
+                    className="w-full inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-4 rounded-none font-semibold hover:bg-accent/90 transition text-lg"
                   >
                     Obțin Ofertă Exactă <ArrowRight className="w-5 h-5" />
                   </a>

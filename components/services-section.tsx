@@ -29,40 +29,40 @@ export function ServicesSection() {
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px bg-border">
           {services.map((service, idx) => {
             const Icon = service.icon
+            const num = String(idx + 1).padStart(2, '0')
             return (
-              <div
+              <Link
                 key={idx}
-                className="bg-white border-t-4 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow"
-                style={{ borderTopColor: service.color }}
+                href={service.link}
+                className="group relative bg-background p-6 md:p-8 lg:p-10 transition-colors duration-300 hover:bg-[#1A1D21] flex flex-col"
               >
-                <div className="flex items-start mb-6">
-                  <Icon 
-                    className="w-12 h-12 flex-shrink-0" 
-                    style={{ color: service.color }}
-                    strokeWidth={1.5}
-                  />
+                {/* Number + top accent line */}
+                <div className="flex items-center justify-between mb-8">
+                  <span className="font-mono text-sm text-accent font-bold">/ {num}</span>
+                  <span className="h-px w-12 bg-border group-hover:bg-accent transition-colors" />
                 </div>
-                
-                <h3 className="text-2xl font-bold mb-4 font-sans" style={{ color: '#1A1A1A' }}>
+
+                <Icon
+                  className="w-12 h-12 flex-shrink-0 mb-6 text-accent"
+                  strokeWidth={1.5}
+                />
+
+                <h3 className="font-serif text-2xl uppercase mb-4 text-foreground group-hover:text-white transition-colors">
                   {service.title}
                 </h3>
-                
-                <p className="text-foreground/80 leading-relaxed mb-6 text-sm">
+
+                <p className="text-foreground/70 group-hover:text-white/70 leading-relaxed mb-8 text-sm transition-colors flex-1">
                   {service.description}
                 </p>
-                
-                <Link
-                  href={service.link}
-                  className="inline-flex items-center gap-2 font-semibold transition-colors"
-                  style={{ color: service.color }}
-                >
+
+                <span className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-accent">
                   Detalii
-                  <span>→</span>
-                </Link>
-              </div>
+                  <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </span>
+              </Link>
             )
           })}
         </div>

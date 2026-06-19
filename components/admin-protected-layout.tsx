@@ -78,7 +78,7 @@ export function AdminProtectedLayout({ children }: AdminLayoutProps) {
               <Link
                 key={item.href}
                 href={item.href}
-                className="flex items-center gap-3 px-4 py-2 rounded-lg text-foreground/80 hover:bg-accent/10 hover:text-foreground transition-colors"
+                className="flex items-center gap-3 px-4 py-2 rounded-none text-foreground/80 hover:bg-accent/10 hover:text-foreground transition-colors"
               >
                 <Icon className="w-4 h-4" />
                 <span className="text-sm">{item.label}</span>
@@ -91,7 +91,7 @@ export function AdminProtectedLayout({ children }: AdminLayoutProps) {
         <div className="border-t border-border p-4">
           <button
             onClick={handleLogout}
-            className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-foreground/80 hover:bg-red-500/10 hover:text-red-600 transition-colors"
+            className="w-full flex items-center gap-3 px-4 py-2 rounded-none text-foreground/80 hover:bg-red-500/10 hover:text-red-600 transition-colors"
           >
             <LogOut className="w-4 h-4" />
             <span className="text-sm">Logout</span>

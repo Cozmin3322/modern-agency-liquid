@@ -115,7 +115,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         {/* Image */}
         <section className="py-12 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="rounded-lg overflow-hidden">
+            <div className="rounded-none overflow-hidden">
               <img
                 src={project.image}
                 alt={project.title}
@@ -129,7 +129,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         <section className="py-16 bg-background">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Short Description */}
-            <div className="mb-12 p-6 bg-card border border-border rounded-lg">
+            <div className="mb-12 p-6 bg-card border border-border rounded-none">
               <p className="text-xl text-foreground/80 leading-relaxed">{project.shortDesc}</p>
             </div>
 
@@ -144,7 +144,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               <h2 className="text-2xl font-serif font-medium mb-4">Cuvinte Cheie</h2>
               <div className="flex flex-wrap gap-3">
                 {project.keywords.map((keyword) => (
-                  <span key={keyword} className="px-4 py-2 bg-accent/10 border border-accent/20 rounded-lg text-sm text-accent">
+                  <span key={keyword} className="px-4 py-2 bg-accent/10 border border-accent/20 rounded-none text-sm text-accent">
                     {keyword}
                   </span>
                 ))}
@@ -163,13 +163,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="tel:++37378370243" 
-                className="inline-block bg-accent text-background px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition"
+                className="inline-block bg-accent text-background px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition"
               >
                 Sună Acum
               </a>
               <a 
                 href="/calculator-oferta" 
-                className="inline-block border-2 border-accent text-accent px-8 py-3 rounded-lg font-semibold hover:bg-accent/10 transition"
+                className="inline-block border-2 border-accent text-accent px-8 py-3 rounded-none font-semibold hover:bg-accent/10 transition"
               >
                 Calculator Ofertă
               </a>
@@ -187,7 +187,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 .slice(0, 3)
                 .map((relatedProject) => (
                   <Link key={relatedProject.id} href={`/portofoliu/${relatedProject.slug}`}>
-                    <div className="bg-card border border-border rounded-lg overflow-hidden hover:border-accent transition group cursor-pointer">
+                    <div className="bg-card border border-border rounded-none overflow-hidden hover:border-accent transition group cursor-pointer">
                       <div className="h-40 overflow-hidden">
                         <img
                           src={relatedProject.image}

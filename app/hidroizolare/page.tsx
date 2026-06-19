@@ -115,7 +115,7 @@ export default function HidroizolarePage() {
                   description: "Montaj eficient fără disruption majoră. Soluții personalizate pentru fiecare proiect."
                 }
               ].map((benefit, idx) => (
-                <div key={idx} className="p-8 border border-border rounded-lg">
+                <div key={idx} className="p-8 border border-border rounded-none">
                   <Check className="w-6 h-6 text-accent mb-4" />
                   <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
                   <p className="text-foreground/70">{benefit.description}</p>
@@ -147,7 +147,7 @@ export default function HidroizolarePage() {
                   link: "/hidroizolare/subsol"
                 }
               ].map((service, idx) => (
-                <Link key={idx} href={service.link} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition group">
+                <Link key={idx} href={service.link} className="p-8 bg-card border border-border rounded-none hover:border-accent transition group">
                   <h3 className="text-xl font-semibold mb-3 group-hover:text-accent transition">{service.title}</h3>
                   <p className="text-foreground/70 mb-4">{service.description}</p>
                   <span className="inline-flex items-center gap-2 text-accent">
@@ -178,7 +178,7 @@ export default function HidroizolarePage() {
                   </div>
                 ))}
               </div>
-              <div className="bg-background p-8 rounded-lg border border-border">
+              <div className="bg-background p-8 rounded-none border border-border">
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Beneficii Imediate</h3>
                 <ul className="space-y-3 text-sm text-foreground/70">
                   <li className="flex gap-2">
@@ -225,7 +225,7 @@ export default function HidroizolarePage() {
                   description: "Pregătirea spațiului: acoperirea geamurilor și suprafețelor cu folie de protecție înainte de aplicare."
                 }
               ].map((service, idx) => (
-                <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
+                <div key={idx} className="p-8 bg-card border border-border rounded-none hover:border-accent transition">
                   <div className="w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center mb-4">
                     <Check className="w-6 h-6 text-accent" />
                   </div>
@@ -234,7 +234,7 @@ export default function HidroizolarePage() {
                 </div>
               ))}
             </div>
-            <div className="mt-12 bg-secondary p-8 rounded-lg border border-border">
+            <div className="mt-12 bg-secondary p-8 rounded-none border border-border">
               <p className="text-foreground/80">
                 Utilizați <Link href="/calculator-oferta" className="text-accent font-semibold hover:underline">calculatorul ofertă</Link> pentru a estima costul exact al serviciilor de hidroizolare pentru proprietatea dumneavoastră. Consultați și <Link href="/portofoliu?tip=hidroizolare" className="text-accent font-semibold hover:underline">portofoliu proiecte</Link> de hidroizolare finalizate cu succes.
               </p>
@@ -247,7 +247,7 @@ export default function HidroizolarePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-serif font-medium mb-4">Zone Tehnice de Aplicare</h2>
             <p className="text-foreground/70 mb-12 max-w-3xl">Selectați tipul de izolație hidroizolării în funcție de zona și condițiile specifice ale proprietății dumneavoastră.</p>
-            <div className="overflow-x-auto border border-border rounded-lg">
+            <div className="overflow-x-auto border border-border rounded-none">
               <table className="w-full">
                 <thead>
                   <tr className="bg-accent text-white">
@@ -306,7 +306,7 @@ export default function HidroizolarePage() {
                   </div>
                 ))}
               </div>
-              <div className="bg-secondary p-8 rounded-lg">
+              <div className="bg-secondary p-8 rounded-none">
                 <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
                   <span className="w-2 h-8 bg-accent"></span>
                   De Ce Spuma Poliuretanică pentru Hidroizolare?
@@ -365,7 +365,7 @@ export default function HidroizolarePage() {
                   description: "Substratul trebuie să fie stabil și consolidat înainte de aplicare."
                 }
               ].map((condition, idx) => (
-                <div key={idx} className="p-8 border border-border rounded-lg hover:border-accent transition bg-background">
+                <div key={idx} className="p-8 border border-border rounded-none hover:border-accent transition bg-background">
                   <condition.icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-xl font-semibold mb-3">{condition.title}</h3>
                   <p className="text-foreground/70">{condition.description}</p>
@@ -407,7 +407,7 @@ export default function HidroizolarePage() {
                   icon: Home
                 }
               ].map((offering, idx) => (
-                <div key={idx} className="p-6 bg-card border-2 border-border rounded-lg hover:border-accent transition text-center">
+                <div key={idx} className="p-6 bg-card border-2 border-border rounded-none hover:border-accent transition text-center">
                   <offering.icon className="w-8 h-8 text-accent mb-3 mx-auto" />
                   <h3 className="text-base font-semibold mb-2 text-foreground">{offering.title}</h3>
                   <p className="text-xs text-foreground/70">{offering.description}</p>
@@ -441,13 +441,13 @@ export default function HidroizolarePage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-[#2C3E50] text-white">
+        <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Protejează-ți Locuința</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
               Consultație gratuită fără angajamente. Estimare preț pe loc. Răspuns în 30 minute.
             </p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Contactează-ne Acum
               <ArrowRight className="w-4 h-4" />
             </a>

@@ -39,21 +39,21 @@ export default function PolyurethaneFormPage() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mb-12">Cum Funcționează Spuma Poliuretanică?</h2>
           
           <div className="space-y-8">
-            <div className="bg-card p-8 rounded-lg border border-border">
+            <div className="bg-card p-8 rounded-none border border-border">
               <h3 className="text-xl font-semibold mb-4 text-accent">1. Reacția Chimică cu 2 Componenți</h3>
               <p className="text-foreground/80 leading-relaxed">
                 Spuma poliuretanică se formează prin amestecarea a doi componenți: poliolul și izocianatul. Când aceștia intră în contact, declanșează o reacție exotermă care generează dioxid de carbon. Acest gaz creeaza o structură de celule care împânzesc materialul, dând spumei caracteristicile sale unice.
               </p>
             </div>
 
-            <div className="bg-card p-8 rounded-lg border border-border">
+            <div className="bg-card p-8 rounded-none border border-border">
               <h3 className="text-xl font-semibold mb-4 text-accent">2. Expansiune Rapidă și Umplere Completă</h3>
               <p className="text-foreground/80 leading-relaxed">
                 Spuma se expandează rapid (până la 60 de ori din volumul inițial) în aproximativ 30-45 de secunde, umplând fiecare cavitate și crevasă. Aceasta permite izolarea completă și uniformă a suprafețelor, eliminând golurile care ar permite transmiterea căldurii sau infiltrarea umezelii.
               </p>
             </div>
 
-            <div className="bg-card p-8 rounded-lg border border-border">
+            <div className="bg-card p-8 rounded-none border border-border">
               <h3 className="text-xl font-semibold mb-4 text-accent">3. Aderență Excelenţională</h3>
               <p className="text-foreground/80 leading-relaxed">
                 Spre deosebire de alte materiale izolante, spuma poliuretanică aderă direct la orice suprafață: beton, lemn, tablă, cărămidă, ușor sau greu. Această proprietate elimină necesitatea de ace, cleme sau adezivi suplimentari și asigură o izolație durabilă pe 25 de ani.
@@ -70,7 +70,7 @@ export default function PolyurethaneFormPage() {
           
           <div className="grid md:grid-cols-2 gap-8">
             {/* Celulă Deschisă */}
-            <div className="bg-background p-8 rounded-lg border border-border">
+            <div className="bg-background p-8 rounded-none border border-border">
               <h3 className="text-2xl font-semibold mb-6 text-accent">Celulă Deschisă (Open Cell)</h3>
               <ul className="space-y-3 text-foreground/80 mb-6">
                 <li className="flex items-start gap-3">
@@ -98,7 +98,7 @@ export default function PolyurethaneFormPage() {
             </div>
 
             {/* Celulă Închisă */}
-            <div className="bg-background p-8 rounded-lg border border-border">
+            <div className="bg-background p-8 rounded-none border border-border">
               <h3 className="text-2xl font-semibold mb-6 text-accent">Celulă Închisă (Closed Cell)</h3>
               <ul className="space-y-3 text-foreground/80 mb-6">
                 <li className="flex items-start gap-3">
@@ -145,7 +145,7 @@ export default function PolyurethaneFormPage() {
               { title: "Containere și Depot", desc: "Protecția mărfurilor sensibile la temperatură cu izolație durabilă și sigură." },
               { title: "Garaje și Anexe", desc: "Control de temperatură pentru confortul și protecția vehiculelor și echipamentelor." }
             ].map((app, idx) => (
-              <div key={idx} className="bg-card p-6 rounded-lg border border-border">
+              <div key={idx} className="bg-card p-6 rounded-none border border-border">
                 <h3 className="text-lg font-semibold mb-3 text-accent">{app.title}</h3>
                 <p className="text-sm text-foreground/80">{app.desc}</p>
               </div>
@@ -246,7 +246,7 @@ export default function PolyurethaneFormPage() {
                 a: "Pregătirea include: evaluare gratuită pe loc, identificarea zonelor de aplicare, pregătirea suprafeţei (curățare), asigurarea ventilaţiei corespunzătoare. Echipa IsoThermLux va coordona toți pașii. Contactează-ne pentru o ofertă personalizată."
               }
             ].map((item, idx) => (
-              <details key={idx} className="group bg-card border border-border rounded-lg p-6">
+              <details key={idx} className="group bg-card border border-border rounded-none p-6">
                 <summary className="cursor-pointer flex items-start gap-4 font-semibold text-lg text-accent">
                   <span className="text-2xl group-open:rotate-90 transition">›</span>
                   {item.q}

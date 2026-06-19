@@ -6,7 +6,7 @@ import { useParallax } from "@/hooks/use-parallax"
 
 const philosophyItems = [
   {
-    title: "70% Economie Energie",
+    title: "40-50% Economie Energie",
     description:
       "Reducere confirmată a costurilor de încălzire. Investiția se recuperează în 2-3 ani prin economiile la facturile de energie.",
   },
@@ -55,11 +55,15 @@ export function Philosophy() {
   return (
     <section id="about" className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24">
           {/* Left column - Title and image */}
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">De Ce Noi?</p>
-            <h2 className="text-6xl md:text-6xl font-serif font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
+            <div className="flex items-center gap-4 mb-6">
+              <span className="font-mono text-sm text-accent font-bold">/ 02</span>
+              <span className="h-px flex-1 max-w-[60px] bg-border" />
+              <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase">De Ce Noi?</p>
+            </div>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-medium leading-[1.1] tracking-tight mb-6 text-balance">
               Beneficiile
               <br />
               <HighlightedText>Termoizolării</HighlightedText>
@@ -68,7 +72,7 @@ export function Philosophy() {
             {/* Imagine cu parallax "float" — overflow hidden ca imaginea să nu iasă din container */}
             <div
               ref={imgContainerRef as React.RefObject<HTMLDivElement>}
-              className="relative hidden lg:block overflow-hidden rounded-lg"
+              className="relative hidden lg:block overflow-hidden rounded-none"
               style={{ height: '24rem' }}
             >
               <img

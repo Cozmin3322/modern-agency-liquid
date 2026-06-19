@@ -429,7 +429,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
             </div>
 
             {/* Image */}
-            <div className="mb-12 rounded-lg overflow-hidden">
+            <div className="mb-12 rounded-none overflow-hidden">
               <img
                 src={article.image || "/placeholder.svg"}
                 alt={article.title}
@@ -445,7 +445,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
             </div>
 
             {/* CTA */}
-            <div className="bg-card p-8 rounded-lg border border-border">
+            <div className="bg-card p-8 rounded-none border border-border">
               <h3 className="text-2xl font-serif font-medium mb-3">Vrei o Ofertă Personalizată?</h3>
               <p className="text-foreground/70 mb-6">
                 Contactează echipa IsoThermLux pentru o consultație gratuită și estimare a costurilor.
@@ -453,13 +453,13 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
                   href="tel:++37378370243"
-                  className="inline-flex items-center justify-center gap-2 bg-accent text-background px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-accent text-background px-6 py-3 rounded-none font-semibold hover:bg-accent/90 transition-colors"
                 >
                   Sună Acum
                 </a>
                 <Link
                   href="/calculator-oferta"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-6 py-3 rounded-lg font-semibold hover:bg-accent/10 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-6 py-3 rounded-none font-semibold hover:bg-accent/10 transition-colors"
                 >
                   Calculator
                 </Link>

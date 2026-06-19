@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ServiceHero } from "@/components/service-hero"
 import { ArrowRight, Check, Fuel, Droplet, Milk, Factory, Thermometer, Truck } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -24,33 +25,22 @@ export default function CisternePage() {
       <Header />
       <main className="bg-background">
 
-        {/* Hero */}
-        <section className="relative min-h-[70vh] flex items-center pt-20 bg-[#1a2535]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative py-20">
-            <nav className="text-sm text-white/60 mb-6">
-              <Link href="/" className="hover:text-white transition">Acasă</Link>
-              <span className="mx-2">/</span>
-              <Link href="/termoizolare" className="hover:text-white transition">Termoizolare</Link>
-              <span className="mx-2">/</span>
-              <span className="text-white">Cisterne</span>
-            </nav>
-            <p className="text-accent text-sm tracking-widest uppercase mb-4">Spumă Poliuretanică cu Celule Închise</p>
-            <h1 className="text-5xl md:text-6xl font-serif font-medium text-white mb-6 max-w-3xl">
-              Termoizolare Cisterne și Rezervoare Industriale
-            </h1>
-            <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
-              Izolăm cisterne metalice, rezervoare de apă, combustibil sau produse alimentare cu spumă poliuretanică cu celule închise — soluția cu cel mai bun coeficient termic, impermeabilă și durabilă 25+ ani.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
-                Consultație Gratuită <ArrowRight className="w-4 h-4" />
-              </a>
-              <Link href="/calculator-oferta" className="inline-flex items-center gap-2 border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:border-white transition">
-                Calculează Oferta
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ServiceHero
+          backgroundImage="/images/hero-mobile-containers.webp"
+          title="Termoizolare Cisterne"
+          titleAccent="și Rezervoare Industriale"
+          subtitle="Izolăm cisterne metalice, rezervoare de apă, combustibil sau produse alimentare cu spumă poliuretanică cu celule închise — impermeabilă și durabilă 25+ ani."
+          ctaSecondaryHref="/calculator-oferta"
+          ctaSecondaryLabel="Calculează Oferta"
+        />
+
+        <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+          <Link href="/" className="hover:text-accent transition">Acasă</Link>
+          <span className="mx-2">/</span>
+          <Link href="/termoizolare" className="hover:text-accent transition">Termoizolare</Link>
+          <span className="mx-2">/</span>
+          <span>Cisterne</span>
+        </nav>
 
         {/* De ce spuma cu celule inchise */}
         <section className="py-24 bg-card">
@@ -77,7 +67,7 @@ export default function CisternePage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-background p-8 rounded-lg border border-border">
+              <div className="bg-background p-8 rounded-none border border-border">
                 <h3 className="text-xl font-semibold mb-6 text-center">Specificații Tehnice</h3>
                 <div className="space-y-4">
                   {[
@@ -138,7 +128,7 @@ export default function CisternePage() {
                   desc: "Rezervoare montate pe remorci sau camioane. Izolație ușoară cu celule închise pentru transport eficient.",
                 },
               ].map((type, idx) => (
-                <div key={idx} className="p-8 bg-card border border-border rounded-lg hover:border-accent transition">
+                <div key={idx} className="p-8 bg-card border border-border rounded-none hover:border-accent transition">
                   <type.Icon className="w-8 h-8 text-accent mb-4" />
                   <h3 className="text-lg font-semibold mb-3">{type.title}</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">{type.desc}</p>
@@ -172,13 +162,13 @@ export default function CisternePage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-[#2C3E50] text-white">
+        <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Ai Nevoie de Termoizolarea unei Cisterne?</h2>
             <p className="text-lg mb-8 max-w-xl mx-auto opacity-90">
               Consultație gratuită. Deplasare la locul cisternei. Ofertă în 24 ore.
             </p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum: +373 78 370 243 <ArrowRight className="w-4 h-4" />
             </a>
           </div>
