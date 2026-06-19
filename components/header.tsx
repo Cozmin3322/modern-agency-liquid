@@ -59,8 +59,8 @@ export function Header() {
     { label: "Calculator", href: "/calculator" },
   ]
 
-  // Transparent pe hero, alb la scroll
-  const isTransparent = scrolled && !mobileMenuOpen
+  // Transparent pe hero (sus de tot), alb solid dupa scroll
+  const isTransparent = !scrolled && !mobileMenuOpen
 
   return (
     <>
@@ -85,7 +85,7 @@ export function Header() {
             <div>
               <div className={cn(
                 "font-serif text-xl font-semibold leading-tight tracking-tight transition-colors duration-300",
-                "text-foreground"
+                isTransparent ? "text-white" : "text-foreground"
               )}>IsoThermLux</div>
               <div className="font-mono text-[10px] text-accent uppercase tracking-[0.25em]">Izolare Profesională</div>
             </div>
