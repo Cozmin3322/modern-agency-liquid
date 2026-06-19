@@ -18,11 +18,7 @@ body {
   line-height: 1.5;
 }
 
-/* Header background color override */
-header.fixed.z-50 {
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #D8DCE0;
-}
+/* Header background controlat din componenta (header.tsx), nu mai e forțat aici */
 
 /* IsoThermLux — Industrial palette: steel gray + safety orange */
 :root {
