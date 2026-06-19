@@ -64,12 +64,16 @@ export function Header() {
 
   return (
     <>
-      <header className={cn(
-        "fixed z-50 w-full transition-all duration-500",
-        isTransparent
-          ? "bg-transparent py-5"
-          : "bg-white/95 backdrop-blur-md border-b border-border shadow-sm py-3"
-      )}>
+      <header
+        className={cn(
+          "fixed z-50 w-full transition-all duration-500",
+          isTransparent ? "bg-transparent py-5" : "backdrop-blur-md py-3"
+        )}
+        style={!isTransparent ? {
+          background: "linear-gradient(to bottom, #FFFFFF, #FAF6F0)",
+          boxShadow: "0 4px 20px rgba(0, 0, 0, 0.06)",
+        } : undefined}
+      >
 
         <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
 
@@ -93,17 +97,17 @@ export function Header() {
 
           {/* Dreapta: telefon + hamburger */}
           <div className="flex items-center gap-4">
-            {/* Buton telefon cu border portocaliu */}
+            {/* Buton telefon plin, cu umbra */}
             <a
               href="tel:+37378370243"
               className={cn(
-                "hidden sm:flex items-center gap-2 px-5 py-2.5 font-mono text-sm uppercase tracking-wider border transition-all duration-300",
+                "hidden sm:flex items-center gap-2 px-5 py-2.5 font-mono text-sm uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5",
                 isTransparent
-                  ? "border-accent text-white hover:bg-accent hover:text-white"
-                  : "border-accent text-accent hover:bg-accent hover:text-white"
+                  ? "border border-accent text-white hover:bg-accent hover:text-white"
+                  : "bg-accent text-white shadow-[0_4px_14px_rgba(155,95,18,0.35)] hover:bg-accent/90 hover:shadow-[0_6px_18px_rgba(155,95,18,0.45)]"
               )}
             >
-              <Phone className="w-4 h-4 text-accent flex-shrink-0" />
+              <Phone className={cn("w-4 h-4 flex-shrink-0", isTransparent ? "text-accent" : "text-white")} />
               +373 78 370 243
             </a>
 
