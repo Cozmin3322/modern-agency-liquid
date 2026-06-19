@@ -59,8 +59,8 @@ export function Header() {
     { label: "Calculator", href: "/calculator" },
   ]
 
-  // Transparent pe hero, alb la scroll
-  const isTransparent = scrolled && !mobileMenuOpen
+  // Transparent pe hero (sus de tot), fundal solid + text închis la scroll
+  const isTransparent = !scrolled && !mobileMenuOpen
 
   return (
     <>
