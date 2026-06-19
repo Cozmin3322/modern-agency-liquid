@@ -64,10 +64,10 @@ export function Header() {
       <header className={cn(
         "fixed z-50 transition-all duration-300 w-full",
         scrolled
-          ? "bg-background/80 backdrop-blur-xl py-3 top-3 left-3 right-3 rounded-2xl border border-border/60 shadow-lg"
+          ? "bg-background/90 backdrop-blur-xl shadow-md border-b border-border/40"
           : "bg-transparent py-4"
       )}>
-        <div className="absolute top-0 left-0 right-0 h-0.5 bg-accent" />
+        <div className={cn("absolute top-0 left-0 right-0 h-0.5 bg-accent transition-opacity duration-300", scrolled ? "opacity-100" : "opacity-0")} />
 
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
 
@@ -81,7 +81,7 @@ export function Header() {
               priority
             />
             <div className="hidden sm:block">
-              <div className="font-serif text-lg font-semibold text-foreground leading-tight tracking-tight">IsoThermLux</div>
+              <div className={cn("font-serif text-lg font-semibold leading-tight tracking-tight transition-colors duration-300", scrolled ? "text-foreground" : "text-white")}>IsoThermLux</div>
               <div className="font-mono text-[10px] text-accent uppercase tracking-[0.2em]">Izolare Profesională</div>
             </div>
           </Link>
@@ -89,12 +89,12 @@ export function Header() {
           {/* Desktop: doar Suna + hamburger */}
           <div className="hidden md:flex items-center gap-4">
             <a href="tel:+37378370243"
-              className="flex items-center gap-2 border border-accent text-accent px-6 py-2.5 font-mono text-sm uppercase tracking-wider hover:bg-accent hover:text-white transition-all duration-200">
+              className={cn("flex items-center gap-2 px-6 py-2.5 font-mono text-sm uppercase tracking-wider transition-all duration-200 border", scrolled ? "border-accent text-accent hover:bg-accent hover:text-white" : "border-white text-white hover:bg-white hover:text-foreground")}>
               <Phone className="w-4 h-4" /> +373 78 370 243
             </a>
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="flex flex-col gap-1.5 p-2 text-foreground/70 hover:text-accent transition-colors group"
+              className={cn("flex flex-col gap-1.5 p-2 transition-colors group", scrolled ? "text-foreground/70 hover:text-accent" : "text-white hover:text-white/70")}
               aria-label="Meniu"
             >
               <span className="w-6 h-0.5 bg-current transition-all group-hover:w-8" />
@@ -106,12 +106,12 @@ export function Header() {
           {/* Mobile: Suna + hamburger */}
           <div className="md:hidden flex items-center gap-3">
             <a href="tel:+37378370243"
-              className="flex items-center gap-1.5 border border-accent text-accent px-4 py-2 font-mono text-xs uppercase tracking-wider hover:bg-accent hover:text-white transition-all">
+              className={cn("flex items-center gap-1.5 px-4 py-2 font-mono text-xs uppercase tracking-wider transition-all border", scrolled ? "border-accent text-accent hover:bg-accent hover:text-white" : "border-white text-white hover:bg-white/20")}>
               <Phone className="w-3.5 h-3.5" /> Sună
             </a>
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="flex flex-col gap-1.5 p-2 text-foreground/70"
+              className={cn("flex flex-col gap-1.5 p-2 transition-colors", scrolled ? "text-foreground/70" : "text-white")}
               aria-label="Meniu"
             >
               <span className="w-6 h-0.5 bg-current" />
