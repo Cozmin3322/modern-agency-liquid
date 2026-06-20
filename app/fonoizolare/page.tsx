@@ -1,9 +1,11 @@
 import { Metadata } from "next"
 import Script from "next/script"
 import Link from "next/link"
+import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Volume2, Shield, Clock, TrendingUp, Home, Building, Music, Coffee } from "lucide-react"
+import { ContactForm } from "@/components/contact-form"
+import { ArrowRight, Check, VolumeX } from "lucide-react"
 
 const fonoizolareServiceSchema = {
   '@context': 'https://schema.org',
@@ -15,31 +17,42 @@ const fonoizolareServiceSchema = {
 }
 
 export const metadata: Metadata = {
-  title: "Fonoizolare cu Spumă Poliuretanică Moldova | Reducere Zgomot 70% | IsoThermLux",
-  description: "Fonoizolare profesională pentru apartamente, birouri și studiouri. Reducere zgomot 70%. Spumă poliuretanică cu celulă deschisă. Consultație gratuită Chișinău.",
+  title: "Fonoizolare cu Spumă Poliuretanică Moldova | Aplicare Profesională | IsoThermLux",
+  description: "Fonoizolare profesională cu spumă poliuretanică cu celulă deschisă. Reducere zgomot până la 70%. Garanție 25 ani scrisă. Consultație gratuită Chișinău.",
   keywords: "fonoizolare Moldova, fonoizolare Chișinău, izolare fonică, reducere zgomot, confort acustic, spumă poliuretanică fonoizolare",
-  alternates: { canonical: "https://www.isothermlux.md/fonoizolare" }
+  alternates: { canonical: "https://www.isothermlux.md/fonoizolare" },
 }
 
-const benefits = [
-  { Icon: Volume2, title: "Reducere Zgomot 70%", description: "Eliminare efectivă a zgomotului exterior și interior cu spumă cu celulă deschisă." },
-  { Icon: Shield, title: "Garanție 25 Ani", description: "Garanție scrisă de 25 de ani pentru durabilitate și performanță acustică." },
-  { Icon: Clock, title: "Aplicare 1-2 Zile", description: "Instalare profesională rapidă, fără disconfort prelungit pentru locatari." },
-  { Icon: TrendingUp, title: "Valoare Imobiliară", description: "Crește valoarea proprietății prin adăugarea confortului acustic premium." },
+const undeSeAplica = [
+  "Pereți despărțitori interiori",
+  "Tavane între etaje",
+  "Apartamente și case de locuit",
+  "Birouri și săli de conferință",
+  "Studiouri de înregistrare și săli de repetiție",
+  "Restaurante, baruri, spații comerciale",
+  "Cluburi și săli de evenimente",
 ]
 
-const applications = [
-  { Icon: Home, title: "Apartamente", items: ["Pereți despărțitori", "Tavane între etaje", "Uși și ferestre", "Guri de ventilație"] },
-  { Icon: Building, title: "Birouri", items: ["Birouri private", "Săli de conferință", "Recepții", "Căi de acces"] },
-  { Icon: Music, title: "Studiouri", items: ["Camere de înregistrare", "Studiouri muzicale", "Săli de dans", "Teatre"] },
-  { Icon: Coffee, title: "Spații Comerciale", items: ["Restaurante", "Cafenele", "Centre fitness", "Spa-uri"] },
+const galleryThumbs = [
+  "/images/project-apartament-izolare-01.jpg",
+  "/images/project-birou-comercial.webp",
+  "/images/project-sala-sport-01.webp",
+  "/images/project-casa-renovare.webp",
+  "/images/project-mansarda-02.webp",
+  "/images/project-planseu-02.webp",
+  "/images/project-finisaj-01.webp",
+  "/images/project-casa-privat.webp",
+  "/images/project-detaliu-izolare-01.jpg",
 ]
 
-const steps = [
-  { nr: "01", title: "Consultație", description: "Evaluare gratuită și analiză acustică a spațiului." },
-  { nr: "02", title: "Ofertă", description: "Propunere personalizată și transparentă, fără surprize." },
-  { nr: "03", title: "Instalare", description: "Aplicare profesională în 1-2 zile lucrătoare." },
-  { nr: "04", title: "Garanție", description: "Suport post-instalare și garanție scrisă 25 ani." },
+const deCeIsoThermLux = [
+  "Experiență de peste 14 ani în izolații profesionale",
+  "Echipamente de ultimă generație și materiale premium",
+  "Intervenții rapide și consultanță gratuită",
+  "Garanție scrisă până la 25 de ani",
+  "Acoperire vastă, în toată Moldova",
+  "Fără intermediari — lucrăm direct",
+  "Plată în rate",
 ]
 
 export default function FonoizolarePage() {
@@ -47,154 +60,171 @@ export default function FonoizolarePage() {
     <>
       <Script id="fonoizolare-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(fonoizolareServiceSchema) }} />
       <Header />
-      <main className="min-h-screen bg-background">
+      <main className="bg-background">
 
-        {/* Hero */}
-        <section className="py-24 md:py-36 border-b border-border">
+        {/* Hero — bandă imagine + titlu sub ea */}
+        <section className="relative pt-24">
+          <div className="relative h-56 md:h-80 w-full">
+            <Image src="/images/project-apartament-izolare-01.jpg" alt="Aplicare fonoizolare cu spumă poliuretanică" fill priority sizes="100vw" className="object-cover" />
+            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute right-6 md:right-16 top-1/2 -translate-y-1/2 w-24 h-24 md:w-32 md:h-32 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
+              <VolumeX className="w-10 h-10 md:w-12 md:h-12 text-accent" />
+            </div>
+          </div>
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-semibold leading-tight mb-2">
+              Fonoizolare cu Spumă Poliuretanică
+            </h1>
+            <p className="text-lg md:text-xl text-accent font-medium mb-6">
+              Aplicare Profesională în Toată Moldova
+            </p>
+            <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              Zgomotul de la vecini, stradă sau echipamente afectează confortul zilnic. Spuma poliuretanică cu celulă deschisă absoarbe sunetul direct la sursă, reducând zgomotul perceput cu până la 70%, fără a ocupa spațiu util semnificativ.
+            </p>
+          </div>
+        </section>
+
+        {/* Ce este fonoizolatia */}
+        <section className="py-16 md:py-20 bg-card">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative h-64 md:h-96 mb-10 overflow-hidden">
+              <Image src="/images/project-birou-comercial.webp" alt="Spațiu fonoizolat cu spumă poliuretanică" fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Ce este fonoizolația cu spumă poliuretanică?</h2>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Firma noastră vă pune la dispoziție aplicații de izolație cu spumă poliuretanică cu celulă deschisă, tehnologie creată special pentru oamenii ce locuiesc cu zgomotul în interiorul casei. Structura poroasă a materialului absoarbe undele sonore în loc să le reflecte.
+            </p>
+            <p className="text-foreground/80 leading-relaxed">
+              Știm cu toții că sunetele se propagă prin aer și prin structura caselor, mai apoi prin pereți. Soluția de calitate o găsiți la noi: aplicare directă, fără rosturi, pe pereți, tavane sau planșee, cu rezultate vizibile din prima zi.
+            </p>
+          </div>
+        </section>
+
+        {/* Avantaje */}
+        <section className="py-16 md:py-20 bg-background">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-2xl">
-              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">Servicii IsoThermLux</p>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-medium leading-tight mb-6">
-                Fonoizolare<br />Profesională
-              </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-lg">
-                Izolare fonică cu spumă poliuretanică cu celulă deschisă. Reducere zgomot până la 70% pentru apartamente, birouri și studiouri.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300 hover:gap-3">
-                  Solicită Ofertă Gratuită <ArrowRight className="w-4 h-4" />
-                </Link>
-                <Link href="/calculator-oferta" className="inline-flex items-center gap-2 border border-border text-foreground px-8 py-3 rounded-full font-medium hover:border-accent hover:text-accent transition-all duration-300">
-                  Calculează Costul
-                </Link>
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-10 text-accent">Avantajele fonoizolației cu spumă poliuretanică</h2>
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <ul className="space-y-3">
+                  {[
+                    "Reducere zgomot perceput cu până la 70%",
+                    "Aderență perfectă pe pereți, tavane și planșee",
+                    "Structură poroasă — absoarbe sunetul în loc să-l reflecte",
+                    "Aplicare rapidă — 1-2 zile lucrătoare",
+                    "Beneficiu dublu — izolație termică suplimentară",
+                    "Garanție scrisă 25 ani",
+                  ].map((text) => (
+                    <li key={text} className="flex gap-3">
+                      <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                      <span className="text-foreground/80 text-sm">{text}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 mt-6 font-semibold hover:bg-accent/90 transition-colors">
+                  Află mai multe
+                </a>
+              </div>
+              <div className="relative h-80 md:h-96">
+                <Image src="/images/project-sala-sport-01.webp" alt="Tehnician aplicând fonoizolare" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Benefits */}
-        <section className="py-20 md:py-28">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-xl mb-16">
-              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">De ce fonoizolare</p>
-              <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight">Beneficii concrete, rezultate măsurabile</h2>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border">
-              {benefits.map(({ Icon, title, description }) => (
-                <div key={title} className="bg-background p-8 group hover:bg-card transition-colors duration-300">
-                  <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center mb-6 group-hover:border-accent group-hover:bg-accent/5 transition-all duration-300">
-                    <Icon className="w-5 h-5 text-muted-foreground group-hover:text-accent transition-colors duration-300" strokeWidth={1.5} />
-                  </div>
-                  <h3 className="text-base font-serif font-medium mb-3">{title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
-                </div>
-              ))}
-            </div>
+        {/* CTA bandă */}
+        <section className="relative py-16 md:py-20 bg-[#1A1D21] text-white text-center overflow-hidden">
+          <div className="absolute inset-0 opacity-20">
+            <Image src="/images/project-casa-renovare.webp" alt="" fill sizes="100vw" className="object-cover" />
           </div>
-        </section>
-
-        {/* Applications */}
-        <section className="py-20 md:py-28 border-t border-border">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-xl mb-16">
-              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Unde aplicăm</p>
-              <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight">Aplicații fonoizolare</h2>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {applications.map(({ Icon, title, items }) => (
-                <div key={title}>
-                  <div className="flex items-center gap-3 mb-6">
-                    <Icon className="w-5 h-5 text-accent" strokeWidth={1.5} />
-                    <h3 className="font-serif font-medium text-lg">{title}</h3>
-                  </div>
-                  <ul className="space-y-3">
-                    {items.map(item => (
-                      <li key={item} className="flex items-center gap-3 text-sm text-muted-foreground">
-                        <span className="w-1 h-1 rounded-full bg-accent flex-shrink-0" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Process */}
-        <section className="py-20 md:py-28 border-t border-border section-warm">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-xl mb-16">
-              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Cum lucrăm</p>
-              <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight">Procesul nostru în 4 pași</h2>
-            </div>
-            <div className="grid md:grid-cols-4 gap-8">
-              {steps.map(({ nr, title, description }) => (
-                <div key={nr}>
-                  <p className="text-5xl font-serif text-muted-foreground/20 mb-4">{nr}</p>
-                  <h3 className="font-serif font-medium text-lg mb-2">{title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Zone Tehnice */}
-        <section className="py-20 md:py-28 border-t border-border">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-xl mb-16">
-              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Specificații tehnice</p>
-              <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight">Zone tehnice de aplicare</h2>
-            </div>
-            <div className="overflow-x-auto border border-border rounded-none">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-accent text-white">
-                    <th className="px-6 py-4 text-left font-semibold">Zonă</th>
-                    <th className="px-6 py-4 text-left font-semibold">Tip Spumă Recomandat</th>
-                    <th className="px-6 py-4 text-left font-semibold">Grosime Uzuală</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-border">
-                  {[
-                    ["Pereți despărțitori interior", "Celulă deschisă", "5–8 cm"],
-                    ["Tavane între etaje", "Celulă deschisă", "5–10 cm"],
-                    ["Studiouri și camere de înregistrare", "Celulă deschisă", "8–12 cm"],
-                    ["Pereți spre exterior (combinat termo)", "Celulă închisă", "5–10 cm"],
-                    ["Conducte și instalații tehnice", "Celulă închisă", "3–5 cm"],
-                  ].map(([zona, tip, grosime], i) => (
-                    <tr key={i} className={i % 2 === 0 ? "bg-background" : "bg-card"}>
-                      <td className="px-6 py-4 font-medium text-foreground">{zona}</td>
-                      <td className="px-6 py-4 text-muted-foreground">{tip}</td>
-                      <td className="px-6 py-4 text-muted-foreground">{grosime}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="text-sm text-muted-foreground mt-6 max-w-2xl">
-              Spuma cu celulă deschisă oferă cea mai bună absorbție acustică datorită structurii sale poroase, ideală pentru reducerea zgomotului aerian. Pentru pereți spre exterior recomandăm o soluție combinată cu celulă închisă pentru izolație termică suplimentară.
-            </p>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="py-20 md:py-28 bg-foreground">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p className="text-sm tracking-[0.3em] uppercase text-background/50 mb-6">Pas următor</p>
-            <h2 className="text-4xl md:text-5xl font-serif font-medium text-background mb-6 leading-tight">
-              Gata pentru<br />confort acustic?
+          <div className="relative max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-serif font-medium mb-6">
+              IsoThermLux oferă servicii de fonoizolare în toată Moldova, cu echipe mobile și echipamente profesionale.
             </h2>
-            <p className="text-lg text-background/70 mb-10">
-              Contactează-ne pentru o evaluare gratuită. Răspuns în maxim 30 de minute.
-            </p>
-            <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300 hover:gap-3">
-              Solicită Consultație Gratuită <ArrowRight className="w-5 h-5" />
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 font-semibold hover:bg-accent/90 transition-colors">
+              Contact
             </Link>
           </div>
         </section>
 
+        {/* Unde se aplica + galerie */}
+        <section className="py-16 md:py-20 bg-background">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Unde se poate aplica fonoizolația cu spumă poliuretanică?</h2>
+            <div className="grid md:grid-cols-2 gap-10">
+              <div>
+                <p className="text-foreground/80 mb-4">
+                  IsoThermLux aplică fonoizolația eficient în întreaga țară, pe toate tipurile de spații:
+                </p>
+                <ul className="space-y-2 mb-6">
+                  {undeSeAplica.map((item) => (
+                    <li key={item} className="flex gap-3 text-sm text-foreground/80">
+                      <span className="text-accent">•</span>{item}
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-sm text-foreground/70 mb-2">Vrei să vezi cum arată o fonoizolație reușită?</p>
+                <Link href="/portofoliu" className="inline-flex items-center gap-2 text-accent font-medium hover:gap-3 transition-all">
+                  Vezi portofoliul nostru de lucrări recente <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                {galleryThumbs.map((src) => (
+                  <div key={src} className="relative aspect-square">
+                    <Image src={src} alt="Lucrare de fonoizolare IsoThermLux" fill sizes="200px" className="object-cover" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA bandă 2 */}
+        <section className="relative py-16 md:py-20 bg-[#1A1D21] text-white text-center overflow-hidden">
+          <div className="absolute inset-0 opacity-20">
+            <Image src="/images/project-mansarda-02.webp" alt="" fill sizes="100vw" className="object-cover" />
+          </div>
+          <div className="relative max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-serif font-medium mb-6">
+              Vrei să afli cât te costă o fonoizolare la apartamentul sau birourile tale?
+            </h2>
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 font-semibold hover:bg-accent/90 transition-colors">
+              Contact
+            </Link>
+          </div>
+        </section>
+
+        {/* De ce IsoThermLux */}
+        <section className="py-16 md:py-20 bg-card">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-10 text-accent">De ce să alegi IsoThermLux?</h2>
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <ul className="space-y-3">
+                {deCeIsoThermLux.map((text) => (
+                  <li key={text} className="flex gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground/80 text-sm">{text}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="relative h-64 md:h-80">
+                <Image src="/images/project-detaliu-izolare-01.jpg" alt="Tehnician IsoThermLux aplicând fonoizolare" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
+              </div>
+            </div>
+            <p className="text-foreground/80 leading-relaxed mt-10 max-w-3xl">
+              Dacă vrei un spațiu liniștit, ferit de zgomotul vecinilor sau al străzii, fonoizolarea cu spumă poliuretanică este alegerea ideală. Începe chiar azi călătoria către un confort acustic real. Liniște garantată, fără compromisuri.
+            </p>
+            <p className="text-accent font-medium mt-6">Completează formularul de mai sus sau contactează-ne direct!</p>
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 mt-4 font-semibold hover:bg-accent/90 transition-colors">
+              Contact
+            </Link>
+          </div>
+        </section>
+
+        {/* Formular contact */}
+        <div id="contact-form">
+          <ContactForm />
+        </div>
       </main>
       <Footer />
     </>
