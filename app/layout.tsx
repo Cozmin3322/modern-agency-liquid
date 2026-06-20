@@ -4,7 +4,6 @@ import Script from "next/script"
 import { Roboto_Condensed, Inter, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { organizationSchema } from "@/lib/schema"
-import { SplashScreen } from "@/components/splash-screen"
 import { CookieBanner } from "@/components/cookie-banner"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import "./globals.css"
@@ -133,7 +132,6 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
-        <SplashScreen />
         {children}
         <WhatsAppButton />
         <CookieBanner />
