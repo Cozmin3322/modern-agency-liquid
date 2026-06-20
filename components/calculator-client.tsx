@@ -18,14 +18,11 @@ interface CalculatorClientProps {
 export function CalculatorClient({ settings }: CalculatorClientProps) {
   const [type, setType] = useState<'termoizolare' | 'hiroizolare'>('termoizolare')
   const [area, setArea] = useState<number>(100)
-  const [location, setLocation] = useState<'chisinau' | 'balti' | 'altul'>('chisinau')
 
   // Prețuri simple în lei moldovenești
   const pricePerM2 = 300 // lei/m²
-  const transportFee = location === 'chisinau' ? 0 : location === 'balti' ? 300 : 600
-  
-  const materialsAndLabor = area * pricePerM2
-  const totalEstimate = materialsAndLabor + transportFee
+
+  const totalEstimate = area * pricePerM2
   const savings = type === 'termoizolare' ? Math.round((totalEstimate / 100) * 12) : 0
 
   return (
@@ -101,25 +98,9 @@ export function CalculatorClient({ settings }: CalculatorClientProps) {
             {/* Location */}
             <div>
               <label className="block font-semibold mb-3 text-xs md:text-sm uppercase tracking-wider">3. Locație</label>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-3">
-                {[
-                  { val: 'chisinau', label: 'Chișinău', fee: 'Gratis' },
-                  { val: 'balti', label: 'Bălți', fee: '+150 EUR' },
-                  { val: 'altul', label: 'Altă locație', fee: '+300 EUR' }
-                ].map((opt) => (
-                  <button
-                    key={opt.val}
-                    onClick={() => setLocation(opt.val as any)}
-                    className={`p-3 rounded-none font-semibold transition border-2 text-center ${
-                      location === opt.val
-                        ? 'border-accent bg-accent/10'
-                        : 'border-border hover:border-accent/50'
-                    }`}
-                  >
-                    <div className="text-sm">{opt.label}</div>
-                    <div className={`text-xs font-normal mt-1 ${location === opt.val ? 'text-foreground' : 'text-foreground/70'}`}>{opt.fee}</div>
-                  </button>
-                ))}
+              <div className="p-3 rounded-none border-2 border-accent bg-accent/10">
+                <p className="text-sm font-semibold">Deservim toată Moldova</p>
+                <p className="text-xs text-foreground/70 mt-1">Deplasare gratuită pentru evaluare, indiferent de locație</p>
               </div>
             </div>
 
@@ -143,12 +124,6 @@ export function CalculatorClient({ settings }: CalculatorClientProps) {
                   <span className="text-foreground/70">Preț/m²:</span>
                   <span className="font-semibold">{pricePerM2} lei</span>
                 </div>
-                {transportFee > 0 && (
-                  <div className="flex justify-between text-sm">
-                    <span className="text-foreground/70">Transport:</span>
-                    <span className="font-semibold text-orange-500">+{transportFee} lei</span>
-                  </div>
-                )}
               </div>
 
               <div className="bg-accent/15 p-4 rounded-none mb-6 border border-accent/30">
