@@ -307,6 +307,34 @@ export const projects: Project[] = [
     metaTitle: "Termoizolare Fațadă cu Spumă Poliuretanică - IsoThermLux",
     metaDescription: "Termoizolare fațadă exterioară cu spumă poliuretanică. Strat continuu, fără punți termice. Garanție 25 ani.",
   },
+  {
+    id: 11,
+    title: "Termoizolare Sală de Sport",
+    category: "Termoizolare",
+    image: "/images/project-sala-sport-01.webp",
+    images: [
+      "/images/project-sala-sport-01.webp",
+    ],
+    slug: "termoizolare-sala-sport",
+    shortDesc: "Plafon sală de sport cu structură metalică termoizolat",
+    longDesc: `<h2>Termoizolare Sală de Sport cu Spumă Poliuretanică</h2>
+      <p>Termoizolare a plafonului unei săli de sport cu structură metalică, prin aplicarea spumei poliuretanice pe toată suprafața interioară a acoperișului. Spuma acoperă uniform spațiul dintre grinzile metalice, creând un strat continuu pe toată deschiderea sălii.</p>
+      <h3>Lucrări efectuate:</h3>
+      <ul>
+        <li>Termoizolare completă a plafonului pe structură metalică</li>
+        <li>Acoperire uniformă pe toată deschiderea sălii, între grinzile principale</li>
+        <li>Protejare pereți și ferestre pe durata aplicării</li>
+      </ul>
+      <h3>Rezultate:</h3>
+      <ul>
+        <li>Strat termoizolant continuu, fără rosturi, pe toată suprafața</li>
+        <li>Aderență perfectă pe structura metalică</li>
+        <li>Spațiu pregătit pentru confort termic optim al sportivilor</li>
+      </ul>`,
+    keywords: ["termoizolare sală sport", "izolare hală sportivă spumă poliuretanică", "termoizolare structură metalică", "spumă poliuretanică sală sport"],
+    metaTitle: "Termoizolare Sală de Sport cu Spumă Poliuretanică - IsoThermLux",
+    metaDescription: "Termoizolare sală de sport cu structură metalică. Spumă poliuretanică aplicată uniform pe toată suprafața. Garanție 25 ani.",
+  },
 ]
 
 export function getProjectBySlug(slug: string): Project | undefined {
