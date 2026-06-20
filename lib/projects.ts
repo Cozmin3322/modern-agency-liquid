@@ -139,6 +139,34 @@ export const projects: Project[] = [
     metaTitle: "Termoizolare Acoperiș Plat cu Spumă Poliuretanică - IsoThermLux",
     metaDescription: "Termoizolare acoperiș plat cu spumă poliuretanică. Strat continuu și uniform pe toată suprafața. Garanție 25 ani.",
   },
+  {
+    id: 5,
+    title: "Termoizolare Fundație",
+    category: "Termoizolare",
+    image: "/images/project-fundatie-noua-01.webp",
+    images: [
+      "/images/project-fundatie-noua-01.webp",
+    ],
+    slug: "termoizolare-fundatie",
+    shortDesc: "Fundație termoizolată cu spumă poliuretanică celulă închisă",
+    longDesc: `<h2>Termoizolare Fundație cu Spumă Poliuretanică Celulă Închisă</h2>
+      <p>Termoizolare a pereților de fundație ai unei construcții, prin aplicarea spumei poliuretanice cu celulă închisă direct pe suprafața de beton. Spuma creează un strat continuu, impermeabil, care protejează fundația atât termic, cât și împotriva umidității din sol.</p>
+      <h3>Lucrări efectuate:</h3>
+      <ul>
+        <li>Termoizolare completă a suprafeței exterioare a fundației</li>
+        <li>Acoperire uniformă pe colțuri și suprafețe verticale</li>
+        <li>Strat continuu, fără rosturi, rezistent la umiditate</li>
+      </ul>
+      <h3>Rezultate:</h3>
+      <ul>
+        <li>Protecție termică și barieră contra umidității în același strat</li>
+        <li>Aderență perfectă pe suprafața de beton</li>
+        <li>Fundație pregătită pentru umplutură și finisaje ulterioare</li>
+      </ul>`,
+    keywords: ["termoizolare fundație", "izolare fundație spumă poliuretanică", "termoizolare fundație celulă închisă", "spumă poliuretanică fundație"],
+    metaTitle: "Termoizolare Fundație cu Spumă Poliuretanică - IsoThermLux",
+    metaDescription: "Termoizolare fundație cu spumă poliuretanică celulă închisă. Protecție termică și contra umidității. Garanție 25 ani.",
+  },
 ]
 
 export function getProjectBySlug(slug: string): Project | undefined {
