@@ -54,7 +54,7 @@ export function PricingOffers() {
                 </ul>
                 <a
                   href="#contact-form"
-                  className="block text-center bg-[#C81E1E] text-white py-3 text-sm font-semibold uppercase tracking-wide hover:bg-[#A81818] transition-colors"
+                  className="block text-center bg-[#BD2626] text-white py-3 text-sm font-semibold uppercase tracking-wide hover:bg-[#a31f1f] transition-colors"
                 >
                   Solicită Oferta
                 </a>
