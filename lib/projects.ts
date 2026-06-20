@@ -223,6 +223,34 @@ export const projects: Project[] = [
     metaTitle: "Termoizolare Planșeu cu Spumă Poliuretanică - IsoThermLux",
     metaDescription: "Termoizolare planșeu pe structură din lemn cu spumă poliuretanică. Strat continuu pe toată suprafața. Garanție 25 ani.",
   },
+  {
+    id: 8,
+    title: "Termoizolare Mansardă",
+    category: "Termoizolare",
+    image: "/images/project-mansarda-3-01.webp",
+    images: [
+      "/images/project-mansarda-3-01.webp",
+    ],
+    slug: "termoizolare-mansarda-3",
+    shortDesc: "Mansardă cu pereți din zidărie, termoizolată complet",
+    longDesc: `<h2>Termoizolare Mansardă cu Spumă Poliuretanică</h2>
+      <p>Termoizolare a unei mansarde cu pereți din zidărie și structură de acoperiș din lemn, prin aplicarea spumei poliuretanice pe toată suprafața înclinată a acoperișului. Spuma urmărește perfect linia căpriorilor, creând un strat continuu și uniform.</p>
+      <h3>Lucrări efectuate:</h3>
+      <ul>
+        <li>Termoizolare completă a suprafeței interioare a acoperișului</li>
+        <li>Acoperire uniformă pe toată deschiderea, între căpriorii din lemn</li>
+        <li>Aplicare atentă în zona de îmbinare cu pereții de zidărie</li>
+      </ul>
+      <h3>Rezultate:</h3>
+      <ul>
+        <li>Strat termoizolant continuu, fără rosturi, pe toată suprafața</li>
+        <li>Aderență perfectă pe structura din lemn</li>
+        <li>Spațiu pregătit pentru finisaje și control termic optim</li>
+      </ul>`,
+    keywords: ["termoizolare mansardă", "izolare pod spumă poliuretanică", "termoizolare acoperiș lemn", "spumă poliuretanică mansardă"],
+    metaTitle: "Termoizolare Mansardă cu Spumă Poliuretanică - IsoThermLux",
+    metaDescription: "Termoizolare mansardă completă cu spumă poliuretanică. Strat continuu pe structura din lemn. Garanție 25 ani.",
+  },
 ]
 
 export function getProjectBySlug(slug: string): Project | undefined {
