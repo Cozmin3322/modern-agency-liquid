@@ -81,6 +81,36 @@ export const projects: Project[] = [
     metaTitle: "Termoizolare Acoperiș Industrial cu Spumă Poliuretanică - IsoThermLux",
     metaDescription: "Termoizolare acoperiș industrial cu structură metalică. Spumă poliuretanică aplicată uniform pe toată suprafața. Garanție 25 ani.",
   },
+  {
+    id: 3,
+    title: "Termoizolare Planșeu",
+    category: "Termoizolare",
+    image: "/images/project-planseu-01.webp",
+    images: [
+      "/images/project-planseu-01.webp",
+      "/images/project-planseu-02.webp",
+    ],
+    slug: "termoizolare-planseu",
+    shortDesc: "Planșeu termoizolat cu spumă poliuretanică, interior și exterior",
+    longDesc: `<h2>Termoizolare Planșeu cu Spumă Poliuretanică</h2>
+      <p>Termoizolare a unui planșeu, atât pe partea interioară a structurii din lemn, cât și pe suprafața exterioară a planșeului. Aplicarea spumei poliuretanice creează un strat continuu, etanș, care urmează perfect linia căpriorilor și acoperă complet suprafața de beton/zidărie.</p>
+      <h3>Lucrări efectuate:</h3>
+      <ul>
+        <li>Termoizolare interioară a planșeului, pe structura din lemn (căpriori)</li>
+        <li>Acoperire completă a pereților de zidărie din zona mansardei</li>
+        <li>Termoizolare exterioară a suprafeței planșeului, cu strat uniform pe toată suprafața</li>
+        <li>Aplicare atentă în jurul elementelor de structură din lemn</li>
+      </ul>
+      <h3>Rezultate:</h3>
+      <ul>
+        <li>Strat termoizolant continuu pe toată suprafața planșeului</li>
+        <li>Aderență perfectă atât pe lemn cât și pe zidărie</li>
+        <li>Protecție termică completă interior + exterior</li>
+      </ul>`,
+    keywords: ["termoizolare planșeu", "izolare planșeu spumă poliuretanică", "termoizolare planșeu exterior", "spumă poliuretanică planșeu"],
+    metaTitle: "Termoizolare Planșeu cu Spumă Poliuretanică - IsoThermLux",
+    metaDescription: "Termoizolare planșeu interior și exterior cu spumă poliuretanică. Strat continuu, etanș, pe toată suprafața. Garanție 25 ani.",
+  },
 ]
 
 export function getProjectBySlug(slug: string): Project | undefined {
