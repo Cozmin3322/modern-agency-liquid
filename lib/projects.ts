@@ -49,6 +49,38 @@ export const projects: Project[] = [
     metaTitle: "Termoizolare Mansardă cu Spumă Poliuretanică - IsoThermLux",
     metaDescription: "Termoizolare mansardă completă cu spumă poliuretanică. Acoperire perfectă a structurii din lemn, fără punți termice. Garanție 25 ani.",
   },
+  {
+    id: 2,
+    title: "Termoizolare Acoperiș Industrial",
+    category: "Termoizolare",
+    image: "/images/project-acoperis-industrial-01.webp",
+    images: [
+      "/images/project-acoperis-industrial-01.webp",
+      "/images/project-acoperis-industrial-02.webp",
+      "/images/project-acoperis-industrial-03.webp",
+      "/images/project-acoperis-industrial-04.webp",
+    ],
+    slug: "termoizolare-acoperis-industrial",
+    shortDesc: "Acoperiș industrial cu structură metalică termoizolat complet",
+    longDesc: `<h2>Termoizolare Acoperiș Industrial cu Spumă Poliuretanică</h2>
+      <p>Termoizolare a unui acoperiș industrial cu structură metalică, prin aplicarea spumei poliuretanice direct pe suprafața interioară. Spuma aderă perfect pe panourile metalice și urmează linia structurii, creând un strat continuu și uniform pe toată deschiderea acoperișului.</p>
+      <h3>Lucrări efectuate:</h3>
+      <ul>
+        <li>Termoizolare completă a suprafeței interioare a acoperișului metalic</li>
+        <li>Acoperire uniformă pe toată deschiderea, între grinzile structurii metalice</li>
+        <li>Izolare în jurul conductelor de ventilație și instalațiilor existente</li>
+        <li>Protejare ferestre și suprafețe adiacente pe durata aplicării</li>
+      </ul>
+      <h3>Rezultate:</h3>
+      <ul>
+        <li>Strat termoizolant continuu, fără rosturi, pe toată suprafața</li>
+        <li>Aderență perfectă pe structura metalică</li>
+        <li>Spațiu interior pregătit pentru control termic eficient</li>
+      </ul>`,
+    keywords: ["termoizolare acoperiș industrial", "izolare hală spumă poliuretanică", "termoizolare structură metalică", "spumă poliuretanică hală"],
+    metaTitle: "Termoizolare Acoperiș Industrial cu Spumă Poliuretanică - IsoThermLux",
+    metaDescription: "Termoizolare acoperiș industrial cu structură metalică. Spumă poliuretanică aplicată uniform pe toată suprafața. Garanție 25 ani.",
+  },
 ]
 
 export function getProjectBySlug(slug: string): Project | undefined {
