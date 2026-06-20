@@ -42,21 +42,11 @@ export function Header() {
     { label: "Fațade", href: "/fatade" },
     { label: "Hidroizolare", href: "/hidroizolare" },
     { label: "Fonoizolare", href: "/fonoizolare" },
-    { label: "Portofoliu", href: "/portofoliu" },
   ]
 
   const galleryLinks = [
     { label: "Video", href: "/galerie/video" },
     { label: "Foto", href: "/galerie/foto" },
-  ]
-
-  const allMenuLinks = [
-    { label: "Acasă", href: "/" },
-    { label: "Beneficii", href: "/beneficii" },
-    { label: "Contact", href: "/contact" },
-    { label: "FAQ", href: "/intrebari-frecvente" },
-    { label: "Blog", href: "/blog" },
-    { label: "Calculator", href: "/calculator-oferta" },
   ]
 
   return (
@@ -123,94 +113,110 @@ export function Header() {
         </nav>
       </header>
 
-      {/* Fullscreen menu overlay */}
-      <div className={cn(
-        "fixed inset-0 z-[100] bg-[#1A1D21] flex flex-col transition-all duration-400",
-        mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-      )}>
-        <div className="h-0.5 w-full bg-accent flex-shrink-0" />
+      {/* Overlay backdrop */}
+      <div
+        onClick={close}
+        className={cn(
+          "fixed inset-0 z-[90] bg-black/30 transition-opacity duration-300",
+          mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        )}
+      />
 
-        {/* Top bar în meniu */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 flex-shrink-0">
-          <Link href="/" onClick={close} className="flex items-center gap-3">
-            <Image src="/images/logo-isotherm-lux-white.webp" alt="IsoThermLux" width={56} height={56} className="h-12 w-auto" />
-            <div>
-              <div className="font-serif text-base font-semibold text-white leading-tight">IsoThermLux</div>
-              <div className="font-mono text-[9px] text-accent uppercase tracking-[0.2em]">Izolare Profesională</div>
-            </div>
-          </Link>
-          <button onClick={close} className="p-2 text-white/40 hover:text-white transition-colors" aria-label="Închide">
-            <X className="w-6 h-6" />
+      {/* Light dropdown menu panel */}
+      <div className={cn(
+        "fixed top-0 right-0 z-[100] h-full w-full sm:w-80 bg-white shadow-2xl flex flex-col transition-transform duration-300",
+        mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+      )}>
+        <div className="flex items-center justify-between px-5 py-4 border-b border-border flex-shrink-0">
+          <span className="font-serif text-base font-semibold text-foreground">Meniu</span>
+          <button onClick={close} className="p-2 text-foreground/50 hover:text-accent transition-colors" aria-label="Închide">
+            <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Links */}
-        <div className="flex-1 overflow-y-auto px-6 py-6">
-          <ul className="space-y-0">
-            {allMenuLinks.map((item, i) => (
-              <li key={item.label}>
-                <Link href={item.href} onClick={close}
-                  className="group flex items-center gap-4 py-4 border-b border-white/8 hover:border-accent/50 transition-colors">
-                  <span className="font-mono text-[10px] text-accent/60 w-8">/ {String(i + 1).padStart(2, '0')}</span>
-                  <span className="text-2xl font-serif text-white uppercase group-hover:text-accent transition-colors">{item.label}</span>
-                </Link>
-              </li>
-            ))}
+        <div className="flex-1 overflow-y-auto px-5 py-4">
+          <ul className="divide-y divide-border">
+            <li>
+              <Link href="/" onClick={close} className="block py-3.5 text-foreground font-medium hover:text-accent transition-colors">
+                Home
+              </Link>
+            </li>
 
             {/* Servicii */}
             <li>
               <button onClick={() => setServicesOpen(!servicesOpen)}
-                className="group flex items-center justify-between py-4 border-b border-white/8 hover:border-accent/50 transition-colors w-full">
-                <div className="flex items-center gap-4">
-                  <span className="font-mono text-[10px] text-accent/60 w-8">/ 07</span>
-                  <span className="text-2xl font-serif text-white uppercase group-hover:text-accent transition-colors">Servicii</span>
-                </div>
-                <ChevronDown className={cn("w-4 h-4 text-white/30 transition-transform", servicesOpen && "rotate-180")} />
+                className="flex items-center justify-between w-full py-3.5 text-foreground font-medium hover:text-accent transition-colors">
+                Servicii
+                <ChevronDown className={cn("w-4 h-4 text-foreground/40 transition-transform", servicesOpen && "rotate-180")} />
               </button>
               {servicesOpen && (
-                <div className="pl-12 py-2 border-b border-white/8">
+                <div className="pl-4 pb-2">
                   {serviceLinks.map((l) => (
                     <Link key={l.href} href={l.href} onClick={close}
-                      className="flex items-center gap-2 py-2.5 text-white/50 hover:text-accent transition-colors">
-                      <span className="w-1 h-1 bg-accent/50 flex-shrink-0" />
-                      <span className="font-mono text-sm uppercase tracking-wider">{l.label}</span>
+                      className="block py-2 text-sm text-foreground/70 hover:text-accent transition-colors">
+                      {l.label}
                     </Link>
                   ))}
                 </div>
               )}
+            </li>
+
+            <li>
+              <Link href="/#tarife" onClick={close} className="block py-3.5 text-foreground font-medium hover:text-accent transition-colors">
+                Tarife
+              </Link>
             </li>
 
             {/* Galerie */}
             <li>
               <button onClick={() => setGalleryOpen(!galleryOpen)}
-                className="group flex items-center justify-between py-4 border-b border-white/8 hover:border-accent/50 transition-colors w-full">
-                <div className="flex items-center gap-4">
-                  <span className="font-mono text-[10px] text-accent/60 w-8">/ 08</span>
-                  <span className="text-2xl font-serif text-white uppercase group-hover:text-accent transition-colors">Galerie</span>
-                </div>
-                <ChevronDown className={cn("w-4 h-4 text-white/30 transition-transform", galleryOpen && "rotate-180")} />
+                className="flex items-center justify-between w-full py-3.5 text-foreground font-medium hover:text-accent transition-colors">
+                Galerie
+                <ChevronDown className={cn("w-4 h-4 text-foreground/40 transition-transform", galleryOpen && "rotate-180")} />
               </button>
               {galleryOpen && (
-                <div className="pl-12 py-2 border-b border-white/8">
+                <div className="pl-4 pb-2">
                   {galleryLinks.map((l) => (
                     <Link key={l.href} href={l.href} onClick={close}
-                      className="flex items-center gap-2 py-2.5 text-white/50 hover:text-accent transition-colors">
-                      <span className="w-1 h-1 bg-accent/50 flex-shrink-0" />
-                      <span className="font-mono text-sm uppercase tracking-wider">{l.label}</span>
+                      className="block py-2 text-sm text-foreground/70 hover:text-accent transition-colors">
+                      {l.label}
                     </Link>
                   ))}
                 </div>
               )}
             </li>
+
+            <li>
+              <Link href="/#recenzii" onClick={close} className="block py-3.5 text-foreground font-medium hover:text-accent transition-colors">
+                Recenzii
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog" onClick={close} className="block py-3.5 text-foreground font-medium hover:text-accent transition-colors">
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" onClick={close} className="block py-3.5 text-foreground font-medium hover:text-accent transition-colors">
+                Contact
+              </Link>
+            </li>
           </ul>
+
+          {/* Search */}
+          <div className="relative mt-4">
+            <input
+              type="text"
+              placeholder="Caută..."
+              className="w-full border border-border rounded-sm px-4 py-2.5 text-sm focus:outline-none focus:border-accent transition-colors"
+            />
+          </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="px-6 py-5 border-t border-white/10 flex-shrink-0">
-          <a href="tel:+37378370243" onClick={close}
-            className="flex items-center justify-center gap-2 bg-accent text-white py-3.5 font-mono text-sm uppercase tracking-wider hover:bg-accent/90 transition-all w-full">
-            <Phone className="w-4 h-4" /> +373 78 370 243
-          </a>
+        {/* Bottom logo */}
+        <div className="px-5 py-5 border-t border-border flex-shrink-0 flex items-center justify-center">
+          <Image src="/images/logo-isotherm-lux.webp" alt="IsoThermLux" width={56} height={56} className="h-10 w-auto" />
         </div>
       </div>
     </>

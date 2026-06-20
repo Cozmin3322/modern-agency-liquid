@@ -13,7 +13,7 @@ interface Review {
 
 export function ReviewsClient({ reviews }: { reviews: Review[] }) {
   return (
-    <section className="py-20 md:py-28 border-b border-border">
+    <section id="recenzii" className="py-20 md:py-28 border-b border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}

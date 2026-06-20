@@ -3,7 +3,6 @@ import { Hero } from "@/components/hero"
 import { ServiceHighlights } from "@/components/service-highlights"
 import { StatsBar } from "@/components/stats-bar"
 import { AboutDark } from "@/components/about-dark"
-import { Projects } from "@/components/projects"
 import { CoverageMoldova } from "@/components/coverage-moldova"
 import { PricingOffers } from "@/components/pricing-offers"
 import { BrandLogos } from "@/components/brand-logos"
@@ -48,9 +47,6 @@ export default async function Home() {
 
       {/* 3. Despre noi */}
       <AboutDark />
-
-      {/* 4. Proiecte recente */}
-      <Projects />
 
       {/* 4b. Acoperire + județe */}
       <CoverageMoldova />
