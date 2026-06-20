@@ -111,6 +111,34 @@ export const projects: Project[] = [
     metaTitle: "Termoizolare Planșeu cu Spumă Poliuretanică - IsoThermLux",
     metaDescription: "Termoizolare planșeu interior și exterior cu spumă poliuretanică. Strat continuu, etanș, pe toată suprafața. Garanție 25 ani.",
   },
+  {
+    id: 4,
+    title: "Termoizolare Acoperiș Plat",
+    category: "Termoizolare",
+    image: "/images/project-acoperis-plat-01.webp",
+    images: [
+      "/images/project-acoperis-plat-01.webp",
+    ],
+    slug: "termoizolare-acoperis-plat",
+    shortDesc: "Acoperiș plat termoizolat, pregătit pentru panouri solare",
+    longDesc: `<h2>Termoizolare Acoperiș Plat cu Spumă Poliuretanică</h2>
+      <p>Termoizolare a unui acoperiș plat de bloc, prin aplicarea spumei poliuretanice pe toată suprafața. Spuma creează un strat continuu, uniform, care urmează structura existentă a acoperișului, inclusiv elementele de prindere pentru sistemele montate pe acoperiș (precum suporții pentru panouri solare).</p>
+      <h3>Lucrări efectuate:</h3>
+      <ul>
+        <li>Termoizolare completă a suprafeței acoperișului plat</li>
+        <li>Acoperire uniformă în jurul elementelor de structură și prindere existente</li>
+        <li>Strat continuu, fără rosturi, pe toată deschiderea acoperișului</li>
+      </ul>
+      <h3>Rezultate:</h3>
+      <ul>
+        <li>Suprafață termoizolată complet, pregătită pentru montaj echipamente</li>
+        <li>Strat uniform, rezistent la intemperii</li>
+        <li>Aderență perfectă pe suportul existent al acoperișului</li>
+      </ul>`,
+    keywords: ["termoizolare acoperiș plat", "izolare acoperiș bloc spumă poliuretanică", "termoizolare terasă", "spumă poliuretanică acoperiș plat"],
+    metaTitle: "Termoizolare Acoperiș Plat cu Spumă Poliuretanică - IsoThermLux",
+    metaDescription: "Termoizolare acoperiș plat cu spumă poliuretanică. Strat continuu și uniform pe toată suprafața. Garanție 25 ani.",
+  },
 ]
 
 export function getProjectBySlug(slug: string): Project | undefined {
