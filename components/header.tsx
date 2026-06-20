@@ -59,15 +59,12 @@ export function Header() {
     { label: "Calculator", href: "/calculator" },
   ]
 
-  // Alb la inceput (sus de tot), transparent dupa ce dai scroll
-  const isTransparent = scrolled && !mobileMenuOpen
-
   return (
     <>
       <header
         className={cn(
-          "fixed z-50 w-full transition-all duration-500",
-          isTransparent ? "bg-transparent py-5" : "backdrop-blur-md py-3 bg-white shadow-sm"
+          "fixed z-50 w-full transition-all duration-300 bg-white",
+          scrolled ? "py-3 shadow-md" : "py-4 shadow-sm"
         )}
       >
 
