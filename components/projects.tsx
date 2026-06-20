@@ -89,10 +89,10 @@ export function Projects() {
                   <div>
                     <h3 className="text-xl font-medium mb-2 group-hover:underline underline-offset-4">{project.title}</h3>
                     <p className="text-muted-foreground text-sm">
-                      {project.category} · {project.location}
+                      {project.category}{project.location ? ` · ${project.location}` : ''}
                     </p>
                   </div>
-                  <span className="text-muted-foreground text-xs md:text-sm">{project.year}</span>
+                  {project.year && <span className="text-muted-foreground text-xs md:text-sm">{project.year}</span>}
                 </div>
               </Link>
             </article>

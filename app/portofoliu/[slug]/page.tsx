@@ -59,16 +59,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     name: project.title,
     description: project.metaDescription,
     image: project.image,
-    datePublished: `${project.year}-01-01`,
+    ...(project.year ? { datePublished: `${project.year}-01-01` } : {}),
     author: {
       '@type': 'Organization',
       name: 'IsoThermLux',
       url: 'https://www.isothermlux.md',
     },
-    location: {
-      '@type': 'Place',
-      name: project.location,
-    },
+    ...(project.location ? { location: { '@type': 'Place', name: project.location } } : {}),
   }
 
   return (
@@ -100,28 +97,46 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                   <p className="text-sm text-foreground/60 mb-1">Categoria</p>
                   <p className="font-semibold text-accent">{project.category}</p>
                 </div>
-                <div>
-                  <p className="text-sm text-foreground/60 mb-1">Locație</p>
-                  <p className="font-semibold">{project.location}</p>
-                </div>
-                <div>
-                  <p className="text-sm text-foreground/60 mb-1">Anul</p>
-                  <p className="font-semibold">{project.year}</p>
-                </div>
+                {project.location && (
+                  <div>
+                    <p className="text-sm text-foreground/60 mb-1">Locație</p>
+                    <p className="font-semibold">{project.location}</p>
+                  </div>
+                )}
+                {project.year && (
+                  <div>
+                    <p className="text-sm text-foreground/60 mb-1">Anul</p>
+                    <p className="font-semibold">{project.year}</p>
+                  </div>
+                )}
               </div>
             </div>
         </section>
 
-        {/* Image */}
+        {/* Images — gallery if multiple, single if one */}
         <section className="py-12 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="rounded-none overflow-hidden">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-96 object-cover"
-              />
-            </div>
+            {project.images && project.images.length > 1 ? (
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
+                {project.images.map((img, idx) => (
+                  <div key={idx} className={`overflow-hidden ${idx === 0 ? 'col-span-2 md:col-span-2 row-span-2' : ''}`}>
+                    <img
+                      src={img}
+                      alt={`${project.title} - ${idx + 1}`}
+                      className="w-full h-full object-cover aspect-square md:aspect-auto md:min-h-[180px]"
+                    />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-96 object-cover"
+                />
+              </div>
+            )}
           </div>
         </section>
 

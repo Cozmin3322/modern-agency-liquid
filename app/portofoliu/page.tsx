@@ -34,7 +34,7 @@ export default function PortfolioPage() {
   const filtered = useMemo(() => {
     return projects.filter((p) => {
       const catMatch = selectedCategory === "Toate" || p.category === selectedCategory
-      const locMatch = selectedLocation === "Toate locațiile" || p.location.includes(selectedLocation)
+      const locMatch = selectedLocation === "Toate locațiile" || (p.location?.includes(selectedLocation) ?? false)
       return catMatch && locMatch
     })
   }, [selectedCategory, selectedLocation])
@@ -151,13 +151,19 @@ export default function PortfolioPage() {
                       <div className="p-6 flex flex-col flex-1">
                         <h3 className="font-serif text-lg uppercase mb-2 group-hover:text-accent transition-colors">{project.title}</h3>
                         <p className="text-foreground/60 text-sm mb-4 flex-1">{project.shortDesc}</p>
-                        <div className="flex justify-between items-center">
-                          <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                            <MapPin className="w-3 h-3 text-accent flex-shrink-0" />
-                            <span>{project.location}</span>
+                        {(project.location || project.year) && (
+                          <div className="flex justify-between items-center">
+                            {project.location && (
+                              <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                                <MapPin className="w-3 h-3 text-accent flex-shrink-0" />
+                                <span>{project.location}</span>
+                              </div>
+                            )}
+                            {project.year && (
+                              <span className="font-mono text-xs text-muted-foreground">{project.year}</span>
+                            )}
                           </div>
-                          <span className="font-mono text-xs text-muted-foreground">{project.year}</span>
-                        </div>
+                        )}
                       </div>
                     </div>
                   </Link>
