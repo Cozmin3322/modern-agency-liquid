@@ -279,6 +279,34 @@ export const projects: Project[] = [
     metaTitle: "Termoizolare Terasă cu Spumă Poliuretanică - IsoThermLux",
     metaDescription: "Termoizolare terasă exterioară cu spumă poliuretanică. Strat continuu și uniform pe toată suprafața. Garanție 25 ani.",
   },
+  {
+    id: 10,
+    title: "Termoizolare Fațadă",
+    category: "Termoizolare",
+    image: "/images/project-fatada-01.webp",
+    images: [
+      "/images/project-fatada-01.webp",
+    ],
+    slug: "termoizolare-fatada",
+    shortDesc: "Fațadă exterioară clădire termoizolată complet",
+    longDesc: `<h2>Termoizolare Fațadă cu Spumă Poliuretanică</h2>
+      <p>Termoizolare a fațadei exterioare a unei clădiri, prin aplicarea spumei poliuretanice pe toată suprafața peretelui. Spuma creează un strat continuu și uniform, fără punți termice, pregătit pentru finisajele ulterioare ale fațadei.</p>
+      <h3>Lucrări efectuate:</h3>
+      <ul>
+        <li>Termoizolare completă a suprafeței exterioare a fațadei</li>
+        <li>Acoperire uniformă pe toată înălțimea clădirii, inclusiv în jurul golurilor de fereastră</li>
+        <li>Strat continuu, fără rosturi, pe toată suprafața tratată</li>
+      </ul>
+      <h3>Rezultate:</h3>
+      <ul>
+        <li>Eliminare completă a punților termice pe fațadă</li>
+        <li>Aderență perfectă pe suportul de beton</li>
+        <li>Fațadă pregătită pentru finisajele exterioare</li>
+      </ul>`,
+    keywords: ["termoizolare fațadă", "izolare fațadă spumă poliuretanică", "termoizolare fațadă exterioară", "spumă poliuretanică fațadă"],
+    metaTitle: "Termoizolare Fațadă cu Spumă Poliuretanică - IsoThermLux",
+    metaDescription: "Termoizolare fațadă exterioară cu spumă poliuretanică. Strat continuu, fără punți termice. Garanție 25 ani.",
+  },
 ]
 
 export function getProjectBySlug(slug: string): Project | undefined {
