@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import Script from "next/script"
-import { Oswald, Inter, Geist_Mono } from "next/font/google"
+import { Roboto_Condensed, Inter, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { organizationSchema } from "@/lib/schema"
 import { SplashScreen } from "@/components/splash-screen"
@@ -9,7 +9,7 @@ import { CookieBanner } from "@/components/cookie-banner"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import "./globals.css"
 
-const _oswald = Oswald({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-oswald", display: "swap" })
+const _robotoCondensed = Roboto_Condensed({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-oswald", display: "swap" })
 const _inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-inter", display: "swap" })
 const _geistMono = Geist_Mono({ subsets: ["latin"], display: "swap" })
 
@@ -70,7 +70,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ro" className={`bg-background ${_oswald.variable} ${_inter.variable}`}>
+    <html lang="ro" className={`bg-background ${_robotoCondensed.variable} ${_inter.variable}`}>
       <head>
         {/* Google Analytics */}
         <Script

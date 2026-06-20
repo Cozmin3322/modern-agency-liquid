@@ -9,8 +9,6 @@ import { BrandLogos } from "@/components/brand-logos"
 import { Reviews } from "@/components/reviews"
 import { ContactForm } from "@/components/contact-form"
 import { LocationMap } from "@/components/location-map"
-import { FAQ } from "@/components/faq"
-import { CallToAction } from "@/components/call-to-action"
 import { Footer } from "@/components/footer"
 import Script from "next/script"
 
@@ -65,12 +63,6 @@ export default async function Home() {
 
       {/* 8b. Locație / Hartă */}
       <LocationMap />
-
-      {/* 9. FAQ */}
-      <FAQ />
-
-      {/* 10. CTA final */}
-      <CallToAction />
 
       <Footer />
     </main>
