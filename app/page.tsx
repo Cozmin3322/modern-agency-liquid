@@ -6,6 +6,7 @@ import { Projects } from "@/components/projects"
 import { Reviews } from "@/components/reviews"
 import { CoverageMoldova } from "@/components/coverage-moldova"
 import { ContactForm } from "@/components/contact-form"
+import { LocationMap } from "@/components/location-map"
 import { FAQ } from "@/components/faq"
 import { CallToAction } from "@/components/call-to-action"
 import { Footer } from "@/components/footer"
@@ -82,6 +83,9 @@ export default async function Home() {
       <div id="contact-form">
         <ContactForm />
       </div>
+
+      {/* 8b. Locație / Hartă */}
+      <LocationMap />
 
       {/* 9. FAQ */}
       <FAQ />
