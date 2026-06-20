@@ -13,6 +13,9 @@ export function Header() {
   const [servicesOpen, setServicesOpen] = useState(false)
   const [galleryOpen, setGalleryOpen] = useState(false)
   const [blogOpen, setBlogOpen] = useState(false)
+  const [desktopServicesOpen, setDesktopServicesOpen] = useState(false)
+  const [desktopGalleryOpen, setDesktopGalleryOpen] = useState(false)
+  const [desktopBlogOpen, setDesktopBlogOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 80)
@@ -74,42 +77,124 @@ export function Header() {
       <header
         className={cn(
           "fixed z-40 w-full top-8 transition-all duration-300 bg-white",
-          scrolled ? "py-3 shadow-md" : "py-4 shadow-sm"
+          scrolled ? "py-2 shadow-md" : "py-3 shadow-sm"
         )}
       >
 
-        <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
+        <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between gap-6">
 
           {/* Logo stânga */}
-          <Link href="/" onClick={handleLogoClick} className="flex items-center gap-3 group">
+          <Link href="/" onClick={handleLogoClick} className="flex items-center gap-2.5 group flex-shrink-0">
             <Image
               src="/images/logo-isotherm-lux.webp"
               alt="IsoThermLux"
               width={72} height={72}
-              className="h-16 w-auto transition-transform duration-200 group-hover:scale-105"
+              className="h-11 w-auto transition-transform duration-200 group-hover:scale-105"
               priority
             />
             <div>
-              <div className="font-serif text-xl font-semibold leading-tight tracking-tight text-foreground">IsoThermLux</div>
-              <div className="font-mono text-[10px] text-accent uppercase tracking-[0.25em]">Izolare Profesională</div>
+              <div className="font-serif text-base font-semibold leading-tight tracking-tight text-foreground">IsoThermLux</div>
+              <div className="font-mono text-[9px] text-accent uppercase tracking-[0.2em]">Izolare Profesională</div>
             </div>
           </Link>
 
+          {/* Meniu desktop */}
+          <ul className="hidden lg:flex items-center gap-6 font-mono text-xs uppercase tracking-wider text-foreground/80 flex-1 justify-center">
+            <li>
+              <Link href="/" className="hover:text-accent transition-colors">Home</Link>
+            </li>
+            <li
+              className="relative"
+              onMouseEnter={() => setDesktopServicesOpen(true)}
+              onMouseLeave={() => setDesktopServicesOpen(false)}
+            >
+              <button className="flex items-center gap-1 hover:text-accent transition-colors">
+                Servicii
+                <ChevronDown className={cn("w-3 h-3 transition-transform", desktopServicesOpen && "rotate-180")} />
+              </button>
+              {desktopServicesOpen && (
+                <div className="absolute top-full left-0 pt-2 w-56">
+                  <div className="bg-white shadow-lg border border-border py-2">
+                    {serviceLinks.map((l) => (
+                      <Link key={l.href} href={l.href}
+                        className="block px-4 py-2 text-xs normal-case tracking-normal text-foreground/80 hover:text-accent hover:bg-card transition-colors">
+                        {l.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </li>
+            <li>
+              <Link href="/tarife" className="hover:text-accent transition-colors">Tarife</Link>
+            </li>
+            <li
+              className="relative"
+              onMouseEnter={() => setDesktopGalleryOpen(true)}
+              onMouseLeave={() => setDesktopGalleryOpen(false)}
+            >
+              <button className="flex items-center gap-1 hover:text-accent transition-colors">
+                Galerie
+                <ChevronDown className={cn("w-3 h-3 transition-transform", desktopGalleryOpen && "rotate-180")} />
+              </button>
+              {desktopGalleryOpen && (
+                <div className="absolute top-full left-0 pt-2 w-40">
+                  <div className="bg-white shadow-lg border border-border py-2">
+                    {galleryLinks.map((l) => (
+                      <Link key={l.href} href={l.href}
+                        className="block px-4 py-2 text-xs normal-case tracking-normal text-foreground/80 hover:text-accent hover:bg-card transition-colors">
+                        {l.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </li>
+            <li>
+              <Link href="/recenzii" className="hover:text-accent transition-colors">Recenzii</Link>
+            </li>
+            <li
+              className="relative"
+              onMouseEnter={() => setDesktopBlogOpen(true)}
+              onMouseLeave={() => setDesktopBlogOpen(false)}
+            >
+              <button className="flex items-center gap-1 hover:text-accent transition-colors">
+                Blog
+                <ChevronDown className={cn("w-3 h-3 transition-transform", desktopBlogOpen && "rotate-180")} />
+              </button>
+              {desktopBlogOpen && (
+                <div className="absolute top-full left-0 pt-2 w-40">
+                  <div className="bg-white shadow-lg border border-border py-2">
+                    {blogLinks.map((l) => (
+                      <Link key={l.href} href={l.href}
+                        className="block px-4 py-2 text-xs normal-case tracking-normal text-foreground/80 hover:text-accent hover:bg-card transition-colors">
+                        {l.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-accent transition-colors">Contact</Link>
+            </li>
+          </ul>
+
           {/* Dreapta: telefon + hamburger */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 flex-shrink-0">
             {/* Buton telefon plin, cu umbra - mereu vizibil */}
             <a
               href="tel:+37378370243"
-              className="hidden sm:flex items-center gap-2 px-5 py-2.5 font-mono text-sm uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5 bg-accent text-white shadow-[0_4px_14px_rgba(155,95,18,0.35)] hover:bg-accent/90 hover:shadow-[0_6px_18px_rgba(155,95,18,0.45)]"
+              className="hidden sm:flex items-center gap-2 px-4 py-2 font-mono text-xs uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5 bg-accent text-white shadow-[0_4px_14px_rgba(155,95,18,0.35)] hover:bg-accent/90 hover:shadow-[0_6px_18px_rgba(155,95,18,0.45)]"
             >
-              <Phone className="w-4 h-4 flex-shrink-0 text-white" />
+              <Phone className="w-3.5 h-3.5 flex-shrink-0 text-white" />
               +373 78 370 243
             </a>
 
-            {/* Hamburger */}
+            {/* Hamburger (vizibil doar pe mobil/tabletă) */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="flex flex-col gap-[5px] p-2 transition-colors duration-300 text-foreground hover:text-accent"
+              className="flex lg:hidden flex-col gap-[5px] p-2 transition-colors duration-300 text-foreground hover:text-accent"
               aria-label="Meniu"
             >
               <span className="w-7 h-[2px] bg-current" />
