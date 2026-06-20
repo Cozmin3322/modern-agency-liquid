@@ -51,7 +51,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Termoizolare Acoperiș Industrial",
+    title: "Tavan Restaurant",
     category: "Termoizolare",
     image: "/images/project-acoperis-industrial-01.webp",
     images: [
@@ -60,26 +60,26 @@ export const projects: Project[] = [
       "/images/project-acoperis-industrial-03.webp",
       "/images/project-acoperis-industrial-04.webp",
     ],
-    slug: "termoizolare-acoperis-industrial",
-    shortDesc: "Acoperiș industrial cu structură metalică termoizolat complet",
-    longDesc: `<h2>Termoizolare Acoperiș Industrial cu Spumă Poliuretanică</h2>
-      <p>Termoizolare a unui acoperiș industrial cu structură metalică, prin aplicarea spumei poliuretanice direct pe suprafața interioară. Spuma aderă perfect pe panourile metalice și urmează linia structurii, creând un strat continuu și uniform pe toată deschiderea acoperișului.</p>
+    slug: "tavan-restaurant",
+    shortDesc: "Tavan restaurant cu structură metalică termoizolat complet",
+    longDesc: `<h2>Termoizolare Tavan Restaurant cu Spumă Poliuretanică</h2>
+      <p>Termoizolare a tavanului unui restaurant cu structură metalică, prin aplicarea spumei poliuretanice direct pe suprafața interioară. Spuma aderă perfect pe panourile metalice și urmează linia structurii, creând un strat continuu și uniform pe toată deschiderea spațiului.</p>
       <h3>Lucrări efectuate:</h3>
       <ul>
-        <li>Termoizolare completă a suprafeței interioare a acoperișului metalic</li>
+        <li>Termoizolare completă a suprafeței interioare a tavanului metalic</li>
         <li>Acoperire uniformă pe toată deschiderea, între grinzile structurii metalice</li>
         <li>Izolare în jurul conductelor de ventilație și instalațiilor existente</li>
-        <li>Protejare ferestre și suprafețe adiacente pe durata aplicării</li>
+        <li>Protejare ferestre, mobilier și suprafețe adiacente pe durata aplicării</li>
       </ul>
       <h3>Rezultate:</h3>
       <ul>
         <li>Strat termoizolant continuu, fără rosturi, pe toată suprafața</li>
         <li>Aderență perfectă pe structura metalică</li>
-        <li>Spațiu interior pregătit pentru control termic eficient</li>
+        <li>Spațiu pregătit pentru confort termic optim al clienților</li>
       </ul>`,
-    keywords: ["termoizolare acoperiș industrial", "izolare hală spumă poliuretanică", "termoizolare structură metalică", "spumă poliuretanică hală"],
-    metaTitle: "Termoizolare Acoperiș Industrial cu Spumă Poliuretanică - IsoThermLux",
-    metaDescription: "Termoizolare acoperiș industrial cu structură metalică. Spumă poliuretanică aplicată uniform pe toată suprafața. Garanție 25 ani.",
+    keywords: ["termoizolare tavan restaurant", "izolare restaurant spumă poliuretanică", "termoizolare structură metalică", "spumă poliuretanică restaurant"],
+    metaTitle: "Termoizolare Tavan Restaurant cu Spumă Poliuretanică - IsoThermLux",
+    metaDescription: "Termoizolare tavan restaurant cu structură metalică. Spumă poliuretanică aplicată uniform pe toată suprafața. Garanție 25 ani.",
   },
   {
     id: 3,
