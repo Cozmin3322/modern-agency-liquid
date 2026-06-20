@@ -1,18 +1,8 @@
-'use client'
-
-import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
-const RAIOANE = [
-  'Chișinău', 'Bălți', 'Orhei', 'Soroca', 'Ungheni', 'Cahul', 'Hîncești', 'Strășeni',
-  'Anenii Noi', 'Ialoveni', 'Căușeni', 'Edineț', 'Florești', 'Drochia', 'Comrat',
-]
-
 export function CoverageMoldova() {
-  const [raion, setRaion] = useState('')
-
   return (
     <section className="w-full">
 
@@ -22,22 +12,7 @@ export function CoverageMoldova() {
           <h2 className="text-3xl md:text-4xl font-serif font-medium text-center mb-2">
             Acoperire în toată <span className="text-accent">Moldova</span>.
           </h2>
-          <p className="text-center text-muted-foreground mb-10">Alege raionul căutat</p>
-
-          <div className="max-w-xs mx-auto mb-14">
-            <select
-              value={raion}
-              onChange={(e) => setRaion(e.target.value)}
-              className="w-full border border-border px-4 py-3 text-sm bg-white focus:outline-none focus:border-accent"
-            >
-              <option value="">Selectează raionul</option>
-              {RAIOANE.map((r) => (
-                <option key={r} value={r}>{r}</option>
-              ))}
-            </select>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center mt-10">
 
             {/* Text */}
             <div>

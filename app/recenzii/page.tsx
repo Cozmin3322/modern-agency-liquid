@@ -1,7 +1,15 @@
 import { Metadata } from "next"
+import Link from "next/link"
+import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Star } from "lucide-react"
+
+const galleryPhotos = [
+  "/images/project-acoperis-new.webp",
+  "/images/hidroizolare-fundatie-02.webp",
+  "/images/project-apartament-izolare-01.jpg",
+]
 
 export const metadata: Metadata = {
   title: "Recenzii IsoThermLux | Clienți Mulțumiți | 5 Stele",
@@ -60,15 +68,6 @@ export default function ReviewsPage() {
     <>
       <Header />
       <main className="bg-background">
-        <section className="py-24 border-b border-border">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-5xl font-serif font-medium mb-8">Recenzii Clienți</h1>
-            <p className="text-xl text-foreground/80">
-              Peste 500 de clienți mulțumiți. Evaluări 5 stele. Iată ce spun despre serviciile noastre.
-            </p>
-          </div>
-        </section>
-
         <section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8">
@@ -91,15 +90,15 @@ export default function ReviewsPage() {
           </div>
         </section>
 
-        <section className="py-24 bg-card">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-serif font-medium mb-6">Satisfacție 100%</h2>
-            <p className="text-lg text-foreground/80 mb-8">
-              Clienții noștri sunt prioritatea #1. Garanția 25 ani și suportul permanent ne diferențiază.
-            </p>
-            <a href="tel:+37378370243" className="inline-block bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">
-              Cere Recenzie pe Loc
-            </a>
+        <section className="pb-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              {galleryPhotos.map((src) => (
+                <Link key={src} href="/galerie/foto" className="relative h-56 block group overflow-hidden">
+                  <Image src={src} alt="Galerie foto IsoThermLux" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:opacity-80 transition-opacity duration-300" />
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
       </main>

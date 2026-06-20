@@ -235,7 +235,7 @@ export default function TermoizolarePage() {
         <section className="py-16 md:py-20 bg-background">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative h-64 md:h-96 mb-10 overflow-hidden">
-              <Image src="/images/economie-70-procent-gaz.jpg" alt="Pierderi de căldură vs. casă izolată" fill sizes="(max-width: 1024px) 100vw, 900px" className="object-cover" />
+              <Image src="/images/hero-family-thermostat.png" alt="Pierderi de căldură vs. casă izolată" fill sizes="(max-width: 1024px) 100vw, 900px" className="object-cover" />
               <div className="absolute top-6 left-6 bg-white/90 px-4 py-2 font-semibold text-accent text-sm md:text-base">
                 ~ 40% pierderi de căldură
               </div>

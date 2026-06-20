@@ -5,7 +5,6 @@ import { StatsBar } from "@/components/stats-bar"
 import { AboutDark } from "@/components/about-dark"
 import { CoverageMoldova } from "@/components/coverage-moldova"
 import { PricingOffers } from "@/components/pricing-offers"
-import { BrandLogos } from "@/components/brand-logos"
 import { Reviews } from "@/components/reviews"
 import { ContactForm } from "@/components/contact-form"
 import { LocationMap } from "@/components/location-map"
@@ -49,9 +48,6 @@ export default async function Home() {
 
       {/* 4c. Oferte / Prețuri */}
       <PricingOffers />
-
-      {/* 4d. Branduri parteneri */}
-      <BrandLogos />
 
       {/* 5. Recenzii clienți */}
       <Reviews />

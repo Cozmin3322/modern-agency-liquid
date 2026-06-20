@@ -193,15 +193,17 @@ export default function HidroizolarePage() {
             <h2 className="text-2xl md:text-3xl font-serif font-medium mb-10 text-center text-accent">Tipuri de hidroizolare</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { href: "/hidroizolare/fundatie", title: "Fundație", desc: "Protecție profesională a fundației împotriva infiltrațiilor de apă din pământ." },
-                { href: "/hidroizolare/acoperis", title: "Acoperiș", desc: "Impermeabilizare completă a acoperișului. Protecție la ploaie și zăpadă." },
-                { href: "/hidroizolare/subsol", title: "Subsol", desc: "Protecție subsol și pereți subterani. Spațiu uscat și locuibil." },
-              ].map(({ href, title, desc }) => (
-                <Link key={href} href={href} className="p-8 bg-background border border-border hover:border-accent transition group">
-                  <h3 className="text-lg font-semibold mb-2 group-hover:text-accent transition">{title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{desc}</p>
-                  <span className="inline-flex items-center gap-2 text-accent text-sm">Detalii <ArrowRight className="w-4 h-4" /></span>
-                </Link>
+                { image: "/images/hidroizolare-fundatie-02.webp", title: "Fundație", desc: "Protecție profesională a fundației împotriva infiltrațiilor de apă din pământ." },
+                { image: "/images/project-acoperis.webp", title: "Acoperiș", desc: "Impermeabilizare completă a acoperișului. Protecție la ploaie și zăpadă." },
+                { image: "/images/project-subsol-uscat.webp", title: "Subsol", desc: "Protecție subsol și pereți subterani. Spațiu uscat și locuibil." },
+              ].map(({ image, title, desc }) => (
+                <div key={title} className="p-8 bg-background border border-border">
+                  <div className="relative h-32 w-full mb-4 overflow-hidden">
+                    <Image src={image} alt={title} fill sizes="300px" className="object-cover" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">{title}</h3>
+                  <p className="text-sm text-muted-foreground">{desc}</p>
+                </div>
               ))}
             </div>
           </div>

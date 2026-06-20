@@ -170,7 +170,7 @@ export function Header() {
             </li>
 
             <li>
-              <Link href="/#tarife" onClick={close} className="block py-3.5 text-foreground font-medium hover:text-accent transition-colors">
+              <Link href="/tarife" onClick={close} className="block py-3.5 text-foreground font-medium hover:text-accent transition-colors">
                 Tarife
               </Link>
             </li>
@@ -195,7 +195,7 @@ export function Header() {
             </li>
 
             <li>
-              <Link href="/#recenzii" onClick={close} className="block py-3.5 text-foreground font-medium hover:text-accent transition-colors">
+              <Link href="/recenzii" onClick={close} className="block py-3.5 text-foreground font-medium hover:text-accent transition-colors">
                 Recenzii
               </Link>
             </li>
