@@ -50,23 +50,23 @@ function LeadCard({ lead, onUpdate }: { lead: Lead; onUpdate: () => void }) {
 
   return (
     <div className="border border-border bg-white">
-      <div className="p-4 sm:p-5">
-        <div className="flex items-start justify-between gap-3 mb-3">
-          <div>
-            <h3 className="font-semibold text-foreground text-lg">{lead.name}</h3>
+      <div className="p-3.5 sm:p-4 md:p-5">
+        <div className="flex flex-col xs:flex-row sm:flex-row items-start justify-between gap-2 sm:gap-3 mb-3">
+          <div className="min-w-0">
+            <h3 className="font-semibold text-foreground text-base sm:text-lg truncate">{lead.name}</h3>
             <p className="text-xs text-foreground/50 font-mono flex items-center gap-1 mt-0.5">
-              <Calendar className="w-3 h-3" /> {formatDate(lead.created_at)}
+              <Calendar className="w-3 h-3 flex-shrink-0" /> {formatDate(lead.created_at)}
             </p>
           </div>
 
           {/* Status dropdown */}
-          <div className="relative flex-shrink-0">
+          <div className="relative flex-shrink-0 self-start">
             <button
               onClick={() => setStatusMenuOpen(!statusMenuOpen)}
-              className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold border rounded-none ${statusInfo.color}`}
+              className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 text-[11px] sm:text-xs font-semibold border rounded-none whitespace-nowrap ${statusInfo.color}`}
             >
               {statusInfo.label}
-              <ChevronDown className="w-3 h-3" />
+              <ChevronDown className="w-3 h-3 flex-shrink-0" />
             </button>
             {statusMenuOpen && (
               <div className="absolute right-0 top-full mt-1 w-44 bg-white border border-border shadow-lg z-20">
@@ -74,7 +74,7 @@ function LeadCard({ lead, onUpdate }: { lead: Lead; onUpdate: () => void }) {
                   <button
                     key={s}
                     onClick={() => handleStatusChange(s)}
-                    className="w-full text-left px-3 py-2 text-sm hover:bg-accent/10 transition-colors"
+                    className="w-full text-left px-3 py-2.5 sm:py-2 text-sm hover:bg-accent/10 transition-colors"
                   >
                     {STATUS_CONFIG[s].label}
                   </button>
@@ -84,47 +84,47 @@ function LeadCard({ lead, onUpdate }: { lead: Lead; onUpdate: () => void }) {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-2 mb-3 text-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3 text-sm">
           <a href={`tel:${lead.phone}`} className="flex items-center gap-2 text-accent hover:underline">
             <Phone className="w-4 h-4 flex-shrink-0" /> {lead.phone}
           </a>
           {lead.location && (
-            <div className="flex items-center gap-2 text-foreground/70">
-              <MapPin className="w-4 h-4 flex-shrink-0" /> {lead.location}
+            <div className="flex items-center gap-2 text-foreground/70 min-w-0">
+              <MapPin className="w-4 h-4 flex-shrink-0" /> <span className="truncate">{lead.location}</span>
             </div>
           )}
           {lead.service_type && (
-            <div className="flex items-center gap-2 text-foreground/70 sm:col-span-2">
-              <Wrench className="w-4 h-4 flex-shrink-0" /> {lead.service_type}
+            <div className="flex items-center gap-2 text-foreground/70 sm:col-span-2 min-w-0">
+              <Wrench className="w-4 h-4 flex-shrink-0" /> <span className="truncate">{lead.service_type}</span>
             </div>
           )}
         </div>
 
         {lead.message && (
-          <p className="text-sm text-foreground/70 bg-card p-3 mb-3 border-l-2 border-accent/40">
+          <p className="text-sm text-foreground/70 bg-card p-3 mb-3 border-l-2 border-accent/40 break-words">
             {lead.message}
           </p>
         )}
 
-        <div className="flex items-center gap-3 flex-wrap">
+        <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
           <a
             href={`https://wa.me/${lead.phone.replace(/\D/g, '')}`}
             target="_blank" rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-xs font-mono uppercase tracking-wide px-3 py-1.5 border border-green-500 text-green-600 hover:bg-green-500 hover:text-white transition-colors"
+            className="flex items-center gap-1.5 text-[11px] sm:text-xs font-mono uppercase tracking-wide px-2.5 sm:px-3 py-1.5 border border-green-500 text-green-600 hover:bg-green-500 hover:text-white transition-colors"
           >
             <MessageSquare className="w-3.5 h-3.5" /> WhatsApp
           </a>
           <button
             onClick={() => setNotesOpen(!notesOpen)}
-            className="text-xs font-mono uppercase tracking-wide px-3 py-1.5 border border-border text-foreground/60 hover:border-accent hover:text-accent transition-colors"
+            className="flex items-center gap-1.5 text-[11px] sm:text-xs font-mono uppercase tracking-wide px-2.5 sm:px-3 py-1.5 border border-border text-foreground/60 hover:border-accent hover:text-accent transition-colors"
           >
             {notesOpen ? 'Ascunde Notițe' : lead.notes ? 'Vezi Notițe' : 'Adaugă Notițe'}
           </button>
           <button
             onClick={handleDelete}
-            className="ml-auto flex items-center gap-1.5 text-xs font-mono uppercase tracking-wide px-3 py-1.5 text-red-500 hover:bg-red-50 transition-colors"
+            className="ml-auto flex items-center gap-1.5 text-[11px] sm:text-xs font-mono uppercase tracking-wide px-2.5 sm:px-3 py-1.5 text-red-500 hover:bg-red-50 transition-colors"
           >
-            <Trash2 className="w-3.5 h-3.5" /> Șterge
+            <Trash2 className="w-3.5 h-3.5" /> <span className="hidden xs:inline">Șterge</span>
           </button>
         </div>
 
@@ -176,17 +176,17 @@ export default function CrmPage() {
 
   return (
     <AdminProtectedLayout>
-      <div className="p-6 sm:p-8 max-w-5xl mx-auto">
-        <div className="mb-6">
-          <h1 className="text-3xl font-serif font-bold text-foreground mb-1">CRM — Cereri Clienți</h1>
-          <p className="text-foreground/60">Toate cererile primite prin formularul de contact de pe site</p>
+      <div className="p-4 sm:p-6 md:p-8 max-w-5xl mx-auto">
+        <div className="mb-5 sm:mb-6">
+          <h1 className="text-2xl sm:text-3xl font-serif font-bold text-foreground mb-1">CRM — Cereri Clienți</h1>
+          <p className="text-sm sm:text-base text-foreground/60">Toate cererile primite prin formularul de contact de pe site</p>
         </div>
 
-        {/* Filter pills */}
-        <div className="flex flex-wrap gap-2 mb-6">
+        {/* Filter pills — scrollable on mobile */}
+        <div className="flex gap-2 mb-5 sm:mb-6 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible">
           <button
             onClick={() => setFilterStatus('toate')}
-            className={`px-3 py-1.5 text-xs font-mono uppercase tracking-wide border transition-colors ${
+            className={`flex-shrink-0 px-3 py-1.5 text-xs font-mono uppercase tracking-wide border transition-colors whitespace-nowrap ${
               filterStatus === 'toate' ? 'bg-foreground text-white border-foreground' : 'border-border text-foreground/60 hover:border-foreground/40'
             }`}
           >
@@ -196,7 +196,7 @@ export default function CrmPage() {
             <button
               key={s}
               onClick={() => setFilterStatus(s)}
-              className={`px-3 py-1.5 text-xs font-mono uppercase tracking-wide border transition-colors ${
+              className={`flex-shrink-0 px-3 py-1.5 text-xs font-mono uppercase tracking-wide border transition-colors whitespace-nowrap ${
                 filterStatus === s ? STATUS_CONFIG[s].color + ' font-semibold' : 'border-border text-foreground/60 hover:border-foreground/40'
               }`}
             >
