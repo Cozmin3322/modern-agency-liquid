@@ -148,10 +148,10 @@ export default function AboutPage() {
                 Sună Acum
               </a>
               <a
-                href="/calculator-oferta"
+                href="/contact"
                 className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-8 py-4 rounded-none font-semibold hover:bg-accent/10 transition-colors"
               >
-                Calculator Ofertă
+                Cere Ofertă
               </a>
             </div>
           </div>

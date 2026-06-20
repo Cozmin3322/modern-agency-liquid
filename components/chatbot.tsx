@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { Send, X, Calculator } from 'lucide-react'
+import { Send, X } from 'lucide-react'
 
 interface Message {
   id: string
@@ -30,7 +30,6 @@ export default function Chatbot() {
   const quickReplies = [
     { label: 'Preț termoizolare', message: 'Care este prețul pentru termoizolare?' },
     { label: 'Garanție', message: 'Ce garanție oferiți?' },
-    { label: 'Calculator preț', message: 'Vreau să calculez costul' },
   ]
 
   const handleSendMessage = async (messageText?: string) => {

@@ -30,8 +30,8 @@ export default function GarajPage() {
           title="Termoizolare Garaj"
           titleAccent="Cald Iarna, Răcoros Vara"
           subtitle="Un garaj neizolatermit este inutilizabil iarna și sufocant vara. Izolăm pereții, acoperișul și ușile garajului cu spumă poliuretanică."
-          ctaSecondaryHref="/calculator-oferta"
-          ctaSecondaryLabel="Calculează Oferta"
+          ctaSecondaryHref="/contact"
+          ctaSecondaryLabel="Cere Ofertă"
         />
 
         <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">

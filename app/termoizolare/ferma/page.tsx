@@ -30,8 +30,8 @@ export default function FermaPage() {
           title="Termoizolare Ferme"
           titleAccent="Agricole și Grajduri"
           subtitle="Animalele sănătoase și costurile reduse încep cu o fermă bine izolată. Izolăm grajduri, hale avicole, sere și depozite agricole."
-          ctaSecondaryHref="/calculator-oferta"
-          ctaSecondaryLabel="Calculează Oferta"
+          ctaSecondaryHref="/contact"
+          ctaSecondaryLabel="Cere Ofertă"
         />
 
         <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">

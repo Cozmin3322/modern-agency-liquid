@@ -242,14 +242,14 @@ export default function BlogPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Vrei o Ofertă Personalizată?</h2>
             <p className="text-lg text-foreground/70 mb-8">
-              Contactează-ne pentru o consultație gratuită și un calculator de estimare.
+              Contactează-ne pentru o consultație gratuită și o ofertă personalizată.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/calculator-oferta"
+                href="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition-colors"
               >
-                Calculator Ofertă <ArrowRight className="w-5 h-5" />
+                Cere Ofertă <ArrowRight className="w-5 h-5" />
               </Link>
               <a
                 href="tel:+37378370243"

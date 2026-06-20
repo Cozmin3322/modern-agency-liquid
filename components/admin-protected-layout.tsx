@@ -61,7 +61,6 @@ export function AdminProtectedLayout({ children }: AdminLayoutProps) {
     { label: 'Acasă', href: '/admin/content/home', icon: FileText },
     { label: 'Termoizolare', href: '/admin/content/termoizolare', icon: FileText },
     { label: 'Hidroizolare', href: '/admin/content/hidroizolare', icon: FileText },
-    { label: 'Calculator', href: '/admin/content/calculator', icon: Settings },
     { label: 'FAQ', href: '/admin/content/faq', icon: FileText },
     { label: 'Recenzii', href: '/admin/content/reviews', icon: Users },
     { label: 'Proiecte', href: '/admin/content/projects', icon: Package },

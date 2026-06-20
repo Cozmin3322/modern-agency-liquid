@@ -42,7 +42,6 @@ export async function getContent<T>(key: string, defaultValue: T): Promise<T> {
   // Map content keys to cache tags so they revalidate on admin save
   const tagMap: Record<string, string> = {
     'faq_items': 'intrebari-frecvente',
-    'calculator_settings': 'calculator-oferta',
     'reviews_data': 'recenzii',
     'termoizolare_content': 'termoizolare',
     'hidroizolare_content': 'hidroizolare',

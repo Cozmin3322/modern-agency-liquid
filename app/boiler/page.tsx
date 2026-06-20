@@ -72,8 +72,8 @@ export default function BoilerPage() {
           title="Termoizolare Boiler"
           titleAccent="Reduci Pierderile cu 60%"
           subtitle="Izolarea unui boiler este esențială pentru a reduce pierderile de căldură și a economisi la factură. Aplicăm spumă poliuretanică cu celule închise direct pe boiler."
-          ctaSecondaryHref="/calculator-oferta"
-          ctaSecondaryLabel="Calculează Oferta"
+          ctaSecondaryHref="/contact"
+          ctaSecondaryLabel="Cere Ofertă"
         />
 
         <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">

@@ -18,7 +18,6 @@ export default function AdminDashboard() {
             {[
               { title: 'Acasă', desc: 'Editați titlul și conținutul paginii principale' },
               { title: 'Servicii', desc: 'Gestionați informații despre Termoizolare și Hidroizolare' },
-              { title: 'Calculator', desc: 'Configurați prețurile și costurile de deplasare' },
               { title: 'FAQ', desc: 'Adăugați, editați și ștergeți întrebări frecvente' },
               { title: 'Recenzii', desc: 'Gestionați recenziile clienților' },
               { title: 'Proiecte', desc: 'Editați detaliile proiectelor din portofoliu' },

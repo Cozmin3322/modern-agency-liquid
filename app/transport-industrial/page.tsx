@@ -64,8 +64,8 @@ export default function TransportIndustrialPage() {
           title="Termoizolare Transport"
           titleAccent="Industrial"
           subtitle="Soluții complete de termoizolare pentru vehicule industriale, flote de transport și echipamente mobile cu spumă poliuretanică cu celule închise."
-          ctaSecondaryHref="/calculator-oferta"
-          ctaSecondaryLabel="Calculează Oferta"
+          ctaSecondaryHref="/contact"
+          ctaSecondaryLabel="Cere Ofertă"
         />
 
         <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">

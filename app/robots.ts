@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: '*',
         allow: [
           '/', '/blog', '/blog/*', '/termoizolare', '/termoizolare/*',
-          '/hidroizolare', '/hidroizolare/*', '/calculator-oferta', '/calculator',
+          '/hidroizolare', '/hidroizolare/*',
           '/intrebari-frecvente', '/portofoliu', '/portofoliu/*',
           '/boiler', '/transport-industrial', '/fatade', '/fonoizolare',
           '/despre-noi', '/contact', '/recenzii', '/servicii', '/beneficii',

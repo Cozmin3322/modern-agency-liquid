@@ -30,7 +30,6 @@ export async function saveContent(key: string, value: unknown): Promise<boolean>
     // Revalidate pages that use this content
     const tagMap: Record<string, string[]> = {
       'faq_items': ['intrebari-frecvente'],
-      'calculator_settings': ['calculator-oferta'],
       'reviews_data': ['recenzii'],
       'termoizolare_content': ['termoizolare'],
       'hidroizolare_content': ['hidroizolare'],
