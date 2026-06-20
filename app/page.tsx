@@ -1,10 +1,13 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
+import { ServiceHighlights } from "@/components/service-highlights"
 import { PremiumServices } from "@/components/premium-services"
+import { StatsBar } from "@/components/stats-bar"
 import { Philosophy } from "@/components/philosophy"
 import { Projects } from "@/components/projects"
-import { Reviews } from "@/components/reviews"
 import { CoverageMoldova } from "@/components/coverage-moldova"
+import { PricingOffers } from "@/components/pricing-offers"
+import { Reviews } from "@/components/reviews"
 import { ContactForm } from "@/components/contact-form"
 import { LocationMap } from "@/components/location-map"
 import { FAQ } from "@/components/faq"
@@ -37,14 +40,26 @@ export default async function Home() {
       {/* 1. Hero */}
       <Hero />
 
+      {/* 1b. Servicii rapide (3 carduri) */}
+      <ServiceHighlights />
+
       {/* 2. Servicii concrete */}
       <PremiumServices />
+
+      {/* 2b. Statistici */}
+      <StatsBar />
 
       {/* 3. De ce noi — cifre + beneficii */}
       <Philosophy />
 
       {/* 4. Proiecte recente */}
       <Projects />
+
+      {/* 4b. Acoperire + județe */}
+      <CoverageMoldova />
+
+      {/* 4c. Oferte / Prețuri */}
+      <PricingOffers />
 
       {/* 5. Recenzii clienți */}
       <Reviews />
@@ -75,9 +90,6 @@ export default async function Home() {
           </div>
         </div>
       </section>
-
-      {/* 7. Acoperire Moldova + stats */}
-      <CoverageMoldova />
 
       {/* 8. Formular contact */}
       <div id="contact-form">

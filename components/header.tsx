@@ -61,9 +61,22 @@ export function Header() {
 
   return (
     <>
+      {/* Top bar */}
+      <div className="fixed top-0 z-50 w-full bg-accent text-white text-xs">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 h-8 flex items-center justify-between">
+          <a href="tel:+37378370243" className="hidden sm:inline-flex items-center gap-1.5 hover:text-white/80 transition-colors">
+            <Phone className="w-3 h-3" /> +373 78 370 243
+          </a>
+          <div className="flex items-center gap-3 ml-auto">
+            <a href="https://www.facebook.com/isothermlux" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-white/80 transition-colors">f</a>
+            <a href="https://www.instagram.com/isothermlux" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-white/80 transition-colors">ig</a>
+          </div>
+        </div>
+      </div>
+
       <header
         className={cn(
-          "fixed z-50 w-full transition-all duration-300 bg-white",
+          "fixed z-40 w-full top-8 transition-all duration-300 bg-white",
           scrolled ? "py-3 shadow-md" : "py-4 shadow-sm"
         )}
       >
