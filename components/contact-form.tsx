@@ -4,22 +4,37 @@ import { useState } from 'react'
 import type React from 'react'
 import Image from 'next/image'
 import { ArrowRight, Facebook, Instagram, Linkedin, Mail } from 'lucide-react'
+import { createLead } from '@/app/actions/crm'
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
     name: '', phone: '', location: '', serviceType: '', message: '',
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setIsSubmitting(true)
+
+    // Salvează cererea în CRM (nu blocăm utilizatorul dacă eșuează)
+    createLead({
+      name: formData.name,
+      phone: formData.phone,
+      location: formData.location,
+      serviceType: formData.serviceType,
+      message: formData.message,
+      source: 'formular_contact',
+    }).catch((err) => console.error('[CRM] Failed to save lead:', err))
+
     const msg = `Bună ziua! Am completat formularul de contact:\n\nNume: ${formData.name}\nTelefon: ${formData.phone}\nLocalitate: ${formData.location}\nServiciu: ${formData.serviceType}\nMesaj: ${formData.message}`
     window.open(`https://wa.me/37378370243?text=${encodeURIComponent(msg)}`, '_blank')
     setFormData({ name: '', phone: '', location: '', serviceType: '', message: '' })
+    setIsSubmitting(false)
   }
 
   const inputClass = "w-full px-0 py-3 bg-transparent border-0 border-b border-white/20 text-white placeholder:text-white/40 focus:outline-none focus:border-white/60 transition-colors duration-200 text-sm"

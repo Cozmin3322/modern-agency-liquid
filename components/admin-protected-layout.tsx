@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { adminAuth } from '@/lib/admin-auth'
-import { LogOut, Home, Settings, FileText, Users, Package } from 'lucide-react'
+import { LogOut, Home, Settings, FileText, Users, Package, Phone } from 'lucide-react'
 
 interface AdminLayoutProps {
   children: React.ReactNode
@@ -49,6 +49,7 @@ export function AdminProtectedLayout({ children }: AdminLayoutProps) {
   }
 
   const navItems = [
+    { label: 'CRM — Cereri Clienți', href: '/admin/crm', icon: Phone },
     { label: 'Dashboard', href: '/admin/dashboard', icon: Home },
     { label: 'Acasă', href: '/admin/content/home', icon: FileText },
     { label: 'Termoizolare', href: '/admin/content/termoizolare', icon: FileText },

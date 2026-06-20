@@ -19,7 +19,7 @@ export default function AdminLoginPage() {
     await new Promise(resolve => setTimeout(resolve, 300))
 
     if (adminAuth.login(password)) {
-      router.push('/admin/dashboard')
+      router.push('/admin/crm')
     } else {
       setError('Parolă incorectă')
       setPassword('')
