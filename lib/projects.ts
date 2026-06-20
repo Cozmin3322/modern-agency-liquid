@@ -251,6 +251,34 @@ export const projects: Project[] = [
     metaTitle: "Termoizolare Mansardă cu Spumă Poliuretanică - IsoThermLux",
     metaDescription: "Termoizolare mansardă completă cu spumă poliuretanică. Strat continuu pe structura din lemn. Garanție 25 ani.",
   },
+  {
+    id: 9,
+    title: "Termoizolare Terasă",
+    category: "Termoizolare",
+    image: "/images/project-terasa-01.webp",
+    images: [
+      "/images/project-terasa-01.webp",
+    ],
+    slug: "termoizolare-terasa",
+    shortDesc: "Terasă bloc rezidențial termoizolată cu spumă poliuretanică",
+    longDesc: `<h2>Termoizolare Terasă cu Spumă Poliuretanică</h2>
+      <p>Termoizolare a unei terase exterioare la un bloc rezidențial nou, prin aplicarea spumei poliuretanice direct pe suprafața de beton. Spuma creează un strat continuu și uniform, rezistent la condiții exterioare, pe toată lungimea terasei.</p>
+      <h3>Lucrări efectuate:</h3>
+      <ul>
+        <li>Termoizolare completă a suprafeței terasei exterioare</li>
+        <li>Acoperire uniformă pe toată lungimea, inclusiv zonele cu denivelări</li>
+        <li>Strat continuu, fără rosturi, pregătit pentru finisaje ulterioare</li>
+      </ul>
+      <h3>Rezultate:</h3>
+      <ul>
+        <li>Protecție termică completă a suprafeței exterioare</li>
+        <li>Aderență perfectă pe suportul de beton</li>
+        <li>Terasă pregătită pentru următoarele etape de finisare</li>
+      </ul>`,
+    keywords: ["termoizolare terasă", "izolare terasă bloc spumă poliuretanică", "termoizolare terasă exterioară", "spumă poliuretanică terasă"],
+    metaTitle: "Termoizolare Terasă cu Spumă Poliuretanică - IsoThermLux",
+    metaDescription: "Termoizolare terasă exterioară cu spumă poliuretanică. Strat continuu și uniform pe toată suprafața. Garanție 25 ani.",
+  },
 ]
 
 export function getProjectBySlug(slug: string): Project | undefined {
