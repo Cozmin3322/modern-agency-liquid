@@ -83,7 +83,7 @@ export function AdminProtectedLayout({ children }: AdminLayoutProps) {
       {/* Sidebar — drawer on mobile/tablet, static on desktop */}
       <aside className={`
         fixed lg:static inset-y-0 left-0 z-50
-        w-72 sm:w-64 border-r border-border bg-accent/5 flex flex-col
+        w-72 sm:w-64 border-r border-border bg-card flex flex-col
         transform transition-transform duration-300 ease-in-out
         ${sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
@@ -139,7 +139,7 @@ export function AdminProtectedLayout({ children }: AdminLayoutProps) {
       {/* Main Content */}
       <main className="flex-1 flex flex-col overflow-hidden min-w-0">
         {/* Header */}
-        <header className="border-b border-border bg-accent/5 px-4 sm:px-6 py-3 sm:py-4 flex-shrink-0">
+        <header className="border-b border-border bg-card px-4 sm:px-6 py-3 sm:py-4 flex-shrink-0">
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-3 min-w-0">
               <button

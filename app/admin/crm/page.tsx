@@ -51,7 +51,7 @@ function LeadCard({ lead, onUpdate }: { lead: Lead; onUpdate: () => void }) {
   return (
     <div className="border border-border bg-white">
       <div className="p-3.5 sm:p-4 md:p-5">
-        <div className="flex flex-col xs:flex-row sm:flex-row items-start justify-between gap-2 sm:gap-3 mb-3">
+        <div className="flex flex-row items-start justify-between gap-2 sm:gap-3 mb-3">
           <div className="min-w-0">
             <h3 className="font-semibold text-foreground text-base sm:text-lg truncate">{lead.name}</h3>
             <p className="text-xs text-foreground/50 font-mono flex items-center gap-1 mt-0.5">
