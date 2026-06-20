@@ -2,8 +2,8 @@
 @import "tw-animate-css";
 
 @theme inline {
-  --font-sans: 'Lato', system-ui, -apple-system, sans-serif;
-  --font-mono: 'Courier New', monospace;
+  --font-sans: 'Roboto Slab', sans-serif;
+  --font-mono: 'Roboto Slab', sans-serif;
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -28,36 +28,36 @@ body {
   --card-foreground: #1A1D21;
   --popover: #FFFFFF;
   --popover-foreground: #1A1D21;
-  --primary: #E8590C;
+  --primary: #D89830;
   --primary-foreground: #FFFFFF;
   --secondary: #F4F5F6;
   --secondary-foreground: #1A1D21;
   --muted: #6B7280;
   --muted-foreground: #4B5159;
-  --accent: #E8590C;
+  --accent: #D89830;
   --accent-foreground: #FFFFFF;
-  --warm-accent: #C2410C;
+  --warm-accent: #E8B048;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #FFFFFF;
   --border: #D8DCE0;
   --input: #F4F5F6;
-  --ring: #E8590C;
-  --chart-1: #E8590C;
+  --ring: #D89830;
+  --chart-1: #D89830;
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0rem;
-  --sidebar: #1A1D21;
+  --sidebar: #203040;
   --sidebar-foreground: #FFFFFF;
   --font-montserrat: 'Montserrat', sans-serif;
   --font-open-sans: 'Open Sans', sans-serif;
-  --sidebar-primary: #E8590C;
+  --sidebar-primary: #D89830;
   --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #23272E;
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: #2E343B;
-  --sidebar-ring: #E8590C;
+  --sidebar-ring: #D89830;
 }
 
 .dark {
@@ -67,32 +67,32 @@ body {
   --card-foreground: #1A1D21;
   --popover: #FFFFFF;
   --popover-foreground: #1A1D21;
-  --primary: #E8590C;
+  --primary: #D89830;
   --primary-foreground: #FFFFFF;
   --secondary: #F4F5F6;
   --secondary-foreground: #1A1D21;
   --muted: #6B7280;
   --muted-foreground: #4B5159;
-  --accent: #E8590C;
+  --accent: #D89830;
   --accent-foreground: #FFFFFF;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #FFFFFF;
   --border: #D8DCE0;
   --input: #F4F5F6;
-  --ring: #E8590C;
-  --chart-1: #E8590C;
+  --ring: #D89830;
+  --chart-1: #D89830;
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: #1A1D21;
+  --sidebar: #203040;
   --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #E8590C;
+  --sidebar-primary: #D89830;
   --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #23272E;
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: #2E343B;
-  --sidebar-ring: #E8590C;
+  --sidebar-ring: #D89830;
 }
 
 /* Blog article prose styling */
@@ -127,9 +127,9 @@ body {
 }
 
 @theme inline {
-  --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif;
-  --font-serif: 'Oswald', 'Oswald Fallback', sans-serif;
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --font-sans: 'Roboto Slab', 'Roboto Slab Fallback', sans-serif;
+  --font-serif: 'Roboto Slab', 'Roboto Slab Fallback', sans-serif;
+  --font-mono: 'Roboto Slab', 'Roboto Slab Fallback', sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

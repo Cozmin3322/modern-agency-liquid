@@ -30,8 +30,8 @@ export default function CisternePage() {
           title="Termoizolare Cisterne"
           titleAccent="și Rezervoare Industriale"
           subtitle="Izolăm cisterne metalice, rezervoare de apă, combustibil sau produse alimentare cu spumă poliuretanică cu celule închise — impermeabilă și durabilă 25+ ani."
-          ctaSecondaryHref="/calculator-oferta"
-          ctaSecondaryLabel="Calculează Oferta"
+          ctaSecondaryHref="/contact"
+          ctaSecondaryLabel="Cere Ofertă"
         />
 
         <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">

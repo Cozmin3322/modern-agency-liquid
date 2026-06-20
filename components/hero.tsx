@@ -7,8 +7,8 @@ interface HeroContent {
 }
 
 const DEFAULT_HERO: HeroContent = {
-  heroTitle: 'Termoizolare',
-  heroSubtitle: 'în Moldova',
+  heroTitle: 'Izolații cu Spumă',
+  heroSubtitle: 'Servicii de Calitate Premium',
 }
 
 export async function Hero() {

@@ -30,8 +30,8 @@ export default function ContainerePage() {
           title="Termoizolare Containere"
           titleAccent="Profesională"
           subtitle="Transformăm containerele reci și incomode în spații termice eficiente. Spumă poliuretanică aplicată pe toată suprafața interioară sau exterioară."
-          ctaSecondaryHref="/calculator-oferta"
-          ctaSecondaryLabel="Calculează Oferta"
+          ctaSecondaryHref="/contact"
+          ctaSecondaryLabel="Cere Ofertă"
         />
 
         <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">

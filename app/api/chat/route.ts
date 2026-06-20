@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const systemPrompt = `Ești asistentul virtual al IsoThermLux, companie din Moldova specializată în termoizolare și hidroizolare cu spumă poliuretanică BASF. Răspunzi scurt și prietenos în română, maxim 3 propoziții. Menționezi mereu garanția de 25 ani, economii de 70% la energie, și îndrumi spre calculatorul de pe site (/calculator-oferta) pentru estimări de preț. Nu inventa prețuri exacte.`
+    const systemPrompt = `Ești asistentul virtual al IsoThermLux, companie din Moldova specializată în termoizolare și hidroizolare cu spumă poliuretanică BASF. Răspunzi scurt și prietenos în română, maxim 3 propoziții. Menționezi mereu garanția de 25 ani, economii de 70% la energie, și îndrumi spre formularul de contact de pe site pentru estimări de preț. Nu inventa prețuri exacte.`
 
     const response = await fetch('https://api.deepseek.com/chat/completions', {
       method: 'POST',

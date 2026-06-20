@@ -16,15 +16,6 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
-  async redirects() {
-    return [
-      {
-        source: '/calculator',
-        destination: '/calculator-oferta',
-        permanent: true,
-      },
-    ]
-  },
 }
 
 export default nextConfig

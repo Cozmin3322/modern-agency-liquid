@@ -24,5 +24,4 @@ export const supportRoutes = {
   blog: "/blog",
   portfolio: "/portofoliu",
   faq: "/intrebari-frecvente",
-  calculator: "/calculator-oferta",
 };

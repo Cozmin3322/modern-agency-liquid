@@ -86,7 +86,7 @@ const articles: Record<string, BlogArticle> = {
     readTime: '6 min',
     image: '/images/beneficii-termoizolare.webp',
     excerpt: 'Calculează exact cât vei economisi și cum se recuperează investiția în termoizolare în 2-3 ani.',
-    keywords: 'economie gaz, termoizolare, ROI, eficiență energetică, calculator, costuri termoizolare, recuperare investiție',
+    keywords: 'economie gaz, termoizolare, ROI, eficiență energetică, costuri termoizolare, recuperare investiție',
     content: `
       <h2>De Unde Vin Pierderile de Căldură?</h2>
       <ul>
@@ -99,8 +99,8 @@ const articles: Record<string, BlogArticle> = {
       <h2>Calculul Economiilor</h2>
       <p>Dacă plătești 5000 MDL anual pentru gaz, cu termoizolare poți economisi 2000-2500 MDL. Investiția se recuperează în 2-3 ani.</p>
 
-      <h2>Calculator ROI</h2>
-      <p>Folosește calculatorul nostru pe website pentru a estima exact economiile tale în funcție de suprafață și locație.</p>
+      <h2>Estimarea Economiilor</h2>
+      <p>Contactează-ne pentru o estimare exactă a economiilor tale, în funcție de suprafață și locație.</p>
 
       <h2>Exemplu Practic</h2>
       <p><strong>Casa:</strong> 150 m² locuibili</p>
@@ -226,7 +226,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const descriptionMap: Record<string, string> = {
     'termoizolare-casa-ghid-complet': 'Ghid complet despre termoizolare cu spumă poliuretanică. Beneficii, costuri și proces. Descoperă cum economisești 40-50% la încălzire cu IsoThermLux.',
     'hidroizolare-fundatie-protectie': 'Hidroizolarea fundației este esențială. Cum protejezi casa de infiltrații. Metode și costuri pentru hidroizolare profesională în Moldova.',
-    'economii-45-50-procent-gaz-termoizolare': 'Calculează exact cât vei economisi la factura de gaz cu termoizolare. Recuperare investiție în 2-3 ani. Calculator ROI gratuit IsoThermLux.',
+    'economii-45-50-procent-gaz-termoizolare': 'Calculează exact cât vei economisi la factura de gaz cu termoizolare. Recuperare investiție în 2-3 ani, cu IsoThermLux.',
     'izolare-mansarda-spatiu-locuibil': 'Transformă mansarda ta într-un spațiu confortabil cu izolație termică profesională. Spumă poliuretanică, garanție 25 ani, economie energie.',
     'materiale-basf-iso-9001-calitate': 'Spumă poliuretanică certificată ISO 9001 garantează calitate și durabilitate. De ce alegem doar materiale premium pentru fiecare proiect.',
     'garantie-25-ani-protectie-investitie': 'Garanție scrisă 25 ani pe material și manopera. Protecție completă pentru investiția ta în termoizolare și hidroizolare profesională.',
@@ -458,10 +458,10 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
                   Sună Acum
                 </a>
                 <Link
-                  href="/calculator-oferta"
+                  href="/contact"
                   className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-6 py-3 rounded-none font-semibold hover:bg-accent/10 transition-colors"
                 >
-                  Calculator
+                  Cere Ofertă
                 </Link>
               </div>
             </div>

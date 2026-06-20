@@ -30,8 +30,8 @@ export default function FundatiePage() {
           title="Termoizolare Fundație"
           titleAccent="și Subsol"
           subtitle="Fundația rece și subsolul umed sunt cauza principală a mucegaiului. Le izolăm cu spumă poliuretanică cu celule închise — soluție permanentă."
-          ctaSecondaryHref="/calculator-oferta"
-          ctaSecondaryLabel="Calculează Oferta"
+          ctaSecondaryHref="/contact"
+          ctaSecondaryLabel="Cere Ofertă"
         />
 
         <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">

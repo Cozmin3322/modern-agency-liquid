@@ -30,8 +30,8 @@ export default function CamioanePage() {
           title="Termoizolare Camioane"
           titleAccent="și Vehicule de Transport"
           subtitle="Izolăm caroseria camionului sau remorcii tale cu spumă poliuretanică cu celule închise — ușoară, impermeabilă și durabilă."
-          ctaSecondaryHref="/calculator-oferta"
-          ctaSecondaryLabel="Calculează Oferta"
+          ctaSecondaryHref="/contact"
+          ctaSecondaryLabel="Cere Ofertă"
         />
 
         <nav className="text-sm text-foreground/60 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">

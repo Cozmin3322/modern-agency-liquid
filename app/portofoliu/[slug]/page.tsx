@@ -182,11 +182,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               >
                 Sună Acum
               </a>
-              <a 
-                href="/calculator-oferta" 
+              <a
+                href="/contact"
                 className="inline-block border-2 border-accent text-accent px-8 py-3 rounded-none font-semibold hover:bg-accent/10 transition"
               >
-                Calculator Ofertă
+                Cere Ofertă
               </a>
             </div>
           </div>

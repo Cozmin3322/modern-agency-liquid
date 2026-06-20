@@ -6,7 +6,6 @@ const serviceLinks = [
   { label: "Termoizolare", href: "/termoizolare" },
   { label: "Fațade", href: "/fatade" },
   { label: "Hidroizolare", href: "/hidroizolare" },
-  { label: "Calculator Ofertă", href: "/calculator-oferta" },
   { label: "Portofoliu", href: "/portofoliu" },
 ]
 
