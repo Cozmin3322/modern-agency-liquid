@@ -59,7 +59,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/servicii`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/contact`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
     { url: `${baseUrl}/calculator-oferta`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/calculator`, lastModified, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/fonoizolare`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/beneficii`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/ce-este-spuma-poliuretanica`, lastModified, changeFrequency: 'monthly', priority: 0.7 },

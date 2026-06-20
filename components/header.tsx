@@ -56,7 +56,7 @@ export function Header() {
     { label: "Contact", href: "/contact" },
     { label: "FAQ", href: "/intrebari-frecvente" },
     { label: "Blog", href: "/blog" },
-    { label: "Calculator", href: "/calculator" },
+    { label: "Calculator", href: "/calculator-oferta" },
   ]
 
   return (

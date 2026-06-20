@@ -62,7 +62,7 @@ export default async function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              <Link href="/calculator"
+              <Link href="/calculator-oferta"
                 className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition-all duration-300 hover:gap-3">
                 Deschide Calculatorul <ArrowRight className="w-4 h-4" />
               </Link>
