@@ -1,247 +1,287 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Check, ArrowRight, Home, Building2, Warehouse, Container, Truck, Wrench, Wheat, Thermometer, Droplets, Wind, FileText, Calculator, HardHat, Zap } from "lucide-react"
+import Image from "next/image"
+import { Check, ArrowRight, Sun, Snowflake } from "lucide-react"
 import { Header } from "@/components/header"
-import { ServiceHero } from "@/components/service-hero"
 import { Footer } from "@/components/footer"
+import { ContactForm } from "@/components/contact-form"
 
 export const metadata: Metadata = {
-  title: "Termoizolare Profesională Moldova | Economie 40-50% la Energie | IsoThermLux",
+  title: "Termoizolare cu Spumă Poliuretanică Moldova | Aplicare Profesională | IsoThermLux",
   description:
-    "Termoizolare profesională cu spumă poliuretanică în Moldova. Economie 40-50% la energie. Garanție 25 ani scrisă. 14 ani experiență. Consultație gratuită Chișinău.",
+    "Termoizolare profesională cu spumă poliuretanică în toată Moldova. Economie 40-50% la energie. Garanție 25 ani scrisă. 14 ani experiență, echipe mobile, consultație gratuită.",
   keywords:
     "termoizolare Moldova, termoizolare Chișinău, izolare termică, spumă poliuretanică Moldova, termoizolare casă, economie energie Moldova",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare" },
   openGraph: {
-    title: "Termoizolare Profesională | Economie 40-50% la Energie | IsoThermLux",
+    title: "Termoizolare cu Spumă Poliuretanică | Aplicare Profesională | IsoThermLux",
     description:
-      "Termoizolare profesională cu spumă poliuretanică. Economie 40-50% la energie. Garanție 25 ani scrisă. 14 ani experiență.",
+      "Termoizolare profesională cu spumă poliuretanică în toată Moldova. Economie 40-50% la energie. Garanție 25 ani scrisă.",
     url: "https://www.isothermlux.md/termoizolare",
     locale: "ro_MD",
     type: "website",
   },
 }
 
-const tipuriTermoizolare = [
-  { href: "/termoizolare/mansarda", Icon: Home, title: "Mansardă", desc: "Izolare termică profesională a mansardelor. Spațiu locuibil cald iarna, răcoros vara." },
-  { href: "/termoizolare/casa", Icon: Home, title: "Casă Completă", desc: "Izolare acoperiș, pereți exteriori și fundație. Confort maxim, economie 40-50%." },
-  { href: "/termoizolare/hala-industriala", Icon: Warehouse, title: "Hale Industriale", desc: "Izolație termică pentru hale, depozite și clădiri comerciale. Aplicare 300 m²/zi." },
-  { href: "/termoizolare/acoperis", Icon: Building2, title: "Acoperiș și Terasă", desc: "Terase plate, șarpante, table ondulate. Eliminăm condensul și pierderile prin acoperiș." },
-  { href: "/termoizolare/cisterne", Icon: Container, title: "Cisterne și Rezervoare", desc: "Cisterne de combustibil, apă, alimente. Spumă cu celule închise — impermeabilă." },
-  { href: "/termoizolare/containere", Icon: Container, title: "Containere", desc: "Containere frigorifice, de depozitare sau locuibile. Soluție completă în 1 zi." },
-  { href: "/termoizolare/camioane", Icon: Truck, title: "Camioane și Vehicule", desc: "Caroserii izoterme, dube, remorci frigorifice. Greutate minimă, eficiență maximă." },
-  { href: "/termoizolare/fundatie", Icon: Building2, title: "Fundație și Subsol", desc: "Socluri, pereți subterani, plăci de beton. Elimini umezeala și puntea termică." },
-  { href: "/termoizolare/garaj", Icon: Wrench, title: "Garaj și Atelier", desc: "Garaje metalice sau zidărie, ateliere auto. Confortabil tot parcursul anului." },
-  { href: "/termoizolare/ferma", Icon: Wheat, title: "Ferme Agricole", desc: "Grajduri, hale avicole, sere, depozite agricole. Animale sănătoase, costuri reduse." },
-  { href: "/termoizolare/conducte", Icon: Thermometer, title: "Conducte și Instalații", desc: "Conducte termice, sanitare, industriale. Fără rosturi, fără punți termice." },
+const undeSeAplica = [
+  "Acoperișuri și mansarde pe orice tip de construcție",
+  "Pereți exteriori și interiori",
+  "Demisol și subsol",
+  "Hale industriale, ferme, comerciale",
+  "Planșee, beciuri",
+  "Hale industriale, terase, containere",
+  "Structuri metalice sau prefabricate",
 ]
 
-const conditiiAplicare = [
-  { Icon: Thermometer, title: "Temperatura", desc: "Temperatura minimă +5°C pentru aplicare și întărire corectă a materialului." },
-  { Icon: Droplets, title: "Umiditate", desc: "Suprafața trebuie să fie uscată și curată. NU se aplică pe suprafețe înghețate sau umede." },
-  { Icon: Wind, title: "Ventilație", desc: "Spațiile închise trebuie aerisite corespunzător pentru a elimina vaporii de aplicare." },
-  { Icon: Wrench, title: "Preparare Suprafață", desc: "Îndepărtați praf, vopsea desprinsă și alte impurități. Spuma aderă direct pe beton și lemn curat." },
+const galleryThumbs = [
+  "/images/project-mansarda-01.webp",
+  "/images/project-mansarda-02.webp",
+  "/images/project-mansarda-03.webp",
+  "/images/project-hala-industrial-01.webp",
+  "/images/project-hala-industrial-02.webp",
+  "/images/project-acoperis-industrial-01.webp",
+  "/images/project-terasa-izolare-01.webp",
+  "/images/project-fundatie-noua-01.webp",
+  "/images/project-planseu-01.webp",
 ]
 
-const deIsoThermLux = [
-  { Icon: FileText, title: "Garanție Scrisă 25 Ani", desc: "Contract legal pentru fiecare proiect. Protecția dumneavoastră este prioritate noastră." },
-  { Icon: Zap, title: "Economie 40-50% la Energie", desc: "Factură de gaz mai mică. Investiția se recuperează în 2-3 ani cu economii reale." },
-  { Icon: Calculator, title: "Calculator Ofertă Online", desc: "Estimare preț exactă în 2 minute. Vezi calculul complet al economiilor anuale." },
-  { Icon: HardHat, title: "Consultație Gratuită pe Loc", desc: "Echipă profesionistă analizează proprietatea și oferă recomandări personalizate." },
+const tipuriSpuma = [
+  { image: "/images/project-mansarda-04.webp", title: "Spumă cu celulă deschisă", desc: "Ideală pentru izolarea în zone unde nu este nevoie de impermeabilizare." },
+  { image: "/images/project-acoperis-industrial-02.webp", title: "Spumă cu celulă închisă", desc: "Perfectă pentru exterior, structuri expuse și protecție la umiditate." },
+  { image: "/images/project-terasa-izolare-01.webp", title: "Poliuree", desc: "Soluție pentru hidroizolare și protecție suplementară." },
+]
+
+const deCeIsoThermLux = [
+  "Experiență de peste 14 ani în izolații profesionale",
+  "Echipamente de ultimă generație și materiale premium",
+  "Intervenții rapide și consultanță gratuită",
+  "Garanție scrisă până la 25 de ani",
+  "Acoperire vastă, în toată Moldova",
+  "Fără intermediari — lucrăm direct",
+  "Plată în rate",
 ]
 
 export default function TermoizolarePage() {
   return (
     <>
       <script id="termoizolare-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Service", name: "Servicii de Termoizolare", description: "Servicii profesionale de termoizolare cu izolație termică de calitate. Economie 40-50% la energie. Garanție 25 ani. Aplicare în 1-2 zile.", provider: { "@type": "LocalBusiness", name: "IsoThermLux", url: "https://www.isothermlux.md" }, areaServed: "MD", availableLanguage: "ro" }) }} />
-      <script id="termoizolare-service-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Service", name: "Termoizolare Profesională", provider: { "@type": "LocalBusiness", name: "IsoThermLux", telephone: "+37378370243", address: { "@type": "PostalAddress", addressLocality: "Chișinău", addressCountry: "MD" } }, areaServed: "Moldova", description: "Servicii profesionale de termoizolare cu spumă poliuretanică. Garanție 25 ani.", offers: { "@type": "Offer", availability: "https://schema.org/InStock" } }) }} />
       <script id="breadcrumb-termoizolare" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Acasă", item: "https://www.isothermlux.md" }, { "@type": "ListItem", position: 2, name: "Termoizolare", item: "https://www.isothermlux.md/termoizolare" }] }) }} />
       <Header />
       <main className="bg-background">
-        <ServiceHero
-          backgroundImage="/images/termoizolare-hero.webp"
-          title="Termoizolare Profesională"
-          titleAccent="în Moldova — Economie 40-50% la Energie"
-          subtitle="Izolație termică profesională cu spumă poliuretanică în Chișinău, Moldova, cu economie confirmată de 40-50% la costuri de energie. Materiale premium ISO 9001, garanție 25 ani scrisă, echipă certificată cu 14 ani experiență."
-          ctaHref="tel:+37378370243"
-          ctaLabel="Consultație Gratuită"
-          ctaSecondaryHref="/portofoliu?tip=termoizolare"
-          ctaSecondaryLabel="Vezi Portofoliu"
-        />
 
-        {/* Beneficii */}
-        <section className="py-24 bg-card">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-12">Beneficiile Termoizolării</h2>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="grid gap-6">
-                {[
-                  { title: "40-50% Economie la Energie", desc: "Reducere confirmată a costurilor de gaz și electricitate. Investiția se recuperează în 2-3 ani." },
-                  { title: "Garanție 25 Ani", desc: "Garanție scrisă material și manopera. Protecție completă a investiției dumneavoastră." },
-                  { title: "Materiale Premium", desc: "Izolație termică certificată ISO 9001. Fără compromiuri la calitate și durabilitate." },
-                  { title: "Aplicare Rapidă", desc: "Montaj în 1-2 zile. Minimal disrupting pentru locuința sau biroul dumneavoastră." },
-                ].map((item, i) => (
-                  <div key={i} className="p-6 border border-border rounded-none bg-background">
-                    <Check className="w-6 h-6 text-accent mb-3" />
-                    <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                    <p className="text-foreground/70 text-sm">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="rounded-none overflow-hidden">
-                <img src="/images/beneficii-termoizolare.webp" alt="Termoizolare profesională casă cu spumă poliuretanică Chișinău Moldova" className="w-full h-full object-cover" />
-              </div>
+        {/* Hero — bandă imagine + titlu sub ea */}
+        <section className="relative pt-24">
+          <div className="relative h-56 md:h-80 w-full">
+            <Image src="/images/termoizolare-hero.webp" alt="Aplicare termoizolare cu spumă poliuretanică" fill priority sizes="100vw" className="object-cover" />
+            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute right-6 md:right-16 top-1/2 -translate-y-1/2 w-24 h-24 md:w-32 md:h-32 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
+              <Snowflake className="w-10 h-10 md:w-12 md:h-12 text-accent" />
             </div>
+          </div>
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-semibold leading-tight mb-2">
+              Termoizolare cu Spumă Poliuretanică
+            </h1>
+            <p className="text-lg md:text-xl text-accent font-medium mb-6">
+              Aplicare Profesională în Toată Moldova
+            </p>
+            <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              Pierderile de căldura prin acoperișuri, pereți și planșee pot ajunge la 50% din totalul pierderilor de energie ale unei locuințe. O termoizolare profesională, aplicată corect, le reduce drastic. Iar cea mai performantă soluție rămâne spuma poliuretanică aplicată prin pulverizare, cu rezultate dovedite pe termen lung.
+            </p>
           </div>
         </section>
 
-        {/* Tipuri */}
-        <section className="py-24 bg-background">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-4">Tipuri de Termoizolare</h2>
-            <p className="text-foreground/60 mb-12 max-w-2xl">Izolăm orice tip de construcție sau obiect cu spumă poliuretanică — cu celule deschise sau închise, în funcție de necesități.</p>
-            <div className="grid md:grid-cols-3 gap-8">
-              {tipuriTermoizolare.map(({ href, Icon, title, desc }) => (
-                <Link key={href} href={href} className="p-8 bg-card border border-border rounded-none hover:border-accent transition group">
-                  <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center mb-4 group-hover:border-accent group-hover:text-accent transition">
-                    <Icon className="w-5 h-5" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-accent transition">{title}</h3>
-                  <p className="text-foreground/70 mb-4 text-sm">{desc}</p>
-                  <span className="inline-flex items-center gap-2 text-accent text-sm">Detalii <ArrowRight className="w-4 h-4" /></span>
-                </Link>
-              ))}
+        {/* Ce este termoizolatia */}
+        <section className="py-16 md:py-20 bg-card">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative h-64 md:h-96 mb-10 overflow-hidden">
+              <Image src="/images/project-acoperis-industrial-03.webp" alt="Tehnician aplicând spumă poliuretanică pe acoperiș" fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" />
             </div>
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Ce este termoizolația cu spumă poliuretanică?</h2>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Este un sistem de izolare termică bazat pe aplicarea directă a spumei poliuretanice (celulă deschisă sau închisă), folosind un strat continuu și etanș. Necesită personal calificat, echipamente specifice și o aplicare corectă a stratului de material.
+            </p>
+            <p className="text-foreground/80 leading-relaxed">
+              Spuma se aplică în formă lichidă și se transformă în câteva secunde, adoptând forma suprafeței pe care o izolează. Eficiența energetică nu mai este opțională — este o necesitate. Izolația corectă a clădirii contribuie direct la reducerea costurilor de încălzire și la protecția împotriva umidității și a condensului.
+            </p>
           </div>
         </section>
 
-        {/* Zone Tehnice */}
-        <section className="py-24 bg-secondary">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-4">Zone Tehnice de Aplicare</h2>
-            <p className="text-foreground/70 mb-12 max-w-3xl">Selectați tipul de izolație termoizolării în funcție de zona și condițiile specifice ale proprietății dumneavoastră.</p>
-            <div className="overflow-x-auto border border-border rounded-none">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-accent text-white">
-                    <th className="px-6 py-4 text-left font-semibold">Zonă</th>
-                    <th className="px-6 py-4 text-left font-semibold">Tip Spumă Recomandat</th>
-                    <th className="px-6 py-4 text-left font-semibold">Grosime Uzuală</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-border">
+        {/* Avantaje */}
+        <section className="py-16 md:py-20 bg-background">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-10 text-accent">Avantajele termoizolației cu spumă poliuretanică</h2>
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <p className="text-foreground/80 mb-4">
+                  Spuma poliuretanică are cea mai bună conductivitate termică dintre toate izolațiile convenționale (λ = 0.022–0.030 W/m·K), de două ori mai eficientă decât vata minerală sau polistirenul, la grosime egală.
+                </p>
+                <ul className="space-y-3">
                   {[
-                    ["Acoperiș interior", "Celule deschise / închise", "10–15 cm"],
-                    ["Pereți interiori", "Celule deschise", "5–8 cm"],
-                    ["Pereți exteriori", "Celule închise", "5–10 cm"],
-                    ["Subsoluri și beciuri", "Celule închise", "5–10 cm"],
-                    ["Tavane / planșee", "Celule închise", "5–8 cm"],
-                    ["Spații comerciale / industriale", "Celule închise", "4–10 cm"],
-                  ].map(([zona, tip, grosime], i) => (
-                    <tr key={i} className={i % 2 === 0 ? "bg-background" : "bg-secondary"}>
-                      <td className="px-6 py-4 font-medium text-foreground">{zona}</td>
-                      <td className="px-6 py-4 text-foreground/80">{tip}</td>
-                      <td className="px-6 py-4 text-foreground/80">{grosime}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-
-        {/* Detalii Tehnice */}
-        <section className="py-24 bg-background">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-12">Detalii Tehnice</h2>
-            <div className="grid md:grid-cols-2 gap-12">
-              <div className="space-y-6">
-                {[
-                  ["Conductivitate Termică", "λ = 0.020–0.025 W/m·K"],
-                  ["Aderență Directă Pe", "Lemn, beton, cărămidă, tablă"],
-                  ["Capacitate de Aplicare", "Până la 300 m²/zi"],
-                  ["Durată de Viață", "Peste 25 ani fără întreținere"],
-                ].map(([label, val], i) => (
-                  <div key={i} className="p-6 border-l-4 border-accent bg-card">
-                    <p className="text-sm text-muted-foreground mb-2">{label}</p>
-                    <p className="text-xl font-semibold text-foreground">{val}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="bg-secondary p-8 rounded-none">
-                <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3"><span className="w-2 h-8 bg-accent" />De Ce Alegem Spuma Poliuretanică?</h3>
-                <ul className="space-y-4 text-foreground/80">
-                  {["Conductivitate termică minimă - cel mai bun raport izolare/grosime", "Aderență perfect pe orice suprafață fără preparare specială", "Etanșare totală - fără punți termice sau infiltrații", "Durabilitate extremă - nu se degradează sau se tasează", "Garanție 25 ani - cea mai lungă pe piață"].map((text, i) => (
-                    <li key={i} className="flex gap-3"><Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" /><span>{text}</span></li>
+                    "Una mai bună conductivitate termică decât izolațiile tradiționale",
+                    "Aderență perfectă la orice suprafață — fără rosturi sau pierderi",
+                    "Se adaptează la suprafețe neregulate, indiferent de forma sau dificultate",
+                    "Reduce consumul de energie cu până la 40%",
+                    "Reduce durabilă — rezistă peste 50 ani",
+                    "Reduce punțile termice și asigură etanșarea perfectă",
+                  ].map((text) => (
+                    <li key={text} className="flex gap-3">
+                      <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                      <span className="text-foreground/80 text-sm">{text}</span>
+                    </li>
                   ))}
                 </ul>
+                <p className="text-foreground/70 text-sm mt-6">
+                  Termoizolația cu spumă poliuretanică este mai eficientă decât poliistirenul sau vata minerală.
+                </p>
+                <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 mt-6 font-semibold hover:bg-accent/90 transition-colors">
+                  Află mai multe
+                </a>
+              </div>
+              <div className="relative h-80 md:h-96">
+                <Image src="/images/project-hala-industrial-new.webp" alt="Tehnician cu echipament de protecție aplicând spumă poliuretanică" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
+                <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow">
+                  <Sun className="w-6 h-6 text-accent" />
+                </div>
+                <div className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow">
+                  <Snowflake className="w-6 h-6 text-accent" />
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Condiții de Aplicare */}
-        <section className="py-24 bg-card">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-12">Condiții de Aplicare</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {conditiiAplicare.map(({ Icon, title, desc }) => (
-                <div key={title} className="p-8 border border-border rounded-none hover:border-accent transition bg-background">
-                  <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center mb-4">
-                    <Icon className="w-5 h-5 text-accent" />
+        {/* CTA bandă */}
+        <section className="relative py-16 md:py-20 bg-[#1A1D21] text-white text-center overflow-hidden">
+          <div className="absolute inset-0 opacity-20">
+            <Image src="/images/project-mansarda-05.webp" alt="" fill sizes="100vw" className="object-cover" />
+          </div>
+          <div className="relative max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-serif font-medium mb-6">
+              IsoThermLux oferă servicii de termoizolare în toată Moldova, cu echipe mobile și echipamente profesionale.
+            </h2>
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 font-semibold hover:bg-accent/90 transition-colors">
+              Contact
+            </Link>
+          </div>
+        </section>
+
+        {/* Unde se aplica + galerie */}
+        <section className="py-16 md:py-20 bg-background">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Unde se poate aplica termoizolația cu spumă poliuretanică?</h2>
+            <div className="grid md:grid-cols-2 gap-10">
+              <div>
+                <p className="text-foreground/80 mb-4">
+                  IsoThermLux aplică termoizolația eficient în întreaga țară, pe toate tipurile de suprafețe:
+                </p>
+                <ul className="space-y-2 mb-6">
+                  {undeSeAplica.map((item) => (
+                    <li key={item} className="flex gap-3 text-sm text-foreground/80">
+                      <span className="text-accent">•</span>{item}
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-sm text-foreground/70 mb-2">Vrei să vezi cum arată o termoizolație reușită?</p>
+                <Link href="/portofoliu" className="inline-flex items-center gap-2 text-accent font-medium hover:gap-3 transition-all">
+                  Vezi portofoliul nostru de lucrări recente <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                {galleryThumbs.map((src) => (
+                  <div key={src} className="relative aspect-square">
+                    <Image src={src} alt="Lucrare de termoizolare IsoThermLux" fill sizes="200px" className="object-cover" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">{title}</h3>
-                  <p className="text-foreground/70">{desc}</p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
-        {/* De Ce IsoThermLux */}
-        <section className="py-24 bg-background">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-12 text-center">De Ce IsoThermLux?</h2>
-            <div className="grid md:grid-cols-4 gap-6">
-              {deIsoThermLux.map(({ Icon, title, desc }) => (
-                <div key={title} className="p-8 bg-card border-2 border-border rounded-none hover:border-accent transition text-center">
-                  <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-6 h-6 text-accent" />
+        {/* Ce tip de spuma folosim */}
+        <section className="py-16 md:py-20 bg-card">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-10 text-center text-accent">Ce tip de spumă folosim?</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {tipuriSpuma.map(({ image, title, desc }) => (
+                <div key={title}>
+                  <div className="relative h-48 mb-4">
+                    <Image src={image} alt={title} fill sizes="(max-width: 768px) 100vw, 300px" className="object-cover" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-3 text-foreground">{title}</h3>
-                  <p className="text-sm text-foreground/70">{desc}</p>
+                  <h3 className="font-semibold mb-1">{title}</h3>
+                  <p className="text-sm text-muted-foreground">{desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Procesul Nostru */}
-        <section className="py-24 bg-card">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-12">Procesul Nostru</h2>
-            <div className="grid md:grid-cols-4 gap-6">
-              {[["1", "Consultație Gratuită", "Analiză completă pe loc și recomandări"], ["2", "Ofertă Personalizată", "Estimare exactă și plan de lucru"], ["3", "Implementare Profesională", "Echipă certificată și materiale premium"], ["4", "Garanție 25 Ani", "Protecție completă a investiției"]].map(([nr, title, desc]) => (
-                <div key={nr} className="text-center">
-                  <div className="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">{nr}</div>
-                  <h3 className="font-semibold mb-2">{title}</h3>
-                  <p className="text-sm text-foreground/70">{desc}</p>
-                </div>
-              ))}
-            </div>
+        {/* CTA bandă 2 */}
+        <section className="relative py-16 md:py-20 bg-[#1A1D21] text-white text-center overflow-hidden">
+          <div className="absolute inset-0 opacity-20">
+            <Image src="/images/project-acoperis-industrial-04.webp" alt="" fill sizes="100vw" className="object-cover" />
+          </div>
+          <div className="relative max-w-3xl mx-auto px-4">
+            <h2 className="text-xl md:text-2xl font-serif font-medium mb-6">
+              Vrei să afli cât te costă o termoizolare cu spumă la casa sau hala ta?
+            </h2>
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 font-semibold hover:bg-accent/90 transition-colors">
+              Contact
+            </Link>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="py-24 bg-[#1A1D21] text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-serif font-medium mb-6">Gata pentru Termoizolare?</h2>
-            <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">Consultație gratuită fără angajamente. Estimare preț pe loc. Răspuns în 30 minute.</p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
-              Contactează-ne Acum<ArrowRight className="w-4 h-4" />
-            </a>
+        {/* Cat economisesti */}
+        <section className="py-16 md:py-20 bg-background">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative h-64 md:h-96 mb-10 overflow-hidden">
+              <Image src="/images/economie-70-procent-gaz.jpg" alt="Pierderi de căldură vs. casă izolată" fill sizes="(max-width: 1024px) 100vw, 900px" className="object-cover" />
+              <div className="absolute top-6 left-6 bg-white/90 px-4 py-2 font-semibold text-accent text-sm md:text-base">
+                ~ 40% pierderi de căldură
+              </div>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Cât economisești cu o termoizolare eficientă?</h2>
+            <p className="text-foreground/80 leading-relaxed mb-6 max-w-3xl">
+              Un acoperiș termoizolat corect poate reduce cu până la 40% pierderile de căldură. În locuri de vară, spuma poliuretanică păstrează temperatura interioară constantă la prețuri. Pe termen lung, investiția este amortizată prin economiile la factura de energie.
+            </p>
+            <p className="text-foreground/70 text-sm mb-4">Vrei să afli toate opțiunile de plată, inclusiv cea în rate?</p>
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 font-semibold hover:bg-accent/90 transition-colors">
+              Plata în rate toată țara
+            </Link>
           </div>
         </section>
+
+        {/* De ce IsoThermLux */}
+        <section className="py-16 md:py-20 bg-card">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-10 text-accent">De ce să alegi IsoThermLux?</h2>
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <ul className="space-y-3">
+                {deCeIsoThermLux.map((text) => (
+                  <li key={text} className="flex gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground/80 text-sm">{text}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="relative h-64 md:h-80">
+                <Image src="/images/project-acoperis-industrial-01.webp" alt="Tehnician IsoThermLux aplicând spumă poliuretanică" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
+              </div>
+            </div>
+            <p className="text-foreground/80 leading-relaxed mt-10 max-w-3xl">
+              Dacă vrei o casă mai călduroasă iarna și mai răcoroasă vara, fără costuri urcate la întreținere, termoizolarea cu spumă poliuretanică este alegerea ideală. Începe chiar azi călătoria către un confort mai mare, eficiență și economie. Energie salvată. Bani economisiți. Confort garantat.
+            </p>
+            <p className="text-accent font-medium mt-6">Completează formularul de mai sus sau contactează-ne direct!</p>
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 mt-4 font-semibold hover:bg-accent/90 transition-colors">
+              Contact
+            </Link>
+          </div>
+        </section>
+
+        {/* Formular contact */}
+        <div id="contact-form">
+          <ContactForm />
+        </div>
       </main>
       <Footer />
     </>
