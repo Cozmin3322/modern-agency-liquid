@@ -12,6 +12,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
   const [galleryOpen, setGalleryOpen] = useState(false)
+  const [blogOpen, setBlogOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 80)
@@ -28,6 +29,7 @@ export function Header() {
     setMobileMenuOpen(false)
     setServicesOpen(false)
     setGalleryOpen(false)
+    setBlogOpen(false)
   }
 
   const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -37,16 +39,21 @@ export function Header() {
   }
 
   const serviceLinks = [
-    { label: "Toate Serviciile", href: "/servicii" },
-    { label: "Termoizolare", href: "/termoizolare" },
-    { label: "Fațade", href: "/fatade" },
-    { label: "Hidroizolare", href: "/hidroizolare" },
-    { label: "Fonoizolare", href: "/fonoizolare" },
+    { label: "Termoizolații", href: "/termoizolare" },
+    { label: "Fonoizolații", href: "/fonoizolare" },
+    { label: "Hidroizolații", href: "/hidroizolare" },
+    { label: "Termo / Fono / Hidro Izolații", href: "/servicii" },
+    { label: "Tipuri de Spumă", href: "/ce-este-spuma-poliuretanica" },
   ]
 
   const galleryLinks = [
     { label: "Video", href: "/galerie/video" },
     { label: "Foto", href: "/galerie/foto" },
+  ]
+
+  const blogLinks = [
+    { label: "Portofoliu", href: "/portofoliu" },
+    { label: "Articole", href: "/blog" },
   ]
 
   return (
@@ -192,10 +199,23 @@ export function Header() {
                 Recenzii
               </Link>
             </li>
+            {/* Blog */}
             <li>
-              <Link href="/blog" onClick={close} className="block py-3.5 text-foreground font-medium hover:text-accent transition-colors">
+              <button onClick={() => setBlogOpen(!blogOpen)}
+                className="flex items-center justify-between w-full py-3.5 text-foreground font-medium hover:text-accent transition-colors">
                 Blog
-              </Link>
+                <ChevronDown className={cn("w-4 h-4 text-foreground/40 transition-transform", blogOpen && "rotate-180")} />
+              </button>
+              {blogOpen && (
+                <div className="pl-4 pb-2">
+                  {blogLinks.map((l) => (
+                    <Link key={l.href} href={l.href} onClick={close}
+                      className="block py-2 text-sm text-foreground/70 hover:text-accent transition-colors">
+                      {l.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </li>
             <li>
               <Link href="/contact" onClick={close} className="block py-3.5 text-foreground font-medium hover:text-accent transition-colors">
