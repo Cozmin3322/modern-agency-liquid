@@ -9,11 +9,10 @@ import { ArrowRight, Check } from "lucide-react"
 export default function CalculatorPage() {
   const [type, setType] = useState<'termoizolare' | 'hidroizolare'>('termoizolare')
   const [area, setArea] = useState<number>(100)
-  const [location, setLocation] = useState<'chisinau' | 'balti' | 'altul'>('chisinau')
   const [complexity, setComplexity] = useState<'low' | 'medium' | 'high'>('medium')
   const [submitted, setSubmitted] = useState(false)
 
-  // Pricing estimates (RON per m2) - updated to 300 RON/m2 for termoizolare
+  // Pricing estimates (MDL per m2)
   const basePricing = {
     termoizolare: {
       low: 250,
@@ -27,12 +26,8 @@ export default function CalculatorPage() {
     }
   }
 
-  // Transport fee based on location (RON)
-  const transportFee = location === 'chisinau' ? 0 : location === 'balti' ? 200 : 400
-
   const pricePerM2 = basePricing[type][complexity]
-  const materialsAndLabor = area * pricePerM2
-  const totalEstimate = materialsAndLabor + transportFee
+  const totalEstimate = area * pricePerM2
 
   const savings = type === 'termoizolare'
     ? Math.round((totalEstimate / 100) * 15) // Estimated savings per year (15% of total cost = 45% economy over 3 years)
@@ -130,25 +125,12 @@ export default function CalculatorPage() {
                 {/* Location */}
                 <div>
                   <label className="block font-semibold mb-4 text-lg">3. Locație</label>
-                  <div className="grid grid-cols-3 gap-4">
-                    {[
-                      { val: 'chisinau', label: 'Chișinău', fee: 'Fără taxă' },
-                      { val: 'balti', label: 'Bălți', fee: '+200 RON' },
-                      { val: 'altul', label: 'Altă locație', fee: '+400 RON' }
-                    ].map((opt) => (
-                      <button
-                        key={opt.val}
-                        onClick={() => setLocation(opt.val as any)}
-                        className={`p-3 border-2 rounded-none font-semibold transition ${
-                          location === opt.val
-                            ? 'border-accent bg-accent/10'
-                            : 'border-border hover:border-accent/50'
-                        }`}
-                      >
-                        <div>{opt.label}</div>
-                        <div className="text-xs font-normal text-foreground/60">{opt.fee}</div>
-                      </button>
-                    ))}
+                  <div className="p-4 border-2 border-accent bg-accent/10 flex items-center gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold">Deservim toată Moldova</p>
+                      <p className="text-xs text-foreground/60">Deplasare gratuită pentru evaluare, indiferent de locație</p>
+                    </div>
                   </div>
                 </div>
 
@@ -194,29 +176,23 @@ export default function CalculatorPage() {
                     </div>
                     <div className="flex justify-between pb-3 border-b border-border">
                       <span className="text-sm text-foreground/70">Preț/m²:</span>
-                      <span className="font-semibold">{pricePerM2} RON</span>
+                      <span className="font-semibold">{pricePerM2} MDL</span>
                     </div>
                     <div className="flex justify-between pb-3 border-b border-border">
                       <span className="text-sm text-foreground/70">Materiale și manopera:</span>
-                      <span className="font-semibold">{materialsAndLabor.toLocaleString()} RON</span>
+                      <span className="font-semibold">{totalEstimate.toLocaleString()} MDL</span>
                     </div>
-                    {transportFee > 0 && (
-                      <div className="flex justify-between pb-3 border-b border-border">
-                        <span className="text-sm text-foreground/70">Transport:</span>
-                        <span className="font-semibold text-orange-500">{transportFee} RON</span>
-                      </div>
-                    )}
                   </div>
 
                   <div className="bg-accent/10 p-4 rounded-none mb-8 border-2 border-accent">
                     <p className="text-sm text-accent font-semibold mb-1">Total Estimat:</p>
-                    <p className="text-4xl font-bold text-accent">{totalEstimate.toLocaleString()} RON</p>
+                    <p className="text-4xl font-bold text-accent">{totalEstimate.toLocaleString()} MDL</p>
                   </div>
 
                   {savings > 0 && (
                     <div className="bg-green-500/10 p-4 rounded-none mb-8 border border-green-500">
                       <p className="text-sm text-green-700 font-semibold mb-1">Economii Anuale Estimate:</p>
-                      <p className="text-2xl font-bold text-green-600">~{savings} RON/an</p>
+                      <p className="text-2xl font-bold text-green-600">~{savings} MDL/an</p>
                     </div>
                   )}
 

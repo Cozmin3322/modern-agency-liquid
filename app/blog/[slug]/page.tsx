@@ -97,20 +97,20 @@ const articles: Record<string, BlogArticle> = {
       </ul>
 
       <h2>Calculul Economiilor</h2>
-      <p>Dacă plătești 5000 RON anual pentru gaz, cu termoizolare poți economisi 2000-2500 RON. Investiția se recuperează în 2-3 ani.</p>
+      <p>Dacă plătești 5000 MDL anual pentru gaz, cu termoizolare poți economisi 2000-2500 MDL. Investiția se recuperează în 2-3 ani.</p>
 
       <h2>Calculator ROI</h2>
       <p>Folosește calculatorul nostru pe website pentru a estima exact economiile tale în funcție de suprafață și locație.</p>
 
       <h2>Exemplu Practic</h2>
       <p><strong>Casa:</strong> 150 m² locuibili</p>
-      <p><strong>Factură gaz actual:</strong> 5000 RON/an</p>
-      <p><strong>După termoizolare:</strong> 2750 RON/an (45% economie)</p>
-      <p><strong>Investiție termoizolare:</strong> 45000 RON (300 RON/m²)</p>
+      <p><strong>Factură gaz actual:</strong> 5000 MDL/an</p>
+      <p><strong>După termoizolare:</strong> 2750 MDL/an (45% economie)</p>
+      <p><strong>Investiție termoizolare:</strong> 45000 MDL (300 MDL/m²)</p>
       <p><strong>Recuperată în:</strong> 2 ani</p>
 
       <h2>Beneficii pe Termen Lung</h2>
-      <p>După recuperarea investiției, economisești 2250 RON anual pentru 24 de ani - total 54000 RON cu garanție completă.</p>
+      <p>După recuperarea investiției, economisești 2250 MDL anual pentru 24 de ani - total 54000 MDL cu garanție completă.</p>
     `,
   },
   'izolare-mansarda-spatiu-locuibil': {
