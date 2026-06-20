@@ -1,7 +1,6 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { ServiceHighlights } from "@/components/service-highlights"
-import { PremiumServices } from "@/components/premium-services"
 import { StatsBar } from "@/components/stats-bar"
 import { AboutDark } from "@/components/about-dark"
 import { Projects } from "@/components/projects"
@@ -43,9 +42,6 @@ export default async function Home() {
 
       {/* 1b. Servicii rapide (3 carduri) */}
       <ServiceHighlights />
-
-      {/* 2. Servicii concrete */}
-      <PremiumServices />
 
       {/* 2b. Statistici */}
       <StatsBar />
