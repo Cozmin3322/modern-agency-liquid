@@ -74,7 +74,12 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-6 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">© 2026 ISOTHERMLUX — TOATE DREPTURILE REZERVATE</p>
+          <p className="text-xs text-muted-foreground">
+            © 2026 ISOTHERMLUX — TOATE DREPTURILE REZERVATE ·{" "}
+            <a href="https://adsmoldova.md" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+              Website creat de Adsmoldova.md
+            </a>
+          </p>
           <div className="flex gap-6">
             <Link href="/politica-de-confidentialitate" className="text-xs text-muted-foreground hover:text-accent transition-colors uppercase tracking-wide">
               Confidențialitate
