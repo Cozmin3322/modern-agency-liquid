@@ -1,22 +1,16 @@
-import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { AboutSlider } from "@/components/about-slider"
+import { getGalleryImages } from "@/lib/gallery-images"
 
 export function AboutDark() {
+  const images = getGalleryImages()
   return (
     <section className="bg-[#203040] text-white py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Imagine */}
-          <div className="relative h-72 md:h-96">
-            <Image
-              src="/images/project-aplicare-spuma-01.webp"
-              alt="Tehnician IsoThermLux aplicând spumă poliuretanică"
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
+          <AboutSlider images={images} />
 
           {/* Text */}
           <div>
