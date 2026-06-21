@@ -25,9 +25,9 @@ export function ServiceHighlights() {
   return (
     <section className="bg-[#F4EFE7] pb-14 md:pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {items.map(({ icon: Icon, title, description }) => (
-            <div key={title} className="bg-white p-8">
+            <div key={title} className="bg-white rounded-sm shadow-md border-t-4 border-accent p-8">
               <Icon className="w-8 h-8 text-accent mb-5" strokeWidth={1.5} />
               <h3 className="text-lg font-semibold mb-3">{title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
