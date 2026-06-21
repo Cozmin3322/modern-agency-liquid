@@ -46,9 +46,12 @@ export function ReviewsClient({ reviews }: { reviews: Review[] }) {
         </div>
 
         {/* Reviews */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border">
+        <div className="flex md:grid md:grid-cols-3 gap-px bg-border overflow-x-auto snap-x snap-mandatory -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 md:mx-0 md:px-0">
           {reviews.map((review) => (
-            <div key={review.id} className="bg-background p-6 md:p-8 flex flex-col">
+            <div
+              key={review.id}
+              className="bg-background p-6 md:p-8 flex flex-col flex-shrink-0 w-[85%] sm:w-[60%] md:w-auto snap-start"
+            >
               {/* Stars */}
               <div className="flex gap-1 mb-5">
                 {[...Array(review.rating)].map((_, i) => (
