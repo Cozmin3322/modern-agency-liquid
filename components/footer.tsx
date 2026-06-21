@@ -1,6 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
-import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react"
 
 const serviceLinks = [
   { label: "Termoizolare", href: "/termoizolare" },
@@ -19,67 +17,26 @@ const infoLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-[#1A1D21] text-white">
+    <footer className="bg-white text-foreground border-t border-border">
       {/* Top safety stripe */}
       <div className="h-1 w-full bg-accent" />
 
-      <div className="container mx-auto px-6 md:px-12 py-16 md:py-20">
-        {/* Top grid */}
-        <div className="grid grid-cols-2 md:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-16">
-          {/* Brand */}
-          <div className="col-span-2 md:col-span-5">
-            <Link href="/" className="inline-flex items-center mb-6">
-              <Image src="/images/logo-isotherm-lux-white.webp" alt="IsoThermLux" width={64} height={64} className="h-16 w-auto" />
-            </Link>
-            <p className="text-white/70 leading-relaxed max-w-sm mb-8">
-              Servicii profesionale de termoizolare și hidroizolare cu spumă poliuretanică. 14 ani de experiență, 3971 proiecte finalizate, garanție 25 ani.
-            </p>
-            <div className="flex gap-8 border-t border-white/10 pt-6">
-              <div>
-                <div className="font-serif text-3xl text-accent leading-none">14</div>
-                <div className="font-mono text-[10px] uppercase tracking-widest text-white/50 mt-2">Ani experiență</div>
-              </div>
-              <div>
-                <div className="font-serif text-3xl text-accent leading-none">3971</div>
-                <div className="font-mono text-[10px] uppercase tracking-widest text-white/50 mt-2">Proiecte</div>
-              </div>
-              <div>
-                <div className="font-serif text-3xl text-accent leading-none">25</div>
-                <div className="font-mono text-[10px] uppercase tracking-widest text-white/50 mt-2">Ani garanție</div>
-              </div>
-            </div>
-          </div>
+      <div className="container mx-auto px-6 md:px-12 py-10 md:py-14">
+        {/* Keyword line */}
+        <p className="text-sm text-muted-foreground leading-relaxed mb-10">
+          Izolație cu spumă poliuretanică · Izolație termică cu spumă · Izolație cu spumă poliuretanică cu celulă închisă · Izolație cu spumă poliuretanică cu celula deschisă · Termoizolație poduri, mansarde · Hidroizolație cu poliuree · Izolație exterioara acoperis și pereți · Fonoizolații cu spumă poliuretanică
+        </p>
 
-          {/* Servicii */}
-          <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center gap-2 mb-5">
-              <span className="font-mono text-xs text-accent">/ 01</span>
-              <h3 className="font-mono text-xs uppercase tracking-widest text-white/50">Servicii</h3>
-            </div>
-            <ul className="space-y-3">
-              {serviceLinks.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="group inline-flex items-center gap-1 text-sm text-white/80 hover:text-accent transition-colors">
-                    {link.label}
-                    <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
+        {/* Sections */}
+        <div className="flex flex-col gap-8 mb-8">
           {/* Informatii */}
-          <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center gap-2 mb-5">
-              <span className="font-mono text-xs text-accent">/ 02</span>
-              <h3 className="font-mono text-xs uppercase tracking-widest text-white/50">Informații</h3>
-            </div>
-            <ul className="space-y-3">
-              {infoLinks.map((link) => (
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-4">Informații</h3>
+            <ul className="space-y-2.5">
+              {[...serviceLinks, ...infoLinks].map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="group inline-flex items-center gap-1 text-sm text-white/80 hover:text-accent transition-colors">
+                  <Link href={link.href} className="text-sm text-foreground/80 hover:text-accent transition-colors">
                     {link.label}
-                    <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                   </Link>
                 </li>
               ))}
@@ -87,48 +44,42 @@ export function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="col-span-2 md:col-span-3">
-            <div className="flex items-center gap-2 mb-5">
-              <span className="font-mono text-xs text-accent">/ 03</span>
-              <h3 className="font-mono text-xs uppercase tracking-widest text-white/50">Contact</h3>
-            </div>
-            <ul className="space-y-4">
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-4">Contact</h3>
+            <ul className="space-y-2.5">
               <li>
-                <a href="tel:+37378370243" aria-label="Sună IsoThermLux la +373 78 370 243" className="group flex items-center gap-3 text-white/80 hover:text-accent transition-colors">
-                  <span className="flex items-center justify-center w-9 h-9 border border-white/15 group-hover:border-accent group-hover:bg-accent/10 transition-colors flex-shrink-0">
-                    <Phone className="w-4 h-4" />
-                  </span>
-                  <span className="text-sm">+373 78 370 243</span>
+                <a href="tel:+37378370243" aria-label="Sună IsoThermLux la +373 78 370 243" className="text-sm text-foreground/80 hover:text-accent transition-colors">
+                  +373 78 370 243
                 </a>
               </li>
               <li>
-                <a href="mailto:infopoliuretan@gmail.com" className="group flex items-center gap-3 text-white/80 hover:text-accent transition-colors">
-                  <span className="flex items-center justify-center w-9 h-9 border border-white/15 group-hover:border-accent group-hover:bg-accent/10 transition-colors flex-shrink-0">
-                    <Mail className="w-4 h-4" />
-                  </span>
-                  <span className="text-sm break-all">infopoliuretan@gmail.com</span>
+                <a href="mailto:infopoliuretan@gmail.com" className="text-sm text-foreground/80 hover:text-accent transition-colors break-all">
+                  infopoliuretan@gmail.com
                 </a>
               </li>
-              <li>
-                <div className="flex items-center gap-3 text-white/80">
-                  <span className="flex items-center justify-center w-9 h-9 border border-white/15 flex-shrink-0">
-                    <MapPin className="w-4 h-4" />
-                  </span>
-                  <span className="text-sm">Chișinău, Moldova</span>
-                </div>
-              </li>
+              <li className="text-sm text-foreground/80">Chișinău, Moldova</li>
             </ul>
+          </div>
+
+          {/* Social icons row */}
+          <div className="flex items-center gap-3">
+            <a href="https://www.facebook.com/isothermlux" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+              className="flex items-center justify-center w-9 h-9 rounded-sm bg-[#1877F2] text-white text-sm font-semibold">f</a>
+            <a href="https://www.instagram.com/isothermlux" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+              className="flex items-center justify-center w-9 h-9 rounded-sm bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] text-white text-xs font-semibold">ig</a>
+            <a href="tel:+37378370243" aria-label="WhatsApp"
+              className="flex items-center justify-center w-9 h-9 rounded-sm bg-[#25D366] text-white text-xs font-semibold">wa</a>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <p className="font-mono text-xs text-white/50">© 2026 ISOTHERMLUX — TOATE DREPTURILE REZERVATE</p>
+        <div className="pt-6 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <p className="text-xs text-muted-foreground">© 2026 ISOTHERMLUX — TOATE DREPTURILE REZERVATE</p>
           <div className="flex gap-6">
-            <Link href="/politica-de-confidentialitate" className="font-mono text-xs text-white/50 hover:text-accent transition-colors uppercase tracking-wide">
+            <Link href="/politica-de-confidentialitate" className="text-xs text-muted-foreground hover:text-accent transition-colors uppercase tracking-wide">
               Confidențialitate
             </Link>
-            <Link href="/termenii-si-conditiile" className="font-mono text-xs text-white/50 hover:text-accent transition-colors uppercase tracking-wide">
+            <Link href="/termenii-si-conditiile" className="text-xs text-muted-foreground hover:text-accent transition-colors uppercase tracking-wide">
               Termeni
             </Link>
           </div>
