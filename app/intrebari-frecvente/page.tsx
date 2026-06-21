@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: "Cum pot obține o ofertă personalizată?",
-    a: "Contactați-ne la +373 78 370 243 sau completați formularul de contact. Un specialist vă va contacta cu o estimare în 30 de minute."
+    a: "Contactați-ne la +373 60 811 115 sau completați formularul de contact. Un specialist vă va contacta cu o estimare în 30 de minute."
   }
 ]
 
@@ -85,7 +85,7 @@ export default function IntrebariFrecventePage() {
               <h3 className="text-2xl font-serif font-medium mb-4">Nu găsești răspunsul pe care îl cauți?</h3>
               <p className="text-foreground/70 mb-6">Contactează-ne direct și un specialist îți va oferi consultanța de care ai nevoie.</p>
               <a
-                href="tel:+37378370243"
+                href="tel:+37360811115"
                 className="inline-block bg-[#1A1D21] text-white px-8 py-3 rounded-none font-semibold hover:bg-[#1A1D21]/90 transition"
               >
                 Sună Acum

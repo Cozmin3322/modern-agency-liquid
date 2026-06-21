@@ -177,7 +177,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:++37378370243" 
+                href="tel:++37360811115" 
                 className="inline-block bg-accent text-background px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition"
               >
                 Sună Acum

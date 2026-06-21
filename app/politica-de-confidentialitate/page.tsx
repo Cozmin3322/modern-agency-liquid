@@ -106,7 +106,7 @@ export default function PoliticaConfidentialitate() {
               <div className="bg-slate-100 p-4 rounded-none mt-4">
                 <p>IsoThermLux</p>
                 <p>Email: infopoliuretan@gmail.com</p>
-                <p>Telefon: +373 78 370 243</p>
+                <p>Telefon: +373 60 811 115</p>
                 <p>Adresa: Chișinău, Moldova</p>
               </div>
             </section>

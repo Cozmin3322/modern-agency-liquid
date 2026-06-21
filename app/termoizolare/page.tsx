@@ -134,7 +134,7 @@ export default function TermoizolarePage() {
                 <p className="text-foreground/70 text-sm mt-6">
                   Termoizolația cu spumă poliuretanică este mai eficientă decât poliistirenul sau vata minerală.
                 </p>
-                <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 mt-6 font-semibold hover:bg-accent/90 transition-colors">
+                <a href="tel:+37360811115" className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 mt-6 font-semibold hover:bg-accent/90 transition-colors">
                   Află mai multe
                 </a>
               </div>

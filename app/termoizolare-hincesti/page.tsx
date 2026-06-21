@@ -41,7 +41,7 @@ export default function Page() {
               Servicii profesionale de termoizolare cu spumă poliuretanică în Hîncești și raionul Hîncești. <span className="text-accent font-semibold">74+ proiecte</span> finalizate. Garanție 25 ani. Deplasare gratuită.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-white px-8 py-4 font-semibold uppercase tracking-wide hover:bg-accent/90 transition">
+              <a href="tel:+37360811115" className="inline-flex items-center gap-3 bg-accent text-white px-8 py-4 font-semibold uppercase tracking-wide hover:bg-accent/90 transition">
                 <Phone className="w-4 h-4" />
                 Sună Acum
               </a>
@@ -142,9 +142,9 @@ export default function Page() {
             <span className="font-mono text-xs text-accent uppercase tracking-widest block mb-4">Hîncești · raionul Hîncești</span>
             <h2 className="text-4xl font-serif text-white mb-4">Cere Ofertă Gratuită în Hîncești</h2>
             <p className="text-white/70 mb-8">Evaluare gratuită pe loc. Răspuns în 30 min. Garanție 25 ani.</p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-white px-10 py-4 font-semibold hover:bg-accent/90 transition uppercase tracking-wide">
+            <a href="tel:+37360811115" className="inline-flex items-center gap-3 bg-accent text-white px-10 py-4 font-semibold hover:bg-accent/90 transition uppercase tracking-wide">
               <Phone className="w-4 h-4" />
-              +373 78 370 243
+              +373 60 811 115
             </a>
           </div>
         </section>

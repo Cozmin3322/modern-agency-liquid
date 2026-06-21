@@ -44,7 +44,7 @@ export default function MansardaPage() {
                 Transformă mansarda în spațiu cald și confortabil. Izolație termică de înaltă calitate cu economia confirmată de 40-50%.
               </p>
               <div className="flex gap-4">
-                <a href="tel:+37378370243" className="bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">
+                <a href="tel:+37360811115" className="bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">
                   Consultație Gratuită
                 </a>
               </div>
@@ -155,7 +155,7 @@ export default function MansardaPage() {
             <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
               Consultație gratuită. Estimare pe loc. Răspuns în 30 minute.
             </p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37360811115" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum <ArrowRight className="w-4 h-4" />
             </a>
           </div>

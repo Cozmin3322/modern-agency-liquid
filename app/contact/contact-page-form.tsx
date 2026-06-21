@@ -16,7 +16,7 @@ export function ContactPageForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const msg = `Bună! Solicit o ofertă:\n\nNume: ${formData.name}\nTelefon: ${formData.phone}\nLocalitate: ${formData.location}\nServiciu: ${formData.serviceType}\nMesaj: ${formData.message}`
-    window.open(`https://wa.me/37378370243?text=${encodeURIComponent(msg)}`, '_blank')
+    window.open(`https://wa.me/37360811115?text=${encodeURIComponent(msg)}`, '_blank')
     setFormData({ name: '', phone: '', location: '', serviceType: '', message: '' })
   }
 

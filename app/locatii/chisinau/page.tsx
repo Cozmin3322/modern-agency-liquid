@@ -37,7 +37,7 @@ export default function ChisinauPage() {
               <div className="p-8 bg-background border border-border rounded-none">
                 <Phone className="w-8 h-8 text-accent mb-4" />
                 <h3 className="font-semibold mb-2">Telefon</h3>
-                <a href="tel:+37378370243" className="text-accent hover:underline">+373 78 370 243</a>
+                <a href="tel:+37360811115" className="text-accent hover:underline">+373 60 811 115</a>
               </div>
               <div className="p-8 bg-background border border-border rounded-none">
                 <MapPin className="w-8 h-8 text-accent mb-4" />
@@ -76,7 +76,7 @@ export default function ChisinauPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Vrei Consultație în Chișinău?</h2>
             <p className="text-lg mb-8 opacity-90">Contactează echipa locală. Răspuns în 30 minute.</p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37360811115" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum
             </a>
           </div>

@@ -22,7 +22,7 @@ export function CallToAction() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+37378370243"
+              href="tel:+37360811115"
               className="inline-flex items-center justify-center gap-3 bg-accent text-white px-8 py-4 text-sm tracking-wide hover:bg-accent/90 transition-colors duration-300 group"
             >
               Suna Acum

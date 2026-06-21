@@ -86,7 +86,7 @@ export default function Chatbot() {
       {/* Notification - WhatsApp Phone Link */}
       {showNotification && !isOpen && (
         <a 
-          href="https://wa.me/37378370243"
+          href="https://wa.me/37360811115"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white rounded-none shadow-lg max-w-xs p-4 border border-[#D8DCE0] animate-fade-in hover:shadow-xl transition-shadow" 
@@ -99,7 +99,7 @@ export default function Chatbot() {
               </svg>
             </div>
             <div className="flex-1">
-              <p className="text-sm text-[#6B3410] font-medium">+373 78370243</p>
+              <p className="text-sm text-[#6B3410] font-medium">+373 60 811 115</p>
               <p className="text-xs text-[#E8590C]">Contactează-ne pe WhatsApp</p>
             </div>
             <button

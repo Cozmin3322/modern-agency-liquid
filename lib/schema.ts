@@ -5,7 +5,7 @@ export const organizationSchema = {
   image: 'https://www.isothermlux.md/images/logo-isotherm-lux.png',
   description: 'Servicii profesionale de termoizolare și hidroizolare în Moldova. 12 ani experiență. Garanție 25 ani.',
   url: 'https://www.isothermlux.md',
-  telephone: '+37378370243',
+  telephone: '+37360811115',
   email: 'infopoliuretan@gmail.com',
   address: {
     '@type': 'PostalAddress',

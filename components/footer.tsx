@@ -48,8 +48,8 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-4">Contact</h3>
             <ul className="space-y-2.5">
               <li>
-                <a href="tel:+37378370243" aria-label="Sună IsoThermLux la +373 78 370 243" className="text-sm text-foreground/80 hover:text-accent transition-colors">
-                  +373 78 370 243
+                <a href="tel:+37360811115" aria-label="Sună IsoThermLux la +373 60 811 115" className="text-sm text-foreground/80 hover:text-accent transition-colors">
+                  +373 60 811 115
                 </a>
               </li>
               <li>
@@ -67,7 +67,7 @@ export function Footer() {
               className="flex items-center justify-center w-9 h-9 rounded-sm bg-[#1877F2] text-white text-sm font-semibold">f</a>
             <a href="https://www.instagram.com/isothermlux" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
               className="flex items-center justify-center w-9 h-9 rounded-sm bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] text-white text-xs font-semibold">ig</a>
-            <a href="tel:+37378370243" aria-label="WhatsApp"
+            <a href="tel:+37360811115" aria-label="WhatsApp"
               className="flex items-center justify-center w-9 h-9 rounded-sm bg-[#25D366] text-white text-xs font-semibold">wa</a>
           </div>
         </div>

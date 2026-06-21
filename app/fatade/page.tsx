@@ -78,7 +78,7 @@ export default function FacadesPage() {
               <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-lg">
                 Sisteme profesionale ETICS cu garanție 25 ani. Transformăm fațada casei tale în scut termic eficient cu execuție rapidă și durabilă.
               </p>
-              <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300 hover:gap-3">
+              <a href="tel:+37360811115" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300 hover:gap-3">
                 Ofertă Gratuită <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -213,8 +213,8 @@ export default function FacadesPage() {
               Contactează echipa IsoThermLux pentru o evaluare gratuită și ofertă personalizată.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+37378370243" className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300">
-                +373 78 370 243
+              <a href="tel:+37360811115" className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300">
+                +373 60 811 115
               </a>
               <a href="mailto:infopoliuretan@gmail.com" className="inline-flex items-center justify-center gap-2 border border-background/30 text-background px-8 py-4 rounded-full font-medium hover:border-background/60 transition-all duration-300">
                 infopoliuretan@gmail.com

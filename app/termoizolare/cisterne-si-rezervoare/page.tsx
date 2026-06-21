@@ -33,7 +33,7 @@ export default function Page() {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-medium text-white mb-6">Termoizolare Cisterne și Rezervoare cu Spumă Poliuretanică</h1>
               <p className="text-xl text-white/85 mb-8 leading-relaxed">Cisternele și rezervoarele neizolate pierd sau câștigă căldura din mediul exterior, degradând conținutul și consumând energie. Spuma poliuretanică menține temperatura dorită eficient și durabil.</p>
               <div className="flex flex-wrap gap-4">
-                <a href="tel:+37378370243" className="bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">Consultație Gratuită</a>
+                <a href="tel:+37360811115" className="bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">Consultație Gratuită</a>
                 <Link href="/termoizolare" className="border border-white/40 text-white px-8 py-3 rounded-none hover:bg-white/10 transition">Toate Serviciile</Link>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function Page() {
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-4xl font-serif font-medium mb-4">Solicită Ofertă pentru Cisternă</h2>
             <p className="text-white/80 mb-8">Evaluare gratuită pe loc. Ofertă în 24h. Garanție 25 ani.</p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37360811115" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum <ArrowRight className="w-4 h-4" />
             </a>
           </div>

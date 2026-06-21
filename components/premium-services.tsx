@@ -122,7 +122,7 @@ export function PremiumServices() {
 
             {/* Button */}
             <a
-              href="tel:+37378370243"
+              href="tel:+37360811115"
               className="inline-block px-8 py-3 bg-accent text-white font-semibold rounded-none hover:bg-accent/90 transition-colors"
             >
               Sună Acum →

@@ -22,7 +22,7 @@ export function ServiceHero({
   title,
   titleAccent,
   subtitle,
-  ctaHref = 'tel:+37378370243',
+  ctaHref = 'tel:+37360811115',
   ctaLabel = 'Consultație Gratuită',
   ctaSecondaryHref,
   ctaSecondaryLabel,

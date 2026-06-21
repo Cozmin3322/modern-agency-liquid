@@ -5,14 +5,14 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react"
 import { ContactPageForm } from "./contact-page-form"
 
 export const metadata: Metadata = {
-  title: "Contact IsoThermLux | +373 78 370 243 | Răspuns în 30 min",
-  description: "Contactează IsoThermLux pentru ofertă gratuită. Tel: +373 78 370 243. Luni-Vineri 08:00-18:00. Răspuns rapid în 30 minute.",
+  title: "Contact IsoThermLux | +373 60 811 115 | Răspuns în 30 min",
+  description: "Contactează IsoThermLux pentru ofertă gratuită. Tel: +373 60 811 115. Luni-Vineri 08:00-18:00. Răspuns rapid în 30 minute.",
   alternates: { canonical: "https://www.isothermlux.md/contact" }
 }
 
 const contactItems = [
-  { Icon: Phone, label: "Telefon", value: "+373 78 370 243", href: "tel:+37378370243" },
-  { Icon: MessageCircle, label: "WhatsApp", value: "+373 78 370 243", href: "https://wa.me/37378370243" },
+  { Icon: Phone, label: "Telefon", value: "+373 60 811 115", href: "tel:+37360811115" },
+  { Icon: MessageCircle, label: "WhatsApp", value: "+373 60 811 115", href: "https://wa.me/37360811115" },
   { Icon: Mail, label: "Email", value: "infopoliuretan@gmail.com", href: "mailto:infopoliuretan@gmail.com" },
   { Icon: Clock, label: "Program", value: "Luni–Vineri 08:00–18:00", href: null },
   { Icon: MapPin, label: "Locație", value: "Chișinău, Moldova", href: null },

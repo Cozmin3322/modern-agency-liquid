@@ -114,8 +114,8 @@ export default function FermaPage() {
             <p className="text-lg mb-8 max-w-xl mx-auto opacity-90">
               Venim la fermă, evaluăm gratuit și-ți facem oferta completă. Lucrăm fără a opri activitatea.
             </p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
-              Sună Acum: +373 78 370 243 <ArrowRight className="w-4 h-4" />
+            <a href="tel:+37360811115" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
+              Sună Acum: +373 60 811 115 <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </section>

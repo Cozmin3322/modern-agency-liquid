@@ -37,7 +37,7 @@ export default function ClosedCellFoamPage() {
             Impermeabilă, densitate mare, rezistență maximă la apă și umiditate. Soluția ideală pentru fundații, subsoluri și aplicații în contact direct cu apa.
           </p>
           <a
-            href="tel:+373783702433"
+            href="tel:+373608111153"
             className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition"
           >
             Sună Pentru Ofertă Gratuită →
@@ -260,10 +260,10 @@ export default function ClosedCellFoamPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+373783702433"
+              href="tel:+373608111153"
               className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition"
             >
-              Sună Acum +37378370243
+              Sună Acum +37360811115
             </a>
             <a
               href="mailto:infopoliuretan@gmail.com"

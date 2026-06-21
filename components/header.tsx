@@ -64,8 +64,8 @@ export function Header() {
       {/* Top bar */}
       <div className="fixed top-0 z-50 w-full bg-accent text-white text-xs">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 h-6 flex items-center justify-between">
-          <a href="tel:+37378370243" className="inline-flex items-center gap-1.5 hover:text-white/80 transition-colors">
-            <Phone className="w-3 h-3" /> +373 78 370 243
+          <a href="tel:+37360811115" className="inline-flex items-center gap-1.5 hover:text-white/80 transition-colors">
+            <Phone className="w-3 h-3" /> +373 60 811 115
           </a>
         </div>
       </div>
@@ -184,11 +184,11 @@ export function Header() {
           <div className="flex items-center gap-3 flex-shrink-0 ml-auto">
             {/* Buton telefon plin, cu umbra - mereu vizibil */}
             <a
-              href="tel:+37378370243"
+              href="tel:+37360811115"
               className="hidden sm:flex items-center gap-2 px-4 py-2 font-mono text-xs uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5 bg-accent text-white shadow-[0_4px_14px_rgba(155,95,18,0.35)] hover:bg-accent/90 hover:shadow-[0_6px_18px_rgba(155,95,18,0.45)]"
             >
               <Phone className="w-3.5 h-3.5 flex-shrink-0 text-white" />
-              +373 78 370 243
+              +373 60 811 115
             </a>
 
             {/* Hamburger (vizibil doar pe mobil/tabletă) */}

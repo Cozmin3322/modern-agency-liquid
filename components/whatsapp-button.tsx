@@ -51,7 +51,7 @@ export function WhatsAppButton() {
 
       {/* Buton WhatsApp */}
       <a
-        href="https://wa.me/37378370243?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20ofert%C4%83%20gratuit%C4%83."
+        href="https://wa.me/37360811115?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20ofert%C4%83%20gratuit%C4%83."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contactează-ne pe WhatsApp"

@@ -178,7 +178,7 @@ export default function PortfolioPage() {
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-4xl font-serif text-white mb-4">Proiectul Tău Următor</h2>
             <p className="text-white/70 mb-8">Fiecare proiect este unic. Consultație gratuită la fața locului.</p>
-            <a href="tel:+37378370243" className="inline-block bg-accent text-white px-10 py-4 font-semibold hover:bg-accent/90 transition uppercase tracking-wide font-mono text-sm">
+            <a href="tel:+37360811115" className="inline-block bg-accent text-white px-10 py-4 font-semibold hover:bg-accent/90 transition uppercase tracking-wide font-mono text-sm">
               Sună Acum
             </a>
           </div>

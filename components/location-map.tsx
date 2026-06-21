@@ -39,8 +39,8 @@ export function LocationMap() {
                 </div>
                 <div>
                   <span className="font-mono text-[10px] text-white/40 uppercase tracking-widest block mb-1">Telefon</span>
-                  <a href="tel:+37378370243" className="text-white font-semibold hover:text-accent transition-colors">
-                    +373 78 370 243
+                  <a href="tel:+37360811115" className="text-white font-semibold hover:text-accent transition-colors">
+                    +373 60 811 115
                   </a>
                 </div>
               </div>
@@ -48,7 +48,7 @@ export function LocationMap() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="tel:+37378370243"
+                href="tel:+37360811115"
                 className="inline-flex items-center gap-2 bg-accent text-white px-7 py-3.5 font-mono text-sm uppercase tracking-wider hover:bg-accent/90 transition-colors"
               >
                 <Phone className="w-4 h-4" />

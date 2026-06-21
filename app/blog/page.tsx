@@ -252,7 +252,7 @@ export default function BlogPage() {
                 Cere Ofertă <ArrowRight className="w-5 h-5" />
               </Link>
               <a
-                href="tel:+37378370243"
+                href="tel:+37360811115"
                 className="inline-flex items-center justify-center gap-2 border-2 border-accent text-accent px-8 py-4 rounded-none font-semibold hover:bg-accent/10 transition-colors"
               >
                 Sună Acum

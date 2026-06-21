@@ -452,7 +452,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="tel:++37378370243"
+                  href="tel:++37360811115"
                   className="inline-flex items-center justify-center gap-2 bg-accent text-background px-6 py-3 rounded-none font-semibold hover:bg-accent/90 transition-colors"
                 >
                   Sună Acum

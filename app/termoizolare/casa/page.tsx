@@ -27,7 +27,7 @@ export default function CasaPage() {
               <p className="text-2xl text-white/90 mb-8 leading-relaxed">
                 Izolează acoperisul, pereții și fundația. Confort maxim în orice sezon. Economie 40-50% la gaz.
               </p>
-              <a href="tel:+37378370243" className="inline-block bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">
+              <a href="tel:+37360811115" className="inline-block bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">
                 Consultație Gratuită
               </a>
             </div>
@@ -88,7 +88,7 @@ export default function CasaPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Termoizolează Casa Completa</h2>
             <p className="text-lg mb-8 opacity-90">Consultație gratuită fără angajamente.</p>
-            <a href="tel:+37378370243" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
+            <a href="tel:+37360811115" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Contactează-ne <ArrowRight className="w-4 h-4" />
             </a>
           </div>

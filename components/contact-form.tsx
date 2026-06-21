@@ -31,7 +31,7 @@ export function ContactForm() {
     }).catch((err) => console.error('[CRM] Failed to save lead:', err))
 
     const msg = `Bună ziua! Am completat formularul de contact:\n\nNume: ${formData.name}\nTelefon: ${formData.phone}\nLocalitate: ${formData.location}\nServiciu: ${formData.serviceType}\nMesaj: ${formData.message}`
-    window.open(`https://wa.me/37378370243?text=${encodeURIComponent(msg)}`, '_blank')
+    window.open(`https://wa.me/37360811115?text=${encodeURIComponent(msg)}`, '_blank')
     setFormData({ name: '', phone: '', location: '', serviceType: '', message: '' })
     setIsSubmitting(false)
   }
@@ -57,9 +57,9 @@ export function ContactForm() {
 
             {/* Contact links */}
             <div className="space-y-4 mb-10">
-              <a href="tel:+37378370243" className="flex items-center gap-3 text-[#1A1D21]/85 hover:text-[#1A1D21] transition-colors group">
+              <a href="tel:+37360811115" className="flex items-center gap-3 text-[#1A1D21]/85 hover:text-[#1A1D21] transition-colors group">
                 <span className="w-8 h-8 rounded-full border border-[#1A1D21]/25 flex items-center justify-center group-hover:border-[#1A1D21]/60 transition-colors text-xs">☎</span>
-                <span className="text-sm">+373 78 370 243</span>
+                <span className="text-sm">+373 60 811 115</span>
               </a>
               <a href="mailto:infopoliuretan@gmail.com" className="flex items-center gap-3 text-[#1A1D21]/85 hover:text-[#1A1D21] transition-colors group">
                 <span className="w-8 h-8 rounded-full border border-[#1A1D21]/25 flex items-center justify-center group-hover:border-[#1A1D21]/60 transition-colors">
