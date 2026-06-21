@@ -88,7 +88,7 @@ export function Header() {
             <Image
               src="/images/logo-isotherm-lux.webp"
               alt="IsoThermLux"
-              width={96} height={96}
+              width={241} height={97}
               className="h-14 w-auto transition-transform duration-200 group-hover:scale-105"
               priority
             />
@@ -321,7 +321,7 @@ export function Header() {
 
         {/* Bottom logo */}
         <div className="px-5 py-5 border-t border-border flex-shrink-0 flex items-center justify-center">
-          <Image src="/images/logo-isotherm-lux.webp" alt="IsoThermLux" width={96} height={96} className="h-20 w-auto" />
+          <Image src="/images/logo-isotherm-lux.webp" alt="IsoThermLux" width={241} height={97} className="h-20 w-auto" />
         </div>
       </div>
     </>
