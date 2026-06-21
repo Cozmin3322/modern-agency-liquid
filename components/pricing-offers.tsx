@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 
 const OFFERS = [
   {
-    image: '/images/project-aplicare-spuma-01.webp',
+    image: '/images/gallery/termo-26.webp',
     title: 'Celulă Deschisă',
     rows: [
       ['10 cm grosime', '43-70 lei/mp + TVA'],
@@ -15,7 +15,7 @@ const OFFERS = [
     ],
   },
   {
-    image: '/images/project-finisaj-01.webp',
+    image: '/images/gallery/termo-27.webp',
     title: 'Celulă Închisă',
     rows: [
       ['5 cm grosime', '55-75 lei/mp + TVA'],
@@ -25,7 +25,7 @@ const OFFERS = [
     ],
   },
   {
-    image: '/images/hidroizolare-hero.webp',
+    image: '/images/gallery/hidro-05.webp',
     title: 'Hidroizolație Poliuree',
     rows: [
       ['Aplicare', 'de la 90 lei/mp + TVA'],

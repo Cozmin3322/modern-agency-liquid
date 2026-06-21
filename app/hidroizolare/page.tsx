@@ -38,15 +38,15 @@ const undeSeAplica = [
 ]
 
 const galleryThumbs = [
-  "/images/hidroizolare-fundatie-02.webp",
-  "/images/project-fundatie-noua-01.webp",
-  "/images/project-fundatie.webp",
-  "/images/project-subsol-uscat.webp",
-  "/images/project-hidroizolare-01.jpg",
-  "/images/project-terasa-izolare-01.webp",
-  "/images/project-acoperis-plat-01.webp",
-  "/images/project-acoperis.webp",
-  "/images/project-acoperis-new.webp",
+  "/images/gallery/hidro-04.webp",
+  "/images/gallery/hidro-06.webp",
+  "/images/gallery/hidro-07.webp",
+  "/images/gallery/hidro-09.webp",
+  "/images/gallery/hidro-10.webp",
+  "/images/gallery/hidro-11.webp",
+  "/images/gallery/hidro-12.webp",
+  "/images/gallery/hidro-13.webp",
+  "/images/gallery/hidro-14.webp",
 ]
 
 const deCeIsoThermLux = [
@@ -73,7 +73,7 @@ export default function HidroizolarePage() {
         {/* Hero — bandă imagine + titlu sub ea */}
         <section className="relative pt-24">
           <div className="relative h-56 md:h-80 w-full">
-            <Image src="/images/hidroizolare-hero.webp" alt="Aplicare hidroizolare cu poliuree" fill priority sizes="100vw" className="object-cover" />
+            <Image src="/images/gallery/hidro-05.webp" alt="Aplicare hidroizolare cu poliuree" fill priority sizes="100vw" className="object-cover" />
             <div className="absolute inset-0 bg-black/30" />
             <div className="absolute right-6 md:right-16 top-1/2 -translate-y-1/2 w-24 h-24 md:w-32 md:h-32 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
               <Droplets className="w-10 h-10 md:w-12 md:h-12 text-accent" />
@@ -96,7 +96,7 @@ export default function HidroizolarePage() {
         <section className="py-16 md:py-20 bg-card">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative h-64 md:h-96 mb-10 overflow-hidden">
-              <Image src="/images/hidroizolare-fundatie-02.webp" alt="Aplicare hidroizolare la fundație" fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" />
+              <Image src="/images/gallery/hidro-01.webp" alt="Aplicare hidroizolare la fundație" fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" />
             </div>
             <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Ce este hidroizolația cu poliuree?</h2>
             <p className="text-foreground/80 leading-relaxed mb-4">
@@ -134,7 +134,7 @@ export default function HidroizolarePage() {
                 </a>
               </div>
               <div className="relative h-80 md:h-96">
-                <Image src="/images/project-fundatie-noua-01.webp" alt="Tehnician aplicând hidroizolare cu poliuree" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
+                <Image src="/images/gallery/hidro-02.webp" alt="Tehnician aplicând hidroizolare cu poliuree" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function HidroizolarePage() {
         {/* CTA bandă */}
         <section className="relative py-16 md:py-20 bg-[#1A1D21] text-white text-center overflow-hidden">
           <div className="absolute inset-0 opacity-20">
-            <Image src="/images/project-subsol-uscat.webp" alt="" fill sizes="100vw" className="object-cover" />
+            <Image src="/images/gallery/hidro-03.webp" alt="" fill sizes="100vw" className="object-cover" />
           </div>
           <div className="relative max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-serif font-medium mb-6">
@@ -193,9 +193,9 @@ export default function HidroizolarePage() {
             <h2 className="text-2xl md:text-3xl font-serif font-medium mb-10 text-center text-accent">Tipuri de hidroizolare</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { image: "/images/hidroizolare-fundatie-02.webp", title: "Fundație", desc: "Protecție profesională a fundației împotriva infiltrațiilor de apă din pământ." },
-                { image: "/images/project-acoperis.webp", title: "Acoperiș", desc: "Impermeabilizare completă a acoperișului. Protecție la ploaie și zăpadă." },
-                { image: "/images/project-subsol-uscat.webp", title: "Subsol", desc: "Protecție subsol și pereți subterani. Spațiu uscat și locuibil." },
+                { image: "/images/gallery/hidro-15.webp", title: "Fundație", desc: "Protecție profesională a fundației împotriva infiltrațiilor de apă din pământ." },
+                { image: "/images/gallery/hidro-16.webp", title: "Acoperiș", desc: "Impermeabilizare completă a acoperișului. Protecție la ploaie și zăpadă." },
+                { image: "/images/gallery/hidro-17.webp", title: "Subsol", desc: "Protecție subsol și pereți subterani. Spațiu uscat și locuibil." },
               ].map(({ image, title, desc }) => (
                 <div key={title} className="p-8 bg-background border border-border">
                   <div className="relative h-32 w-full mb-4 overflow-hidden">
@@ -212,7 +212,7 @@ export default function HidroizolarePage() {
         {/* CTA bandă 2 */}
         <section className="relative py-16 md:py-20 bg-[#1A1D21] text-white text-center overflow-hidden">
           <div className="absolute inset-0 opacity-20">
-            <Image src="/images/project-acoperis-plat-01.webp" alt="" fill sizes="100vw" className="object-cover" />
+            <Image src="/images/gallery/hidro-18.webp" alt="" fill sizes="100vw" className="object-cover" />
           </div>
           <div className="relative max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-serif font-medium mb-6">
@@ -238,7 +238,7 @@ export default function HidroizolarePage() {
                 ))}
               </ul>
               <div className="relative h-64 md:h-80">
-                <Image src="/images/project-hidroizolare-01.jpg" alt="Tehnician IsoThermLux aplicând hidroizolare" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
+                <Image src="/images/gallery/hidro-09.webp" alt="Tehnician IsoThermLux aplicând hidroizolare" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
               </div>
             </div>
             <p className="text-foreground/80 leading-relaxed mt-10 max-w-3xl">

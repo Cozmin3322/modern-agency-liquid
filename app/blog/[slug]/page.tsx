@@ -22,7 +22,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '15 ianuarie 2024',
     readTime: '5 min',
-    image: '/images/project-casa-termoizolare-01.jpg',
+    image: '/images/gallery/termo-02.webp',
     excerpt: 'Descoperă cum funcționează termoizolarea cu spumă poliuretanică, beneficiile complete și cum economisești 40-50% la energie.',
     keywords: 'termoizolare, spumă poliuretanică, izolare termică, ghid complet, economia de energie, izolație casă',
     content: `
@@ -52,7 +52,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '12 ianuarie 2024',
     readTime: '4 min',
-    image: '/images/hidroizolare-fundatie-02.jpg',
+    image: '/images/gallery/hidro-01.webp',
     excerpt: 'Ce este hidroizolarea și de ce este esențială pentru protecția proprietății tale. Metode, costuri și beneficii.',
     keywords: 'hidroizolare, fundație, protecție umiditate, infiltrații apă, hidroizolare subsol, profesională',
     content: `
@@ -84,7 +84,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '10 ianuarie 2024',
     readTime: '6 min',
-    image: '/images/beneficii-termoizolare.webp',
+    image: '/images/gallery/termo-04.webp',
     excerpt: 'Calculează exact cât vei economisi și cum se recuperează investiția în termoizolare în 2-3 ani.',
     keywords: 'economie gaz, termoizolare, ROI, eficiență energetică, costuri termoizolare, recuperare investiție',
     content: `
@@ -118,7 +118,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '8 ianuarie 2024',
     readTime: '5 min',
-    image: '/images/project-mansard-new.webp',
+    image: '/images/gallery/termo-06.webp',
     excerpt: 'Transformă mansarda ta într-un spațiu confortabil și locuibil cu izolație termică profesională.',
     keywords: 'izolare mansardă, spațiu locuibil, termoizolare mansardă, confort termic, spumă poliuretanică',
     content: `
@@ -153,7 +153,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '5 ianuarie 2024',
     readTime: '4 min',
-    image: '/images/premium-services-foam.png',
+    image: '/images/gallery/termo-08.webp',
     excerpt: 'Spumă poliuretanică certificată ISO 9001 garantează calitate și durabilitate. De ce alegem doar materiale premium.',
     keywords: 'ISO 9001, materiale premium, spumă poliuretanică, calitate, durabilitate, garanție 25 ani',
     content: `
@@ -184,7 +184,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '2 ianuarie 2024',
     readTime: '5 min',
-    image: '/images/project-rezultat-final-01.jpg',
+    image: '/images/gallery/termo-17.webp',
     excerpt: 'Garanție scrisă 25 ani pe material și manopera. Protecție completă pentru investiția ta în termoizolare.',
     keywords: 'garanție 25 ani, protecție investiție, durabilitate, asigurare calitate, termoizolare garantat',
     content: `
@@ -222,7 +222,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '28 ianuarie 2024',
     readTime: '6 min',
-    image: '/images/project-aplicare-spuma-01.webp',
+    image: '/images/gallery/termo-26.webp',
     excerpt: 'Diferențele reale dintre cele două tipuri de spumă poliuretanică și cum alegi varianta corectă pentru acoperiș, pereți sau fundație.',
     keywords: 'celulă deschisă, celulă închisă, spumă poliuretanică, diferențe izolare, alegere material izolator',
     content: `
@@ -257,7 +257,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '25 ianuarie 2024',
     readTime: '5 min',
-    image: '/images/project-finisaj-01.webp',
+    image: '/images/gallery/fono-01.webp',
     excerpt: 'O analiză transparentă a prețurilor pentru izolarea cu spumă, în funcție de grosime, tip de spumă și suprafața lucrării.',
     keywords: 'preț izolare spumă, cost spumă poliuretanică, preț pe metru pătrat, tarife termoizolare',
     content: `
@@ -287,7 +287,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '22 ianuarie 2024',
     readTime: '5 min',
-    image: '/images/project-casa-termoizolare-01.jpg',
+    image: '/images/gallery/termo-02.webp',
     excerpt: 'De ce spuma poliuretanică este alegerea optimă pentru hale, depozite și clădiri industriale cu suprafețe mari.',
     keywords: 'izolare hale industriale, izolare depozite, spumă poliuretanică industrial, termoizolare clădiri mari',
     content: `
@@ -317,7 +317,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '19 ianuarie 2024',
     readTime: '7 min',
-    image: '/images/beneficii-termoizolare.webp',
+    image: '/images/gallery/termo-04.webp',
     excerpt: 'Punem față în față cele două materiale izolatoare cele mai populare: performanță termică, durabilitate, preț și timp de aplicare.',
     keywords: 'spumă poliuretanică vs vată minerală, comparație materiale izolatoare, alegere izolație termică',
     content: `
@@ -345,7 +345,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '16 ianuarie 2024',
     readTime: '4 min',
-    image: '/images/project-mansard-new.webp',
+    image: '/images/gallery/termo-06.webp',
     excerpt: 'Spuma poliuretanică nu izolează doar termic — explicăm cum contribuie și la reducerea zgomotului din exterior și dintre etaje.',
     keywords: 'fonoizolare, izolare fonică, reducere zgomot, spumă poliuretanică acustică, izolare zgomot stradă',
     content: `
@@ -375,7 +375,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '13 ianuarie 2024',
     readTime: '4 min',
-    image: '/images/project-rezultat-final-01.jpg',
+    image: '/images/gallery/termo-17.webp',
     excerpt: 'Mulți clienți cred că izolarea se face doar primăvara sau vara. Explicăm condițiile reale în care aplicarea iarna este posibilă și sigură.',
     keywords: 'spumă poliuretanică iarna, aplicare izolare iarna, temperatură aplicare spumă, izolare anotimp rece',
     content: `
@@ -405,7 +405,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '9 ianuarie 2024',
     readTime: '6 min',
-    image: '/images/project-casa-termoizolare-01.jpg',
+    image: '/images/gallery/termo-02.webp',
     excerpt: 'De la grosimea insuficientă la alegerea greșită a materialului — cele mai comune erori care reduc eficiența izolației termice.',
     keywords: 'greșeli izolare termică, erori termoizolare, sfaturi izolare casă, izolare ineficientă',
     content: `
@@ -439,7 +439,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '6 ianuarie 2024',
     readTime: '5 min',
-    image: '/images/hidroizolare-fundatie-02.jpg',
+    image: '/images/gallery/hidro-01.webp',
     excerpt: 'Cum funcționează hidroizolația cu poliuree, de ce e mai eficientă decât metodele clasice și cât costă aplicarea pentru o fundație.',
     keywords: 'hidroizolație poliuree, hidroizolare fundație modernă, membrană poliuree, protecție umiditate fundație',
     content: `
@@ -469,7 +469,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '3 ianuarie 2024',
     readTime: '5 min',
-    image: '/images/project-finisaj-01.webp',
+    image: '/images/gallery/fono-01.webp',
     excerpt: 'Containere de locuit, ateliere sau depozite metalice: cum le transformi în spații confortabile termic cu izolație din spumă.',
     keywords: 'izolare container metalic, izolare construcție tablă, spumă poliuretanică container, container locuit izolat',
     content: `
@@ -499,7 +499,7 @@ const articles: Record<string, BlogArticle> = {
     author: 'IsoThermLux Team',
     date: '30 decembrie 2023',
     readTime: '4 min',
-    image: '/images/premium-services-foam.png',
+    image: '/images/gallery/termo-08.webp',
     excerpt: 'Adevărul despre durata de viață reală a spumei poliuretanice, factorii care o influențează și ce întreținere necesită în timp.',
     keywords: 'durata viață spumă poliuretanică, întreținere izolație, durabilitate izolare termică, garanție izolație',
     content: `

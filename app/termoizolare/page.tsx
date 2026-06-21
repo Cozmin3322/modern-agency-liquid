@@ -34,21 +34,21 @@ const undeSeAplica = [
 ]
 
 const galleryThumbs = [
-  "/images/project-mansarda-01.webp",
-  "/images/project-mansarda-02.webp",
-  "/images/project-mansarda-03.webp",
-  "/images/project-hala-industrial-01.webp",
-  "/images/project-hala-industrial-02.webp",
-  "/images/project-acoperis-industrial-01.webp",
-  "/images/project-terasa-izolare-01.webp",
-  "/images/project-fundatie-noua-01.webp",
-  "/images/project-planseu-01.webp",
+  "/images/gallery/termo-09.webp",
+  "/images/gallery/termo-10.webp",
+  "/images/gallery/termo-11.webp",
+  "/images/gallery/termo-12.webp",
+  "/images/gallery/termo-13.webp",
+  "/images/gallery/termo-14.webp",
+  "/images/gallery/termo-15.webp",
+  "/images/gallery/termo-16.webp",
+  "/images/gallery/hidro-08.webp",
 ]
 
 const tipuriSpuma = [
-  { image: "/images/project-mansarda-04.webp", title: "Spumă cu celulă deschisă", desc: "Ideală pentru izolarea în zone unde nu este nevoie de impermeabilizare." },
-  { image: "/images/project-acoperis-industrial-02.webp", title: "Spumă cu celulă închisă", desc: "Perfectă pentru exterior, structuri expuse și protecție la umiditate." },
-  { image: "/images/project-terasa-izolare-01.webp", title: "Poliuree", desc: "Soluție pentru hidroizolare și protecție suplementară." },
+  { image: "/images/gallery/termo-18.webp", title: "Spumă cu celulă deschisă", desc: "Ideală pentru izolarea în zone unde nu este nevoie de impermeabilizare." },
+  { image: "/images/gallery/termo-19.webp", title: "Spumă cu celulă închisă", desc: "Perfectă pentru exterior, structuri expuse și protecție la umiditate." },
+  { image: "/images/gallery/termo-20.webp", title: "Poliuree", desc: "Soluție pentru hidroizolare și protecție suplementară." },
 ]
 
 const deCeIsoThermLux = [
@@ -72,7 +72,7 @@ export default function TermoizolarePage() {
         {/* Hero — bandă imagine + titlu sub ea */}
         <section className="relative pt-24">
           <div className="relative h-56 md:h-80 w-full">
-            <Image src="/images/termoizolare-hero.webp" alt="Aplicare termoizolare cu spumă poliuretanică" fill priority sizes="100vw" className="object-cover" />
+            <Image src="/images/gallery/termo-03.webp" alt="Aplicare termoizolare cu spumă poliuretanică" fill priority sizes="100vw" className="object-cover" />
             <div className="absolute inset-0 bg-black/30" />
             <div className="absolute right-6 md:right-16 top-1/2 -translate-y-1/2 w-24 h-24 md:w-32 md:h-32 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
               <Snowflake className="w-10 h-10 md:w-12 md:h-12 text-accent" />
@@ -95,7 +95,7 @@ export default function TermoizolarePage() {
         <section className="py-16 md:py-20 bg-card">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative h-64 md:h-96 mb-10 overflow-hidden">
-              <Image src="/images/project-acoperis-industrial-03.webp" alt="Tehnician aplicând spumă poliuretanică pe acoperiș" fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" />
+              <Image src="/images/gallery/termo-01.webp" alt="Tehnician aplicând spumă poliuretanică pe acoperiș" fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" />
             </div>
             <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Ce este termoizolația cu spumă poliuretanică?</h2>
             <p className="text-foreground/80 leading-relaxed mb-4">
@@ -139,7 +139,7 @@ export default function TermoizolarePage() {
                 </a>
               </div>
               <div className="relative h-80 md:h-96">
-                <Image src="/images/project-hala-industrial-new.webp" alt="Tehnician cu echipament de protecție aplicând spumă poliuretanică" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
+                <Image src="/images/gallery/termo-05.webp" alt="Tehnician cu echipament de protecție aplicând spumă poliuretanică" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
                 <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow">
                   <Sun className="w-6 h-6 text-accent" />
                 </div>
@@ -154,7 +154,7 @@ export default function TermoizolarePage() {
         {/* CTA bandă */}
         <section className="relative py-16 md:py-20 bg-[#1A1D21] text-white text-center overflow-hidden">
           <div className="absolute inset-0 opacity-20">
-            <Image src="/images/project-mansarda-05.webp" alt="" fill sizes="100vw" className="object-cover" />
+            <Image src="/images/gallery/termo-07.webp" alt="" fill sizes="100vw" className="object-cover" />
           </div>
           <div className="relative max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-serif font-medium mb-6">
@@ -219,7 +219,7 @@ export default function TermoizolarePage() {
         {/* CTA bandă 2 */}
         <section className="relative py-16 md:py-20 bg-[#1A1D21] text-white text-center overflow-hidden">
           <div className="absolute inset-0 opacity-20">
-            <Image src="/images/project-acoperis-industrial-04.webp" alt="" fill sizes="100vw" className="object-cover" />
+            <Image src="/images/gallery/termo-21.webp" alt="" fill sizes="100vw" className="object-cover" />
           </div>
           <div className="relative max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-serif font-medium mb-6">
@@ -265,7 +265,7 @@ export default function TermoizolarePage() {
                 ))}
               </ul>
               <div className="relative h-64 md:h-80">
-                <Image src="/images/project-acoperis-industrial-01.webp" alt="Tehnician IsoThermLux aplicând spumă poliuretanică" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
+                <Image src="/images/gallery/termo-22.webp" alt="Tehnician IsoThermLux aplicând spumă poliuretanică" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
               </div>
             </div>
             <p className="text-foreground/80 leading-relaxed mt-10 max-w-3xl">

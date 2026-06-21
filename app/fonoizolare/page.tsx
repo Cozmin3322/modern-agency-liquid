@@ -34,15 +34,15 @@ const undeSeAplica = [
 ]
 
 const galleryThumbs = [
-  "/images/project-apartament-izolare-01.jpg",
-  "/images/project-birou-comercial.webp",
-  "/images/project-sala-sport-01.webp",
-  "/images/project-casa-renovare.webp",
-  "/images/project-mansarda-02.webp",
-  "/images/project-planseu-02.webp",
-  "/images/project-finisaj-01.webp",
-  "/images/project-casa-privat.webp",
-  "/images/project-detaliu-izolare-01.jpg",
+  "/images/gallery/fono-01.webp",
+  "/images/gallery/fono-02.webp",
+  "/images/gallery/fono-03.webp",
+  "/images/gallery/fono-04.webp",
+  "/images/gallery/fono-05.webp",
+  "/images/gallery/fono-06.webp",
+  "/images/gallery/termo-23.webp",
+  "/images/gallery/termo-24.webp",
+  "/images/gallery/termo-25.webp",
 ]
 
 const deCeIsoThermLux = [
@@ -65,7 +65,7 @@ export default function FonoizolarePage() {
         {/* Hero — bandă imagine + titlu sub ea */}
         <section className="relative pt-24">
           <div className="relative h-56 md:h-80 w-full">
-            <Image src="/images/project-apartament-izolare-01.jpg" alt="Aplicare fonoizolare cu spumă poliuretanică" fill priority sizes="100vw" className="object-cover" />
+            <Image src="/images/gallery/fono-06.webp" alt="Aplicare fonoizolare cu spumă poliuretanică" fill priority sizes="100vw" className="object-cover" />
             <div className="absolute inset-0 bg-black/30" />
             <div className="absolute right-6 md:right-16 top-1/2 -translate-y-1/2 w-24 h-24 md:w-32 md:h-32 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
               <VolumeX className="w-10 h-10 md:w-12 md:h-12 text-accent" />
@@ -88,7 +88,7 @@ export default function FonoizolarePage() {
         <section className="py-16 md:py-20 bg-card">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative h-64 md:h-96 mb-10 overflow-hidden">
-              <Image src="/images/project-birou-comercial.webp" alt="Spațiu fonoizolat cu spumă poliuretanică" fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" />
+              <Image src="/images/gallery/fono-01.webp" alt="Spațiu fonoizolat cu spumă poliuretanică" fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" />
             </div>
             <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Ce este fonoizolația cu spumă poliuretanică?</h2>
             <p className="text-foreground/80 leading-relaxed mb-4">
@@ -126,7 +126,7 @@ export default function FonoizolarePage() {
                 </a>
               </div>
               <div className="relative h-80 md:h-96">
-                <Image src="/images/project-sala-sport-01.webp" alt="Tehnician aplicând fonoizolare" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
+                <Image src="/images/gallery/fono-02.webp" alt="Tehnician aplicând fonoizolare" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function FonoizolarePage() {
         {/* CTA bandă */}
         <section className="relative py-16 md:py-20 bg-[#1A1D21] text-white text-center overflow-hidden">
           <div className="absolute inset-0 opacity-20">
-            <Image src="/images/project-casa-renovare.webp" alt="" fill sizes="100vw" className="object-cover" />
+            <Image src="/images/gallery/fono-03.webp" alt="" fill sizes="100vw" className="object-cover" />
           </div>
           <div className="relative max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-serif font-medium mb-6">
@@ -182,7 +182,7 @@ export default function FonoizolarePage() {
         {/* CTA bandă 2 */}
         <section className="relative py-16 md:py-20 bg-[#1A1D21] text-white text-center overflow-hidden">
           <div className="absolute inset-0 opacity-20">
-            <Image src="/images/project-mansarda-02.webp" alt="" fill sizes="100vw" className="object-cover" />
+            <Image src="/images/gallery/fono-04.webp" alt="" fill sizes="100vw" className="object-cover" />
           </div>
           <div className="relative max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-serif font-medium mb-6">
@@ -208,7 +208,7 @@ export default function FonoizolarePage() {
                 ))}
               </ul>
               <div className="relative h-64 md:h-80">
-                <Image src="/images/project-detaliu-izolare-01.jpg" alt="Tehnician IsoThermLux aplicând fonoizolare" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
+                <Image src="/images/gallery/fono-05.webp" alt="Tehnician IsoThermLux aplicând fonoizolare" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
               </div>
             </div>
             <p className="text-foreground/80 leading-relaxed mt-10 max-w-3xl">
