@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const services = [
   {
     href: "/termoizolare",
-    image: "/images/termoizolare-hero.webp",
+    image: "/images/gallery/termo-03.webp",
     title: "Termoizolatii",
     blocks: [
       { label: "Aplicare spuma celula deschisa", text: "Este o spuma cu densitate scazuta, in general de 8 kg/m3, cu o performanta termica asemanatoare cu cea a materialelor clasice. Spuma cu celula deschisa mai este si spuma flexibila." },
@@ -25,7 +25,7 @@ const services = [
   },
   {
     href: "/hidroizolare",
-    image: "/images/hidroizolare-hero.webp",
+    image: "/images/gallery/hidro-05.webp",
     title: "Hidroizolatii",
     blocks: [
       { label: "Aplicare poliuree", text: "Poliureea este o rasina din doua componente, apartinand familiei de \"impermeabilizare continua cu elastomeri de poliuretan\". La noi gasesti cele mai bune servicii de calitate." },
@@ -33,7 +33,7 @@ const services = [
   },
   {
     href: "/fonoizolare",
-    image: "/images/project-apartament-izolare-01.jpg",
+    image: "/images/gallery/fono-06.webp",
     title: "Fonoizolatii",
     blocks: [
       { label: "Aplicare spuma celula deschisa", text: "Este o spuma cu densitate scazuta, in general de 8 kg/m3, cu o performanta termica asemanatoare cu cea a materialelor clasice. Spuma cu celula deschisa mai este si spuma flexibila." },
