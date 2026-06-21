@@ -72,12 +72,12 @@ export function Header() {
 
       <header
         className={cn(
-          "fixed z-40 w-full top-6 transition-all duration-300 bg-white",
-          scrolled ? "py-1.5 shadow-md" : "py-2 shadow-sm"
+          "fixed z-40 w-full top-6 h-14 transition-all duration-300 bg-white",
+          scrolled && "shadow-md"
         )}
       >
 
-        <nav className="relative max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between gap-6">
+        <nav className="relative max-w-7xl mx-auto px-6 lg:px-8 h-full flex items-center justify-between gap-6">
 
           {/* Logo */}
           <Link
