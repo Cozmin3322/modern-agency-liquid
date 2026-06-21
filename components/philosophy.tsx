@@ -58,11 +58,7 @@ export function Philosophy() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24">
           {/* Left column - Title and image */}
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <div className="flex items-center gap-4 mb-6">
-              <span className="font-mono text-sm text-accent font-bold">/ 02</span>
-              <span className="h-px flex-1 max-w-[60px] bg-border" />
-              <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase">De Ce Noi?</p>
-            </div>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">De Ce Noi?</p>
             <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-medium leading-[1.1] tracking-tight mb-6 text-balance">
               Beneficiile
               <br />

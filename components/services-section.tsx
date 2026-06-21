@@ -32,19 +32,12 @@ export function ServicesSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px bg-border">
           {services.map((service, idx) => {
             const Icon = service.icon
-            const num = String(idx + 1).padStart(2, '0')
             return (
               <Link
                 key={idx}
                 href={service.link}
                 className="group relative bg-background p-6 md:p-8 lg:p-10 transition-colors duration-300 hover:bg-[#1A1D21] flex flex-col"
               >
-                {/* Number + top accent line */}
-                <div className="flex items-center justify-between mb-8">
-                  <span className="font-mono text-sm text-accent font-bold">/ {num}</span>
-                  <span className="h-px w-12 bg-border group-hover:bg-accent transition-colors" />
-                </div>
-
                 <Icon
                   className="w-12 h-12 flex-shrink-0 mb-6 text-accent"
                   strokeWidth={1.5}

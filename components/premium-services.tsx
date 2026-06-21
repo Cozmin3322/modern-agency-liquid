@@ -104,12 +104,9 @@ export function PremiumServices() {
           <div className="space-y-6 text-white">
             {/* Label and accent line */}
             <div>
-              <div className="flex items-center gap-3 mb-3">
-                <span className="font-mono text-sm text-accent font-bold">/ 01</span>
-                <p className="text-sm font-bold tracking-widest uppercase text-accent">
-                  Despre Noi
-                </p>
-              </div>
+              <p className="text-sm font-bold tracking-widest uppercase text-accent mb-3">
+                Despre Noi
+              </p>
               <div className="w-16 h-0.5 bg-accent" />
             </div>
 

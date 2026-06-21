@@ -74,11 +74,7 @@ export default function Page() {
         {/* Services */}
         <section className="py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-4 mb-12">
-              <span className="font-mono text-sm text-accent font-bold">/ 01</span>
-              <span className="h-px w-12 bg-border" />
-              <h2 className="text-4xl font-serif uppercase">Servicii în Ungheni</h2>
-            </div>
+            <h2 className="text-4xl font-serif uppercase mb-12">Servicii în Ungheni</h2>
             <div className="grid md:grid-cols-3 gap-px bg-border">
               {[
                 { t: "Termoizolare Acoperiș", d: "Izolăm acoperișuri înclinate și plate cu spumă poliuretanică. Stop pierderi de căldură, stop condens.", href: "/termoizolare/acoperis" },
@@ -102,11 +98,7 @@ export default function Page() {
         {/* Areas */}
         <section className="py-20 bg-card">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-4 mb-12">
-              <span className="font-mono text-sm text-accent font-bold">/ 02</span>
-              <span className="h-px w-12 bg-border" />
-              <h2 className="text-4xl font-serif uppercase">Zone Deservite în Ungheni</h2>
-            </div>
+            <h2 className="text-4xl font-serif uppercase mb-12">Zone Deservite în Ungheni</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
               {AREAS.map((area) => (
                 <div key={area} className="flex items-center gap-2 p-3 border border-border">
@@ -124,11 +116,7 @@ export default function Page() {
         {/* Why us local */}
         <section className="py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-4 mb-12">
-              <span className="font-mono text-sm text-accent font-bold">/ 03</span>
-              <span className="h-px w-12 bg-border" />
-              <h2 className="text-4xl font-serif uppercase">De Ce IsoThermLux în Ungheni?</h2>
-            </div>
+            <h2 className="text-4xl font-serif uppercase mb-12">De Ce IsoThermLux în Ungheni?</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 ["Cunoaștem condițiile locale", "Climatul din raionul Ungheni — temperaturi extreme iarna, umiditate sezoniera. Știm exact ce tip de spumă funcționează cel mai bine."],

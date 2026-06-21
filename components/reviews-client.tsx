@@ -19,11 +19,7 @@ export function ReviewsClient({ reviews }: { reviews: Review[] }) {
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12 md:mb-16">
           <div>
-            <div className="flex items-center gap-4 mb-4">
-              <span className="font-mono text-sm text-accent font-bold">/ 04</span>
-              <span className="h-px flex-1 max-w-[60px] bg-border" />
-              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground">Recenzii</p>
-            </div>
+            <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">Recenzii</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-medium leading-tight">
               Ce spun<br />clienții noștri
             </h2>

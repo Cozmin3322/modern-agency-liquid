@@ -16,11 +16,7 @@ export function CoverageMoldova() {
 
             {/* Text */}
             <div>
-              <div className="flex items-center gap-4 mb-6">
-                <span className="font-mono text-sm text-accent font-bold">/ 05</span>
-                <span className="h-px flex-1 max-w-[60px] bg-border" />
-                <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground">Acoperire</p>
-              </div>
+              <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">Acoperire</p>
               <h3 className="text-4xl md:text-5xl font-serif font-medium leading-tight mb-6">
                 Acoperim toată<br />Moldova
               </h3>
