@@ -40,32 +40,16 @@ export default function PhotoGallery() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3 mb-16">
             {[
-              { img: '/images/project-termoizolare-01.jpg', title: 'Izolare Profesională' },
-              { img: '/images/project-hidroizolare-01.jpg', title: 'Hidroizolare Completă' },
-              { img: '/images/project-aplicare-spuma-01.jpg', title: 'Aplicare Spumă' },
-              { img: '/images/project-finisaj-01.jpg', title: 'Finisaj Premium' },
-              { img: '/images/project-detaliu-izolare-01.jpg', title: 'Detalii Izolare' },
-              { img: '/images/project-rezultat-final-01.jpg', title: 'Rezultat Final' },
-              { img: '/images/project-preparare-suprafata-01.jpg', title: 'Pregătire Suprafață' },
-              { img: '/images/project-protectie-margini-01.jpg', title: 'Protecție Margini' },
-              { img: '/images/project-casa-termoizolare-01.jpg', title: 'Casă Termoizolare' },
-              { img: '/images/project-casa-aplicare-01.jpg', title: 'Casă Aplicare' },
-              { img: '/images/project-casa-detail-01.jpg', title: 'Casă Detaliu' },
-              { img: '/images/project-casa-finisaj-01.jpg', title: 'Casă Finisaj' },
-              { img: '/images/project-hala-industrial-01.jpg', title: 'Hală Industrială' },
-              { img: '/images/project-hala-aplicare-01.jpg', title: 'Hală Aplicare' },
-              { img: '/images/project-hala-detail-01.jpg', title: 'Hală Detaliu' },
-              { img: '/images/project-apartament-izolare-01.jpg', title: 'Apartament Izolare' },
-              { img: '/images/project-terasa-izolare-01.jpg', title: 'Terasă Izolare' },
-              { img: '/images/project-terasa-aplicare-01.jpg', title: 'Terasă Aplicare' },
-              { img: '/images/project-terasa-finisaj-01.jpg', title: 'Terasă Finisaj' },
-              { img: '/images/project-fasada-protectie-01.jpg', title: 'Fațadă Protecție' },
+              ...Array.from({ length: 27 }, (_, i) => ({ img: `/images/gallery/termo-${String(i + 1).padStart(2, '0')}.webp`, title: 'Termoizolare' })),
+              ...Array.from({ length: 18 }, (_, i) => ({ img: `/images/gallery/hidro-${String(i + 1).padStart(2, '0')}.webp`, title: 'Hidroizolare' })),
+              ...Array.from({ length: 6 }, (_, i) => ({ img: `/images/gallery/fono-${String(i + 1).padStart(2, '0')}.webp`, title: 'Fonoizolare' })),
             ].map((photo, idx) => (
               <div key={idx} className="relative aspect-square overflow-hidden group cursor-pointer">
                 <Image
                   src={photo.img}
                   alt={photo.title}
                   fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
