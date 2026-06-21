@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { Phone } from 'lucide-react'
+import { useParallax } from '@/hooks/use-parallax'
 
 interface HeroContent {
   heroTitle: string
@@ -13,6 +14,8 @@ interface HeroClientProps {
 }
 
 export function HeroClient({ data }: HeroClientProps) {
+  const { ref, offset } = useParallax(0.25)
+
   const scrollToContactForm = () => {
     const contactForm = document.getElementById('contact-form')
     if (contactForm) {
@@ -21,9 +24,15 @@ export function HeroClient({ data }: HeroClientProps) {
   }
 
   return (
-    <section className="relative w-full min-h-[600px] md:min-h-[720px] pt-28 md:pt-32 pb-10 overflow-hidden">
-      {/* Background — hero image, full-bleed */}
-      <div className="absolute inset-0">
+    <section
+      ref={ref as React.RefObject<HTMLElement>}
+      className="relative w-full min-h-[600px] md:min-h-[720px] pt-28 md:pt-32 pb-10 overflow-hidden"
+    >
+      {/* Background — hero image, full-bleed, with parallax on desktop */}
+      <div
+        className="absolute left-0 right-0 will-change-transform"
+        style={{ top: '-10%', bottom: '-10%', transform: `translateY(${offset}px)` }}
+      >
         <Image
           src="/images/hero-family-thermostat.png"
           alt="Familie confortabilă acasă, izolată cu spumă poliuretanică"
