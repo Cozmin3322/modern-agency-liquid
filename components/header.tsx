@@ -321,7 +321,7 @@ export function Header() {
 
         {/* Bottom logo */}
         <div className="px-5 py-5 border-t border-border flex-shrink-0 flex items-center justify-center">
-          <Image src="/images/logo-isotherm-lux.webp" alt="IsoThermLux" width={56} height={56} className="h-10 w-auto" />
+          <Image src="/images/logo-isotherm-lux.webp" alt="IsoThermLux" width={96} height={96} className="h-20 w-auto" />
         </div>
       </div>
     </>
