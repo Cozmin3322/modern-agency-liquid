@@ -64,7 +64,7 @@ export function Header() {
       {/* Top bar */}
       <div className="fixed top-0 z-50 w-full bg-accent text-white text-xs">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 h-6 flex items-center justify-between">
-          <a href="tel:+37378370243" className="hidden sm:inline-flex items-center gap-1.5 hover:text-white/80 transition-colors">
+          <a href="tel:+37378370243" className="inline-flex items-center gap-1.5 hover:text-white/80 transition-colors">
             <Phone className="w-3 h-3" /> +373 78 370 243
           </a>
           <div className="flex items-center gap-3 ml-auto">
