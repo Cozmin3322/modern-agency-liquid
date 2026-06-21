@@ -10,15 +10,15 @@ export const metadata: Metadata = {
 }
 
 const rows = [
-  { tip: "Celulă Deschisă", grosime: "10 cm grosime", pret: "240-270 lei/mp + TVA" },
-  { tip: "Celulă Deschisă", grosime: "15 cm grosime", pret: "310-360 lei/mp + TVA" },
-  { tip: "Celulă Deschisă", grosime: "20 cm grosime", pret: "420-450 lei/mp + TVA" },
-  { tip: "Celulă Închisă", grosime: "1 cm grosime", pret: "140-180 lei/mp + TVA" },
-  { tip: "Celulă Închisă", grosime: "2 cm grosime", pret: "180-220 lei/mp + TVA" },
-  { tip: "Celulă Închisă", grosime: "3 cm grosime", pret: "240-280 lei/mp + TVA" },
-  { tip: "Celulă Închisă", grosime: "4 cm grosime", pret: "280-320 lei/mp + TVA" },
-  { tip: "Celulă Închisă", grosime: "5 cm grosime", pret: "310-350 lei/mp + TVA" },
-  { tip: "Hidroizolație Poliuree", grosime: "Aplicare", pret: "300 lei/mp + TVA" },
+  { tip: "Celulă Deschisă", grosime: "10 cm grosime", pret: "240-270 lei/mp" },
+  { tip: "Celulă Deschisă", grosime: "15 cm grosime", pret: "310-360 lei/mp" },
+  { tip: "Celulă Deschisă", grosime: "20 cm grosime", pret: "420-450 lei/mp" },
+  { tip: "Celulă Închisă", grosime: "1 cm grosime", pret: "140-180 lei/mp" },
+  { tip: "Celulă Închisă", grosime: "2 cm grosime", pret: "180-220 lei/mp" },
+  { tip: "Celulă Închisă", grosime: "3 cm grosime", pret: "240-280 lei/mp" },
+  { tip: "Celulă Închisă", grosime: "4 cm grosime", pret: "280-320 lei/mp" },
+  { tip: "Celulă Închisă", grosime: "5 cm grosime", pret: "310-350 lei/mp" },
+  { tip: "Hidroizolație Poliuree", grosime: "Aplicare", pret: "300 lei/mp" },
 ]
 
 export default function TarifePage() {
