@@ -81,10 +81,14 @@ export function Header() {
         )}
       >
 
-        <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between gap-6">
+        <nav className="relative max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between gap-6">
 
-          {/* Logo stânga */}
-          <Link href="/" onClick={handleLogoClick} className="flex items-center gap-2.5 group flex-shrink-0">
+          {/* Logo */}
+          <Link
+            href="/"
+            onClick={handleLogoClick}
+            className="flex items-center gap-2.5 group flex-shrink-0 absolute left-1/2 -translate-x-1/2 lg:static lg:left-auto lg:translate-x-0"
+          >
             <Image
               src="/images/logo-isotherm-lux.webp"
               alt="IsoThermLux"
@@ -92,7 +96,7 @@ export function Header() {
               className="h-11 w-auto transition-transform duration-200 group-hover:scale-105"
               priority
             />
-            <div>
+            <div className="hidden lg:block">
               <div className="font-serif text-base font-semibold leading-tight tracking-tight text-foreground">IsoThermLux</div>
               <div className="font-mono text-[9px] text-accent uppercase tracking-[0.2em]">Izolare Profesională</div>
             </div>
@@ -181,7 +185,7 @@ export function Header() {
           </ul>
 
           {/* Dreapta: telefon + hamburger */}
-          <div className="flex items-center gap-3 flex-shrink-0">
+          <div className="flex items-center gap-3 flex-shrink-0 ml-auto">
             {/* Buton telefon plin, cu umbra - mereu vizibil */}
             <a
               href="tel:+37378370243"
