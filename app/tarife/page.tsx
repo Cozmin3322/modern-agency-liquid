@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 }
 
 const rows = [
-  { tip: "Celulă Deschisă", grosime: "10 cm grosime", pret: "300 lei/mp + TVA" },
-  { tip: "Celulă Deschisă", grosime: "15 cm grosime", pret: "300 lei/mp + TVA" },
-  { tip: "Celulă Deschisă", grosime: "20 cm grosime", pret: "300 lei/mp + TVA" },
-  { tip: "Celulă Deschisă", grosime: "25 cm grosime", pret: "300 lei/mp + TVA" },
-  { tip: "Celulă Închisă", grosime: "5 cm grosime", pret: "300 lei/mp + TVA" },
-  { tip: "Celulă Închisă", grosime: "7 cm grosime", pret: "300 lei/mp + TVA" },
-  { tip: "Celulă Închisă", grosime: "10 cm grosime", pret: "300 lei/mp + TVA" },
-  { tip: "Celulă Închisă", grosime: "15 cm grosime", pret: "300 lei/mp + TVA" },
+  { tip: "Celulă Deschisă", grosime: "10 cm grosime", pret: "240-270 lei/mp + TVA" },
+  { tip: "Celulă Deschisă", grosime: "15 cm grosime", pret: "310-360 lei/mp + TVA" },
+  { tip: "Celulă Deschisă", grosime: "20 cm grosime", pret: "420-450 lei/mp + TVA" },
+  { tip: "Celulă Închisă", grosime: "1 cm grosime", pret: "140-180 lei/mp + TVA" },
+  { tip: "Celulă Închisă", grosime: "2 cm grosime", pret: "180-220 lei/mp + TVA" },
+  { tip: "Celulă Închisă", grosime: "3 cm grosime", pret: "240-280 lei/mp + TVA" },
+  { tip: "Celulă Închisă", grosime: "4 cm grosime", pret: "280-320 lei/mp + TVA" },
+  { tip: "Celulă Închisă", grosime: "5 cm grosime", pret: "310-350 lei/mp + TVA" },
   { tip: "Hidroizolație Poliuree", grosime: "Aplicare", pret: "300 lei/mp + TVA" },
 ]
 
@@ -34,8 +34,7 @@ export default function TarifePage() {
 
       <section className="py-16 md:py-24 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="overflow-x-auto border border-border">
-            <table className="w-full text-sm">
+          <div className="overflow-x-auto border border-border">            <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-border bg-card">
                   <th className="text-left p-4 font-semibold">Tip izolație</th>
@@ -54,6 +53,9 @@ export default function TarifePage() {
               </tbody>
             </table>
           </div>
+          <p className="text-sm text-muted-foreground mt-6">
+            Prețul pentru fiecare lucrare se calculează în parte și depinde de mai mulți factori.
+          </p>
         </div>
       </section>
 

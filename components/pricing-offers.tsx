@@ -8,20 +8,20 @@ const OFFERS = [
     image: '/images/gallery/termo-26.webp',
     title: 'Celulă Deschisă',
     rows: [
-      ['10 cm grosime', '300 lei/mp + TVA'],
-      ['15 cm grosime', '300 lei/mp + TVA'],
-      ['20 cm grosime', '300 lei/mp + TVA'],
-      ['25 cm grosime', '300 lei/mp + TVA'],
+      ['10 cm grosime', '240-270 lei/mp + TVA'],
+      ['15 cm grosime', '310-360 lei/mp + TVA'],
+      ['20 cm grosime', '420-450 lei/mp + TVA'],
     ],
   },
   {
     image: '/images/gallery/termo-27.webp',
     title: 'Celulă Închisă',
     rows: [
-      ['5 cm grosime', '300 lei/mp + TVA'],
-      ['7 cm grosime', '300 lei/mp + TVA'],
-      ['10 cm grosime', '300 lei/mp + TVA'],
-      ['15 cm grosime', '300 lei/mp + TVA'],
+      ['1 cm grosime', '140-180 lei/mp + TVA'],
+      ['2 cm grosime', '180-220 lei/mp + TVA'],
+      ['3 cm grosime', '240-280 lei/mp + TVA'],
+      ['4 cm grosime', '280-320 lei/mp + TVA'],
+      ['5 cm grosime', '310-350 lei/mp + TVA'],
     ],
   },
   {
@@ -97,6 +97,9 @@ export function PricingOffers() {
             <OfferCard key={offer.title} offer={offer} index={index} />
           ))}
         </div>
+        <p className="text-sm text-muted-foreground text-center mt-10">
+          Prețul pentru fiecare lucrare se calculează în parte și depinde de mai mulți factori.
+        </p>
       </div>
     </section>
   )
