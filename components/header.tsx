@@ -72,7 +72,7 @@ export function Header() {
 
       <header
         className={cn(
-          "fixed z-40 w-full top-6 h-14 transition-all duration-300 bg-white",
+          "fixed z-40 w-full top-6 h-16 transition-all duration-300 bg-white",
           scrolled && "shadow-md"
         )}
       >
