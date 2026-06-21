@@ -1,18 +1,21 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { X } from 'lucide-react'
+import { X, Settings } from 'lucide-react'
 import Link from 'next/link'
 
 export function CookieBanner() {
   const [isVisible, setIsVisible] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
+  const [hasConsent, setHasConsent] = useState(false)
 
   useEffect(() => {
     // Check if user has already accepted cookies
     const cookieConsent = localStorage.getItem('cookie-consent')
     if (!cookieConsent) {
       setIsVisible(true)
+    } else {
+      setHasConsent(true)
     }
     setIsLoading(false)
   }, [])
@@ -20,14 +23,29 @@ export function CookieBanner() {
   const handleAccept = () => {
     localStorage.setItem('cookie-consent', 'accepted')
     setIsVisible(false)
+    setHasConsent(true)
   }
 
   const handleReject = () => {
     localStorage.setItem('cookie-consent', 'rejected')
     setIsVisible(false)
+    setHasConsent(true)
   }
 
-  if (isLoading || !isVisible) return null
+  if (isLoading) return null
+
+  if (!isVisible) {
+    if (!hasConsent) return null
+    return (
+      <button
+        onClick={() => setIsVisible(true)}
+        aria-label="Setări cookies"
+        className="fixed bottom-4 left-4 z-50 flex items-center justify-center w-11 h-11 rounded-full bg-gray-900 text-white shadow-lg hover:bg-gray-700 transition-colors"
+      >
+        <Settings className="w-5 h-5" />
+      </button>
+    )
+  }
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-lg">
