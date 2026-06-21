@@ -92,10 +92,6 @@ export function Header() {
               className="h-14 w-auto transition-transform duration-200 group-hover:scale-105"
               priority
             />
-            <div className="hidden lg:block">
-              <div className="font-serif text-base font-semibold leading-tight tracking-tight text-foreground">IsoThermLux</div>
-              <div className="font-mono text-[9px] text-accent uppercase tracking-[0.2em]">Izolare Profesională</div>
-            </div>
           </Link>
 
           {/* Meniu desktop */}
