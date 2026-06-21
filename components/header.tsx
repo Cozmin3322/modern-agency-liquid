@@ -67,10 +67,6 @@ export function Header() {
           <a href="tel:+37378370243" className="inline-flex items-center gap-1.5 hover:text-white/80 transition-colors">
             <Phone className="w-3 h-3" /> +373 78 370 243
           </a>
-          <div className="flex items-center gap-3 ml-auto">
-            <a href="https://www.facebook.com/isothermlux" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-white/80 transition-colors">f</a>
-            <a href="https://www.instagram.com/isothermlux" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-white/80 transition-colors">ig</a>
-          </div>
         </div>
       </div>
 
@@ -92,8 +88,8 @@ export function Header() {
             <Image
               src="/images/logo-isotherm-lux.webp"
               alt="IsoThermLux"
-              width={72} height={72}
-              className="h-11 w-auto transition-transform duration-200 group-hover:scale-105"
+              width={96} height={96}
+              className="h-14 w-auto transition-transform duration-200 group-hover:scale-105"
               priority
             />
             <div className="hidden lg:block">
