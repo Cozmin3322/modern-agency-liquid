@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import type React from 'react'
+import Image from 'next/image'
 import { ArrowRight, Facebook, Instagram, Linkedin, Mail } from 'lucide-react'
 import { createLead } from '@/app/actions/crm'
 
@@ -45,8 +46,17 @@ export function ContactForm() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-0 items-stretch border border-border">
 
-          {/* Left — info, fundal auriu deschis */}
-          <div className="bg-[#E8B048] text-[#1A1D21] p-8 md:p-12 flex flex-col justify-center">
+          {/* Left — info, fundal auriu deschis cu poză */}
+          <div className="relative text-[#1A1D21] p-8 md:p-12 flex flex-col justify-center overflow-hidden">
+            <Image
+              src="/images/gallery/termo-22.webp"
+              alt=""
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-[#E8B048]/85" />
+            <div className="relative z-10">
             <p className="text-sm tracking-[0.3em] uppercase text-[#1A1D21]/60 mb-6">Contact</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-medium leading-tight mb-6">
               Cere ofertă<br />gratuită
@@ -81,6 +91,7 @@ export function ContactForm() {
                   <Icon className="w-4 h-4 text-[#1A1D21]/70" />
                 </a>
               ))}
+            </div>
             </div>
           </div>
 
