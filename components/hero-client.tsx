@@ -37,7 +37,7 @@ export function HeroClient({ data }: HeroClientProps) {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
         {/* Text panel — overlaid on top of the image */}
-        <div className="max-w-xl bg-accent/95 text-white p-8 md:p-12 rounded-sm backdrop-blur-sm">
+        <div className="max-w-xl bg-accent/20 text-white p-8 md:p-12 rounded-sm backdrop-blur-sm">
           <p className="font-mono text-sm uppercase tracking-[0.25em] text-white/80 mb-2">
             {data.heroTitle || 'Izolații cu Spumă'}
           </p>
