@@ -9,6 +9,7 @@ import { Reviews } from "@/components/reviews"
 import { ContactForm } from "@/components/contact-form"
 import { LocationMap } from "@/components/location-map"
 import { Footer } from "@/components/footer"
+import { RevealOnScroll } from "@/components/reveal-on-scroll"
 import Script from "next/script"
 
 const webSiteSchema = {
@@ -35,30 +36,32 @@ export default async function Home() {
       <Hero />
 
       {/* 1b. Servicii rapide (3 carduri) */}
-      <ServiceHighlights />
+      <RevealOnScroll><ServiceHighlights /></RevealOnScroll>
 
       {/* 2b. Statistici */}
-      <StatsBar />
+      <RevealOnScroll><StatsBar /></RevealOnScroll>
 
       {/* 3. Despre noi */}
-      <AboutDark />
+      <RevealOnScroll><AboutDark /></RevealOnScroll>
 
       {/* 4b. Acoperire + județe */}
-      <CoverageMoldova />
+      <RevealOnScroll><CoverageMoldova /></RevealOnScroll>
 
       {/* 4c. Oferte / Prețuri */}
-      <PricingOffers />
+      <RevealOnScroll><PricingOffers /></RevealOnScroll>
 
       {/* 5. Recenzii clienți */}
-      <Reviews />
+      <RevealOnScroll><Reviews /></RevealOnScroll>
 
       {/* 8. Formular contact */}
-      <div id="contact-form">
-        <ContactForm />
-      </div>
+      <RevealOnScroll>
+        <div id="contact-form">
+          <ContactForm />
+        </div>
+      </RevealOnScroll>
 
       {/* 8b. Locație / Hartă */}
-      <LocationMap />
+      <RevealOnScroll><LocationMap /></RevealOnScroll>
 
       <Footer />
     </main>
