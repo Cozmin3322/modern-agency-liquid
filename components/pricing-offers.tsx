@@ -8,27 +8,27 @@ const OFFERS = [
     image: '/images/gallery/termo-26.webp',
     title: 'Celulă Deschisă',
     rows: [
-      ['10 cm grosime', '43-70 lei/mp + TVA'],
-      ['15 cm grosime', '60-85 lei/mp + TVA'],
-      ['20 cm grosime', '75-95 lei/mp + TVA'],
-      ['25 cm grosime', '85-105 lei/mp + TVA'],
+      ['10 cm grosime', '300 lei/mp + TVA'],
+      ['15 cm grosime', '300 lei/mp + TVA'],
+      ['20 cm grosime', '300 lei/mp + TVA'],
+      ['25 cm grosime', '300 lei/mp + TVA'],
     ],
   },
   {
     image: '/images/gallery/termo-27.webp',
     title: 'Celulă Închisă',
     rows: [
-      ['5 cm grosime', '55-75 lei/mp + TVA'],
-      ['7 cm grosime', '75-95 lei/mp + TVA'],
-      ['10 cm grosime', '95-135 lei/mp + TVA'],
-      ['15 cm grosime', '135-180 lei/mp + TVA'],
+      ['5 cm grosime', '300 lei/mp + TVA'],
+      ['7 cm grosime', '300 lei/mp + TVA'],
+      ['10 cm grosime', '300 lei/mp + TVA'],
+      ['15 cm grosime', '300 lei/mp + TVA'],
     ],
   },
   {
     image: '/images/gallery/hidro-05.webp',
     title: 'Hidroizolație Poliuree',
     rows: [
-      ['Aplicare', 'de la 90 lei/mp + TVA'],
+      ['Aplicare', '300 lei/mp + TVA'],
     ],
   },
 ]
