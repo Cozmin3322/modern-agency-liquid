@@ -194,7 +194,7 @@ export default function HidroizolarePage() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 { image: "/images/gallery/hidro-15.webp", title: "Fundație", desc: "Protecție profesională a fundației împotriva infiltrațiilor de apă din pământ." },
-                { image: "/images/gallery/hidro-16.webp", title: "Acoperiș", desc: "Impermeabilizare completă a acoperișului. Protecție la ploaie și zăpadă." },
+                { image: "/images/gallery/hidro-05.webp", title: "Acoperiș", desc: "Impermeabilizare completă a acoperișului. Protecție la ploaie și zăpadă." },
                 { image: "/images/gallery/hidro-17.webp", title: "Subsol", desc: "Protecție subsol și pereți subterani. Spațiu uscat și locuibil." },
               ].map(({ image, title, desc }) => (
                 <div key={title} className="p-8 bg-background border border-border">
