@@ -2,6 +2,9 @@ import Link from "next/link"
 
 const infoLinks = [
   { label: "Tipuri de Spumă", href: "/ce-este-spuma-poliuretanica" },
+  { label: "Politica Cookie", href: "/politica-de-confidentialitate" },
+  { label: "Termeni și Condiții", href: "/termenii-si-conditiile" },
+  { label: "Politica de Confidențialitate", href: "/politica-de-confidentialitate" },
 ]
 
 export function Footer() {
