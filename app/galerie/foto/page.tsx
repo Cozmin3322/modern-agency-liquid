@@ -40,7 +40,7 @@ export default function PhotoGallery() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3 mb-16">
             {[
-              ...Array.from({ length: 27 }, (_, i) => ({ img: `/images/gallery/termo-${String(i + 1).padStart(2, '0')}.webp`, title: 'Termoizolare' })),
+              ...Array.from({ length: 39 }, (_, i) => ({ img: `/images/gallery/termo-${String(i + 1).padStart(2, '0')}.webp`, title: 'Termoizolare' })),
               ...Array.from({ length: 18 }, (_, i) => ({ img: `/images/gallery/hidro-${String(i + 1).padStart(2, '0')}.webp`, title: 'Hidroizolare' })),
               ...Array.from({ length: 6 }, (_, i) => ({ img: `/images/gallery/fono-${String(i + 1).padStart(2, '0')}.webp`, title: 'Fonoizolare' })),
             ].map((photo, idx) => (
