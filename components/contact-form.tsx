@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import type React from 'react'
 import Image from 'next/image'
-import { ArrowRight, Facebook, Instagram, Linkedin, Mail } from 'lucide-react'
+import { ArrowRight, Facebook, Instagram, Mail, Youtube, ShoppingBag } from 'lucide-react'
 import { createLead } from '@/app/actions/crm'
 
 export function ContactForm() {
@@ -82,9 +82,10 @@ export function ContactForm() {
             {/* Social */}
             <div className="flex gap-3">
               {[
-                { href: 'https://www.facebook.com/isothermlux', Icon: Facebook, label: 'Facebook' },
-                { href: 'https://www.instagram.com/isothermlux', Icon: Instagram, label: 'Instagram' },
-                { href: 'https://www.linkedin.com/company/isothermlux', Icon: Linkedin, label: 'LinkedIn' },
+                { href: 'https://www.facebook.com/profile.php?id=61577526434953', Icon: Facebook, label: 'Facebook' },
+                { href: 'https://www.instagram.com/solutecizolare/', Icon: Instagram, label: 'Instagram' },
+                { href: 'https://www.youtube.com/@isothermluxmoldova', Icon: Youtube, label: 'YouTube' },
+                { href: 'https://999.md/ro/cabinet/items/nilac?tab=all', Icon: ShoppingBag, label: '999.md' },
               ].map(({ href, Icon, label }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
                   className="w-9 h-9 rounded-full border border-[#1A1D21]/25 flex items-center justify-center hover:border-[#1A1D21]/60 hover:bg-[#1A1D21]/10 transition-all duration-200">

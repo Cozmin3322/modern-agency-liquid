@@ -15,8 +15,10 @@ export const organizationSchema = {
   areaServed: 'MD',
   priceRange: '€€',
   sameAs: [
-    'https://www.facebook.com/isothermlux',
-    'https://www.instagram.com/isothermlux'
+    'https://www.facebook.com/profile.php?id=61577526434953',
+    'https://www.instagram.com/solutecizolare/',
+    'https://www.youtube.com/@isothermluxmoldova',
+    'https://999.md/ro/cabinet/items/nilac?tab=all'
   ]
 }
 

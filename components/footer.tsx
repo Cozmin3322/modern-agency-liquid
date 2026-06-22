@@ -56,10 +56,14 @@ export function Footer() {
 
             {/* Social icons row */}
             <div className="flex items-center gap-3">
-              <a href="https://www.facebook.com/isothermlux" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+              <a href="https://www.facebook.com/profile.php?id=61577526434953" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
                 className="flex items-center justify-center w-9 h-9 rounded-sm bg-[#1877F2] text-white text-sm font-semibold">f</a>
-              <a href="https://www.instagram.com/isothermlux" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+              <a href="https://www.instagram.com/solutecizolare/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
                 className="flex items-center justify-center w-9 h-9 rounded-sm bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] text-white text-xs font-semibold">ig</a>
+              <a href="https://www.youtube.com/@isothermluxmoldova" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
+                className="flex items-center justify-center w-9 h-9 rounded-sm bg-[#FF0000] text-white text-xs font-semibold">yt</a>
+              <a href="https://999.md/ro/cabinet/items/nilac?tab=all" target="_blank" rel="noopener noreferrer" aria-label="999.md"
+                className="flex items-center justify-center w-9 h-9 rounded-sm bg-[#0099CC] text-white text-xs font-semibold">999</a>
               <a href="tel:+37360811115" aria-label="WhatsApp"
                 className="flex items-center justify-center w-9 h-9 rounded-sm bg-[#25D366] text-white text-xs font-semibold">wa</a>
             </div>
