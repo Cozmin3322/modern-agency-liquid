@@ -117,7 +117,7 @@ export function PremiumServices() {
 
             {/* Description */}
             <p className="text-sm text-white/80 leading-relaxed">
-              Utilizăm spumă poliuretanică și poliuree de cea mai înaltă calitate, produsă de unii dintre cei mai mari producători la nivel mondial. Spuma poliuretanică în termeni generici am putea spune că aceasta este o metodă completă de izolație și anume termo, fono și hidroizolație care poate adera la aproape orice suprafață, printre care betonul sau lemnul.
+              Utilizăm spumă poliuretanică de cea mai înaltă calitate, produsă de unii dintre cei mai mari producători la nivel mondial. Spuma poliuretanică în termeni generici am putea spune că aceasta este o metodă completă de izolație și anume termo, fono și hidroizolație care poate adera la aproape orice suprafață, printre care betonul sau lemnul.
             </p>
 
             {/* Button */}

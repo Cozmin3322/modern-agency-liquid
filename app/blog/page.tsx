@@ -181,8 +181,8 @@ const blogPosts = [
   },
   {
     id: 'izolare-fundatie-hidroizolatie',
-    title: 'Hidroizolație Poliuree pentru Fundație: Soluția Modernă Contra Umidității',
-    excerpt: 'Cum funcționează hidroizolația cu poliuree, de ce e mai eficientă decât metodele clasice și cât costă aplicarea pentru o fundație.',
+    title: 'Hidroizolație cu Spumă Poliuretanică pentru Fundație: Soluția Modernă Contra Umidității',
+    excerpt: 'Cum funcționează hidroizolația cu spumă poliuretanică, de ce e mai eficientă decât metodele clasice și cât costă aplicarea pentru o fundație.',
     author: 'IsoThermLux Team',
     date: '6 ianuarie 2024',
     readTime: '5 min',

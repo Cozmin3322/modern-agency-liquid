@@ -11,7 +11,7 @@ const items = [
     icon: Droplets,
     title: 'Hidroizolații',
     description:
-      'Hidroizolația cu poliuree este o metodă modernă pentru a asigura protecție împotriva umezelii, a infiltrațiilor apei și a acțiunilor climatice extreme. Aceasta metodă este recomandată pentru protecția clădirilor, a construcțiilor din beton, lemn, metal sau materiale compozite, a clădirilor civile, industriale sau agricole.',
+      'Hidroizolația cu spumă poliuretanică celulă închisă este o metodă modernă pentru a asigura protecție împotriva umezelii, a infiltrațiilor apei și a acțiunilor climatice extreme. Aceasta metodă este recomandată pentru protecția clădirilor, a construcțiilor din beton, lemn, metal sau materiale compozite, a clădirilor civile, industriale sau agricole.',
   },
   {
     icon: VolumeX,

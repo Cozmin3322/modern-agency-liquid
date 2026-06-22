@@ -48,7 +48,7 @@ const galleryThumbs = [
 const tipuriSpuma = [
   { image: "/images/gallery/termo-18.webp", title: "Spumă cu celulă deschisă", desc: "Ideală pentru izolarea în zone unde nu este nevoie de impermeabilizare." },
   { image: "/images/gallery/termo-19.webp", title: "Spumă cu celulă închisă", desc: "Perfectă pentru exterior, structuri expuse și protecție la umiditate." },
-  { image: "/images/gallery/termo-20.webp", title: "Poliuree", desc: "Soluție pentru hidroizolare și protecție suplementară." },
+  { image: "/images/gallery/termo-20.webp", title: "Hidroizolare", desc: "Spumă poliuretanică celulă închisă pentru hidroizolare și protecție suplementară." },
 ]
 
 const deCeIsoThermLux = [

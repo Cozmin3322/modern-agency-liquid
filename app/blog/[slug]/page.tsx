@@ -435,21 +435,21 @@ const articles: Record<string, BlogArticle> = {
     `,
   },
   'hidroizolatie-poliuree-fundatie-moderna': {
-    title: 'Hidroizolație Poliuree pentru Fundație: Soluția Modernă Contra Umidității',
+    title: 'Hidroizolație cu Spumă Poliuretanică pentru Fundație: Soluția Modernă Contra Umidității',
     author: 'IsoThermLux Team',
     date: '6 ianuarie 2024',
     readTime: '5 min',
     image: '/images/gallery/hidro-01.webp',
-    excerpt: 'Cum funcționează hidroizolația cu poliuree, de ce e mai eficientă decât metodele clasice și cât costă aplicarea pentru o fundație.',
-    keywords: 'hidroizolație poliuree, hidroizolare fundație modernă, membrană poliuree, protecție umiditate fundație',
+    excerpt: 'Cum funcționează hidroizolația cu spumă poliuretanică, de ce e mai eficientă decât metodele clasice și cât costă aplicarea pentru o fundație.',
+    keywords: 'hidroizolație spumă poliuretanică, hidroizolare fundație modernă, spumă celulă închisă, protecție umiditate fundație',
     content: `
-      <h2>Ce Este Hidroizolația cu Poliuree?</h2>
-      <p>Poliureea este o membrană lichidă aplicată prin pulverizare, care formează un strat continuu, elastic și complet impermeabil, fără cusături sau îmbinări vulnerabile.</p>
+      <h2>Ce Este Hidroizolația cu Spumă Poliuretanică?</h2>
+      <p>Spuma poliuretanică celulă închisă este aplicată prin pulverizare, care formează un strat continuu, rigid și complet impermeabil, fără cusături sau îmbinări vulnerabile.</p>
 
       <h2>De Ce Este Superioară Metodelor Clasice</h2>
       <ul>
         <li>Aderență perfectă pe orice formă de suprafață</li>
-        <li>Elasticitate ridicată — rezistă la mișcările naturale ale fundației</li>
+        <li>Rigiditate ridicată — protejează structura fundației</li>
         <li>Uscare rapidă, lucrarea se finalizează în câteva ore</li>
         <li>Fără cusături care pot ceda în timp, ca la membranele bituminoase</li>
       </ul>
@@ -458,10 +458,10 @@ const articles: Record<string, BlogArticle> = {
       <p>Fundații, terase, subsoluri, balcoane și acoperișuri plate — orice zonă expusă constant la apă sau umiditate ridicată.</p>
 
       <h2>Cost de Aplicare</h2>
-      <p>Pentru hidroizolația cu poliuree, prețul orientativ este de la 90 lei/mp + TVA, în funcție de complexitatea suprafeței și pregătirea necesară.</p>
+      <p>Pentru hidroizolația cu spumă poliuretanică, prețul orientativ este de la 90 lei/mp + TVA, în funcție de complexitatea suprafeței și pregătirea necesară.</p>
 
       <h2>Recomandarea Noastră</h2>
-      <p>Pentru fundațiile expuse la ape subterane sau cu istoric de infiltrații, hidroizolația cu poliuree oferă cea mai sigură protecție pe termen lung.</p>
+      <p>Pentru fundațiile expuse la ape subterane sau cu istoric de infiltrații, hidroizolația cu spumă poliuretanică oferă cea mai sigură protecție pe termen lung.</p>
     `,
   },
   'izolare-containere-metalice-spuma-poliuretanica': {
@@ -544,7 +544,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     'fonoizolare-spuma-poliuretanica-reducere-zgomot': 'Cum reduce spuma poliuretanică zgomotul din casă, alături de izolarea termică. Soluție completă pentru confort acustic.',
     'aplicare-spuma-poliuretanica-iarna': 'Se poate izola cu spumă poliuretanică pe timp de iarnă? Condiții, avantaje și ce verifică o echipă profesionistă.',
     'greseli-frecvente-izolare-termica': '7 greșeli frecvente care reduc eficiența izolării termice și cum le eviți pentru o investiție durabilă.',
-    'hidroizolatie-poliuree-fundatie-moderna': 'Hidroizolația cu poliuree pentru fundație: cum funcționează, de ce e superioară metodelor clasice și ce costuri implică.',
+    'hidroizolatie-poliuree-fundatie-moderna': 'Hidroizolația cu spumă poliuretanică pentru fundație: cum funcționează, de ce e superioară metodelor clasice și ce costuri implică.',
     'izolare-containere-metalice-spuma-poliuretanica': 'Cum izolezi termic containere metalice și construcții din tablă cu spumă poliuretanică pentru confort pe tot anul.',
     'durata-viata-spuma-poliuretanica-intretinere': 'Durata reală de viață a spumei poliuretanice, factorii care o influențează și de ce nu necesită întreținere periodică.',
   }

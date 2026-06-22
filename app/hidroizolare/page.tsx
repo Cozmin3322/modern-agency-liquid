@@ -14,13 +14,13 @@ const hidroizolareServiceSchema = serviceSchema(
 )
 
 export const metadata: Metadata = {
-  title: "Hidroizolare cu Poliuree Moldova | Aplicare Profesională | IsoThermLux",
-  description: "Hidroizolare profesională cu poliuree și spumă poliuretanică în Moldova. Protecție completă fundații, subsoluri, acoperișuri. Garanție 25 ani scrisă.",
-  keywords: "hidroizolare Moldova, hidroizolare Chișinău, impermeabilizare fundație, hidroizolare acoperiș, protecție umiditate Moldova, hidroizolare subsol, poliuree",
+  title: "Hidroizolare cu Spumă Poliuretanică Moldova | Aplicare Profesională | IsoThermLux",
+  description: "Hidroizolare profesională cu spumă poliuretanică celulă închisă în Moldova. Protecție completă fundații, subsoluri, acoperișuri. Garanție 25 ani scrisă.",
+  keywords: "hidroizolare Moldova, hidroizolare Chișinău, impermeabilizare fundație, hidroizolare acoperiș, protecție umiditate Moldova, hidroizolare subsol, spumă poliuretanică",
   alternates: { canonical: "https://www.isothermlux.md/hidroizolare" },
   openGraph: {
-    title: "Hidroizolare cu Poliuree | Aplicare Profesională | IsoThermLux",
-    description: "Hidroizolare cu poliuree și spumă poliuretanică. Garanție 25 ani scrisă. Protecție fundații, subsoluri, acoperișuri.",
+    title: "Hidroizolare cu Spumă Poliuretanică | Aplicare Profesională | IsoThermLux",
+    description: "Hidroizolare cu spumă poliuretanică celulă închisă. Garanție 25 ani scrisă. Protecție fundații, subsoluri, acoperișuri.",
     type: "website",
     locale: "ro_MD",
     url: "https://www.isothermlux.md/hidroizolare",
@@ -73,7 +73,7 @@ export default function HidroizolarePage() {
         {/* Hero — bandă imagine + titlu sub ea */}
         <section className="relative pt-24">
           <div className="relative h-56 md:h-80 w-full">
-            <Image src="/images/gallery/hidro-05.webp" alt="Aplicare hidroizolare cu poliuree" fill priority sizes="100vw" className="object-cover" />
+            <Image src="/images/gallery/hidro-05.webp" alt="Aplicare hidroizolare cu spumă poliuretanică" fill priority sizes="100vw" className="object-cover" />
             <div className="absolute inset-0 bg-black/30" />
             <div className="absolute right-6 md:right-16 top-1/2 -translate-y-1/2 w-24 h-24 md:w-32 md:h-32 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
               <Droplets className="w-10 h-10 md:w-12 md:h-12 text-accent" />
@@ -81,13 +81,13 @@ export default function HidroizolarePage() {
           </div>
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-semibold leading-tight mb-2">
-              Hidroizolare cu Poliuree
+              Hidroizolare cu Spumă Poliuretanică
             </h1>
             <p className="text-lg md:text-xl text-accent font-medium mb-6">
               Aplicare Profesională în Toată Moldova
             </p>
             <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Infiltrațiile de apă afectează fundațiile, subsolurile și acoperișurile, ducând la mucegai, igrasie și degradarea structurii. Hidroizolarea cu poliuree creează o membrană elastică, fără rosturi, complet impermeabilă, cu durată de viață de peste 25 de ani.
+              Infiltrațiile de apă afectează fundațiile, subsolurile și acoperișurile, ducând la mucegai, igrasie și degradarea structurii. Hidroizolarea cu spumă poliuretanică creează o membrană elastică, fără rosturi, complet impermeabilă, cu durată de viață de peste 25 de ani.
             </p>
           </div>
         </section>
@@ -98,9 +98,9 @@ export default function HidroizolarePage() {
             <div className="relative h-64 md:h-96 mb-10 overflow-hidden">
               <Image src="/images/gallery/hidro-01.webp" alt="Aplicare hidroizolare la fundație" fill sizes="(max-width: 768px) 100vw, 800px" className="object-cover" />
             </div>
-            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Ce este hidroizolația cu poliuree?</h2>
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Ce este hidroizolația cu spumă poliuretanică?</h2>
             <p className="text-foreground/80 leading-relaxed mb-4">
-              Hidroizolația cu poliuree este o metodă modernă de a asigura protecție împotriva umezelii, infiltrațiilor de apă și a acțiunilor climatice extreme. Materialul se aplică lichid, prin pulverizare, și se întărește în câteva secunde, formând o membrană continuă, elastică și complet etanșă.
+              Hidroizolația cu spumă poliuretanică celulă închisă este o metodă modernă de a asigura protecție împotriva umezelii, infiltrațiilor de apă și a acțiunilor climatice extreme. Materialul se aplică prin pulverizare și se întărește în câteva secunde, formând un strat continuu, rigid și complet etanș.
             </p>
             <p className="text-foreground/80 leading-relaxed">
               Este recomandată pentru protecția clădirilor din beton, lemn, metal sau materiale compozite — clădiri civile, industriale sau agricole. Aderă direct la suprafață, fără rosturi sau cusături, eliminând orice posibilitate de infiltrare.
@@ -111,7 +111,7 @@ export default function HidroizolarePage() {
         {/* Avantaje */}
         <section className="py-16 md:py-20 bg-background">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-10 text-accent">Avantajele hidroizolației cu poliuree</h2>
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-10 text-accent">Avantajele hidroizolației cu spumă poliuretanică</h2>
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div>
                 <ul className="space-y-3">
@@ -134,7 +134,7 @@ export default function HidroizolarePage() {
                 </a>
               </div>
               <div className="relative h-80 md:h-96">
-                <Image src="/images/gallery/hidro-02.webp" alt="Tehnician aplicând hidroizolare cu poliuree" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
+                <Image src="/images/gallery/hidro-02.webp" alt="Tehnician aplicând hidroizolare cu spumă poliuretanică" fill sizes="(max-width: 768px) 100vw, 500px" className="object-cover" />
               </div>
             </div>
           </div>
@@ -158,7 +158,7 @@ export default function HidroizolarePage() {
         {/* Unde se aplica + galerie */}
         <section className="py-16 md:py-20 bg-background">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Unde se poate aplica hidroizolația cu poliuree?</h2>
+            <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Unde se poate aplica hidroizolația cu spumă poliuretanică?</h2>
             <div className="grid md:grid-cols-2 gap-10">
               <div>
                 <p className="text-foreground/80 mb-4">
@@ -216,7 +216,7 @@ export default function HidroizolarePage() {
           </div>
           <div className="relative max-w-3xl mx-auto px-4">
             <h2 className="text-xl md:text-2xl font-serif font-medium mb-6">
-              Vrei să afli cât te costă o hidroizolare cu poliuree la casa sau hala ta?
+              Vrei să afli cât te costă o hidroizolare cu spumă poliuretanică la casa sau hala ta?
             </h2>
             <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 font-semibold hover:bg-accent/90 transition-colors">
               Contact
@@ -242,7 +242,7 @@ export default function HidroizolarePage() {
               </div>
             </div>
             <p className="text-foreground/80 leading-relaxed mt-10 max-w-3xl">
-              Dacă vrei o locuință protejată complet de infiltrații și umiditate, fără costuri urcate la reparații, hidroizolarea cu poliuree este alegerea ideală. Începe chiar azi călătoria către un spațiu uscat, sigur și durabil. Protecție garantată, fără griji.
+              Dacă vrei o locuință protejată complet de infiltrații și umiditate, fără costuri urcate la reparații, hidroizolarea cu spumă poliuretanică este alegerea ideală. Începe chiar azi călătoria către un spațiu uscat, sigur și durabil. Protecție garantată, fără griji.
             </p>
             <p className="text-accent font-medium mt-6">Completează formularul de mai sus sau contactează-ne direct!</p>
             <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 mt-4 font-semibold hover:bg-accent/90 transition-colors">

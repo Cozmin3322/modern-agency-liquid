@@ -82,7 +82,7 @@ export default function Page() {
                 { t: "Termoizolare Mansardă", d: "Mansardă sau pod transformat în spațiu locuibil confortabil, cald iarna și răcoros vara.", href: "/termoizolare/mansarda" },
                 { t: "Termoizolare Fundație", d: "Fundație protejată termic și hidro simultan cu celulă închisă. Soluție completă 2 în 1.", href: "/termoizolare/fundatie" },
                 { t: "Termoizolare Hale", d: "Hale industriale și agricole izolate rapid. Economie uriașă la încălzire pentru suprafețe mari.", href: "/termoizolare/hale-si-depozite" },
-                { t: "Hidroizolare", d: "Impermeabilizare acoperișuri, terase și fundații cu spumă celulă închisă sau poliuree.", href: "/hidroizolare" },
+                { t: "Hidroizolare", d: "Impermeabilizare acoperișuri, terase și fundații cu spumă poliuretanică celulă închisă.", href: "/hidroizolare" },
               ].map((s, i) => (
                 <Link key={i} href={s.href} className="group bg-background p-8 hover:bg-[#1A1D21] transition-colors duration-300">
                   <span className="font-mono text-xs text-accent mb-4 block">/ 0{i+1}</span>

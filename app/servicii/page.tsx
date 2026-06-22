@@ -28,7 +28,7 @@ const services = [
     image: "/images/gallery/hidro-05.webp",
     title: "Hidroizolatii",
     blocks: [
-      { label: "Aplicare poliuree", text: "Poliureea este o rasina din doua componente, apartinand familiei de \"impermeabilizare continua cu elastomeri de poliuretan\". La noi gasesti cele mai bune servicii de calitate." },
+      { label: "Aplicare spumă poliuretanică celulă închisă", text: "Spuma poliuretanică celulă închisă este o spumă rigidă, impermeabilă, care formează un strat continuu fără rosturi. La noi gasesti cele mai bune servicii de calitate." },
     ],
   },
   {
@@ -93,7 +93,7 @@ export default function ServiciiPage() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Izolație cu spumă poliuretanică • Izolație termică cu spumă • Izolație cu spumă poliuretanică cu celulă închisă •
               Izolație cu spumă poliuretanică cu celulă deschisă • Termoizolație poduri, mansarde, izolație terase •
-              Izolație hale industriale • Hidroizolație cu poliuree, izolație acoperișuri, terase, fundații, subsol cu poliuree •
+              Izolație hale industriale • Hidroizolație cu spumă poliuretanică, izolație acoperișuri, terase, fundații, subsol •
               Izolație exterioară acoperiș și pereți • Fonoizolații cu spumă poliuretanică • Ignifugare lemn.
             </p>
           </div>

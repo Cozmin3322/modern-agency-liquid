@@ -5,7 +5,7 @@ import { Reviews } from "@/components/reviews"
 
 export const metadata: Metadata = {
   title: "Tarife Termoizolare și Hidroizolare | IsoThermLux Moldova",
-  description: "Tarife pentru izolare cu spumă poliuretanică celulă deschisă, celulă închisă și hidroizolație cu poliuree. Prețuri pe metru pătrat.",
+  description: "Tarife pentru izolare cu spumă poliuretanică celulă deschisă, celulă închisă și hidroizolație cu spumă poliuretanică. Prețuri pe metru pătrat.",
   alternates: { canonical: "https://www.isothermlux.md/tarife" }
 }
 
@@ -18,7 +18,7 @@ const rows = [
   { tip: "Celulă Închisă", grosime: "3 cm grosime", pret: "240-280 lei/mp" },
   { tip: "Celulă Închisă", grosime: "4 cm grosime", pret: "280-320 lei/mp" },
   { tip: "Celulă Închisă", grosime: "5 cm grosime", pret: "310-350 lei/mp" },
-  { tip: "Hidroizolație Poliuree", grosime: "Aplicare", pret: "300 lei/mp" },
+  { tip: "Hidroizolație Spumă Poliuretanică", grosime: "Aplicare", pret: "300 lei/mp" },
 ]
 
 export default function TarifePage() {

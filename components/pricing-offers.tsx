@@ -26,7 +26,7 @@ const OFFERS = [
   },
   {
     image: '/images/gallery/hidro-05.webp',
-    title: 'Hidroizolație Poliuree',
+    title: 'Hidroizolație Spumă Poliuretanică',
     rows: [
       ['Aplicare', '300 lei/mp'],
     ],
