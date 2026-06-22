@@ -17,12 +17,12 @@ import Script from 'next/script'
 
 export default function VideoGallery() {
   const videos = [
-    { title: 'Aplicare Spumă Poliuretanică - Mansardă', id: 'dc7hwYjJwlY', description: 'Videoclip profesional de aplicare spumă poliuretanică pe mansardă', short: false },
-    { title: 'Finisaj Fațadă - Casa Rezidențială', id: '0Vdy8Aopzx0', description: 'Finisaj de calitate pe fațada unei case rezidențiale', short: false },
-    { title: 'Hidroizolare Subsol - Construcție', id: 'dQw4w9WgXcQ', description: 'Proces de hidroizolare profesional a subsolului unei construcții', short: false },
-    { title: 'Termoizolare Hală Industrială', id: 'dQw4w9WgXcQ', description: 'Termoizolare profesională pe hală industrială', short: false },
-    { title: 'Aplicare Spumă Poliuretanică', id: 'bWrmbcbpvkE', description: 'Short: aplicare spumă poliuretanică profesională', short: true },
-    { title: 'Termoizolare în Acțiune', id: 'OSIQmgCrCyc', description: 'Short: echipa IsoThermLux în acțiune', short: true },
+    { title: 'Test Rezistență la Foc - Spumă Poliuretanică', id: 'yFPhqgjWz-Q', description: 'Experiment care arată cum spuma poliuretanică funcționează ca barieră în caz de incendiu', short: true },
+    { title: 'Izolația Viitorului', id: 'pFR0D0T2F7c', description: 'Izolație non-toxică, etanșare completă și execuție rapidă', short: true },
+    { title: 'Izolație pentru Fundații, Mansarde și Fațade', id: 'OSIQmgCrCyc', description: 'Izolație non-toxică, performanță termică de top pentru fundații, mansarde, fațade și poduri', short: true },
+    { title: 'Barieră Termică Perfectă', id: 'bWrmbcbpvkE', description: 'Economie de gaz, etanșare completă și confort imediat în orice sezon', short: true },
+    { title: 'Termo & Hidro Izolare Moldova', id: 'dc7hwYjJwlY', description: 'Servicii de termoizolare și hidroizolare în Moldova', short: true },
+    { title: 'De Ce Să Alegi Spuma Poliuretanică', id: '0Vdy8Aopzx0', description: 'Confort termic, economii la facturi, fonoizolație și aplicare rapidă', short: true },
   ]
 
   const videoSchemas = videos.map(video => ({
@@ -88,28 +88,6 @@ export default function VideoGallery() {
       {/* Videos Grid */}
       <section className="py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            {videos.filter(v => !v.short).map((video, idx) => (
-              <div key={idx} className="bg-card overflow-hidden border border-border group">
-                <div className="relative aspect-video">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src={`https://www.youtube.com/embed/${video.id}?mute=1&controls=1&modestbranding=1&rel=0`}
-                    title={video.title}
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="border-0 absolute inset-0 w-full h-full"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-foreground">{video.title}</h3>
-                  <p className="text-sm text-muted-foreground mt-1">{video.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
           {/* YouTube Shorts — vertical format */}
           <div className="mb-16">
             <div className="flex items-center gap-3 mb-6">
@@ -118,21 +96,22 @@ export default function VideoGallery() {
               <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Videoclipuri Scurte</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {videos.filter(v => v.short).map((video, idx) => (
+              {videos.map((video, idx) => (
                 <div key={idx} className="bg-card overflow-hidden border border-border group">
                   <div className="relative" style={{ paddingBottom: '177.78%' }}>
                     <iframe
                       width="100%"
                       height="100%"
-                      src={`https://www.youtube.com/embed/${video.id}?mute=1&controls=1&modestbranding=1&rel=0`}
+                      src={`https://www.youtube.com/embed/${video.id}?controls=1&modestbranding=1&rel=0`}
                       title={video.title}
-                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                       className="border-0 absolute inset-0 w-full h-full"
                     />
                   </div>
                   <div className="p-3">
                     <h3 className="font-semibold text-foreground text-sm">{video.title}</h3>
+                    <p className="text-xs text-muted-foreground mt-1">{video.description}</p>
                   </div>
                 </div>
               ))}
