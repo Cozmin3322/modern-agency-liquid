@@ -28,7 +28,7 @@ export default function PhotoGallery() {
       {/* Hero */}
       <section className="py-16 md:py-24 bg-card border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6">Galerie Fotografie</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6">Galerie Foto</h1>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
             Descoperă imaginile din proiectele noastre finalizate - demonstrația calității și profesionalismului IsoThermLux.
           </p>
