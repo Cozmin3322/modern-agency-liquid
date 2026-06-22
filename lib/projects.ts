@@ -114,7 +114,7 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "Termoizolare Acoperiș Plat",
-    category: "Termoizolare",
+    category: "Hidroizolare",
     image: "/images/project-acoperis-plat-01.webp",
     images: [
       "/images/project-acoperis-plat-01.webp",
@@ -226,7 +226,7 @@ export const projects: Project[] = [
   {
     id: 8,
     title: "Termoizolare Mansardă",
-    category: "Termoizolare",
+    category: "Hidroizolare",
     image: "/images/project-mansarda-3-01.webp",
     images: [
       "/images/project-mansarda-3-01.webp",
@@ -254,7 +254,7 @@ export const projects: Project[] = [
   {
     id: 9,
     title: "Termoizolare Terasă",
-    category: "Termoizolare",
+    category: "Hidroizolare",
     image: "/images/project-terasa-01.webp",
     images: [
       "/images/project-terasa-01.webp",
@@ -282,7 +282,7 @@ export const projects: Project[] = [
   {
     id: 10,
     title: "Termoizolare Fațadă",
-    category: "Termoizolare",
+    category: "Hidroizolare",
     image: "/images/project-fatada-01.webp",
     images: [
       "/images/project-fatada-01.webp",
