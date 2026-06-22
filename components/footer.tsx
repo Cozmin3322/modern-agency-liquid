@@ -1,18 +1,7 @@
 import Link from "next/link"
 
-const serviceLinks = [
-  { label: "Termoizolare", href: "/termoizolare" },
-  { label: "Hidroizolare", href: "/hidroizolare" },
-  { label: "Portofoliu", href: "/portofoliu" },
-]
-
 const infoLinks = [
-  { label: "Ghid Spumă Poliuretanică", href: "/ce-este-spuma-poliuretanica" },
-  { label: "Celulă Închisă", href: "/spuma-cu-celula-inchisa" },
-  { label: "Despre Noi", href: "/despre-noi" },
-  { label: "Recenzii", href: "/recenzii" },
-  { label: "Termeni și Condiții", href: "/termenii-si-conditiile" },
-  { label: "Politica de Confidențialitate", href: "/politica-de-confidentialitate" },
+  { label: "Tipuri de Spumă", href: "/ce-este-spuma-poliuretanica" },
 ]
 
 export function Footer() {
@@ -34,7 +23,7 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-4">Informații</h3>
             <div className="h-px w-8 bg-accent mb-4" />
             <ul className="space-y-2.5">
-              {[...serviceLinks, ...infoLinks].map((link) => (
+              {infoLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-foreground/80 hover:text-accent transition-colors">
                     {link.label}
