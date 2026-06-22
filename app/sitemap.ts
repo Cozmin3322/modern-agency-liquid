@@ -19,7 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/hidroizolare`, lastModified, changeFrequency: 'weekly', priority: 0.9 },
 
     // Termoizolare subpages
-    { url: `${baseUrl}/fatade`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/termoizolare/mansarda`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/termoizolare/casa`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/termoizolare/hala-industriala`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
@@ -59,7 +58,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/servicii`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/contact`, lastModified, changeFrequency: 'yearly', priority: 0.7 },
     { url: `${baseUrl}/fonoizolare`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/beneficii`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/ce-este-spuma-poliuretanica`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/spuma-cu-celula-inchisa`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/galerie/video`, lastModified, changeFrequency: 'monthly', priority: 0.7 },

@@ -9,8 +9,8 @@ export default function robots(): MetadataRoute.Robots {
           '/', '/blog', '/blog/*', '/termoizolare', '/termoizolare/*',
           '/hidroizolare', '/hidroizolare/*',
           '/intrebari-frecvente', '/portofoliu', '/portofoliu/*',
-          '/boiler', '/transport-industrial', '/fatade', '/fonoizolare',
-          '/despre-noi', '/contact', '/recenzii', '/servicii', '/beneficii',
+          '/boiler', '/transport-industrial', '/fonoizolare',
+          '/despre-noi', '/contact', '/recenzii', '/servicii',
           '/ce-este-spuma-poliuretanica', '/spuma-cu-celula-inchisa',
           '/galerie/foto', '/galerie/video', '/locatii/chisinau', '/locatii/balti'
         ],

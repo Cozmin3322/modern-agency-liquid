@@ -2,13 +2,11 @@ import Link from "next/link"
 
 const serviceLinks = [
   { label: "Termoizolare", href: "/termoizolare" },
-  { label: "Fațade", href: "/fatade" },
   { label: "Hidroizolare", href: "/hidroizolare" },
   { label: "Portofoliu", href: "/portofoliu" },
 ]
 
 const infoLinks = [
-  { label: "Beneficii", href: "/beneficii" },
   { label: "Ghid Spumă Poliuretanică", href: "/ce-este-spuma-poliuretanica" },
   { label: "Celulă Închisă", href: "/spuma-cu-celula-inchisa" },
   { label: "Despre Noi", href: "/despre-noi" },
