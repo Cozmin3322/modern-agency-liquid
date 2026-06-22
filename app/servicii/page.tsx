@@ -33,7 +33,7 @@ const services = [
   },
   {
     href: "/fonoizolare",
-    image: "/images/gallery/fono-06.webp",
+    image: "/images/gallery/fono-07.webp",
     title: "Fonoizolatii",
     blocks: [
       { label: "Aplicare spuma celula deschisa", text: "Este o spuma cu densitate scazuta, in general de 8 kg/m3, cu o performanta termica asemanatoare cu cea a materialelor clasice. Spuma cu celula deschisa mai este si spuma flexibila." },
