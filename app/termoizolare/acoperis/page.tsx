@@ -7,12 +7,12 @@ import { ArrowRight, Check, Building, House, Factory, Construction, Building2, L
 
 export const metadata: Metadata = {
   title: "Termoizolare Acoperiș Terasă și Șarpantă | Spumă Poliuretanică | IsoThermLux",
-  description: "Termoizolare profesională a acoperișurilor cu spumă poliuretanică. Terase plate, șarpante, table ondulate. Economie 40% la energie. Garanție 25 ani. Chișinău, Moldova.",
+  description: "Termoizolare profesională a acoperișurilor cu spumă poliuretanică. Terase plate, șarpante, table ondulate. Economie 40% la energie. Garanție 25 de ani. Chișinău, Moldova.",
   keywords: "termoizolare acoperis Moldova, izolare terasa, spuma poliuretanica acoperis, termoizolare sarpanta, izolare table acoperis Chisinau",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare/acoperis" },
   openGraph: {
     title: "Termoizolare Acoperiș | IsoThermLux Moldova",
-    description: "Izolație termică profesională pentru acoperișuri cu spumă poliuretanică. Terase, șarpante, hale. Garanție 25 ani.",
+    description: "Izolație termică profesională pentru acoperișuri cu spumă poliuretanică. Terase, șarpante, hale. Garanție 25 de ani.",
     type: "website",
     locale: "ro_MD",
     url: "https://www.isothermlux.md/termoizolare/acoperis",
@@ -104,7 +104,7 @@ export default function AcoperisPage() {
               <div>
                 <h2 className="text-4xl font-serif font-medium mb-6">Beneficiile Izolării Acoperișului</h2>
                 <p className="text-foreground/70 mb-8">
-                  Un acoperiș bine izolat este cea mai importantă investiție termică pe care o poți face. Recuperezi banii în 2–3 ani prin economii la energie.
+                  Un acoperiș bine izolat este cea mai importantă investiție termică pe care o poți face. Recuperezi banii în 2–3 de ani prin economii la energie.
                 </p>
                 <ul className="space-y-4">
                   {[
@@ -112,7 +112,7 @@ export default function AcoperisPage() {
                     { title: "Elimini condensul și mucegaiul", desc: "Spuma nu permite vapori să ajungă la structura rece." },
                     { title: "Confort vara și iarna", desc: "Acoperișul nu mai radiază cald vara sau frig iarna." },
                     { title: "Protejezi structura de lemn", desc: "Fără umezeală, lemnul nu putrezește." },
-                    { title: "Garanție 25 ani scrisă", desc: "Cel mai lung termen de garanție din Moldova." },
+                    { title: "Garanție 25 de ani scrisă", desc: "Cel mai lung termen de garanție din Moldova." },
                   ].map((b, idx) => (
                     <li key={idx} className="flex items-start gap-3 p-4 bg-background border border-border rounded-none">
                       <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />

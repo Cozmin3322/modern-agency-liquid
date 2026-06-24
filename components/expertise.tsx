@@ -7,7 +7,7 @@ import { HighlightedText } from "./highlighted-text"
 const expertiseAreas = [
   {
     title: "Termoizolare",
-    description: "Izolație termică profesională cu spumă poliuretanică. Reducere costuri încălzire cu 40-50%. Fără punți termice. Aplicare rapidă în 1-2 zile. Garanție 25 ani.",
+    description: "Izolație termică profesională cu spumă poliuretanică. Reducere costuri încălzire cu 40-50%. Fără punți termice. Aplicare rapidă în 1-2 zile. Garanție 25 de ani.",
     icon: Thermometer,
   },
   {

@@ -18,7 +18,7 @@ const fonoizolareServiceSchema = {
 
 export const metadata: Metadata = {
   title: "Fonoizolare cu Spumă Poliuretanică Moldova | Aplicare Profesională | IsoThermLux",
-  description: "Fonoizolare profesională cu spumă poliuretanică cu celulă deschisă. Reducere zgomot până la 70%. Garanție 25 ani scrisă. Consultație gratuită Chișinău.",
+  description: "Fonoizolare profesională cu spumă poliuretanică cu celulă deschisă. Reducere zgomot până la 70%. Garanție 25 de ani scrisă. Consultație gratuită Chișinău.",
   keywords: "fonoizolare Moldova, fonoizolare Chișinău, izolare fonică, reducere zgomot, confort acustic, spumă poliuretanică fonoizolare",
   alternates: { canonical: "https://www.isothermlux.md/fonoizolare" },
 }
@@ -46,7 +46,7 @@ const galleryThumbs = [
 ]
 
 const deCeIsoThermLux = [
-  "Experiență de peste 14 ani în izolații profesionale",
+  "Experiență de peste 14 de ani în izolații profesionale",
   "Echipamente de ultimă generație și materiale premium",
   "Intervenții rapide și consultanță gratuită",
   "Garanție scrisă până la 25 de ani",

@@ -47,7 +47,7 @@ export const projects: Project[] = [
       </ul>`,
     keywords: ["termoizolare mansardă", "izolare pod spumă poliuretanică", "termoizolare acoperiș lemn", "spumă poliuretanică mansardă"],
     metaTitle: "Termoizolare Mansardă cu Spumă Poliuretanică - IsoThermLux",
-    metaDescription: "Termoizolare mansardă completă cu spumă poliuretanică. Acoperire perfectă a structurii din lemn, fără punți termice. Garanție 25 ani.",
+    metaDescription: "Termoizolare mansardă completă cu spumă poliuretanică. Acoperire perfectă a structurii din lemn, fără punți termice. Garanție 25 de ani.",
   },
   {
     id: 2,
@@ -79,7 +79,7 @@ export const projects: Project[] = [
       </ul>`,
     keywords: ["termoizolare tavan restaurant", "izolare restaurant spumă poliuretanică", "termoizolare structură metalică", "spumă poliuretanică restaurant"],
     metaTitle: "Termoizolare Tavan Restaurant cu Spumă Poliuretanică - IsoThermLux",
-    metaDescription: "Termoizolare tavan restaurant cu structură metalică. Spumă poliuretanică aplicată uniform pe toată suprafața. Garanție 25 ani.",
+    metaDescription: "Termoizolare tavan restaurant cu structură metalică. Spumă poliuretanică aplicată uniform pe toată suprafața. Garanție 25 de ani.",
   },
   {
     id: 3,
@@ -109,7 +109,7 @@ export const projects: Project[] = [
       </ul>`,
     keywords: ["termoizolare planșeu", "izolare planșeu spumă poliuretanică", "termoizolare planșeu exterior", "spumă poliuretanică planșeu"],
     metaTitle: "Termoizolare Planșeu cu Spumă Poliuretanică - IsoThermLux",
-    metaDescription: "Termoizolare planșeu interior și exterior cu spumă poliuretanică. Strat continuu, etanș, pe toată suprafața. Garanție 25 ani.",
+    metaDescription: "Termoizolare planșeu interior și exterior cu spumă poliuretanică. Strat continuu, etanș, pe toată suprafața. Garanție 25 de ani.",
   },
   {
     id: 4,
@@ -137,7 +137,7 @@ export const projects: Project[] = [
       </ul>`,
     keywords: ["termoizolare acoperiș plat", "izolare acoperiș bloc spumă poliuretanică", "termoizolare terasă", "spumă poliuretanică acoperiș plat"],
     metaTitle: "Termoizolare Acoperiș Plat cu Spumă Poliuretanică - IsoThermLux",
-    metaDescription: "Termoizolare acoperiș plat cu spumă poliuretanică. Strat continuu și uniform pe toată suprafața. Garanție 25 ani.",
+    metaDescription: "Termoizolare acoperiș plat cu spumă poliuretanică. Strat continuu și uniform pe toată suprafața. Garanție 25 de ani.",
   },
   {
     id: 5,
@@ -165,7 +165,7 @@ export const projects: Project[] = [
       </ul>`,
     keywords: ["termoizolare fundație", "izolare fundație spumă poliuretanică", "termoizolare fundație celulă închisă", "spumă poliuretanică fundație"],
     metaTitle: "Termoizolare Fundație cu Spumă Poliuretanică - IsoThermLux",
-    metaDescription: "Termoizolare fundație cu spumă poliuretanică celulă închisă. Protecție termică și contra umidității. Garanție 25 ani.",
+    metaDescription: "Termoizolare fundație cu spumă poliuretanică celulă închisă. Protecție termică și contra umidității. Garanție 25 de ani.",
   },
   {
     id: 6,
@@ -193,7 +193,7 @@ export const projects: Project[] = [
       </ul>`,
     keywords: ["termoizolare mansardă", "izolare pod spumă poliuretanică", "termoizolare acoperiș lemn", "spumă poliuretanică mansardă"],
     metaTitle: "Termoizolare Mansardă cu Spumă Poliuretanică - IsoThermLux",
-    metaDescription: "Termoizolare mansardă completă cu spumă poliuretanică. Acoperire uniformă a structurii din lemn. Garanție 25 ani.",
+    metaDescription: "Termoizolare mansardă completă cu spumă poliuretanică. Acoperire uniformă a structurii din lemn. Garanție 25 de ani.",
   },
   {
     id: 7,
@@ -221,7 +221,7 @@ export const projects: Project[] = [
       </ul>`,
     keywords: ["termoizolare planșeu", "izolare planșeu spumă poliuretanică", "termoizolare planșeu lemn", "spumă poliuretanică planșeu"],
     metaTitle: "Termoizolare Planșeu cu Spumă Poliuretanică - IsoThermLux",
-    metaDescription: "Termoizolare planșeu pe structură din lemn cu spumă poliuretanică. Strat continuu pe toată suprafața. Garanție 25 ani.",
+    metaDescription: "Termoizolare planșeu pe structură din lemn cu spumă poliuretanică. Strat continuu pe toată suprafața. Garanție 25 de ani.",
   },
   {
     id: 8,
@@ -249,7 +249,7 @@ export const projects: Project[] = [
       </ul>`,
     keywords: ["termoizolare mansardă", "izolare pod spumă poliuretanică", "termoizolare acoperiș lemn", "spumă poliuretanică mansardă"],
     metaTitle: "Termoizolare Mansardă cu Spumă Poliuretanică - IsoThermLux",
-    metaDescription: "Termoizolare mansardă completă cu spumă poliuretanică. Strat continuu pe structura din lemn. Garanție 25 ani.",
+    metaDescription: "Termoizolare mansardă completă cu spumă poliuretanică. Strat continuu pe structura din lemn. Garanție 25 de ani.",
   },
   {
     id: 9,
@@ -277,7 +277,7 @@ export const projects: Project[] = [
       </ul>`,
     keywords: ["termoizolare terasă", "izolare terasă bloc spumă poliuretanică", "termoizolare terasă exterioară", "spumă poliuretanică terasă"],
     metaTitle: "Termoizolare Terasă cu Spumă Poliuretanică - IsoThermLux",
-    metaDescription: "Termoizolare terasă exterioară cu spumă poliuretanică. Strat continuu și uniform pe toată suprafața. Garanție 25 ani.",
+    metaDescription: "Termoizolare terasă exterioară cu spumă poliuretanică. Strat continuu și uniform pe toată suprafața. Garanție 25 de ani.",
   },
   {
     id: 10,
@@ -305,7 +305,7 @@ export const projects: Project[] = [
       </ul>`,
     keywords: ["termoizolare fațadă", "izolare fațadă spumă poliuretanică", "termoizolare fațadă exterioară", "spumă poliuretanică fațadă"],
     metaTitle: "Termoizolare Fațadă cu Spumă Poliuretanică - IsoThermLux",
-    metaDescription: "Termoizolare fațadă exterioară cu spumă poliuretanică. Strat continuu, fără punți termice. Garanție 25 ani.",
+    metaDescription: "Termoizolare fațadă exterioară cu spumă poliuretanică. Strat continuu, fără punți termice. Garanție 25 de ani.",
   },
   {
     id: 11,
@@ -333,7 +333,7 @@ export const projects: Project[] = [
       </ul>`,
     keywords: ["termoizolare sală sport", "izolare hală sportivă spumă poliuretanică", "termoizolare structură metalică", "spumă poliuretanică sală sport"],
     metaTitle: "Termoizolare Sală de Sport cu Spumă Poliuretanică - IsoThermLux",
-    metaDescription: "Termoizolare sală de sport cu structură metalică. Spumă poliuretanică aplicată uniform pe toată suprafața. Garanție 25 ani.",
+    metaDescription: "Termoizolare sală de sport cu structură metalică. Spumă poliuretanică aplicată uniform pe toată suprafața. Garanție 25 de ani.",
   },
 ]
 

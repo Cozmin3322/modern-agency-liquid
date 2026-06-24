@@ -7,12 +7,12 @@ import { ArrowRight, Check, Thermometer, ShieldCheck, Zap, Clock } from "lucide-
 
 export const metadata: Metadata = {
   title: "Termoizolare Boiler și Rezervoare Termice | IsoThermLux Moldova",
-  description: "Termoizolare profesională a boilerelor și rezervoarelor termice cu spumă poliuretanică. Reduci pierderile de căldură cu 60%. Economie reală la factura de gaz. Garanție 25 ani. Moldova.",
+  description: "Termoizolare profesională a boilerelor și rezervoarelor termice cu spumă poliuretanică. Reduci pierderile de căldură cu 60%. Economie reală la factura de gaz. Garanție 25 de ani. Moldova.",
   keywords: "termoizolare boiler Moldova, izolare boiler, spuma poliuretanica boiler, izolare rezervor termic, termoizolare acumulator caldura Chisinau",
   alternates: { canonical: "https://www.isothermlux.md/boiler" },
   openGraph: {
     title: "Termoizolare Boiler | IsoThermLux Moldova",
-    description: "Izolarea unui boiler este esențială pentru a reduce pierderile de căldură. Spumă poliuretanică — garanție 25 ani.",
+    description: "Izolarea unui boiler este esențială pentru a reduce pierderile de căldură. Spumă poliuretanică — garanție 25 de ani.",
     type: "website",
     locale: "ro_MD",
     url: "https://www.isothermlux.md/boiler",
@@ -26,7 +26,7 @@ const specs = [
   { label: "Absorbție apă", value: "< 2% din volum" },
   { label: "Temperaturi de lucru", value: "până la +120°C" },
   { label: "Durată aplicare", value: "câteva ore / boiler" },
-  { label: "Garanție", value: "25 ani scrisă" },
+  { label: "Garanție", value: "25 de ani scrisă" },
 ]
 
 const benefits = [
@@ -163,7 +163,7 @@ export default function BoilerPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Izolează Boilerul și Economisești din Prima Lună</h2>
             <p className="text-lg mb-8 max-w-xl mx-auto opacity-90">
-              Deplasare gratuită. Aplicare în câteva ore. Garanție 25 ani.
+              Deplasare gratuită. Aplicare în câteva ore. Garanție 25 de ani.
             </p>
             <a href="tel:+37360811115" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum: +373 60 811 115 <ArrowRight className="w-4 h-4" />

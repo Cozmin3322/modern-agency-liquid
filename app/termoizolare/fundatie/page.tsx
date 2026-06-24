@@ -7,7 +7,7 @@ import { ArrowRight, Check, Home, Warehouse, Sprout, Layers, Construction, Dropl
 
 export const metadata: Metadata = {
   title: "Termoizolare Fundație și Subsol | Spumă Poliuretanică | IsoThermLux Moldova",
-  description: "Termoizolare profesională a fundațiilor și subsolurilor cu spumă poliuretanică cu celule închise. Elimini umezeala, condensul și pierderile de căldură. Garanție 25 ani. Moldova.",
+  description: "Termoizolare profesională a fundațiilor și subsolurilor cu spumă poliuretanică cu celule închise. Elimini umezeala, condensul și pierderile de căldură. Garanție 25 de ani. Moldova.",
   keywords: "termoizolare fundatie Moldova, izolare subsol, spuma poliuretanica fundatie, termoizolare soclu casa, izolare termica subsol Chisinau",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare/fundatie" },
   openGraph: {

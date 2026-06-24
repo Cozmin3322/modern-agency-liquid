@@ -34,7 +34,7 @@ const articles: Record<string, BlogArticle> = {
         <li><strong>Economie de energie:</strong> Reducere de 40-50% la costurile de încălzire</li>
         <li><strong>Confort termic:</strong> Temperatură constantă în toată casa</li>
         <li><strong>Fără punți termice:</strong> Spuma se adaptează la orice formă</li>
-        <li><strong>Durabilitate:</strong> Garanție 25 ani cu materiale premium certificate ISO 9001</li>
+        <li><strong>Durabilitate:</strong> Garanție 25 de ani cu materiale premium certificate ISO 9001</li>
       </ul>
 
       <h2>Cum Funcționează Spuma Poliuretanică?</h2>
@@ -44,7 +44,7 @@ const articles: Record<string, BlogArticle> = {
       <p>Investiția în termoizolare se recuperează în 2-3 ani prin economiile la facturile de gaz. După aceea, beneficiezi de energie ieftină pentru următorii 25 de ani.</p>
 
       <h2>De Ce Alege IsoThermLux?</h2>
-      <p>Noi folosim spumă poliuretanică certificată ISO 9001. Echipa noastră are 14 ani de experiență cu 3971 proiecte finalizate. Oferim garanție scrisă 25 ani pe toată lucrarea.</p>
+      <p>Noi folosim spumă poliuretanică certificată ISO 9001. Echipa noastră are 14 ani de experiență cu 3971 de proiecte finalizate. Oferim garanție scrisă de 25 de ani pe toată lucrarea.</p>
     `,
   },
   'hidroizolare-fundatie-protectie': {
@@ -180,12 +180,12 @@ const articles: Record<string, BlogArticle> = {
     `,
   },
   'garantie-25-ani-protectie-investitie': {
-    title: 'Garanție 25 Ani: Cum Protejezi Investiția Ta',
+    title: 'Garanție de 25 de Ani: Cum Protejezi Investiția Ta',
     author: 'IsoThermLux Team',
     date: '2 ianuarie 2024',
     readTime: '5 min',
     image: '/images/gallery/termo-17.webp',
-    excerpt: 'Garanție scrisă 25 ani pe material și manopera. Protecție completă pentru investiția ta în termoizolare.',
+    excerpt: 'Garanție scrisă de 25 de ani pe material și manoperă. Protecție completă pentru investiția ta în termoizolare.',
     keywords: 'garanție 25 ani, protecție investiție, durabilitate, asigurare calitate, termoizolare garantat',
     content: `
       <h2>Protecție Completă a Investiției</h2>
@@ -334,7 +334,7 @@ const articles: Record<string, BlogArticle> = {
       <p>Spuma poliuretanică se aplică prin pulverizare, fiind mult mai rapidă pe suprafețe mari, comparativ cu montarea manuală a vatei minerale.</p>
 
       <h2>Cost Inițial vs Cost pe Termen Lung</h2>
-      <p>Vata minerală are un cost inițial mai mic, dar necesită structuri de montaj suplimentare și înlocuire mai frecventă. Spuma poliuretanică, cu garanție de 25 ani, oferă un cost total mai avantajos pe termen lung.</p>
+      <p>Vata minerală are un cost inițial mai mic, dar necesită structuri de montaj suplimentare și înlocuire mai frecventă. Spuma poliuretanică, cu garanție de 25 de ani, oferă un cost total mai avantajos pe termen lung.</p>
 
       <h2>Care Este Soluția Potrivită?</h2>
       <p>Pentru proiecte unde durabilitatea, etanșeitatea și viteza de execuție sunt prioritare, spuma poliuretanică este alegerea recomandată de echipa IsoThermLux.</p>
@@ -431,7 +431,7 @@ const articles: Record<string, BlogArticle> = {
       <p>Fără garanție clară pe material și manoperă, nu ai protecție în cazul unor probleme ulterioare.</p>
 
       <h2>Cum Eviți Toate Aceste Greșeli</h2>
-      <p>O evaluare profesională, materiale certificate ISO 9001 și o echipă cu experiență sunt esențiale. IsoThermLux oferă consultație gratuită și garanție scrisă de 25 ani pentru fiecare proiect.</p>
+      <p>O evaluare profesională, materiale certificate ISO 9001 și o echipă cu experiență sunt esențiale. IsoThermLux oferă consultație gratuită și garanție scrisă de 25 de ani pentru fiecare proiect.</p>
     `,
   },
   'hidroizolatie-poliuree-fundatie-moderna': {
@@ -521,7 +521,7 @@ const articles: Record<string, BlogArticle> = {
       <p>Fisuri vizibile, schimbări de culoare în zonele expuse la UV sau infiltrații punctuale pot indica nevoia unei verificări — situații rare la materialele premium.</p>
 
       <h2>Garanția Care Susține Durabilitatea</h2>
-      <p>De aceea oferim garanție scrisă de 25 ani — pentru că folosim doar materiale certificate ISO 9001, cu performanță dovedită pe termen lung.</p>
+      <p>De aceea oferim garanție scrisă de 25 de ani — pentru că folosim doar materiale certificate ISO 9001, cu performanță dovedită pe termen lung.</p>
     `,
   },
 }
@@ -534,9 +534,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     'termoizolare-casa-ghid-complet': 'Ghid complet despre termoizolare cu spumă poliuretanică. Beneficii, costuri și proces. Descoperă cum economisești 40-50% la încălzire cu IsoThermLux.',
     'hidroizolare-fundatie-protectie': 'Hidroizolarea fundației este esențială. Cum protejezi casa de infiltrații. Metode și costuri pentru hidroizolare profesională în Moldova.',
     'economii-45-50-procent-gaz-termoizolare': 'Calculează exact cât vei economisi la factura de gaz cu termoizolare. Recuperare investiție în 2-3 ani, cu IsoThermLux.',
-    'izolare-mansarda-spatiu-locuibil': 'Transformă mansarda ta într-un spațiu confortabil cu izolație termică profesională. Spumă poliuretanică, garanție 25 ani, economie energie.',
+    'izolare-mansarda-spatiu-locuibil': 'Transformă mansarda ta într-un spațiu confortabil cu izolație termică profesională. Spumă poliuretanică, garanție de 25 de ani, economie de energie.',
     'materiale-basf-iso-9001-calitate': 'Spumă poliuretanică certificată ISO 9001 garantează calitate și durabilitate. De ce alegem doar materiale premium pentru fiecare proiect.',
-    'garantie-25-ani-protectie-investitie': 'Garanție scrisă 25 ani pe material și manopera. Protecție completă pentru investiția ta în termoizolare și hidroizolare profesională.',
+    'garantie-25-ani-protectie-investitie': 'Garanție scrisă de 25 de ani pe material și manoperă. Protecție completă pentru investiția ta în termoizolare și hidroizolare profesională.',
     'celula-deschisa-vs-inchisa-diferente': 'Diferențele reale dintre spuma cu celulă deschisă și celulă închisă. Ghid practic pentru a alege varianta potrivită pentru proiectul tău.',
     'pret-izolare-spuma-poliuretanica-2024': 'Prețuri actualizate pentru izolarea cu spumă poliuretanică în 2024, pe metru pătrat, în funcție de grosime și tip de material.',
     'izolare-hale-industriale-spuma-poliuretanica': 'Cum se izolează halele industriale și depozitele cu spumă poliuretanică pentru eficiență energetică și protecție structurală.',

@@ -55,7 +55,7 @@ export default function BaltiPage() {
 
         <section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-12">Proiecte Recent în Bălți</h2>
+            <h2 className="text-4xl font-serif font-medium mb-12">Proiecte Recente în Bălți</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 { title: "Casa Familială", desc: "Termoizolare completă", date: "2024" },

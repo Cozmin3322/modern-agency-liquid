@@ -13,7 +13,7 @@ const breadcrumb = breadcrumbSchema([
 
 export const metadata: Metadata = {
   title: "Termoizolare Strășeni cu Spumă Poliuretanică | IsoThermLux",
-  description: "Termoizolare profesională în Strășeni cu spumă poliuretanică. Case private, mansarde, fundații. Deplasare gratuită, garanție 25 ani.",
+  description: "Termoizolare profesională în Strășeni cu spumă poliuretanică. Case private, mansarde, fundații. Deplasare gratuită, garanție 25 de ani.",
   keywords: "termoizolare strășeni, izolare strășeni, spumă poliuretanică strășeni, termoizolare raionul Strășeni, izolare termică strășeni Moldova",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare-straseni" },
 }
@@ -38,7 +38,7 @@ export default function Page() {
               Termoizolare Strășeni
             </h1>
             <p className="text-xl text-white/75 mb-10 max-w-2xl leading-relaxed">
-              Servicii profesionale de termoizolare cu spumă poliuretanică în Strășeni și raionul Strășeni. <span className="text-accent font-semibold">112+ proiecte</span> finalizate. Garanție 25 ani. Deplasare gratuită.
+              Servicii profesionale de termoizolare cu spumă poliuretanică în Strășeni și raionul Strășeni. <span className="text-accent font-semibold">112+ proiecte</span> finalizate. Garanție 25 de ani. Deplasare gratuită.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="tel:+37360811115" className="inline-flex items-center gap-3 bg-accent text-white px-8 py-4 font-semibold uppercase tracking-wide hover:bg-accent/90 transition">
@@ -58,7 +58,7 @@ export default function Page() {
             <div className="flex flex-wrap gap-8 justify-center md:justify-start">
               {[
                 ["112+", "Proiecte în raionul Strășeni"],
-                ["25 ani", "Garanție scrisă"],
+                ["25 de ani", "Garanție scrisă"],
                 ["30 min", "Timp răspuns"],
                 ["Gratuit", "Deplasare + evaluare"],
               ].map(([val, label]) => (
@@ -141,7 +141,7 @@ export default function Page() {
           <div className="max-w-3xl mx-auto px-4">
             <span className="font-mono text-xs text-accent uppercase tracking-widest block mb-4">Strășeni · raionul Strășeni</span>
             <h2 className="text-4xl font-serif text-white mb-4">Cere Ofertă Gratuită în Strășeni</h2>
-            <p className="text-white/70 mb-8">Evaluare gratuită pe loc. Răspuns în 30 min. Garanție 25 ani.</p>
+            <p className="text-white/70 mb-8">Evaluare gratuită pe loc. Răspuns în 30 min. Garanție 25 de ani.</p>
             <a href="tel:+37360811115" className="inline-flex items-center gap-3 bg-accent text-white px-10 py-4 font-semibold hover:bg-accent/90 transition uppercase tracking-wide">
               <Phone className="w-4 h-4" />
               +373 60 811 115

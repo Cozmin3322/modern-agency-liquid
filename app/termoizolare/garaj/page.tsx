@@ -7,12 +7,12 @@ import { ArrowRight, Check, BrickWall, DoorOpen, SquareParking, Layers, Home, Ca
 
 export const metadata: Metadata = {
   title: "Termoizolare Garaj | Spumă Poliuretanică | IsoThermLux Moldova",
-  description: "Termoizolare profesională a garajelor cu spumă poliuretanică. Garaj cald iarna, răcoros vara. Ideal pentru ateliere auto și spații de lucru. Garanție 25 ani. Moldova.",
+  description: "Termoizolare profesională a garajelor cu spumă poliuretanică. Garaj cald iarna, răcoros vara. Ideal pentru ateliere auto și spații de lucru. Garanție 25 de ani. Moldova.",
   keywords: "termoizolare garaj Moldova, izolare garaj, spuma poliuretanica garaj, termoizolare atelier auto, izolare termica garaj Chisinau",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare/garaj" },
   openGraph: {
     title: "Termoizolare Garaj | IsoThermLux Moldova",
-    description: "Izolație termică profesională pentru garaje cu spumă poliuretanică. Garaj cald iarna, răcoros vara. Garanție 25 ani.",
+    description: "Izolație termică profesională pentru garaje cu spumă poliuretanică. Garaj cald iarna, răcoros vara. Garanție 25 de ani.",
     type: "website",
     locale: "ro_MD",
     url: "https://www.isothermlux.md/termoizolare/garaj",

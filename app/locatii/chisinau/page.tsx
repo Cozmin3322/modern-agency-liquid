@@ -55,7 +55,7 @@ export default function ChisinauPage() {
 
         <section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-12">Proiecte Recent în Chișinău</h2>
+            <h2 className="text-4xl font-serif font-medium mb-12">Proiecte Recente în Chișinău</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 { title: "Apartament Termoizolat", desc: "Mansardă 45m² termoizolată", date: "2024" },

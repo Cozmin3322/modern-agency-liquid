@@ -93,7 +93,7 @@ const blogPosts = [
   },
   {
     id: 'garanzie-25-ani-izolare',
-    title: 'Garanție 25 Ani: Cum Protejezi Investiția Ta',
+    title: 'Garanție de 25 de Ani: Cum Protejezi Investiția Ta',
     excerpt: 'Află ce acoperă garanția noastră și de ce este cea mai lungă din industrie.',
     author: 'IsoThermLux Team',
     date: '2 ianuarie 2024',

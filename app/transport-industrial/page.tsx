@@ -129,7 +129,7 @@ export default function TransportIndustrialPage() {
                     { label: "Greutate adăugată", value: "1–3 kg/m²" },
                     { label: "Absorbție apă", value: "< 2% din volum" },
                     { label: "Temperaturi de lucru", value: "-50°C până la +120°C" },
-                    { label: "Garanție", value: "25 ani scrisă" },
+                    { label: "Garanție", value: "25 de ani scrisă" },
                   ].map((spec, idx) => (
                     <div key={idx} className="flex justify-between py-2 border-b border-border last:border-0">
                       <span className="text-foreground/60 text-sm">{spec.label}</span>

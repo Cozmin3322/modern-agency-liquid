@@ -60,7 +60,7 @@ export default function MansardaPage() {
               {[
                 { title: "Spațiu Locuibil Cald", desc: "Mansarda devine spațiu confortabil și locuibil în toate anotimpurile." },
                 { title: "Economie 40-50% la Gaz", desc: "Reducere semnificativă la costurile de încălzire. ROI în 2-3 ani." },
-                { title: "Confort Termic", desc: "Temperatura constantă și agradabilă. Fără punți termice." },
+                { title: "Confort Termic", desc: "Temperatura constantă și agreabilă. Fără punți termice." },
                 { title: "Protecție Acustică", desc: "Izolație fonică excelentă. Spațiu liniștit și confortabil." },
                 { title: "Durabilitate", desc: "Materiale premium cu garanție de 25 de ani. Durabilitate dovedită." },
                 { title: "Aplicare Rapidă", desc: "Lucru finalizat în 2-3 zile. Disconfort minim pentru familie." }
@@ -153,7 +153,7 @@ export default function MansardaPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Termoizolează Mansarda Acum</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-              Consultație gratuită. Estimare pe loc. Răspuns în 30 minute.
+              Consultație gratuită. Estimare pe loc. Răspuns în 30 de minute.
             </p>
             <a href="tel:+37360811115" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum <ArrowRight className="w-4 h-4" />

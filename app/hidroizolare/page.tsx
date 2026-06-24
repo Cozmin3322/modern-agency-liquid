@@ -10,17 +10,17 @@ import { serviceSchema, breadcrumbSchema } from "@/lib/schema"
 
 const hidroizolareServiceSchema = serviceSchema(
   'Hidroizolare',
-  'Servicii profesionale de hidroizolare pentru protecție contra infiltrațiilor de apă. Impermeabilizare acoperiș, fundație, subsol. Garanție 25 ani.'
+  'Servicii profesionale de hidroizolare pentru protecție contra infiltrațiilor de apă. Impermeabilizare acoperiș, fundație, subsol. Garanție 25 de ani.'
 )
 
 export const metadata: Metadata = {
   title: "Hidroizolare cu Spumă Poliuretanică Moldova | Aplicare Profesională | IsoThermLux",
-  description: "Hidroizolare profesională cu spumă poliuretanică celulă închisă în Moldova. Protecție completă fundații, subsoluri, acoperișuri. Garanție 25 ani scrisă.",
+  description: "Hidroizolare profesională cu spumă poliuretanică celulă închisă în Moldova. Protecție completă fundații, subsoluri, acoperișuri. Garanție 25 de ani scrisă.",
   keywords: "hidroizolare Moldova, hidroizolare Chișinău, impermeabilizare fundație, hidroizolare acoperiș, protecție umiditate Moldova, hidroizolare subsol, spumă poliuretanică",
   alternates: { canonical: "https://www.isothermlux.md/hidroizolare" },
   openGraph: {
     title: "Hidroizolare cu Spumă Poliuretanică | Aplicare Profesională | IsoThermLux",
-    description: "Hidroizolare cu spumă poliuretanică celulă închisă. Garanție 25 ani scrisă. Protecție fundații, subsoluri, acoperișuri.",
+    description: "Hidroizolare cu spumă poliuretanică celulă închisă. Garanție 25 de ani scrisă. Protecție fundații, subsoluri, acoperișuri.",
     type: "website",
     locale: "ro_MD",
     url: "https://www.isothermlux.md/hidroizolare",

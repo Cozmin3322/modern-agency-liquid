@@ -25,7 +25,7 @@ export default function AcoperisPage() {
                 Impermeabilizare Acoperiș
               </h1>
               <p className="text-2xl text-white/90 mb-8 leading-relaxed">
-                Protecție completă a acoperișului la ploaie și infiltrații. Materiale premium cu garanție 25 ani.
+                Protecție completă a acoperișului la ploaie și infiltrații. Materiale premium cu garanție 25 de ani.
               </p>
               <a href="tel:+37360811115" className="inline-block bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">
                 Consultație Gratuită
@@ -42,7 +42,7 @@ export default function AcoperisPage() {
                 { title: "Etanșeitate Completă", desc: "Protecție 100% la ploaie și infiltrații. Acoperiș sigur." },
                 { title: "Durabilitate 20+ Ani", desc: "Materiale rezistente la vânt și temperaturi extreme." },
                 { title: "Protecție Structurii", desc: "Prevenirea daunelor cauzate de apă. Protecție pereți și interior." },
-                { title: "Garanție 25 Ani", desc: "Garanție scrisă pentru material și manoperă. Investiție pe termen lung." }
+                { title: "Garanție de 25 de Ani", desc: "Garanție scrisă pentru material și manoperă. Investiție pe termen lung." }
               ].map((item, idx) => (
                 <div key={idx} className="p-8 border border-border rounded-none">
                   <Check className="w-6 h-6 text-accent mb-4" />

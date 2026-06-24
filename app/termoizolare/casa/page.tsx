@@ -6,7 +6,7 @@ import { ArrowRight, Check } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Termoizolare Casă Completă | Acoperiș Pereți Fundație | IsoThermLux",
-  description: "Termoizolare completă a casei. Izolare acoperiș, pereți exteriori și fundație. Economie 40-50% la gaz. Garanție 25 ani.",
+  description: "Termoizolare completă a casei. Izolare acoperiș, pereți exteriori și fundație. Economie 40-50% la gaz. Garanție 25 de ani.",
   keywords: "termoizolare casă, izolare completă, termoizolare acoperis pereti, renovare casă",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare/casa" },
 }
@@ -40,7 +40,7 @@ export default function CasaPage() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 { title: "Acoperiș", desc: "Izolație termică profesională a acoperișului. Protecție la vânt și ploaie." },
-                { title: "Pereți Exteriori", desc: "Izolație pereți pentru confort maxim. Eliminare punți termice." },
+                { title: "Pereți Exteriori", desc: "Izolație pereți pentru confort maxim. Eliminarea punților termice." },
                 { title: "Fundație", desc: "Izolație termică a fundației. Spațiu în subsol confortabil și uscat." }
               ].map((item, idx) => (
                 <div key={idx} className="p-8 border border-border rounded-none">
@@ -76,7 +76,7 @@ export default function CasaPage() {
                   <div className="w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
                   <div>
                     <h3 className="font-semibold mb-2">Protecție Lungă</h3>
-                    <p className="text-foreground/70">Garanție 25 ani. Investiție pe termen lung.</p>
+                    <p className="text-foreground/70">Garanție 25 de ani. Investiție pe termen lung.</p>
                   </div>
                 </div>
               </div>

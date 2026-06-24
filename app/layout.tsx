@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | IsoThermLux",
   },
   description:
-    "IsoThermLux - specialist în termoizolare, hidroizolare și fonoizolare în Moldova. 14 ani experiență, garanție până la 25 ani și consultație gratuită.",
+    "IsoThermLux - specialist în termoizolare, hidroizolare și fonoizolare în Moldova. 14 ani de experiență, garanție până la 25 de ani și consultație gratuită.",
   keywords: [
     "termoizolare",
     "hidroizolare",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "IsoThermLux | Termoizolare și Hidroizolare Profesională",
-    description: "Servicii profesionale de termoizolare, hidroizolare și fonoizolare în Moldova. Consultație gratuită și garanție până la 25 ani.",
+    description: "Servicii profesionale de termoizolare, hidroizolare și fonoizolare în Moldova. Consultație gratuită și garanție până la 25 de ani.",
     type: "website",
     locale: "ro_MD",
     siteName: "IsoThermLux",

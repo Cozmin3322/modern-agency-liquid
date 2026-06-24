@@ -6,7 +6,7 @@ import { ArrowRight, Check } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Hidroizolare Fundație Casă | Protecție Infiltrații | IsoThermLux",
-  description: "Hidroizolare profesională a fundației. Protecție completă împotriva infiltrațiilor de apă. Garanție 25 ani.",
+  description: "Hidroizolare profesională a fundației. Protecție completă împotriva infiltrațiilor de apă. Garanție 25 de ani.",
   keywords: "hidroizolare fundație, infiltrații apă, protecție subsol, impermeabilizare",
   alternates: { canonical: "https://www.isothermlux.md/hidroizolare/fundatie" },
 }

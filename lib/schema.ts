@@ -3,7 +3,7 @@ export const organizationSchema = {
   '@type': 'LocalBusiness',
   name: 'IsoThermLux',
   image: 'https://www.isothermlux.md/images/logo-isotherm-lux.png',
-  description: 'Servicii profesionale de termoizolare și hidroizolare în Moldova. 12 ani experiență. Garanție 25 ani.',
+  description: 'Servicii profesionale de termoizolare și hidroizolare în Moldova. 12 de ani experiență. Garanție 25 de ani.',
   url: 'https://www.isothermlux.md',
   telephone: '+37360811115',
   email: 'infopoliuretan@gmail.com',

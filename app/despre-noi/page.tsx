@@ -6,12 +6,12 @@ import { CheckCircle, Award, Users, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Despre IsoThermLux | Echipa Profesionistă | 14 Ani Experiență",
-  description: "Despre IsoThermLux - Companie de termoizolare și hidroizolare cu 14 ani experiență. 3971 proiecte. Echipă certificată. Garanție 25 ani.",
+  description: "Despre IsoThermLux - Companie de termoizolare și hidroizolare cu 14 ani de experiență. 3971 de proiecte. Echipă certificată. Garanție 25 de ani.",
   keywords: "despre noi, echipa IsoThermLux, experiență, certificări, misiune",
   alternates: { canonical: "https://www.isothermlux.md/despre-noi" },
   openGraph: {
     title: "Despre IsoThermLux | 14 Ani Experiență Termoizolare",
-    description: "IsoThermLux - Experți în termoizolare și hidroizolare cu 3971 proiecte și garanție 25 ani.",
+    description: "IsoThermLux - Experți în termoizolare și hidroizolare cu 3971 de proiecte și garanție 25 de ani.",
     type: "website",
     locale: "ro_MD",
     url: "https://www.isothermlux.md/despre-noi",
@@ -67,7 +67,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center gap-3 mb-4">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
-                  <span className="text-lg">3971 clienți satisfăcuți</span>
+                  <span className="text-lg">3971 de clienți satisfăcuți</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
@@ -93,12 +93,12 @@ export default function AboutPage() {
               <div className="p-8 bg-card border border-border rounded-none">
                 <Award className="w-12 h-12 text-accent mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Calitate Premium</h3>
-                <p className="text-foreground/70">Materiale certificate ISO 9001. Garanție 25 ani. Fără compromiuri pe calitate.</p>
+                <p className="text-foreground/70">Materiale certificate ISO 9001. Garanție 25 de ani. Fără compromiuri pe calitate.</p>
               </div>
               <div className="p-8 bg-card border border-border rounded-none">
                 <Users className="w-12 h-12 text-accent mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Profesionalism</h3>
-                <p className="text-foreground/70">Echipă certificată cu 12+ ani experiență. Servicii complete și oneste.</p>
+                <p className="text-foreground/70">Echipă certificată cu 12+ ani de experiență. Servicii complete și oneste.</p>
               </div>
               <div className="p-8 bg-card border border-border rounded-none">
                 <Zap className="w-12 h-12 text-accent mb-4" />
@@ -117,17 +117,17 @@ export default function AboutPage() {
               <div className="p-8 bg-card border border-border rounded-none">
                 <h3 className="font-semibold text-lg mb-2">Ion Popescu</h3>
                 <p className="text-foreground/70 mb-2">Director & Specialist Termoizolare</p>
-                <p className="text-sm text-accent font-semibold">14 ani experiență</p>
+                <p className="text-sm text-accent font-semibold">14 ani de experiență</p>
               </div>
               <div className="p-8 bg-card border border-border rounded-none">
                 <h3 className="font-semibold text-lg mb-2">Andrei Vasile</h3>
                 <p className="text-foreground/70 mb-2">Specialist Hidroizolare</p>
-                <p className="text-sm text-accent font-semibold">10 ani experiență</p>
+                <p className="text-sm text-accent font-semibold">10 ani de experiență</p>
               </div>
               <div className="p-8 bg-card border border-border rounded-none">
                 <h3 className="font-semibold text-lg mb-2">Elena Munteanu</h3>
                 <p className="text-foreground/70 mb-2">Manager Proiecte</p>
-                <p className="text-sm text-accent font-semibold">8 ani experiență</p>
+                <p className="text-sm text-accent font-semibold">8 ani de experiență</p>
               </div>
             </div>
           </div>

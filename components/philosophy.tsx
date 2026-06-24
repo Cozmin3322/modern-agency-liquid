@@ -16,12 +16,12 @@ const philosophyItems = [
       "Spumă poliuretanică certificată ISO 9001. Durabilitate și performanță garantate. Fără compromiuri la calitate.",
   },
   {
-    title: "Garanție 25 Ani",
+    title: "Garanție de 25 de Ani",
     description: "Garanție scrisă pentru material și manoperă. Durabilitate dovedită. Serviciu de încredere pentru generații.",
   },
   {
     title: "14 Ani de Experiență",
-    description: "IsoThermLux a fost înființată în 2010. 3971 proiecte finalizate. Echipă proprie și servicii complete de la început până la final.",
+    description: "IsoThermLux a fost înființată în 2010. 3971 de proiecte finalizate. Echipă proprie și servicii complete de la început până la final.",
   },
 ]
 
@@ -88,7 +88,7 @@ export function Philosophy() {
           {/* Right column - Description and Philosophy items */}
           <div className="space-y-6 lg:pt-48">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
-              Investiția în termoizolare se recuperează în 2-3 ani prin economiile la facturile de energie. Noi oferim garanție 25 ani și echipă profesionistă din Moldova.
+              Investiția în termoizolare se recuperează în 2-3 ani prin economiile la facturile de energie. Noi oferim garanție de 25 de ani și echipă profesionistă din Moldova.
             </p>
 
             {philosophyItems.map((item, index) => (

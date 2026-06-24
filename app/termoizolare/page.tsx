@@ -9,14 +9,14 @@ import { ContactForm } from "@/components/contact-form"
 export const metadata: Metadata = {
   title: "Termoizolare cu Spumă Poliuretanică Moldova | Aplicare Profesională | IsoThermLux",
   description:
-    "Termoizolare profesională cu spumă poliuretanică în toată Moldova. Economie 40-50% la energie. Garanție 25 ani scrisă. 14 ani experiență, echipe mobile, consultație gratuită.",
+    "Termoizolare profesională cu spumă poliuretanică în toată Moldova. Economie 40-50% la energie. Garanție 25 de ani scrisă. 14 de ani experiență, echipe mobile, consultație gratuită.",
   keywords:
     "termoizolare Moldova, termoizolare Chișinău, izolare termică, spumă poliuretanică Moldova, termoizolare casă, economie energie Moldova",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare" },
   openGraph: {
     title: "Termoizolare cu Spumă Poliuretanică | Aplicare Profesională | IsoThermLux",
     description:
-      "Termoizolare profesională cu spumă poliuretanică în toată Moldova. Economie 40-50% la energie. Garanție 25 ani scrisă.",
+      "Termoizolare profesională cu spumă poliuretanică în toată Moldova. Economie 40-50% la energie. Garanție 25 de ani scrisă.",
     url: "https://www.isothermlux.md/termoizolare",
     locale: "ro_MD",
     type: "website",
@@ -52,7 +52,7 @@ const tipuriSpuma = [
 ]
 
 const deCeIsoThermLux = [
-  "Experiență de peste 14 ani în izolații profesionale",
+  "Experiență de peste 14 de ani în izolații profesionale",
   "Echipamente de ultimă generație și materiale premium",
   "Intervenții rapide și consultanță gratuită",
   "Garanție scrisă până la 25 de ani",
@@ -64,7 +64,7 @@ const deCeIsoThermLux = [
 export default function TermoizolarePage() {
   return (
     <>
-      <script id="termoizolare-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Service", name: "Servicii de Termoizolare", description: "Servicii profesionale de termoizolare cu izolație termică de calitate. Economie 40-50% la energie. Garanție 25 ani. Aplicare în 1-2 zile.", provider: { "@type": "LocalBusiness", name: "IsoThermLux", url: "https://www.isothermlux.md" }, areaServed: "MD", availableLanguage: "ro" }) }} />
+      <script id="termoizolare-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Service", name: "Servicii de Termoizolare", description: "Servicii profesionale de termoizolare cu izolație termică de calitate. Economie 40-50% la energie. Garanție 25 de ani. Aplicare în 1-2 zile.", provider: { "@type": "LocalBusiness", name: "IsoThermLux", url: "https://www.isothermlux.md" }, areaServed: "MD", availableLanguage: "ro" }) }} />
       <script id="breadcrumb-termoizolare" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Acasă", item: "https://www.isothermlux.md" }, { "@type": "ListItem", position: 2, name: "Termoizolare", item: "https://www.isothermlux.md/termoizolare" }] }) }} />
       <Header />
       <main className="bg-background">

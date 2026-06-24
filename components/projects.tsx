@@ -45,7 +45,7 @@ export function Projects() {
               <span className="h-px flex-1 max-w-[60px] bg-border" />
               <p className="text-muted-foreground text-xs md:text-sm tracking-[0.3em] uppercase">Lucrările Noastre</p>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-medium tracking-tight">Proiecte Recent Finalizate</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-medium tracking-tight">Proiecte Recente Finalizate</h2>
           </div>
           <Link
             href="/portofoliu"

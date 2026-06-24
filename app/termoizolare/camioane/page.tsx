@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.isothermlux.md/termoizolare/camioane" },
   openGraph: {
     title: "Termoizolare Camioane și Vehicule | IsoThermLux Moldova",
-    description: "Izolație termică profesională pentru camioane și remorci frigorifice cu spumă poliuretanică. Garanție 25 ani.",
+    description: "Izolație termică profesională pentru camioane și remorci frigorifice cu spumă poliuretanică. Garanție 25 de ani.",
     type: "website",
     locale: "ro_MD",
     url: "https://www.isothermlux.md/termoizolare/camioane",
@@ -161,7 +161,7 @@ export default function CamioanePage() {
                     ["Greutate", "1–3 kg/m²", "8–15 kg/m²", "5–10 kg/m²"],
                     ["Punți termice", "Zero", "Posibile", "Posibile"],
                     ["Durată aplicare", "1–2 zile", "3–5 zile", "3–5 zile"],
-                    ["Durabilitate", "25+ ani", "10–15 ani", "15–20 ani"],
+                    ["Durabilitate", "25+ ani", "10–15 de ani", "15–20 de ani"],
                   ].map((row, idx) => (
                     <tr key={idx} className="border-t border-border">
                       <td className="p-4 font-medium text-sm">{row[0]}</td>

@@ -32,7 +32,7 @@ export function AboutDark() {
 
         {/* SEO keywords */}
         <p className="text-center text-white/60 text-sm md:text-base font-medium leading-relaxed mt-16 max-w-4xl mx-auto">
-          Termoizolare Moldova · Hidroizolare Chișinău · Fonoizolare · Spumă Poliuretanică Celulă Deschisă · Spumă Poliuretanică Celulă Închisă · Izolare Fațade · Izolare Acoperiș · Izolare Fundație · Hidroizolare Spumă Poliuretanică · Garanție 25 Ani
+          Termoizolare Moldova · Hidroizolare Chișinău · Fonoizolare · Spumă Poliuretanică Celulă Deschisă · Spumă Poliuretanică Celulă Închisă · Izolare Fațade · Izolare Acoperiș · Izolare Fundație · Hidroizolare Spumă Poliuretanică · Garanție 25 de Ani
         </p>
       </div>
     </section>
