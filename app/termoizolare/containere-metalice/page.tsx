@@ -14,7 +14,7 @@ const breadcrumb = breadcrumbSchema([
 
 export const metadata: Metadata = {
   title: "Termoizolare Containere Metalice cu Spumă Poliuretanică | IsoThermLux",
-  description: "Termoizolare containere metalice cu spumă poliuretanică. Elimini condensul, frigul și zgomotul. Soluție rapidă și durabilă. Garanție 25 ani. Moldova.",
+  description: "Termoizolare containere metalice cu spumă poliuretanică. Elimini condensul, frigul și zgomotul. Soluție rapidă și durabilă. Garanție 25 de ani. Moldova.",
   keywords: "termoizolare container metalic, izolare container spuma poliuretanica, container termoizolat Moldova, izolatie termica container",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare/containere-metalice" },
 }
@@ -48,12 +48,12 @@ export default function Page() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-8 border-2 border-accent/40 rounded-none bg-accent/5">
                 <div className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">Celulă Închisă</div>
-                <p className="text-foreground/80 mb-4">Densitate mare, impermeabil la apă. Ideal acolo unde există contact cu umiditate sau necesitate de rezistență mecanică ridicată.</p>
+                <p className="text-foreground/80 mb-4">Densitate mare, impermeabil la apă. Ideală acolo unde există contact cu umiditate sau necesitate de rezistență mecanică ridicată.</p>
                 <ul className="space-y-1 text-sm text-foreground/70">
                   <li>✓ Impermeabil 100% la apă</li>
                   <li>✓ Valoare R superioară (6.5/inch)</li>
                   <li>✓ Rezistență mecanică ridicată</li>
-                  <li>✓ Ideal fundații, exterioare, cisterne</li>
+                  <li>✓ Ideală pentru fundații, exterioare, cisterne</li>
                 </ul>
               </div>
               <div className="p-8 border border-border rounded-none">
@@ -63,7 +63,7 @@ export default function Page() {
                   <li>✓ Fonoizolare excelentă</li>
                   <li>✓ Foarte ușoară</li>
                   <li>✓ Permeabilă la vapori</li>
-                  <li>✓ Ideal mansarde, pereți interiori, poduri</li>
+                  <li>✓ Ideală pentru mansarde, pereți interiori, poduri</li>
                 </ul>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function Page() {
               <div key={"2"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Reducere zgomot ploaie</h3><p className="text-sm text-foreground/70">Spuma amortizează complet zgomotul ploii pe tablă.</p></div>
               <div key={"3"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Aderare perfectă pe metal</h3><p className="text-sm text-foreground/70">Spuma se lipește chimic de oțel. Nu se desprinde, nu alunecă.</p></div>
               <div key={"4"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Aplicare rapidă</h3><p className="text-sm text-foreground/70">Un container standard se izolează în câteva ore.</p></div>
-              <div key={"5"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Garanție 25 ani</h3><p className="text-sm text-foreground/70">Investiție pe termen lung pentru orice utilizare.</p></div>
+              <div key={"5"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Garanție 25 de ani</h3><p className="text-sm text-foreground/70">Investiție pe termen lung pentru orice utilizare.</p></div>
             </div>
           </div>
         </section>
@@ -116,7 +116,7 @@ export default function Page() {
         <section className="py-20 bg-[#1A1D21] text-white text-center">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-4xl font-serif font-medium mb-4">Izolează Containerul Acum</h2>
-            <p className="text-white/80 mb-8">Evaluare gratuită pe loc. Ofertă în 24h. Garanție 25 ani.</p>
+            <p className="text-white/80 mb-8">Evaluare gratuită pe loc. Ofertă în 24h. Garanție 25 de ani.</p>
             <a href="tel:+37360811115" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum <ArrowRight className="w-4 h-4" />
             </a>

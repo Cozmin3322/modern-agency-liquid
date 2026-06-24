@@ -59,7 +59,7 @@ export default function ChisinauPage() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 { title: "Apartament Termoizolat", desc: "Mansardă 45m² termoizolată", date: "2024" },
-                { title: "Vila Hidroizolată", desc: "Fundație și acoperis", date: "2024" },
+                { title: "Vila Hidroizolată", desc: "Fundație și acoperiș", date: "2024" },
                 { title: "Birou Comercial", desc: "Izolare termică completă", date: "2023" }
               ].map((proj, idx) => (
                 <div key={idx} className="p-8 bg-card border border-border rounded-none">

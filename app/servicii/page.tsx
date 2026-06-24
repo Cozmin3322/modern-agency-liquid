@@ -17,27 +17,27 @@ const services = [
   {
     href: "/termoizolare",
     image: "/images/gallery/termo-03.webp",
-    title: "Termoizolatii",
+    title: "Termoizolații",
     blocks: [
-      { label: "Aplicare spuma celula deschisa", text: "Este o spuma cu densitate scazuta, in general de 8 kg/m3, cu o performanta termica asemanatoare cu cea a materialelor clasice. Spuma cu celula deschisa mai este si spuma flexibila." },
-      { label: "Aplicare spuma celula inchisa", text: "Spuma cu celula inchisa este o spuma dura, rigida, cu densitate de 30-40 kg/m3. Datorita duritatii sale, aceasta spuma mai este denumita si spuma rigida." },
+      { label: "Aplicare spumă celulă deschisă", text: "Este o spumă cu densitate scăzută, în general de 8 kg/m3, cu o performanță termică asemănătoare cu cea a materialelor clasice. Spuma cu celulă deschisă mai este denumită și spumă flexibilă." },
+      { label: "Aplicare spumă celulă închisă", text: "Spuma cu celulă închisă este o spumă dură, rigidă, cu densitate de 30-40 kg/m3. Datorită durității sale, această spumă mai este denumită și spumă rigidă." },
     ],
   },
   {
     href: "/hidroizolare",
     image: "/images/gallery/hidro-05.webp",
-    title: "Hidroizolatii",
+    title: "Hidroizolații",
     blocks: [
-      { label: "Aplicare spumă poliuretanică celulă închisă", text: "Spuma poliuretanică celulă închisă este o spumă rigidă, impermeabilă, care formează un strat continuu fără rosturi. La noi gasesti cele mai bune servicii de calitate." },
+      { label: "Aplicare spumă poliuretanică celulă închisă", text: "Spuma poliuretanică celulă închisă este o spumă rigidă, impermeabilă, care formează un strat continuu fără rosturi. La noi găsiți cele mai bune servicii de calitate." },
     ],
   },
   {
     href: "/fonoizolare",
     image: "/images/gallery/fono-07.webp",
-    title: "Fonoizolatii",
+    title: "Fonoizolații",
     blocks: [
-      { label: "Aplicare spuma celula deschisa", text: "Este o spuma cu densitate scazuta, in general de 8 kg/m3, cu o performanta termica asemanatoare cu cea a materialelor clasice. Spuma cu celula deschisa mai este si spuma flexibila." },
-      { label: "Aplicare spuma celula inchisa", text: "Spuma cu celula inchisa este o spuma dura, rigida, cu densitate de 30-40 kg/m3. Datorita duritatii sale, aceasta spuma mai este denumita si spuma rigida." },
+      { label: "Aplicare spumă celulă deschisă", text: "Este o spumă cu densitate scăzută, în general de 8 kg/m3, cu o performanță termică asemănătoare cu cea a materialelor clasice. Spuma cu celulă deschisă mai este denumită și spumă flexibilă." },
+      { label: "Aplicare spumă celulă închisă", text: "Spuma cu celulă închisă este o spumă dură, rigidă, cu densitate de 30-40 kg/m3. Datorită durității sale, această spumă mai este denumită și spumă rigidă." },
     ],
   },
 ]
@@ -52,7 +52,7 @@ export default function ServiciiPage() {
         <section className="py-16 md:py-20 bg-card text-center border-b border-border">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-2xl md:text-4xl font-serif font-medium leading-tight">
-              Servicii Profesionale Izolatii cu Spuma Poliuretanica in Moldova
+              Servicii Profesionale Izolații cu Spumă Poliuretanică în Moldova
             </h1>
           </div>
         </section>

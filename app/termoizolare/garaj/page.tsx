@@ -29,7 +29,7 @@ export default function GarajPage() {
           backgroundImage="/images/project-finisaj-01.webp"
           title="Termoizolare Garaj"
           titleAccent="Cald Iarna, Răcoros Vara"
-          subtitle="Un garaj neizolatermit este inutilizabil iarna și sufocant vara. Izolăm pereții, acoperișul și ușile garajului cu spumă poliuretanică."
+          subtitle="Un garaj neizolat termic este inutilizabil iarna și sufocant vara. Izolăm pereții, acoperișul și ușile garajului cu spumă poliuretanică."
           ctaSecondaryHref="/contact"
           ctaSecondaryLabel="Cere Ofertă"
         />

@@ -77,7 +77,7 @@ export default function AboutPage() {
               <div className="rounded-none overflow-hidden">
                 <img
                   src="/images/about-spray-foam.jpg"
-                  alt="Tehnician IsoThermLux aplicand spuma poliuretanica pe perete"
+                  alt="Tehnician IsoThermLux aplicând spumă poliuretanică pe perete"
                   className="w-full h-96 object-cover"
                 />
               </div>

@@ -39,10 +39,10 @@ export default function FundatiePage() {
             <h2 className="text-4xl font-serif font-medium mb-12">De Ce Hidroizolare Fundație?</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {[
-                { title: "Protecție Umiditate", desc: "Eliminare infiltrațiilor de apă din pământ. Subsol uscat." },
+                { title: "Protecție Umiditate", desc: "Eliminarea infiltrațiilor de apă din pământ. Subsol uscat." },
                 { title: "Durabilitate Fundație", desc: "Protecție beton contra eroziunii apei. Viață lungă a fundației." },
                 { title: "Spațiu Locuibil", desc: "Subsol utilizabil fără probleme de umiditate." },
-                { title: "Prevenție Daunelor", desc: "Evitare problemelor costisitoare în viitor. Investiție sigură." }
+                { title: "Prevenirea Daunelor", desc: "Evitarea problemelor costisitoare în viitor. Investiție sigură." }
               ].map((item, idx) => (
                 <div key={idx} className="p-8 border border-border rounded-none">
                   <Check className="w-6 h-6 text-accent mb-4" />

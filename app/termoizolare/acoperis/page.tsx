@@ -58,7 +58,7 @@ export default function AcoperisPage() {
                 {
                   Icon: House,
                   title: "Șarpantă (Lemn)",
-                  desc: "Izolăm între căpriori sau pe inradosul învelitorii. Spumă cu celule deschise pentru respirabilitate sau celule închise pentru izolație maximă.",
+                  desc: "Izolăm între căpriori sau pe intradosul învelitorii. Spumă cu celule deschise pentru respirabilitate sau celule închise pentru izolație maximă.",
                   foam: "Celule Deschise sau Închise",
                 },
                 {
@@ -76,7 +76,7 @@ export default function AcoperisPage() {
                 {
                   Icon: Building2,
                   title: "Mansardă",
-                  desc: "Izolăm pereții înclimați și podeaua mansardei. Spațiu locuibil cald iarna și răcoros vara. Vezi și pagina dedicată mansardei.",
+                  desc: "Izolăm pereții înclinați și podeaua mansardei. Spațiu locuibil cald iarna și răcoros vara. Vezi și pagina dedicată mansardei.",
                   foam: "Celule Deschise sau Închise",
                 },
                 {

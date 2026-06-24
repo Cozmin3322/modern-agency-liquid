@@ -41,7 +41,7 @@ export const projects: Project[] = [
       </ul>
       <h3>Rezultate:</h3>
       <ul>
-        <li>Eliminare completă a punților termice dintre căpriori</li>
+        <li>Eliminarea completă a punților termice dintre căpriori</li>
         <li>Spațiu protejat termic pe toată suprafața, inclusiv colțurile dificile</li>
         <li>Aderență perfectă pe lemn, fără desprinderi</li>
       </ul>`,
@@ -299,7 +299,7 @@ export const projects: Project[] = [
       </ul>
       <h3>Rezultate:</h3>
       <ul>
-        <li>Eliminare completă a punților termice pe fațadă</li>
+        <li>Eliminarea completă a punților termice pe fațadă</li>
         <li>Aderență perfectă pe suportul de beton</li>
         <li>Fațadă pregătită pentru finisajele exterioare</li>
       </ul>`,

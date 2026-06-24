@@ -5,9 +5,9 @@ import { Footer } from "@/components/footer"
 import { ArrowRight, Check } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Hidroizolare Acoperis | Impermeabilizare Ploaie | IsoThermLux",
+  title: "Hidroizolare Acoperiș | Impermeabilizare Ploaie | IsoThermLux",
   description: "Hidroizolare profesională a acoperișului. Impermeabilizare completă. Protecție la ploaie și ninsoare.",
-  keywords: "hidroizolare acoperis, impermeabilizare, protecție ploaie, acoperis etanș",
+  keywords: "hidroizolare acoperiș, impermeabilizare, protecție ploaie, acoperiș etanș",
   alternates: { canonical: "https://www.isothermlux.md/hidroizolare/acoperis" },
 }
 
@@ -20,9 +20,9 @@ export default function AcoperisPage() {
           <div className="absolute inset-0 bg-black/40 z-10" />
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
             <div className="max-w-3xl">
-              <p className="text-accent text-sm tracking-widest uppercase mb-4">Hidroizolare Acoperis</p>
+              <p className="text-accent text-sm tracking-widest uppercase mb-4">Hidroizolare Acoperiș</p>
               <h1 className="text-6xl font-serif font-medium text-white mb-6">
-                Impermeabilizare Acoperis
+                Impermeabilizare Acoperiș
               </h1>
               <p className="text-2xl text-white/90 mb-8 leading-relaxed">
                 Protecție completă a acoperișului la ploaie și infiltrații. Materiale premium cu garanție 25 ani.
@@ -36,13 +36,13 @@ export default function AcoperisPage() {
 
         <section className="py-24 bg-card">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-12">Beneficii Hidroizolare Acoperis</h2>
+            <h2 className="text-4xl font-serif font-medium mb-12">Beneficii Hidroizolare Acoperiș</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {[
-                { title: "Etanșeitate Completa", desc: "Protecție 100% la ploaie și infiltrații. Acoperis sigur." },
+                { title: "Etanșeitate Completă", desc: "Protecție 100% la ploaie și infiltrații. Acoperiș sigur." },
                 { title: "Durabilitate 20+ Ani", desc: "Materiale rezistente la vânt și temperaturi extreme." },
                 { title: "Protecție Structurii", desc: "Prevenirea daunelor cauzate de apă. Protecție pereți și interior." },
-                { title: "Garanție 25 Ani", desc: "Garanție scrisă material și manopera. Investiție pe termen lung." }
+                { title: "Garanție 25 Ani", desc: "Garanție scrisă pentru material și manoperă. Investiție pe termen lung." }
               ].map((item, idx) => (
                 <div key={idx} className="p-8 border border-border rounded-none">
                   <Check className="w-6 h-6 text-accent mb-4" />
@@ -56,7 +56,7 @@ export default function AcoperisPage() {
 
         <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-serif font-medium mb-6">Impermeabilizează Acoperisul</h2>
+            <h2 className="text-4xl font-serif font-medium mb-6">Impermeabilizează Acoperișul</h2>
             <p className="text-lg mb-8 opacity-90">Protecție de calitate. Consultație pe loc.</p>
             <a href="tel:+37360811115" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Contactează-ne <ArrowRight className="w-4 h-4" />

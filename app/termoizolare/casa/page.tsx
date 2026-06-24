@@ -5,8 +5,8 @@ import { Footer } from "@/components/footer"
 import { ArrowRight, Check } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Termoizolare Casă Completă | Acoperis Pereti Fundație | IsoThermLux",
-  description: "Termoizolare completă a casei. Izolare acoperis, pereti exteriori și fundație. Economie 40-50% la gaz. Garanție 25 ani.",
+  title: "Termoizolare Casă Completă | Acoperiș Pereți Fundație | IsoThermLux",
+  description: "Termoizolare completă a casei. Izolare acoperiș, pereți exteriori și fundație. Economie 40-50% la gaz. Garanție 25 ani.",
   keywords: "termoizolare casă, izolare completă, termoizolare acoperis pereti, renovare casă",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare/casa" },
 }
@@ -20,12 +20,12 @@ export default function CasaPage() {
           <div className="absolute inset-0 bg-black/40 z-10" />
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
             <div className="max-w-3xl">
-              <p className="text-accent text-sm tracking-widest uppercase mb-4">Termoizolare Casa</p>
+              <p className="text-accent text-sm tracking-widest uppercase mb-4">Termoizolare Casă</p>
               <h1 className="text-6xl font-serif font-medium text-white mb-6">
                 Termoizolare Casă Completă
               </h1>
               <p className="text-2xl text-white/90 mb-8 leading-relaxed">
-                Izolează acoperisul, pereții și fundația. Confort maxim în orice sezon. Economie 40-50% la gaz.
+                Izolează acoperișul, pereții și fundația. Confort maxim în orice sezon. Economie 40-50% la gaz.
               </p>
               <a href="tel:+37360811115" className="inline-block bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">
                 Consultație Gratuită
@@ -39,8 +39,8 @@ export default function CasaPage() {
             <h2 className="text-4xl font-serif font-medium mb-12">Componente Izolare</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { title: "Acoperis", desc: "Izolație termică profesională a acoperișului. Protecție la vânt și ploaie." },
-                { title: "Pereti Exteriori", desc: "Izolație pereți pentru confort maxim. Eliminare punți termice." },
+                { title: "Acoperiș", desc: "Izolație termică profesională a acoperișului. Protecție la vânt și ploaie." },
+                { title: "Pereți Exteriori", desc: "Izolație pereți pentru confort maxim. Eliminare punți termice." },
                 { title: "Fundație", desc: "Izolație termică a fundației. Spațiu în subsol confortabil și uscat." }
               ].map((item, idx) => (
                 <div key={idx} className="p-8 border border-border rounded-none">
@@ -55,7 +55,7 @@ export default function CasaPage() {
 
         <section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-serif font-medium mb-12">De Ce Termoizolare Completa?</h2>
+            <h2 className="text-4xl font-serif font-medium mb-12">De Ce Termoizolare Completă?</h2>
             <div className="max-w-3xl">
               <div className="space-y-6">
                 <div className="flex gap-4">
@@ -86,7 +86,7 @@ export default function CasaPage() {
 
         <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-serif font-medium mb-6">Termoizolează Casa Completa</h2>
+            <h2 className="text-4xl font-serif font-medium mb-6">Termoizolează Complet Casa</h2>
             <p className="text-lg mb-8 opacity-90">Consultație gratuită fără angajamente.</p>
             <a href="tel:+37360811115" className="inline-flex items-center gap-2 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Contactează-ne <ArrowRight className="w-4 h-4" />

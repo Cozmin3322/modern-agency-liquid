@@ -7,12 +7,12 @@ import { ArrowRight, Check, Fuel, Droplet, Milk, Factory, Thermometer, Truck } f
 
 export const metadata: Metadata = {
   title: "Termoizolare Cisterne | Rezervoare Industriale | IsoThermLux Moldova",
-  description: "Termoizolare profesională a cisternelor și rezervoarelor industriale cu spumă poliuretanică cu celule închise. Protecție termică maximă. Garanție 25 ani. Chișinău, Moldova.",
+  description: "Termoizolare profesională a cisternelor și rezervoarelor industriale cu spumă poliuretanică cu celule închise. Protecție termică maximă. Garanție 25 de ani. Chișinău, Moldova.",
   keywords: "termoizolare cisterne Moldova, izolare rezervoare industriale, spuma poliuretanica cisterne, termoizolare rezervoare, izolare termica cisterne",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare/cisterne" },
   openGraph: {
     title: "Termoizolare Cisterne și Rezervoare | IsoThermLux",
-    description: "Izolație termică profesională pentru cisterne și rezervoare cu spumă poliuretanică cu celule închise. Garanție 25 ani.",
+    description: "Izolație termică profesională pentru cisterne și rezervoare cu spumă poliuretanică cu celule închise. Garanție 25 de ani.",
     type: "website",
     locale: "ro_MD",
     url: "https://www.isothermlux.md/termoizolare/cisterne",
@@ -76,7 +76,7 @@ export default function CisternePage() {
                     { label: "Densitate", value: "35–45 kg/m³" },
                     { label: "Absorbție apă", value: "< 2% din volum" },
                     { label: "Grosime recomandată", value: "50–100 mm" },
-                    { label: "Garanție", value: "25 ani scrisă" },
+                    { label: "Garanție", value: "25 de ani scrisă" },
                     { label: "Aplicare", value: "Direct pe metal, beton, GRP" },
                   ].map((spec, idx) => (
                     <div key={idx} className="flex justify-between py-2 border-b border-border last:border-0">

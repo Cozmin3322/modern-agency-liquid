@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.isothermlux.md/termoizolare/containere" },
   openGraph: {
     title: "Termoizolare Containere | IsoThermLux Moldova",
-    description: "Izolație termică profesională pentru containere de toate tipurile cu spumă poliuretanică. Garanție 25 ani.",
+    description: "Izolație termică profesională pentru containere de toate tipurile cu spumă poliuretanică. Garanție 25 de ani.",
     type: "website",
     locale: "ro_MD",
     url: "https://www.isothermlux.md/termoizolare/containere",
@@ -169,7 +169,7 @@ export default function ContainerePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-medium mb-6">Termoizolăm Containerul Tău</h2>
             <p className="text-lg mb-8 max-w-xl mx-auto opacity-90">
-              Spunem-ne ce fel de container ai și îți oferim soluția potrivită. Consultație gratuită.
+              Spune-ne ce fel de container ai și îți oferim soluția potrivită. Consultație gratuită.
             </p>
             <a href="tel:+37360811115" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum: +373 60 811 115 <ArrowRight className="w-4 h-4" />

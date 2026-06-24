@@ -91,9 +91,9 @@ export default function FundatiePage() {
         {/* CTA */}
         <section className="py-24 bg-[#1A1D21] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-serif font-medium mb-6">Scapă de Umezeala și Frigul de la Fundație</h2>
+            <h2 className="text-4xl font-serif font-medium mb-6">Scapă de Umezeală și Frig la Fundație</h2>
             <p className="text-lg mb-8 max-w-xl mx-auto opacity-90">
-              Evaluare gratuită pe loc. Îți arătăm exact unde piezi căldura și cât costă să repari.
+              Evaluare gratuită pe loc. Îți arătăm exact unde pierzi căldura și cât costă să repari.
             </p>
             <a href="tel:+37360811115" className="inline-flex items-center gap-3 bg-accent text-foreground px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum: +373 60 811 115 <ArrowRight className="w-4 h-4" />

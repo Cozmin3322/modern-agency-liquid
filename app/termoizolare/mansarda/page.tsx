@@ -36,7 +36,7 @@ export default function MansardaPage() {
           <div className="absolute inset-0 bg-black/40 z-10" />
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20 relative">
             <div className="max-w-3xl">
-              <p className="text-accent text-sm tracking-widest uppercase mb-4">Termoizolare Mansarda</p>
+              <p className="text-accent text-sm tracking-widest uppercase mb-4">Termoizolare Mansardă</p>
               <h1 className="text-6xl font-serif font-medium text-white mb-6">
                 Termoizolare Mansardă Profesională
               </h1>
@@ -61,9 +61,9 @@ export default function MansardaPage() {
                 { title: "Spațiu Locuibil Cald", desc: "Mansarda devine spațiu confortabil și locuibil în toate anotimpurile." },
                 { title: "Economie 40-50% la Gaz", desc: "Reducere semnificativă la costurile de încălzire. ROI în 2-3 ani." },
                 { title: "Confort Termic", desc: "Temperatura constantă și agradabilă. Fără punți termice." },
-                { title: "Protecție Acustica", desc: "Izolație fonică excelentă. Spațiu linistit și confortabil." },
-                { title: "Durabilitate", desc: "Materiale premium cu garanție 25 ani. Durabilitate comprobată." },
-                { title: "Aplicare Rapidă", desc: "Lucru finalizat în 2-3 zile. Minimal disruptiv pentru familie." }
+                { title: "Protecție Acustică", desc: "Izolație fonică excelentă. Spațiu liniștit și confortabil." },
+                { title: "Durabilitate", desc: "Materiale premium cu garanție de 25 de ani. Durabilitate dovedită." },
+                { title: "Aplicare Rapidă", desc: "Lucru finalizat în 2-3 zile. Disconfort minim pentru familie." }
               ].map((item, idx) => (
                 <div key={idx} className="p-8 border border-border rounded-none">
                   <Check className="w-6 h-6 text-accent mb-4" />
@@ -83,10 +83,10 @@ export default function MansardaPage() {
               {[
                 { step: "1", title: "Evaluare", desc: "Analiză completă a mansardei. Identificare probleme termice. Recomandări." },
                 { step: "2", title: "Plan de Lucru", desc: "Strategie de izolare personalizată. Estimare preț exactă." },
-                { step: "3", title: "Preparare", desc: "Protejarea mobilierului și obiectelor. Pregatire suprafete." },
+                { step: "3", title: "Preparare", desc: "Protejarea mobilierului și obiectelor. Pregătire suprafețe." },
                 { step: "4", title: "Izolare", desc: "Aplicare profesională a izolației. Controlul calității constant." },
                 { step: "5", title: "Finalizare", desc: "Finisaj profesional. Curățenie completă." },
-                { step: "6", title: "Garanție", desc: "Garanție scrisă 25 ani. Suport permanent." }
+                { step: "6", title: "Garanție", desc: "Garanție scrisă de 25 de ani. Suport permanent." }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-8 mb-8">
                   <div className="flex-shrink-0">
@@ -112,7 +112,7 @@ export default function MansardaPage() {
               {[
                 { title: "Mansardă Chișinău 2024", location: "Chișinău", size: "45m²" },
                 { title: "Mansardă Orhei 2024", location: "Orhei", size: "38m²" },
-                { title: "Mansardă Familiala", location: "Bălți", size: "52m²" }
+                { title: "Mansardă Familială", location: "Bălți", size: "52m²" }
               ].map((proj, idx) => (
                 <div key={idx} className="p-8 bg-background border border-border rounded-none">
                   <h3 className="font-semibold mb-3">{proj.title}</h3>
@@ -135,9 +135,9 @@ export default function MansardaPage() {
             <h2 className="text-4xl font-serif font-medium mb-12">Întrebări Frecvente</h2>
             <div className="space-y-6">
               {[
-                { q: "Cat costă termoizolarea mansardei?", a: "Costul depinde de suprafață și complexitate. După evaluare pe loc, oferim estimare exactă. În medie 200-400 EUR/m²." },
+                { q: "Cât costă termoizolarea mansardei?", a: "Costul depinde de suprafață și complexitate. După evaluare pe loc, oferim estimare exactă. În medie 200-400 EUR/m²." },
                 { q: "Cât timp durează?", a: "Mansarda standard se izolează în 2-3 zile. Timpul exact depinde de suprafață și accesibilitate." },
-                { q: "Pot folosi mansarda în timp?", a: "Se recomandă nu. După finalizare (24h), mansarda este gata de utilizare." }
+                { q: "Pot folosi mansarda imediat după lucrare?", a: "Da. După finalizare (24h), mansarda este gata de utilizare." }
               ].map((item, idx) => (
                 <div key={idx}>
                   <h3 className="font-semibold mb-2">{item.q}</h3>

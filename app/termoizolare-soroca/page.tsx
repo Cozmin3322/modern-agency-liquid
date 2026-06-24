@@ -103,7 +103,7 @@ export default function Page() {
               {AREAS.map((area) => (
                 <div key={area} className="flex items-center gap-2 p-3 border border-border">
                   <MapPin className="w-3 h-3 text-accent flex-shrink-0" />
-                  <span className="text-sm">{}</span>
+                  <span className="text-sm">{area}</span>
                 </div>
               ))}
             </div>
@@ -119,10 +119,10 @@ export default function Page() {
             <h2 className="text-4xl font-serif uppercase mb-12">De Ce IsoThermLux în Soroca?</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                ["Cunoaștem condițiile locale", "Climatul din raionul Soroca — temperaturi extreme iarna, umiditate sezoniera. Știm exact ce tip de spumă funcționează cel mai bine."],
+                ["Cunoaștem condițiile locale", "Climatul din raionul Soroca — temperaturi extreme iarna, umiditate sezonieră. Știm exact ce tip de spumă funcționează cel mai bine."],
                 ["87+ proiecte realizate", "Experiență vastă în Soroca și raionul Soroca. Clienții noștri pot fi contactați pentru referințe."],
                 ["Deplasare gratuită la Soroca", "Evaluare pe loc fără costuri. Ofertă personalizată în 24h."],
-                ["Garanție 25 ani în scris", "Nu verbală — pe hârtie, cu semnătură. Lucrarea e garantată pe durata de viață a locuinței."],
+                ["Garanție de 25 de ani în scris", "Nu verbală — pe hârtie, cu semnătură. Lucrarea e garantată pe durata de viață a locuinței."],
               ].map(([t, d], i) => (
                 <div key={i} className="flex gap-4 p-6 border border-border">
                   <Check className="w-5 h-5 text-accent flex-shrink-0 mt-1" />

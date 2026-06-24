@@ -103,7 +103,7 @@ export default function ConduCtePage() {
                 </div>
                 <div className="bg-background p-6 rounded-none border border-border">
                   <h3 className="font-semibold mb-2">Durată de Viață</h3>
-                  <div className="text-3xl font-bold text-foreground">25+ ani</div>
+                  <div className="text-3xl font-bold text-foreground">25+ de ani</div>
                   <p className="text-foreground/60 text-sm mt-1">Fără degradare, fără reizolare</p>
                 </div>
               </div>

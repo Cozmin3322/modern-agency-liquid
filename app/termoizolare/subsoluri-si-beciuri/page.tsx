@@ -14,7 +14,7 @@ const breadcrumb = breadcrumbSchema([
 
 export const metadata: Metadata = {
   title: "Termoizolare Subsoluri și Beciuri cu Spumă Poliuretanică | IsoThermLux",
-  description: "Termoizolare subsoluri și beciuri cu spumă poliuretanică. Elimini umezeala, frigul și mucegaiul definitiv. Garanție 25 ani. Moldova.",
+  description: "Termoizolare subsoluri și beciuri cu spumă poliuretanică. Elimini umezeala, frigul și mucegaiul definitiv. Garanție 25 de ani. Moldova.",
   keywords: "termoizolare subsol, izolare beci spuma poliuretanica, termoizolare subsol Moldova, stop umezeala subsol Chisinau",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare/subsoluri-si-beciuri" },
 }
@@ -48,12 +48,12 @@ export default function Page() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-8 border-2 border-accent/40 rounded-none bg-accent/5">
                 <div className="inline-block bg-accent text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">Celulă Închisă</div>
-                <p className="text-foreground/80 mb-4">Densitate mare, impermeabil la apă. Ideal acolo unde există contact cu umiditate sau necesitate de rezistență mecanică ridicată.</p>
+                <p className="text-foreground/80 mb-4">Densitate mare, impermeabil la apă. Ideală acolo unde există contact cu umiditate sau necesitate de rezistență mecanică ridicată.</p>
                 <ul className="space-y-1 text-sm text-foreground/70">
                   <li>✓ Impermeabil 100% la apă</li>
                   <li>✓ Valoare R superioară (6.5/inch)</li>
                   <li>✓ Rezistență mecanică ridicată</li>
-                  <li>✓ Ideal fundații, exterioare, cisterne</li>
+                  <li>✓ Ideală pentru fundații, exterioare, cisterne</li>
                 </ul>
               </div>
               <div className="p-8 border border-border rounded-none">
@@ -63,7 +63,7 @@ export default function Page() {
                   <li>✓ Fonoizolare excelentă</li>
                   <li>✓ Foarte ușoară</li>
                   <li>✓ Permeabilă la vapori</li>
-                  <li>✓ Ideal mansarde, pereți interiori, poduri</li>
+                  <li>✓ Ideală pentru mansarde, pereți interiori, poduri</li>
                 </ul>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function Page() {
               <div key={"2"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Elimini mucegaiul</h3><p className="text-sm text-foreground/70">Fără umiditate = fără mucegai. Aer curat în toată casa.</p></div>
               <div key={"3"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Protejezi structura casei</h3><p className="text-sm text-foreground/70">Umezeala degradează fundația și pereții. Spuma protejează structura.</p></div>
               <div key={"4"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Beciul mai uscat pentru depozitare</h3><p className="text-sm text-foreground/70">Conservi alimentele și obiectele în condiții optime.</p></div>
-              <div key={"5"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Garanție 25 ani</h3><p className="text-sm text-foreground/70">Soluție permanentă fără tratamente repetate anti-mucegai.</p></div>
+              <div key={"5"} className="p-6 border border-border rounded-none"><Check className="w-5 h-5 text-accent mb-3" /><h3 className="font-semibold mb-2">Garanție 25 de ani</h3><p className="text-sm text-foreground/70">Soluție permanentă fără tratamente repetate anti-mucegai.</p></div>
             </div>
           </div>
         </section>
@@ -116,7 +116,7 @@ export default function Page() {
         <section className="py-20 bg-[#1A1D21] text-white text-center">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-4xl font-serif font-medium mb-4">Scapă de Umezeală Acum</h2>
-            <p className="text-white/80 mb-8">Evaluare gratuită pe loc. Ofertă în 24h. Garanție 25 ani.</p>
+            <p className="text-white/80 mb-8">Evaluare gratuită pe loc. Ofertă în 24h. Garanție 25 de ani.</p>
             <a href="tel:+37360811115" className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-none font-semibold hover:bg-accent/90 transition">
               Sună Acum <ArrowRight className="w-4 h-4" />
             </a>

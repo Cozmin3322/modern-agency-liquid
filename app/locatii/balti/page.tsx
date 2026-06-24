@@ -59,8 +59,8 @@ export default function BaltiPage() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 { title: "Casa Familială", desc: "Termoizolare completă", date: "2024" },
-                { title: "Hidroizolare Acoperis", desc: "Impermeabilizare profesională", date: "2024" },
-                { title: "Vila Rezidenţială", desc: "Izolare termică și umiditate", date: "2023" }
+                { title: "Hidroizolare Acoperiș", desc: "Impermeabilizare profesională", date: "2024" },
+                { title: "Vila Rezidențială", desc: "Izolare termică și umiditate", date: "2023" }
               ].map((proj, idx) => (
                 <div key={idx} className="p-8 bg-card border border-border rounded-none">
                   <h3 className="font-semibold mb-2">{proj.title}</h3>

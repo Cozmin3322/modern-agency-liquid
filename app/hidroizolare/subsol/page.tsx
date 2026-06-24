@@ -25,7 +25,7 @@ export default function SubsolPage() {
                 Subsol Uscat și Confortabil
               </h1>
               <p className="text-2xl text-white/90 mb-8 leading-relaxed">
-                Hidroizolare completă a subsolului. Eliminare umidității. Spațiu util și locuibil.
+                Hidroizolare completă a subsolului. Eliminarea umidității. Spațiu util și locuibil.
               </p>
               <a href="tel:+37360811115" className="inline-block bg-accent text-white px-8 py-3 rounded-none font-semibold hover:bg-accent/90 transition">
                 Consultație Gratuită
@@ -40,7 +40,7 @@ export default function SubsolPage() {
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 { title: "Eliminare Umiditate", desc: "Protecție pereți și podea. Subsol uscat și sănătos." },
-                { title: "Spațiu Util", desc: "Subsol utilizabil pentru depozit, atelier, sau spațiu locabil." },
+                { title: "Spațiu Util", desc: "Subsol utilizabil pentru depozit, atelier, sau spațiu locuibil." },
                 { title: "Protecție Structurii", desc: "Prevenirea daunelor la pereți și fundație cauzate de apă." },
                 { title: "Investiție în Valoare", desc: "Mărirea valorii proprietății. Spațiu extra locuibil." }
               ].map((item, idx) => (

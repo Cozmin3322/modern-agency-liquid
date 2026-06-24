@@ -7,12 +7,12 @@ import { ArrowRight, Check, Beef, PiggyBank, Bird, Sprout, Wheat, Milk } from "l
 
 export const metadata: Metadata = {
   title: "Termoizolare Ferme Agricole și Grajduri | Spumă Poliuretanică | IsoThermLux",
-  description: "Termoizolare profesională pentru ferme, grajduri, sere și depozite agricole cu spumă poliuretanică. Reducere costuri încălzire cu 40%. Garanție 25 ani. Moldova.",
+  description: "Termoizolare profesională pentru ferme, grajduri, sere și depozite agricole cu spumă poliuretanică. Reducere costuri încălzire cu 40%. Garanție 25 de ani. Moldova.",
   keywords: "termoizolare ferma agricola Moldova, izolare grajduri, spuma poliuretanica ferma, termoizolare sera, izolare depozite agricole Moldova",
   alternates: { canonical: "https://www.isothermlux.md/termoizolare/ferma" },
   openGraph: {
     title: "Termoizolare Ferme Agricole | IsoThermLux Moldova",
-    description: "Izolație termică profesională pentru ferme și grajduri cu spumă poliuretanică. Reducere costuri cu 40%. Garanție 25 ani.",
+    description: "Izolație termică profesională pentru ferme și grajduri cu spumă poliuretanică. Reducere costuri cu 40%. Garanție 25 de ani.",
     type: "website",
     locale: "ro_MD",
     url: "https://www.isothermlux.md/termoizolare/ferma",
@@ -76,7 +76,7 @@ export default function FermaPage() {
                 { title: "Fără condens pe tabla acoperișului", desc: "Condensul distruge tabla și creează umezeala în hală. Spuma oprește complet fenomenul." },
                 { title: "Aplicare rapidă pe hale mari", desc: "Echipamentul nostru acoperă 200–300 m²/zi. O hală de 1000 m² se izolează în 3–5 zile." },
                 { title: "Rezistă la amoniac și dezinfectanți", desc: "Spuma poliuretanică este inertă chimic — nu se degradează la dezinfecțiile periodice." },
-                { title: "Garanție 25 ani", desc: "Investiție de lungă durată. Nu trebuie reizolat la fiecare renovare." },
+                { title: "Garanție 25 de ani", desc: "Investiție de lungă durată. Nu trebuie reizolat la fiecare renovare." },
               ].map((b, idx) => (
                 <div key={idx} className="p-6 bg-background border border-border rounded-none">
                   <Check className="w-5 h-5 text-accent mb-3" />

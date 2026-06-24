@@ -57,7 +57,7 @@ export default function CamioanePage() {
                     "Impermeabilă la apă și vapori — fără condens și mucegai",
                     "Aderă perfect pe metal, aluminiu, fibră de sticlă",
                     "Nu vibrează, nu face zgomot în mers",
-                    "Menține temperatura marfă cu până la 8 ore mai mult",
+                    "Menține temperatura mărfii cu până la 8 ore mai mult",
                     "Poate fi acoperită cu orice finisaj interior",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
@@ -77,7 +77,7 @@ export default function CamioanePage() {
                     { label: "Absorbție apă", value: "< 2% din volum" },
                     { label: "Grosime recomandată", value: "30–80 mm" },
                     { label: "Durată aplicare", value: "1–2 zile / camion" },
-                    { label: "Garanție", value: "25 ani scrisă" },
+                    { label: "Garanție", value: "25 de ani scrisă" },
                   ].map((spec, idx) => (
                     <div key={idx} className="flex justify-between py-2 border-b border-border last:border-0">
                       <span className="text-foreground/60 text-sm">{spec.label}</span>
@@ -127,7 +127,7 @@ export default function CamioanePage() {
                 {
                   Icon: Tent,
                   title: "Autorulote și Caravane",
-                  desc: "Termoizolare complete pentru caravane și autorulote. Confort pe tot parcursul anului, oricunde te-ai afla.",
+                  desc: "Termoizolare completă pentru caravane și autorulote. Confort pe tot parcursul anului, oriunde te-ai afla.",
                 },
               ].map((type, idx) => (
                 <div key={idx} className="p-8 bg-card border border-border rounded-none hover:border-accent transition">

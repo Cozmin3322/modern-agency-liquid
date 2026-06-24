@@ -42,11 +42,11 @@ export default function ReviewsPage() {
       project: "Izolare Termică Completă"
     },
     {
-      name: "Stefan Ionescu",
+      name: "Ștefan Ionescu",
       location: "Chișinău",
       rating: 5,
       text: "Profesionalism de top. Consultația gratuită exactă. Recomand 100%.",
-      project: "Termoizolare Casa"
+      project: "Termoizolare Casă"
     },
     {
       name: "Luiza Mihai",
@@ -59,8 +59,8 @@ export default function ReviewsPage() {
       name: "Viorel Popescu",
       location: "Orhei",
       rating: 5,
-      text: "Garanția 25 ani me-a convins. Echipă serioas și onestă. Bravo!",
-      project: "Hidroizolare Acoperis"
+      text: "Garanția 25 de ani m-a convins. Echipă serioasă și onestă. Bravo!",
+      project: "Hidroizolare Acoperiș"
     }
   ]
 

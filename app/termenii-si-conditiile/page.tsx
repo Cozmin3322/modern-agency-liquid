@@ -45,15 +45,15 @@ export default function TermeniiSiConsitii() {
                 <li>Utilizați site-ul pentru scopuri ilegale sau dăunătoare</li>
                 <li>Accesați neautorizat datele sistemului nostru</li>
                 <li>Transmiteți malware sau cod dăunător</li>
-                <li>Spămiți sau trimiteti mesaje comerciale nesolictate</li>
+                <li>Spămiți sau trimiteți mesaje comerciale nesolicitate</li>
               </ul>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mt-8 mb-4">3. Conținut și Proprietate Intelectuală</h2>
               <p>
-                Totul pe site-ul nostru, inclusiv textul, grafica, imagini, logos și software, este proprietatea noastră 
-                sau a licenționarilor noștri și este protejat de legile privind drepturile de autor. 
+                Totul pe site-ul nostru, inclusiv textul, grafica, imagini, logo-urile și software-ul, este proprietatea noastră
+                sau a licențiatorilor noștri și este protejat de legile privind drepturile de autor.
                 Nu aveți voie să reproduceți sau să utilizați orice conținut fără permisiune scrisă.
               </p>
             </section>
@@ -71,7 +71,7 @@ export default function TermeniiSiConsitii() {
               <h2 className="text-2xl font-bold mt-8 mb-4">5. Limitarea Răspunderii</h2>
               <p>
                 ÎN NICIUN CAZ, ISOTHERMLUX NU VA FI RESPONSABILĂ PENTRU ORICE DAUNE INDIRECTE, INCIDENTALE,
-                SPECIALE SAU CONSECUTIVE REZULTATE DIN SAU LEGATE DE UTILIZAREA SITE-ULU SAU SERVICIILOR NOASTRE. 
+                SPECIALE SAU CONSECUTIVE REZULTATE DIN SAU LEGATE DE UTILIZAREA SITE-ULUI SAU SERVICIILOR NOASTRE.
                 Răspunderea noastră totală este limitată în condițiile permise de legislația Republicii Moldova.
               </p>
             </section>

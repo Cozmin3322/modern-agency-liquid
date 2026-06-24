@@ -33,7 +33,7 @@ const benefits = [
   {
     Icon: Thermometer,
     title: "Reduci Pierderile cu 60%",
-    description: "Un boiler neizolatermit pierde constant căldura prin perete. Spuma formează o manta termică continuă, fără rosturi sau goluri.",
+    description: "Un boiler neizolat pierde constant căldura prin perete. Spuma formează o manta termică continuă, fără rosturi sau goluri.",
   },
   {
     Icon: Zap,

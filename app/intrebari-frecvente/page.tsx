@@ -22,11 +22,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Cât durează aplicarea termoizolării?",
-    a: "În funcție de suprafață, o lucrare standard se finalizează în 1-2 zile. Spuma se întărește în cateva ore și poate fi acoperită imediat după aplicare."
+    a: "În funcție de suprafață, o lucrare standard se finalizează în 1-2 zile. Spuma se întărește în câteva ore și poate fi acoperită imediat după aplicare."
   },
   {
     q: "Ce diferență este între celula deschisă și celula închisă?",
-    a: "Celula deschisă este mai economică și potrivită pentru interioare. Celula închisă este mai densă, rezistență la umiditate și recomandată pentru exterior."
+    a: "Celula deschisă este mai economică și potrivită pentru interioare. Celula închisă este mai densă, rezistentă la umiditate și recomandată pentru exterior."
   },
   {
     q: "Cât economisesc la facturi după termoizolare?",
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "Oferiți garanție pentru lucrări?",
-    a: "Da, oferim garanție de 25 de ani pentru toate lucrarile de termoizolare. Garanția acoperă atât materialul cât și manopera."
+    a: "Da, oferim garanție de 25 de ani pentru toate lucrările de termoizolare. Garanția acoperă atât materialul cât și manopera."
   },
   {
     q: "Pot aplica termoizolarea pe orice suprafață?",
