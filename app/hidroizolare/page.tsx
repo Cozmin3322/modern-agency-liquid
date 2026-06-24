@@ -10,7 +10,7 @@ import { serviceSchema, breadcrumbSchema } from "@/lib/schema"
 
 const hidroizolareServiceSchema = serviceSchema(
   'Hidroizolare',
-  'Servicii profesionale de hidroizolare pentru protecție contra infiltrațiilor de apă. Impermeabilizare acoperis, fundație, subsol. Garanție 25 ani.'
+  'Servicii profesionale de hidroizolare pentru protecție contra infiltrațiilor de apă. Impermeabilizare acoperiș, fundație, subsol. Garanție 25 ani.'
 )
 
 export const metadata: Metadata = {
@@ -120,7 +120,7 @@ export default function HidroizolarePage() {
                     "Aderență perfectă pe orice suprafață, fără rosturi",
                     "Elasticitate ridicată — acoperă fisuri și mișcări structurale",
                     "Rezistență la radiații UV și temperaturi extreme",
-                    "Durabilitate peste 25 ani fără întreținere",
+                    "Durabilitate peste 25 de ani fără întreținere",
                     "Aplicare rapidă — uscare în câteva secunde",
                   ].map((text) => (
                     <li key={text} className="flex gap-3">
@@ -242,7 +242,7 @@ export default function HidroizolarePage() {
               </div>
             </div>
             <p className="text-foreground/80 leading-relaxed mt-10 max-w-3xl">
-              Dacă vrei o locuință protejată complet de infiltrații și umiditate, fără costuri urcate la reparații, hidroizolarea cu spumă poliuretanică este alegerea ideală. Începe chiar azi călătoria către un spațiu uscat, sigur și durabil. Protecție garantată, fără griji.
+              Dacă vrei o locuință protejată complet de infiltrații și umiditate, fără costuri ridicate de reparații, hidroizolarea cu spumă poliuretanică este alegerea ideală. Începe chiar azi călătoria către un spațiu uscat, sigur și durabil. Protecție garantată, fără griji.
             </p>
             <p className="text-accent font-medium mt-6">Completează formularul de mai sus sau contactează-ne direct!</p>
             <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 mt-4 font-semibold hover:bg-accent/90 transition-colors">

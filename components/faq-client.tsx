@@ -24,9 +24,9 @@ export function FAQClient({ items }: FAQClientProps) {
     <section id="faq" className="py-20 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-16">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Intrebari Frecvente</p>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Întrebări Frecvente</p>
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-medium leading-[1.1] tracking-tight mb-6 text-balance">
-            Raspunsuri la intrebarile dumneavoastra
+            Răspunsuri la întrebările dumneavoastră
           </h2>
         </div>
 

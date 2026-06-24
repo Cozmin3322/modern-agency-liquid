@@ -18,7 +18,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
           {/* Keyword line */}
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Izolație cu spumă poliuretanică · Izolație termică cu spumă · Izolație cu spumă poliuretanică cu celulă închisă · Izolație cu spumă poliuretanică cu celula deschisă · Termoizolație poduri, mansarde · Hidroizolație cu spumă poliuretanică · Izolație exterioara acoperis și pereți · Fonoizolații cu spumă poliuretanică
+            Izolație cu spumă poliuretanică · Izolație termică cu spumă · Izolație cu spumă poliuretanică cu celulă închisă · Izolație cu spumă poliuretanică cu celula deschisă · Termoizolație poduri, mansarde · Hidroizolație cu spumă poliuretanică · Izolație exterioară acoperiș și pereți · Fonoizolații cu spumă poliuretanică
           </p>
 
           {/* Informatii */}

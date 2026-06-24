@@ -59,7 +59,7 @@ export function HeroClient({ data }: HeroClientProps) {
               Ne deplasăm oriunde în Moldova
             </p>
             <p className="text-lg md:text-xl font-bold uppercase leading-snug mb-3">
-              Garanție până la 25 ani!
+              Garanție până la 25 de ani!
             </p>
             <p className="text-sm text-white/85">
               Longevitate între 50 și 80 de ani

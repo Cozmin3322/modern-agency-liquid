@@ -17,7 +17,7 @@ const philosophyItems = [
   },
   {
     title: "Garanție 25 Ani",
-    description: "Garanție scrisă material și manopera. Durabilitate dovedită. Serviciu de încredere pentru generații.",
+    description: "Garanție scrisă pentru material și manoperă. Durabilitate dovedită. Serviciu de încredere pentru generații.",
   },
   {
     title: "14 Ani de Experiență",
@@ -73,7 +73,7 @@ export function Philosophy() {
             >
               <img
                 src="/images/economie-70-procent-gaz.jpg"
-                alt="Tehnician IsoThermLux aplicand spuma poliuretanica - Beneficiile termoizolarii"
+                alt="Tehnician IsoThermLux aplicând spumă poliuretanică - Beneficiile termoizolării"
                 className="opacity-90 w-full h-full object-cover will-change-transform"
                 style={{
                   transform: `translateY(${imgOffset}px)`,

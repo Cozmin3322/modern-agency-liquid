@@ -51,7 +51,7 @@ export function Projects() {
             href="/portofoliu"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors group"
           >
-            Vezi toate lucrarile
+            Vezi toate lucrările
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>

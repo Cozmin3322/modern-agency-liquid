@@ -79,7 +79,7 @@ function OfferCard({ offer, index }: { offer: typeof OFFERS[number]; index: numb
           href="#contact-form"
           className="block text-center bg-[#BD2626] text-white py-3 text-sm font-semibold uppercase tracking-wide hover:bg-[#a31f1f] transition-colors"
         >
-          Solicită Oferta
+          Solicită Ofertă
         </a>
       </div>
     </div>

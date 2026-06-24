@@ -86,7 +86,7 @@ export default function TermoizolarePage() {
               Aplicare Profesională în Toată Moldova
             </p>
             <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Pierderile de căldura prin acoperișuri, pereți și planșee pot ajunge la 50% din totalul pierderilor de energie ale unei locuințe. O termoizolare profesională, aplicată corect, le reduce drastic. Iar cea mai performantă soluție rămâne spuma poliuretanică aplicată prin pulverizare, cu rezultate dovedite pe termen lung.
+              Pierderile de căldură prin acoperișuri, pereți și planșee pot ajunge la 50% din totalul pierderilor de energie ale unei locuințe. O termoizolare profesională, aplicată corect, le reduce drastic. Iar cea mai performantă soluție rămâne spuma poliuretanică aplicată prin pulverizare, cu rezultate dovedite pe termen lung.
             </p>
           </div>
         </section>
@@ -118,11 +118,11 @@ export default function TermoizolarePage() {
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "Una mai bună conductivitate termică decât izolațiile tradiționale",
+                    "O conductivitate termică mai bună decât izolațiile tradiționale",
                     "Aderență perfectă la orice suprafață — fără rosturi sau pierderi",
-                    "Se adaptează la suprafețe neregulate, indiferent de forma sau dificultate",
+                    "Se adaptează la suprafețe neregulate, indiferent de formă sau dificultate",
                     "Reduce consumul de energie cu până la 40%",
-                    "Reduce durabilă — rezistă peste 50 ani",
+                    "Soluție durabilă — rezistă peste 50 de ani",
                     "Reduce punțile termice și asigură etanșarea perfectă",
                   ].map((text) => (
                     <li key={text} className="flex gap-3">
@@ -132,7 +132,7 @@ export default function TermoizolarePage() {
                   ))}
                 </ul>
                 <p className="text-foreground/70 text-sm mt-6">
-                  Termoizolația cu spumă poliuretanică este mai eficientă decât poliistirenul sau vata minerală.
+                  Termoizolația cu spumă poliuretanică este mai eficientă decât polistirenul sau vata minerală.
                 </p>
                 <a href="tel:+37360811115" className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 mt-6 font-semibold hover:bg-accent/90 transition-colors">
                   Află mai multe
@@ -242,7 +242,7 @@ export default function TermoizolarePage() {
             </div>
             <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4 text-accent">Cât economisești cu o termoizolare eficientă?</h2>
             <p className="text-foreground/80 leading-relaxed mb-6 max-w-3xl">
-              Un acoperiș termoizolat corect poate reduce cu până la 40% pierderile de căldură. În locuri de vară, spuma poliuretanică păstrează temperatura interioară constantă la prețuri. Pe termen lung, investiția este amortizată prin economiile la factura de energie.
+              Un acoperiș termoizolat corect poate reduce cu până la 40% pierderile de căldură. În lunile de vară, spuma poliuretanică păstrează temperatura interioară constantă. Pe termen lung, investiția este amortizată prin economiile la factura de energie.
             </p>
             <p className="text-foreground/70 text-sm mb-4">Vrei să afli toate opțiunile de plată, inclusiv cea în rate?</p>
             <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 font-semibold hover:bg-accent/90 transition-colors">
@@ -269,7 +269,7 @@ export default function TermoizolarePage() {
               </div>
             </div>
             <p className="text-foreground/80 leading-relaxed mt-10 max-w-3xl">
-              Dacă vrei o casă mai călduroasă iarna și mai răcoroasă vara, fără costuri urcate la întreținere, termoizolarea cu spumă poliuretanică este alegerea ideală. Începe chiar azi călătoria către un confort mai mare, eficiență și economie. Energie salvată. Bani economisiți. Confort garantat.
+              Dacă vrei o casă mai călduroasă iarna și mai răcoroasă vara, fără costuri ridicate de întreținere, termoizolarea cu spumă poliuretanică este alegerea ideală. Începe chiar azi călătoria către mai mult confort, eficiență și economie. Energie salvată. Bani economisiți. Confort garantat.
             </p>
             <p className="text-accent font-medium mt-6">Completează formularul de mai sus sau contactează-ne direct!</p>
             <Link href="/contact" className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 mt-4 font-semibold hover:bg-accent/90 transition-colors">

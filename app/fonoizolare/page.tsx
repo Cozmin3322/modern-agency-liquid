@@ -113,7 +113,7 @@ export default function FonoizolarePage() {
                     "Structură poroasă — absoarbe sunetul în loc să-l reflecte",
                     "Aplicare rapidă — 1-2 zile lucrătoare",
                     "Beneficiu dublu — izolație termică suplimentară",
-                    "Garanție scrisă 25 ani",
+                    "Garanție scrisă 25 de ani",
                   ].map((text) => (
                     <li key={text} className="flex gap-3">
                       <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
